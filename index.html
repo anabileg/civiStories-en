@@ -2445,16 +2445,12 @@ dropdown.classList.remove('show');
 }
 });
 document.querySelectorAll('.lang-option').forEach(option => {
-option.onclick = function(e) {
-e.preventDefault();
-const langCode = this.dataset.lang;
-if (langCode === 'ar') {
-return;
-} else {
-showSoonPlaceholder();
-dropdown.classList.remove('show');
-}
-};
+    option.onclick = function(e) {
+        const langCode = this.dataset.lang;
+        if (langCode === 'ar') {
+            return;
+        }
+    };
 });
 }
 function showSoonPlaceholder() {
