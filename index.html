@@ -76,11 +76,13 @@ text-decoration: none;
 }
 .lang-option:hover {
 background: rgba(212, 175, 55, 0.2);
+}
 .lang-option img {
 width: 24px;
 height: 16px;
 object-fit: contain;
 border-radius: 2px;
+filter: grayscale(100%);
 }
 .lang-option.arabic-flag img,
 #currentLangFlag {
@@ -2433,7 +2435,6 @@ window.scrollTo({ top: pos, behavior: 'smooth' });
 function setupLanguageToggle() {
 const toggleBtn = document.getElementById('langToggleBtn');
 const dropdown = document.getElementById('langDropdown');
-const currentFlag = document.getElementById('currentLangFlag');
 toggleBtn.onclick = (e) => {
 e.stopPropagation();
 dropdown.classList.toggle('show');
@@ -2447,13 +2448,21 @@ document.querySelectorAll('.lang-option').forEach(option => {
 option.onclick = function(e) {
 e.preventDefault();
 const langCode = this.dataset.lang;
-const newFlag = this.querySelector('img').src;
-// تغيير العلم في الزر
-currentFlag.src = newFlag;
-// إغلاق القائمة
+if (langCode === 'ar') {
+return;
+} else {
+showSoonPlaceholder();
 dropdown.classList.remove('show');
+}
 };
 });
+}
+function showSoonPlaceholder() {
+const flagContainer = document.querySelector('.lang-toggle-btn');
+flagContainer.innerHTML = '<span class="soon-placeholder">Soon</span>';
+setTimeout(() => {
+flagContainer.innerHTML = '<img src="https://flagcdn.com/w80/eg.png" alt="العربية" id="currentLangFlag">';
+}, 2000);
 }
 // === برامج التوعية الكاملة ===
 const programsData = {
