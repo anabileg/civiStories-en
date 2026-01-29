@@ -91,7 +91,7 @@ filter: grayscale(0%) !important;
 .news-ticker { background: var(--red-news); color: white; height: 45px; position: fixed; top: 90px; width: 100%; z-index: 1000; display: flex; align-items: center; overflow: hidden; }
 .ticker-track { display: flex; white-space: nowrap; width: max-content; }
 .ticker-track span { padding: 0 50px; font-weight: bold; font-size: 1.1rem; }
-.animate-news { animation: marqueeNews 150s linear infinite; direction: reverse; }
+.animate-news { animation: marqueeNews 150s linear infinite; }
 @keyframes marqueeNews { 0% { transform: translateX(0);} 100% { transform: translateX(-50%);} }
 [dir="rtl"] .animate-news { animation: marqueeNewsRtl 3000s linear infinite; }
 @keyframes marqueeNewsRtl { 0% { transform: translateX(0);} 100% { transform: translateX(50%);} }
@@ -2063,7 +2063,7 @@ margin-right: 10px;
     </div>
   </div>
 </nav>
-<div class="news-ticker"><div class="ticker-track animate-news" id="tickerTrack"></div></div>
+<div class="news-ticker" style="direction: ltr;"><div class="ticker-track animate-news" id="tickerTrack"></div></div>
 <section class="hero" id="home">
 <h1 class="main-alert-title" id="main-hero-title">
 <span class="highlight">تسونامي</span> <span class="gold-text">الوهم الرقمي: من مهد الحضارة مصر إلى العالم... صرخة لإنقاذ الإنسانية</span>
@@ -2631,3 +2631,4 @@ else btn.style.display = 'none';
 
 </body>
 </html>
+
