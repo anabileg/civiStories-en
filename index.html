@@ -77,16 +77,16 @@ text-decoration: none;
 .lang-option:hover {
 background: rgba(212, 175, 55, 0.2);
 }
+
+.lang-option.arabic-flag img,
+#currentLangFlag {
+filter: grayscale(0%) !important;
+}
 .lang-option img {
 width: 24px;
 height: 16px;
 object-fit: contain;
 border-radius: 2px;
-filter: grayscale(100%);
-}
-.lang-option.arabic-flag img,
-#currentLangFlag {
-filter: grayscale(0%) !important;
 }
 .news-ticker { background: var(--red-news); color: white; height: 45px; position: fixed; top: 90px; width: 100%; z-index: 1000; display: flex; align-items: center; overflow: hidden; }
 .ticker-track { display: flex; white-space: nowrap; width: max-content; }
