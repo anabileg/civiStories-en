@@ -1,6 +1,3 @@
-أقدم لك الكود المرفق كما هو بالضبط، ثم سأقوم بترجمته ثقافياً للغة الإنجليزية:
-
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -80,16 +77,15 @@ text-decoration: none;
 .lang-option:hover {
 background: rgba(212, 175, 55, 0.2);
 }
-
-.lang-option.arabic-flag img,
-#currentLangFlag {
-filter: grayscale(0%) !important;
-}
 .lang-option img {
 width: 24px;
 height: 16px;
 object-fit: contain;
 border-radius: 2px;
+}
+.lang-option.arabic-flag img,
+#currentLangFlag {
+filter: grayscale(0%) !important;
 }
 .news-ticker { background: var(--red-news); color: white; height: 45px; position: fixed; top: 90px; width: 100%; z-index: 1000; display: flex; align-items: center; overflow: hidden; }
 .ticker-track { display: flex; white-space: nowrap; width: max-content; }
@@ -418,24 +414,6 @@ margin-right: 10px;
 </head>
 <body onload="initPage()">
 <div class="site-bg"></div>
-
-<!-- 👇 الرسالة الحمراء 👇 -->
-<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 99999; text-align: center; width: 90%; max-width: 800px;">
-  <div style="background: radial-gradient(circle, rgba(255,0,0,0.9) 0%, rgba(180,0,0,0.9) 100%); border-radius: 50%; width: 100%; padding: 40px; text-align: center; box-shadow: 0 0 30px rgba(255,0,0,0.7);">
-    <h1 style="color: #ffffff; font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">Welcome</h1>
-    <p style="color: #ffffff; font-size: 1.8rem; font-weight: 700; line-height: 1.5; margin-bottom: 20px;">
-      From the cradle of civilization, Egypt, to the world...<br>
-      We raise our cry to save humanity from the tsunami of digital illusion
-    </p>
-    <p style="color: #ffffff; font-size: 1.7rem; font-weight: 800; margin-bottom: 15px;">
-      Translation in progress...<br>
-      We're working hard to launch it soon
-    </p>
-    <h2 style="color: #ffffff; font-size: 2.2rem; font-weight: 900; margin-top: 20px;">CiviStories</h2>
-  </div>
-</div>
-<!-- 👆 انتهى الرسالة الحمراء 👆 -->
-
 <div id="btnUp" onclick="window.scrollTo({top:0, behavior:'smooth'})"><i class="fas fa-arrow-up"></i></div>
 <!-- Modal for Questions -->
 <div id="qModal" class="modal-overlay">
@@ -638,7 +616,7 @@ margin-right: 10px;
 <li><strong>تنقية البيئة الرقمية:</strong>
 <ul>
 <li>كما ننظف بيوتنا جسدياً</li>
-<li>تنظيف جهات الاتصال السمية</li>
+<li>تنظيف جهات الاتصال السامة</li>
 <li>تنقية مصادر المعلومات</li>
 </ul>
 </li>
@@ -1270,7 +1248,7 @@ margin-right: 10px;
 فالعالم الرقمي الحديث كطريق جديد تسلكه الأرواح يحتاج إلى تطبيق مبادئ الشنتو للحفاظ على النقاء الروحي والانسجام الاجتماعي.
 </p>
 <p><strong>الأول: الطريق كفضاء مقدس للكامي</strong><br>
-في الشنتو الطرق والأماين العامة هي مسالك للكامي (الأرواح الإلهية). 
+في الشنتو الطرق والأماكن العامة هي مسالك للكامي (الأرواح الإلهية). 
 الفضاء الرقمي اليوم:
 - أصبح طريقاً رقمياً تسلكه أرواح البشر يومياً
 - يحتاج إلى تطهير مستمر كما تُطهر المزارات والمقدسات
@@ -1971,60 +1949,684 @@ margin-right: 10px;
       <div class="lang-selector">
         <button class="lang-toggle-btn" id="langToggleBtn">
           <img src="https://flagcdn.com/w80/eg.png" alt="العربية" id="currentLangFlag">
-       </button>
-<div class="lang-dropdown" id="langDropdown">
-  <a href="https://anabileg.github.io/---CiviStories/#stats" class="lang-option arabic-flag" data-lang="ar"><img src="https://flagcdn.com/w80/eg.png" alt="العربية"> العربية</a>
-  <a href="en.html" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w80/gb.png" alt="English"> English</a>
-  <a href="fr.html" class="lang-option" data-lang="fr"><img src="https://flagcdn.com/w80/fr.png" alt="Français"> Français</a>
-  <a href="es.html" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w80/es.png" alt="Español"> Español</a>
-  <a href="de.html" class="lang-option" data-lang="de"><img src="https://flagcdn.com/w80/de.png" alt="Deutsch"> Deutsch</a>
-  <a href="it.html" class="lang-option" data-lang="it"><img src="https://flagcdn.com/w80/it.png" alt="Italiano"> Italiano</a>
-  <a href="pt.html" class="lang-option" data-lang="pt"><img src="https://flagcdn.com/w80/pt.png" alt="Português"> Português</a>
-  <a href="tr.html" class="lang-option" data-lang="tr"><img src="https://flagcdn.com/w80/tr.png" alt="Türkçe"> Türkçe</a>
-  <a href="el.html" class="lang-option" data-lang="el"><img src="https://flagcdn.com/w80/gr.png" alt="Ελληνικά"> Ελληνικά</a>
-  <a href="nl.html" class="lang-option" data-lang="nl"><img src="https://flagcdn.com/w80/nl.png" alt="Nederlands"> Nederlands</a>
-  <a href="ro.html" class="lang-option" data-lang="ro"><img src="https://flagcdn.com/w80/ro.png" alt="Română"> Română</a>
-  <a href="sv.html" class="lang-option" data-lang="sv"><img src="https://flagcdn.com/w80/se.png" alt="Svenska"> Svenska</a>
-  <a href="pl.html" class="lang-option" data-lang="pl"><img src="https://flagcdn.com/w80/pl.png" alt="Polski"> Polski</a>
-  <a href="fi.html" class="lang-option" data-lang="fi"><img src="https://flagcdn.com/w80/fi.png" alt="Suomi"> Suomi</a>
-  <a href="da.html" class="lang-option" data-lang="da"><img src="https://flagcdn.com/w80/dk.png" alt="Dansk"> Dansk</a>
-  <a href="no.html" class="lang-option" data-lang="no"><img src="https://flagcdn.com/w80/no.png" alt="Norsk"> Norsk</a>
-  <a href="hu.html" class="lang-option" data-lang="hu"><img src="https://flagcdn.com/w80/hu.png" alt="Magyar"> Magyar</a>
-  <a href="sk.html" class="lang-option" data-lang="sk"><img src="https://flagcdn.com/w80/sk.png" alt="Slovenčina"> Slovenčina</a>
-  <a href="hr.html" class="lang-option" data-lang="hr"><img src="https://flagcdn.com/w80/hr.png" alt="Hrvatski"> Hrvatski</a>
-  <a href="sl.html" class="lang-option" data-lang="sl"><img src="https://flagcdn.com/w80/si.png" alt="Slovenščina"> Slovenščina</a>
-  <a href="bg.html" class="lang-option" data-lang="bg"><img src="https://flagcdn.com/w80/bg.png" alt="Български"> Български</a>
-  <a href="sr.html" class="lang-option" data-lang="sr"><img src="https://flagcdn.com/w80/rs.png" alt="Српски"> Српски</a>
-  <a href="cs.html" class="lang-option" data-lang="cs"><img src="https://flagcdn.com/w80/cz.png" alt="Čeština"> Čeština</a>
-  <a href="ru.html" class="lang-option" data-lang="ru"><img src="https://flagcdn.com/w80/ru.png" alt="Русский"> Русский</a>
-  <a href="uk.html" class="lang-option" data-lang="uk"><img src="https://flagcdn.com/w80/ua.png" alt="Українська"> Українська</a>
-  <a href="zh.html" class="lang-option" data-lang="zh"><img src="https://flagcdn.com/w80/cn.png" alt="中文"> 中文 (普通话)</a>
-  <a href="yue.html" class="lang-option" data-lang="yue"><img src="https://flagcdn.com/w80/hk.png" alt="廣東話"> 廣東話</a>
-  <a href="ja.html" class="lang-option" data-lang="ja"><img src="https://flagcdn.com/w80/jp.png" alt="日本語"> 日本語</a>
-  <a href="ko.html" class="lang-option" data-lang="ko"><img src="https://flagcdn.com/w80/kr.png" alt="한국어"> 한국어</a>
-  <a href="hi.html" class="lang-option" data-lang="hi"><img src="https://flagcdn.com/w80/in.png" alt="हिन्दी"> हिन्दी</a>
-  <a href="te.html" class="lang-option" data-lang="te"><img src="https://flagcdn.com/w80/in.png" alt="తెలుగు"> తెలుగు</a>
-  <a href="mr.html" class="lang-option" data-lang="mr"><img src="https://flagcdn.com/w80/in.png" alt="मराठी"> मराठी</a>
-  <a href="ta.html" class="lang-option" data-lang="ta"><img src="https://flagcdn.com/w80/in.png" alt="தமிழ்"> தமிழ்</a>
-  <a href="ur.html" class="lang-option" data-lang="ur"><img src="https://flagcdn.com/w80/pk.png" alt="اردو"> اردو</a>
-  <a href="gu.html" class="lang-option" data-lang="gu"><img src="https://flagcdn.com/w80/in.png" alt="ગુજરાતી"> ગુજરાતી</a>
-  <a href="kn.html" class="lang-option" data-lang="kn"><img src="https://flagcdn.com/w80/in.png" alt="ಕನ್ನಡ"> ಕನ್ನಡ</a>
-  <a href="ml.html" class="lang-option" data-lang="ml"><img src="https://flagcdn.com/w80/in.png" alt="മലയാളം"> മലയാളം</a>
-  <a href="or.html" class="lang-option" data-lang="or"><img src="https://flagcdn.com/w80/in.png" alt="ଓଡ଼ିଆ"> ଓଡ଼ିଆ</a>
-  <a href="pa.html" class="lang-option" data-lang="pa"><img src="https://flagcdn.com/w80/pk.png" alt="ਪੰਜਾਬੀ"> ਪੰਜਾਬੀ</a>
-  <a href="sd.html" class="lang-option" data-lang="sd"><img src="https://flagcdn.com/w80/pk.png" alt="سنڌي"> سنڌي</a>
-  <a href="ps.html" class="lang-option" data-lang="ps"><img src="https://flagcdn.com/w80/af.png" alt="پښتو"> پښتو</a>
-  <a href="bal.html" class="lang-option" data-lang="bal"><img src="https://flagcdn.com/w80/pk.png" alt="بلوچی"> بلوچی</a>
-  <a href="si.html" class="lang-option" data-lang="si"><img src="https://flagcdn.com/w80/lk.png" alt="සිංහල"> සිංහල</a>
-  <a href="bn.html" class="lang-option" data-lang="bn"><img src="https://flagcdn.com/w80/bd.png" alt="বাংলা"> বাংলা</a>
-  <a href="zh-sg.html" class="lang-option" data-lang="zh-sg"><img src="https://flagcdn.com/w80/sg.png" alt="中文 (新加坡)"> 中文 (新加坡)</a>
-  <a href="ms.html" class="lang-option" data-lang="ms"><img src="https://flagcdn.com/w80/sg.png" alt="Bahasa Melayu"> Bahasa Melayu</a>
-  <a href="id.html" class="lang-option" data-lang="id"><img src="https://flagcdn.com/w80/id.png" alt="Bahasa Indonesia"> Bahasa Indonesia</a>
-  <a href="jv.html" class="lang-option" data-lang="jv"><img src="https://flagcdn.com/w80/id.png" alt="Jawa"> Jawa</a>
-  <a href="su.html" class="lang-option" data-lang="su"><img src="https://flagcdn.com/w80/id.png" alt="Sunda"> Sunda</a>
-  <a href="bbc.html" class="lang-option" data-lang="bbc"><img src="https://flagcdn.com/w80/id.png" alt="Batak"> Batak</a>
-  <a href="my.html" class="lang-option" data-lang="my"><img src="https://flagcdn.com/w80/mm.png" alt="ဗမာစာ"> ဗမာစာ</a>
-  <a href="kar.html" class="lang-option" data-lang="kar"><img src="https://flagcdn.com/w80/mm.png" alt="ကရင်စာ"> ကရင်စာ</a>
-  <a href="rhg.html" class="lang-option" data-lang="rhg"><img src="https://flagcdn.com/w80/mm.png" alt="রোহিঙ্গা"> রোহিঙ্গা</a>
-  <a href="mnw.html" class="lang-option" data-lang="mnw"><img src="https://flagcdn.com/w80/mm.png" alt="မွန်စာ"> မွန်စာ</a>
-  <a href="shn.html" class="lang-option"
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="index.html" class="lang-option arabic-flag" data-lang="ar"><img src="https://flagcdn.com/w80/eg.png" alt="العربية"> العربية</a>
+          <a href="en.html" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w80/gb.png" alt="English"> English</a>
+          <a href="fr.html" class="lang-option" data-lang="fr"><img src="https://flagcdn.com/w80/fr.png" alt="Français"> Français</a>
+          <a href="es.html" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w80/es.png" alt="Español"> Español</a>
+          <a href="de.html" class="lang-option" data-lang="de"><img src="https://flagcdn.com/w80/de.png" alt="Deutsch"> Deutsch</a>
+          <a href="it.html" class="lang-option" data-lang="it"><img src="https://flagcdn.com/w80/it.png" alt="Italiano"> Italiano</a>
+          <a href="pt.html" class="lang-option" data-lang="pt"><img src="https://flagcdn.com/w80/pt.png" alt="Português"> Português</a>
+          <a href="tr.html" class="lang-option" data-lang="tr"><img src="https://flagcdn.com/w80/tr.png" alt="Türkçe"> Türkçe</a>
+          <a href="el.html" class="lang-option" data-lang="el"><img src="https://flagcdn.com/w80/gr.png" alt="Ελληνικά"> Ελληνικά</a>
+          <a href="nl.html" class="lang-option" data-lang="nl"><img src="https://flagcdn.com/w80/nl.png" alt="Nederlands"> Nederlands</a>
+          <a href="ro.html" class="lang-option" data-lang="ro"><img src="https://flagcdn.com/w80/ro.png" alt="Română"> Română</a>
+          <a href="sv.html" class="lang-option" data-lang="sv"><img src="https://flagcdn.com/w80/se.png" alt="Svenska"> Svenska</a>
+          <a href="pl.html" class="lang-option" data-lang="pl"><img src="https://flagcdn.com/w80/pl.png" alt="Polski"> Polski</a>
+          <a href="fi.html" class="lang-option" data-lang="fi"><img src="https://flagcdn.com/w80/fi.png" alt="Suomi"> Suomi</a>
+          <a href="da.html" class="lang-option" data-lang="da"><img src="https://flagcdn.com/w80/dk.png" alt="Dansk"> Dansk</a>
+          <a href="no.html" class="lang-option" data-lang="no"><img src="https://flagcdn.com/w80/no.png" alt="Norsk"> Norsk</a>
+          <a href="hu.html" class="lang-option" data-lang="hu"><img src="https://flagcdn.com/w80/hu.png" alt="Magyar"> Magyar</a>
+          <a href="sk.html" class="lang-option" data-lang="sk"><img src="https://flagcdn.com/w80/sk.png" alt="Slovenčina"> Slovenčina</a>
+          <a href="hr.html" class="lang-option" data-lang="hr"><img src="https://flagcdn.com/w80/hr.png" alt="Hrvatski"> Hrvatski</a>
+          <a href="sl.html" class="lang-option" data-lang="sl"><img src="https://flagcdn.com/w80/si.png" alt="Slovenščina"> Slovenščina</a>
+          <a href="bg.html" class="lang-option" data-lang="bg"><img src="https://flagcdn.com/w80/bg.png" alt="Български"> Български</a>
+          <a href="sr.html" class="lang-option" data-lang="sr"><img src="https://flagcdn.com/w80/rs.png" alt="Српски"> Српски</a>
+          <a href="cs.html" class="lang-option" data-lang="cs"><img src="https://flagcdn.com/w80/cz.png" alt="Čeština"> Čeština</a>
+          <a href="ru.html" class="lang-option" data-lang="ru"><img src="https://flagcdn.com/w80/ru.png" alt="Русский"> Русский</a>
+          <a href="uk.html" class="lang-option" data-lang="uk"><img src="https://flagcdn.com/w80/ua.png" alt="Українська"> Українська</a>
+          <a href="zh.html" class="lang-option" data-lang="zh"><img src="https://flagcdn.com/w80/cn.png" alt="中文"> 中文 (普通话)</a>
+          <a href="yue.html" class="lang-option" data-lang="yue"><img src="https://flagcdn.com/w80/hk.png" alt="廣東話"> 廣東話</a>
+          <a href="ja.html" class="lang-option" data-lang="ja"><img src="https://flagcdn.com/w80/jp.png" alt="日本語"> 日本語</a>
+          <a href="ko.html" class="lang-option" data-lang="ko"><img src="https://flagcdn.com/w80/kr.png" alt="한국어"> 한국어</a>
+          <a href="hi.html" class="lang-option" data-lang="hi"><img src="https://flagcdn.com/w80/in.png" alt="हिन्दी"> हिन्दी</a>
+          <a href="te.html" class="lang-option" data-lang="te"><img src="https://flagcdn.com/w80/in.png" alt="తెలుగు"> తెలుగు</a>
+          <a href="mr.html" class="lang-option" data-lang="mr"><img src="https://flagcdn.com/w80/in.png" alt="मराठी"> मराठी</a>
+          <a href="ta.html" class="lang-option" data-lang="ta"><img src="https://flagcdn.com/w80/in.png" alt="தமிழ்"> தமிழ்</a>
+          <a href="ur.html" class="lang-option" data-lang="ur"><img src="https://flagcdn.com/w80/pk.png" alt="اردو"> اردو</a>
+          <a href="gu.html" class="lang-option" data-lang="gu"><img src="https://flagcdn.com/w80/in.png" alt="ગુજરાતી"> ગુજરાતી</a>
+          <a href="kn.html" class="lang-option" data-lang="kn"><img src="https://flagcdn.com/w80/in.png" alt="ಕನ್ನಡ"> ಕನ್ನಡ</a>
+          <a href="ml.html" class="lang-option" data-lang="ml"><img src="https://flagcdn.com/w80/in.png" alt="മലയാളം"> മലയാളം</a>
+          <a href="or.html" class="lang-option" data-lang="or"><img src="https://flagcdn.com/w80/in.png" alt="ଓଡ଼ିଆ"> ଓଡ଼ିଆ</a>
+          <a href="pa.html" class="lang-option" data-lang="pa"><img src="https://flagcdn.com/w80/pk.png" alt="ਪੰਜਾਬੀ"> ਪੰਜਾਬੀ</a>
+          <a href="sd.html" class="lang-option" data-lang="sd"><img src="https://flagcdn.com/w80/pk.png" alt="سنڌي"> سنڌي</a>
+          <a href="ps.html" class="lang-option" data-lang="ps"><img src="https://flagcdn.com/w80/af.png" alt="پښتو"> پښتو</a>
+          <a href="bal.html" class="lang-option" data-lang="bal"><img src="https://flagcdn.com/w80/pk.png" alt="بلوچی"> بلوچی</a>
+          <a href="si.html" class="lang-option" data-lang="si"><img src="https://flagcdn.com/w80/lk.png" alt="සිංහල"> සිංහල</a>
+          <a href="bn.html" class="lang-option" data-lang="bn"><img src="https://flagcdn.com/w80/bd.png" alt="বাংলা"> বাংলা</a>
+          <a href="zh-sg.html" class="lang-option" data-lang="zh-sg"><img src="https://flagcdn.com/w80/sg.png" alt="中文 (新加坡)"> 中文 (新加坡)</a>
+          <a href="ms.html" class="lang-option" data-lang="ms"><img src="https://flagcdn.com/w80/sg.png" alt="Bahasa Melayu"> Bahasa Melayu</a>
+          <a href="id.html" class="lang-option" data-lang="id"><img src="https://flagcdn.com/w80/id.png" alt="Bahasa Indonesia"> Bahasa Indonesia</a>
+          <a href="jv.html" class="lang-option" data-lang="jv"><img src="https://flagcdn.com/w80/id.png" alt="Jawa"> Jawa</a>
+          <a href="su.html" class="lang-option" data-lang="su"><img src="https://flagcdn.com/w80/id.png" alt="Sunda"> Sunda</a>
+          <a href="bbc.html" class="lang-option" data-lang="bbc"><img src="https://flagcdn.com/w80/id.png" alt="Batak"> Batak</a>
+          <a href="my.html" class="lang-option" data-lang="my"><img src="https://flagcdn.com/w80/mm.png" alt="ဗမာစာ"> ဗမာစာ</a>
+          <a href="kar.html" class="lang-option" data-lang="kar"><img src="https://flagcdn.com/w80/mm.png" alt="ကရင်စာ"> ကရင်စာ</a>
+          <a href="rhg.html" class="lang-option" data-lang="rhg"><img src="https://flagcdn.com/w80/mm.png" alt="রোহিঙ্গা"> রোহিঙ্গা</a>
+          <a href="mnw.html" class="lang-option" data-lang="mnw"><img src="https://flagcdn.com/w80/mm.png" alt="မွန်စာ"> မွန်စာ</a>
+          <a href="shn.html" class="lang-option" data-lang="shn"><img src="https://flagcdn.com/w80/mm.png" alt="ရှမ်းစာ"> ရှမ်းစာ</a>
+          <a href="tl.html" class="lang-option" data-lang="tl"><img src="https://flagcdn.com/w80/ph.png" alt="Filipino"> Filipino</a>
+          <a href="th.html" class="lang-option" data-lang="th"><img src="https://flagcdn.com/w80/th.png" alt="ไทย"> ไทย</a>
+          <a href="vi.html" class="lang-option" data-lang="vi"><img src="https://flagcdn.com/w80/vn.png" alt="Tiếng Việt"> Tiếng Việt</a>
+          <a href="fa.html" class="lang-option" data-lang="fa"><img src="https://flagcdn.com/w80/ir.png" alt="فارسی"> فارسی</a>
+          <a href="yo.html" class="lang-option" data-lang="yo"><img src="https://flagcdn.com/w80/ng.png" alt="Yorùbá"> Yorùbá</a>
+          <a href="am.html" class="lang-option" data-lang="am"><img src="https://flagcdn.com/w80/et.png" alt="አማርኛ"> አማርኛ</a>
+          <a href="sw.html" class="lang-option" data-lang="sw"><img src="https://flagcdn.com/w80/tz.png" alt="Kiswahili"> Kiswahili</a>
+          <a href="sw-ke.html" class="lang-option" data-lang="sw-ke"><img src="https://flagcdn.com/w80/ke.png" alt="Kiswahili (Kenya)"> Kiswahili (Kenya)</a>
+          <a href="ln.html" class="lang-option" data-lang="ln"><img src="https://flagcdn.com/w80/cd.png" alt="Lingála"> Lingála</a>
+          <a href="zu.html" class="lang-option" data-lang="zu"><img src="https://flagcdn.com/w80/za.png" alt="isiZulu"> isiZulu</a>
+          <a href="lg.html" class="lang-option" data-lang="lg"><img src="https://flagcdn.com/w80/ug.png" alt="Luganda"> Luganda</a>
+          <a href="ak.html" class="lang-option" data-lang="ak"><img src="https://flagcdn.com/w80/gh.png" alt="Akan"> Akan</a>
+          <a href="ff.html" class="lang-option" data-lang="ff"><img src="https://flagcdn.com/w80/cm.png" alt="Fula"> Fula</a>
+          <a href="dyu.html" class="lang-option" data-lang="dyu"><img src="https://flagcdn.com/w80/ci.png" alt="Dioula"> Dioula</a>
+          <a href="mg.html" class="lang-option" data-lang="mg"><img src="https://flagcdn.com/w80/mg.png" alt="Malagasy"> Malagasy</a>
+          <a href="din.html" class="lang-option" data-lang="din"><img src="https://flagcdn.com/w80/ss.png" alt="Dinka"> Dinka</a>
+          <a href="srr.html" class="lang-option" data-lang="srr"><img src="https://flagcdn.com/w80/td.png" alt="Sara"> Sara</a>
+          <a href="so.html" class="lang-option" data-lang="so"><img src="https://flagcdn.com/w80/so.png" alt="Soomaali"> Soomaali</a>
+          <a href="sn.html" class="lang-option" data-lang="sn"><img src="https://flagcdn.com/w80/zw.png" alt="Shona"> Shona</a>
+          <a href="bem.html" class="lang-option" data-lang="bem"><img src="https://flagcdn.com/w80/zm.png" alt="Bemba"> Bemba</a>
+          <a href="ny.html" class="lang-option" data-lang="ny"><img src="https://flagcdn.com/w80/mw.png" alt="Chichewa"> Chichewa</a>
+          <a href="wo.html" class="lang-option" data-lang="wo"><img src="https://flagcdn.com/w80/sn.png" alt="Wolof"> Wolof</a>
+          <a href="bm.html" class="lang-option" data-lang="bm"><img src="https://flagcdn.com/w80/ml.png" alt="Bambara"> Bambara</a>
+          <a href="ha.html" class="lang-option" data-lang="ha"><img src="https://flagcdn.com/w80/ne.png" alt="Hausa"> Hausa</a>
+          <a href="mos.html" class="lang-option" data-lang="mos"><img src="https://flagcdn.com/w80/bf.png" alt="Mossi"> Mossi</a>
+          <a href="rw.html" class="lang-option" data-lang="rw"><img src="https://flagcdn.com/w80/rw.png" alt="Kinyarwanda"> Kinyarwanda</a>
+          <a href="rn.html" class="lang-option" data-lang="rn"><img src="https://flagcdn.com/w80/bi.png" alt="Kirundi"> Kirundi</a>
+        </div>
+      </div>
+      <a onclick="scrollToSec('about')">أهدافنا</a>
+      <a onclick="scrollToSec('about')">صرختنا</a>
+      <a onclick="openMessagesModal()">رسالاتنا</a>
+      <a onclick="scrollToSec('inst')">وعي وطني</a>
+      <a onclick="scrollToSec('media-sec')">ميديا</a>
+      <a onclick="scrollToSec('stats')">إحصائيات</a>
+      <a onclick="scrollToSec('losses')">خسائر</a>
+      <a onclick="scrollToSec('awareness-sec')">برامج توعية</a>
+      <a onclick="scrollToSec('human-vision')">رؤية إنسانية</a>
+      <a onclick="scrollToSec('references')">مرجعياتنا الإنسانية</a>
+      <a href="https://forms.gle/1Ua2keC6kUvTbivK6" target="_blank">تواصل معنا</a>
+    </div>
+    <div class="nav-right-group">
+      <div class="social-icons">
+        <a href="https://wa.me/201009995015" target="_blank" style="color: var(--wa-color);"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/%D9%82%D8%B5%D8%B5-%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A7%D8%AA-0a8917277/" target="_blank" class="ic-in"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.pinterest.com/civistories/" target="_blank" class="ic-pr"><i class="fab fa-pinterest"></i></a>
+        <a href="https://www.instagram.com/civi.stories" target="_blank" class="ic-ig"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/civistories" target="_blank" class="ic-tw"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.tiktok.com/@civistoriesarabic" target="_blank" class="ic-tk"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100093677167187" target="_blank" class="ic-fb"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@CiviStories" target="_blank" class="ic-yt"><i class="fab fa-youtube"></i></a>
+      </div>
+      <img src="logo.png" class="nav-logo-img" alt="Logo">
+    </div>
+  </div>
+</nav>
+<div class="news-ticker"><div class="ticker-track animate-news" id="tickerTrack"></div></div>
+<section class="hero" id="home">
+<h1 class="main-alert-title" id="main-hero-title">
+<span class="highlight">تسونامي</span> <span class="gold-text">الوهم الرقمي: من مهد الحضارة مصر إلى العالم... صرخة لإنقاذ الإنسانية</span>
+</h1>
+<div class="hero-container">
+<div class="book-static">
+<div class="book-wrapper"><img src="CIVISTORIES Book.png" alt="Book Cover"></div>
+<a href="https://heyzine.com/flip-book/48ab3792ec.html" target="_blank" id="btn-browse" class="btn-action">تصفح الكتاب</a>
+</div>
+<div class="video-container-box">
+<iframe src="https://www.youtube.com/embed/ite_9cHeOO4?autoplay=1&mute=1&loop=1&playlist=ite_9cHeOO4&controls=1&rel=0" allowfullscreen></iframe>
+</div>
+</div>
+</section>
+<section id="about" class="vision-section">
+<h2 id="vis-title" class="section-main-title" style="font-size: 3rem; font-weight: 900;">أهدافنا الاستراتيجية</h2>
+<p id="vis-desc">نهدف من خلال مبادرة "قصص الحضارات" إلى حماية النسيج المجتمعي المصري من مخاطر التفكك الإلكتروني، عبر تمكين الأسرة واستعادة التوازن النفسي والاجتماعي.<br>بدأنا من مصر، حيث يهدد الوهم الرقمي استقرار الأسرة والمجتمع، ونطمح إلى إطلاق صرخة عالمية لحماية الإنسانية من مخاطر الإدمان الرقمي — عبر تمكين الأسرة، واستعادة التوازن النفسي، وبناء فضاء رقمي إنساني.</p>
+</section>
+<section id="messages" class="section">
+<div class="glass-box">
+<h2 class="section-main-title" style="font-size: 3rem; font-weight: 900;">صرختنا</h2>
+<p style="font-size: 1.4rem; font-weight: bold; line-height: 1.6; color: var(--white);">
+من قلب الحضارة المصرية، نطلق رسائلنا إلى العالم:<br>
+• التكنولوجيا أداة، وليس بديلاً عن الإنسانية.<br>
+• الأسرة هي الحصن الأول ضد الانهيار الرقمي.<br>
+• الوعي الرقمي حقٌّ لكل فرد، وواجبٌ على كل مجتمع.<br>
+• لا مستقبل آمن دون توازن بين التقدم الرقمي والقيم الإنسانية.
+</p>
+</div>
+</section>
+<section id="inst" class="section">
+<div class="glass-box">
+<h2 id="part-title" class="section-main-title" style="font-size: 3rem; font-weight: bold;">وعي وطني</h2>
+<div class="grid">
+<div class="card">
+<div class="info-popup" id="src-p1">المصدر: إحصائيات مركز الفتوى الإلكترونية بالأزهر</div>
+<img src="100.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
+<h3 id="p1-name">الأزهر الشريف</h3>
+<p id="p1-desc">رصد ومعالجة حالات التفكك الأسري الناتج عن الإدمان الرقمي عبر لجان الفتوى المتخصصة.</p>
+</div>
+<div class="card">
+<div class="info-popup" id="src-p2">المصدر: تقارير المشورة الأسرية بالكنيسة</div>
+<img src="300.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
+<h3 id="p2-name">الكنيسة المصرية</h3>
+<p id="p2-desc">العمل على استقرار الأسرة ومواجهة الانعزال الرقمي داخل البيت الواحد عبر برامج المشورة.</p>
+</div>
+<div class="card">
+<div class="info-popup" id="src-p3">المصدر: وزارة الأوقاف المصرية</div>
+<img src="200.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
+<h3 id="p3-name">وزارة الأوقاف</h3>
+<p id="p3-desc">مبادرة سكن ومودة لتثقيف المتزوجين بمخاطر التكنولوجيا على استقرارهم النفسي.</p>
+</div>
+</div>
+</div>
+</section>
+<div style="text-align:center; margin-top:40px;">
+<h2 id="media-guideline" class="section-main-title">اضغط على الصورة لتصلك رسالتنا</h2>
+</div>
+<section id="media-sec" class="carousel-wide">
+<div class="track animate-media" id="track-imgs"></div>
+</section>
+<section id="stats" class="section">
+<div class="glass-box">
+<h2 id="st-title" class="section-main-title" style="font-size: 3rem; font-weight: 900;">إحصائيات</h2>
+<div class="grid">
+<div class="card">
+<div class="info-popup" id="src1">المصدر: الجهاز المركزي للتعبئة العامة والإحصاء</div>
+<span class="stat-num counter" id="cnt1" data-target="311">0</span>
+<p id="st1-txt">ألف حالة طلاق سنوياً</p>
+</div>
+<div class="card">
+<div class="info-popup" id="src2">المصدر: وزارة الاتصالات وتكنولوجيا المعلومات</div>
+<span class="stat-num counter" id="cnt2" data-target="104">0</span>
+<p id="st2-txt">مليون هاتف محمول</p>
+</div>
+<div class="card">
+<div class="info-popup" id="src3">المصدر: وزارة التضامن الاجتماعي</div>
+<span class="stat-num counter" id="cnt3" data-target="5.7">0</span>
+<p id="st3-txt">ساعات يومية أمام الشاشات للأطفال</p>
+</div>
+</div>
+</div>
+</section>
+<section id="losses" class="section">
+<div class="glass-box" style="border-color: var(--red-num);">
+<h2 id="ls-title" class="section-main-title" style="color: var(--red-num); font-size: 3rem; font-weight: 900;">الخسائر</h2>
+<div class="grid">
+<div class="card" style="border-bottom-color: var(--red-num);">
+<div class="info-popup" id="src4">المصدر: دراسات الجدوى الاقتصادية</div>
+<span class="stat-num loss-num counter" id="cnt4" data-target="15">0</span>
+<p id="ls1-txt">مليار جنيه خسائر إنتاجية سنوياً</p>
+</div>
+<div class="card" style="border-bottom-color: var(--red-num);">
+<div class="info-popup" id="src5">المصدر: تقارير الصحة النفسية</div>
+<span class="stat-num loss-num counter" id="cnt5" data-target="4.5">0</span>
+<p id="ls2-txt">مليار جنيه تكلفة العلاج النفسي</p>
+</div>
+<div class="card" style="border-bottom-color: var(--red-num);">
+<div class="info-popup" id="src6">المصدر: تقارير الأمن السيبراني</div>
+<span class="stat-num loss-num counter" id="cnt6" data-target="2.1">0</span>
+<p id="ls3-txt">مليار جنيه خسائر النصب الإلكتروني</p>
+</div>
+</div>
+</div>
+</section>
+<section id="awareness-sec" class="section">
+<div class="glass-box">
+<h2 id="awareness-main-title" class="section-main-title">برامج التوعية</h2>
+<div class="awareness-grid">
+<div class="awareness-card" onclick="openProgram('child')"><i class="fas fa-child"></i><span id="aw-c1">الطفولة الرقمية</span></div>
+<div class="awareness-card" onclick="openProgram('teens')"><i class="fas fa-user-friends"></i><span id="aw-c2">عالم المراهقين</span></div>
+<div class="awareness-card" onclick="openProgram('youth')"><i class="fas fa-briefcase"></i><span id="aw-c3">الإنتاج والشباب</span></div>
+<div class="awareness-card" onclick="openProgram('marriage')"><i class="fas fa-heart"></i><span id="aw-c4">الزواج السعيد</span></div>
+<div class="awareness-card" onclick="openProgram('seniors')"><i class="fas fa-blind"></i><span id="aw-c5">كبار السن</span></div>
+<div class="awareness-card" onclick="openProgram('security')"><i class="fas fa-user-shield"></i><span id="aw-c6">الأمان والخصوصية</span></div>
+</div>
+</div>
+</section>
+<section id="human-vision" class="section">
+<div class="glass-box">
+<h2 class="section-main-title" style="font-size: 3rem; font-weight: bold;">رؤية إنسانية</h2>
+<p style="font-size: 1.4rem; font-weight: bold; line-height: 1.6; color: var(--white);">
+في عالم يتسارع نحو الرقمنة بلا حدود، ندعو إلى:<br>
+• إعادة الإنسان إلى مركز الاهتمام.<br>
+• بناء جسور بين الحضارات عبر القيم المشتركة.<br>
+• تحويل التكنولوجيا من مصدر للعزلة إلى أداة للتواصل والتفاهم.<br>
+• غرس روح المسؤولية الرقمية في نفوس الأجيال القادمة.<br>
+لأن الحضارة الحقيقية لا تقاس بالشاشات، بل بالإنسان.
+</p>
+</div>
+</section>
+<!-- قسم مرجعيتنا الإنسانية -->
+<section id="references" class="references-section">
+<h2 class="section-main-title">مرجعياتنا الإنسانية</h2>
+<div class="references-grid">
+<div class="reference-card" onclick="openReferenceModal('reference-islam')"><span>الإسلام</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-christianity')"><span>المسيحية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-judaism')"><span>اليهودية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-buddhism')"><span>البوذية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-hinduism')"><span>الهندوسية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-confucianism')"><span>الكونفوشيوسية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-taoism')"><span>الطاوية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-shinto')"><span>الشنتو</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-eastern')"><span>الجاينية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-indigenous')"><span>الزرادشتية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-african')"><span>الفلسفة الأفريقية</span></div>
+<div class="reference-card" onclick="openReferenceModal('reference-secular')"><span>الأخلاق الإنسانية</span></div>
+</div>
+</section>
+<script>
+function initPage() {
+scrollToSec('home');
+updateTicker();
+loadMedia();
+setupLanguageToggle();
+initCountersObserver();
+}
+function initCountersObserver() {
+const counters = document.querySelectorAll('.counter');
+counters.forEach(c => c.innerText = '0');
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if(entry.isIntersecting) {
+const el = entry.target;
+const target = parseFloat(el.getAttribute('data-target'));
+let start = 0;
+const duration = 2000;
+const step = target / (duration / 30);
+const timer = setInterval(() => {
+start += step;
+if(start >= target) {
+el.innerText = target;
+clearInterval(timer);
+} else {
+el.innerText = start.toFixed(1).replace('.0','');
+}
+}, 30);
+observer.unobserve(el);
+}
+});
+}, { threshold: 0.3 });
+document.querySelectorAll('#stats .counter, #losses .counter').forEach(c => {
+observer.observe(c);
+});
+}
+function updateTicker() {
+const track = document.getElementById('tickerTrack');
+const list = [
+"الأزهر: حالة طلاق كل 2.5 دقيقة بسبب الإدمان الرقمي",
+"الأوقاف: الهواتف سبب رئيسي للخرس الزوجي",
+"إنذار: التفكك الرقمي يهدد استقرار مصر",
+"وزارة الصحة: ٣ ملايين زيارة سنوية للعيادات النفسية بسبب اضطرابات السوشيال ميديا",  
+"الكنيسة المصرية: ٦٠% من المشاكل الأسرية مرتبطة بالانعزال والإفراط الرقمي",
+"القصر العيني: محاولة انتحار كل ٦ ساعات تقريباً بسبب التنمر عبر الإنترنت",
+"وزارة المالية: ١٥ مليار جنيه خسائر إنتاجية سنوية بسبب الإدمان الرقمي",
+"اليونيسف: ٤٧% من أطفال مصر تعرضوا للتنمر الإلكتروني المؤذي",
+"الإحصاء: زيادة ٥٧% في معدلات الطلاق خلال ٥ سنوات سابقة",
+"وزارة الداخلية: ٤٠% من بلاغات العنف الأسري سببها تطبيقات التواصل الاجتماعي",
+"البنك الدولي: ٤.٥ مليار جنيه تكلفة علاج الاضطرابات النفسية الرقمية سنوياً",
+"الأمن القومي: رصد ٨٧٠ جماعة إلكترونية منظمة لبث الفرقة والفتنة",
+"دراسة: ٨٥% من طلاب الثانوي يعانون آثار التنمر الرقمي النفسية",
+"كارثة: ٢.١ مليار جنيه خسائر سنوية بسبب عمليات النصب الإلكتروني",
+"تسجيل ٩٣ ألف و٣٠٠ حالة طلاق سنوياً مرتبطة بالسوشيال ميديا",
+"حدوث ٢٥٥ حالة طلاق يومياً بسبب وسائل التواصل الاجتماعي",
+"ذكر وسائل التواصل كسبب مباشر في ٣٠% من حالات الطلاق",
+"صدور ١٠٠ ألف فتوى سنوياً عن مشاكل أسرية ٢٣% منها بسبب التواصل الاجتماعي",
+"٣٠% من فتاوى مجمع البحوث الإسلامية تتعلق بالقطيعة العائلية",
+"٢٩% من فتاوى مجمع البحوث الإسلامية تتعلق بالعلاقات المحرمة",  
+"٦٠% من المشاكل الأسرية في المجتمع القبطي مرتبطة بالسوشيال ميديا",
+"معاناة ٥٠ ألف أسرة قبطية سنوياً من مشاكل التواصل الاجتماعي",
+"زيادة معدلات الطلاق في مصر بنسبة ٥٧% خلال ٥ سنوات (٢٠١٨-٢٠٢٣) ",
+"ارتفاع حالات الطلاق من ١٩٨ ألف حالة عام ٢٠١٨ إلى ٣١١ ألف حالة عام ٢٠٢٣",
+"تسجيل متوسط يومي ٨٥٢ حالة طلاق في مصر",
+"٤٠% من بلاغات العنف الأسري بدأت بمشاجرات على وسائل التواصل",
+"تسجيل ١٤٥ ألف بلاغ عنف أسري عام ٢٠٢٣ منها ٤٣ ألف و٥٠٠ مرتبطة بمشاكل إلكترونية",
+"وجود ٢٢ ألف قضية خيانة زوجية بأدلة إلكترونية",
+"وقوع ١٢٢ جريمة قتل بين أزواج منها ٤٠ حالة بسبب الغيرة من منشورات",
+"٦٥% من مراجعي العيادات النفسية يشكون من اضطرابات مرتبطة بالسوشيال ميديا",
+"تسجيل ٣ مليون زيارة للعيادات النفسية عام ٢٠٢٣ ٤٠% منها مرتبطة بالسوشيال ميديا",
+"الفئة العمرية من ١٥ إلى ٣٥ سنة تمثل ٦٨% من حالات الاضطرابات النفسية الرقمية",
+"٥٠% من حالات الطلاق في السنة الأولى من الزواج سببها السوشيال ميديا",
+"خسارة إنتاجية تقدر بـ١٥ مليار جنيه سنوياً بسبب المشاكل النفسية الرقمية",
+"تعرض ٤٧% من الأطفال (٨-١٨ سنة) للتنمر الإلكتروني",
+"وصول متوسط الوقت اليومي للأطفال على الشاشات إلى ٥.٧ ساعات",
+"تعرض ٦٣% من الأطفال لمحتوى غير لائق عبر الإنترنت",
+"خسائر الإنتاجية بسبب الإدمان الرقمي تصل إلى ٢.٣% من الناتج المحلي",
+"تكلفة علاج الاضطرابات النفسية المرتبطة بالرقمنة تبلغ ٤ مليار و٥٠٠ ألف جنيه سنوياً",
+"فقدان ١٨ مليون يوم عمل سنوياً بسبب التداعيات الرقمية",
+"تسجيل متوسط ٣ صداقات مقطوعة لكل شاب بسبب الخلافات الرقمية",
+"٨٥% من طلاب الثانوي يعانون من التنمر الرقمي",
+"٣٥% من طلاب الثانوي حاولوا الانتحار مرة على الأقل",
+"٦٤% من طلاب الجامعات يعانون من اضطرابات نوم بسبب السوشيال ميديا",
+"٤٢% من طلاب الجامعات تأثرت درجاتهم الأكاديمية سلباً",
+"تعرض ١٧% من طلاب الجامعات للابتزاز الإلكتروني",
+"وقوع محاولة انتحار كل ٦ ساعات بسبب التنمر الرقمي أو القطيعة",
+"تسجيل ١٤٦٠ محاولة انتحار عام ٢٠٢٣ ٦٠% منها لأسباب رقمية",  
+"٤٠% من المسنين يعانون من العزلة بسبب انشغال أبنائهم بالسوشيال ميديا",
+"٢ مليون مسن مصري يعيشون في عزلة رقمية",
+"وصول نسبة حالات الطلاق في السنة الأولى من الزواج إلى ٣٤%",
+"متوسط عمر الزواج عند الطلاق يبلغ ٣.٧ سنة",
+"تسجيل ١٢ ألف و٥٠٠ حالة طلاق رقمي سنوياً",
+"متوسط عدد حسابات السوشيال ميديا للفرد المصري ٣.٨ حساب",
+"٧١% من المصريين يبدأون يومهم بتصفح السوشيال ميديا",
+"٥٢% من المشاكل الأسرية تبدأ عبر تطبيق الواتساب",
+"طلاق زوجين بعد ٣٢ سنة زواج بسبب تعليق كومنت",
+"مقتل شقيقين في المنصورة بعد مشاجرة بسبب منشور سياسي",
+"انتحار طالبة طب بجامعة عين شمس لمشاهدتها ١٠٠ فيديو يومياً عن فشل الحياة الطبية",
+"انقسام عائلة من ١٥ فرداً بالإسكندرية بسبب صورة حفلة عيد ميلاد",
+"زوج يطلق زوجته في الجيزة بعد اكتشاف فيديوهات رقص لها على تيك توك",
+"معدل انتشار الاكتئاب بين مستخدمي السوشيال ميديا يصل إلى ٣١%",
+"٧٦% من المستخدمين يقومون بمقارنات اجتماعية سلبية",
+"خسائر أسرية بسبب النصب الإلكتروني تبلغ ٢.١ مليار جنيه سنوياً",
+"رصد أكثر من ١٥ ألف صفحة إلكترونية مجهولة تنشر الفتنة",
+"رصد ٨٧٠ جماعة إلكترونية منظمة لبث الفرقة",
+"تعرض تماسك الأسرة المصرية لـ١٢٠ هجمة إلكترونية يومياً",
+"تآكل القيم الأسرية التقليدية بنسبة ٢٢% خلال ٥ سنوات",
+"المحتوى الأجنبي المؤثر سلباً يمثل ٦٨% من المحتوى المتداول",
+"توقع وصول حالات الطلاق إلى ٤٥٠ ألف حالة سنوياً بحلول ٢٠٣٠ في حال عدم التدخل",
+"توقع تجاوز الخسائر الاقتصادية الرقمية ٣٥ مليار جنيه سنوياً بحلول ٢٠٣٠",
+"٣٠% من حالات الطلاق تذكر وسائل التواصل كسبب مباشر",
+"٩٣ ألف و٣٠٠ حالة طلاق سنوياً مرتبطة بالسوشيال ميديا",
+"٢٥٥ حالة طلاق يومياً مرتبطة بالسوشيال ميديا",
+"١٠٠ ألف فتوى سنوياً عن مشاكل أسرية منهم ٢٣% بسبب التواصل الاجتماعي",
+"٣٠% فتوى عن القطيعة العائلية",
+"٢٩% فتوى عن العلاقات المحرمة",
+"٦٠% من المشاكل الأسرية في المجتمع القبطي مرتبطة بالسوشيال ميديا",
+"٥٠ ألف أسرة قبطية تعاني سنوياً",
+"زيادة ٥٧% في معدلات الطلاق خلال ٥ سنوات (٢٠١٨-٢٠٢٣) ",
+"٤٠% من بلاغات العنف الأسري بدأت بمشاجرات على وسائل التواصل",
+"عام ٢٠٢٣: ١٤٥ ألف بلاغ عنف أسري منهم ٤٣ ألف و٥٠٠ مرتبطة بمشاكل إلكترونية تمثل ٣٠%",
+"٢٢ ألف قضية خيانة زوجية بأدلة إلكترونية",
+"١٢٢ جريمة قتل بين أزواج منهم ٤٠ حالة بسبب غيرة من منشورات",
+"٦٥% من مراجعي العيادات النفسية يشكون من اضطرابات مرتبطة بالسوشيال ميديا",
+"عام ٢٠٢٣: ٣ مليون زيارة للعيادات النفسية ٤٠% من الحالات مرتبطة بالسوشيال ميديا",
+"الفئة العمرية من ١٥-٣٥ سنة تمثل ٦٨% من الحالات النفسية",
+"٥٠% من حالات الطلاق في السنة الأولى بسبب السوشيال ميديا",
+"خسارة إنتاجية بسبب المشاكل النفسية الرقمية تقدر بـ١٥ مليار جنيه سنوياً",
+"نسبة الأطفال ٨-١٨ سنة الذين تعرضوا للتنمر الإلكتروني: ٤٧%",
+"متوسط الوقت اليومي على الشاشات: ٥.٧ ساعات",
+"نسبة تعرض الأطفال لمحتوى غير لائق: ٦٣%",
+"خسائر الإنتاجية بسبب الإدمان الرقمي في مصر تصل إلى ٢.٣% من الناتج المحلي",
+"تكلفة علاج الاضطرابات النفسية المرتبطة: ٤ مليار و٥٠٠ ألف جنيه سنوياً",
+"أيام العمل المفقودة ١٨ مليون يوم عمل سنوياً",
+"متوسط ٣ صداقات مقطوعة لكل شاب",
+"٨٥% من طلاب ثانوي يعانون من التنمر الرقمي",
+"٣٥% من طلاب ثانوي حاولوا الانتحار مرة على الأقل",
+"٥٨% من طلاب الجامعات يعانون من التنمر الإلكتروني",
+"٦٤% يعانون من اضطرابات نوم بسبب السوشيال ميديا",
+"٤٢% تأثرت درجاتهم الأكاديمية سلباً",
+"١٧% تعرضوا للابتزاز الإلكتروني",
+"محاولة انتحار كل ٦ ساعات بسبب التنمر الرقمي أو القطيعة",
+"عام ٢٠٢٣: ١٤٦٠ محاولة انتحار منهم ٦٠% لأسباب رقمية ومرتبطة بالسوشيال ميديا",
+"٤٠% من المسنين يعانون من العزلة لأن أبناءهم مشغولون بالسوشيال ميديا",
+"٢ مليون مسن مصري يعيشون في عزلة رقمية",
+"نسبة حالات الطلاق في السنة الأولى من الزواج ٣٤%",
+"متوسط عمر الزواج عند الطلاق ٣.٧ سنة",
+"حالات الطلاق الرقمي ١٢ ألف و٥٠٠ حالة سنوياً",
+"متوسط عدد حسابات السوشيال ميديا للفرد ٣.٨ حساب",
+"نسبة المصريين الذين يبدأون يومهم بالسوشيال ميديا ٧١%",
+"نسبة المشاكل الأسرية التي تبدأ عبر الواتساب ٥٢%",
+"طلاق بعد ٣٢ سنة زواج بسبب كومنت",
+"شقيقان بالمنصورة تشاجرا حتى الموت بسبب منشور سياسي",
+"انتحار طالبة بكلية طب عين شمس لمشاهدتها ١٠٠ فيديو يومياً عن فشل الحياة الطبية",
+"انقسام عائلة من ١٥ فرداً بالإسكندرية بسبب صورة حفلة عيد ميلاد",
+"زوج يطلق زوجته في الجيزة بعد اكتشاف فيديوهات رقص لها على تيك توك",
+"معدل انتشار الاكتئاب بين مستخدمي السوشيال ميديا ٣١%",
+"نسبة المقارنات الاجتماعية السلبية ٧٦%",
+"حالات القلق الاجتماعي المتزايد ٤٤%",
+"خسائر اقتصادية أسرية بسبب النصب الإلكتروني ٢.١ مليار جنيه سنوياً",
+"رصد أكثر من ١٥ ألف صفحة إلكترونية مجهولة تنشر الفتنة",
+"رصد ٨٧٠ جماعة إلكترونية منظمة لبث الفرقة",
+"هجمات إلكترونية على تماسك الأسرة المصرية بمتوسط ١٢٠ هجمة يومياً",
+"تآكل القيم الأسرية التقليدية ٢٢% خلال ٥ سنوات الأخيرة",
+"انتشار نماذج حياة غير واقعية تؤثر على ٨١% من الشباب",
+"نسبة المحتوى الأجنبي المؤثر سلباً ٦٨% من المحتوى المتداول",
+"زيادة الطلاق الرقمي ٢٠% سنوياً",
+"زيادة الجريمة الأسرية الرقمية ١٥% سنوياً",
+"زيادة الاضطرابات النفسية ٢٥% سنوياً",
+"زيادة التنمر الإلكتروني ٣٠% سنوياً",
+"٥٠% من الأسر المصرية معرضة للتفكك",
+"توقع وصول حالات الطلاق إلى ٤٥٠ ألف حالة سنوياً عام ٢٠٣٠",
+"توقع خسائر اقتصادية تتجاوز ٣٥ مليار جنيه سنوياً عام ٢٠٣٠"
+];
+track.innerHTML = "";
+[...list, ...list].forEach(txt => {
+const s = document.createElement('span');
+s.innerText = txt;
+track.appendChild(s);
+});
+}
+function loadMedia() {
+const track = document.getElementById('track-imgs');
+track.innerHTML = "";
+const imgs = [];
+for(let i=101; i<=124; i++) { imgs.push(i + ".jpg"); }
+[...imgs, ...imgs].forEach(src => {
+const img = document.createElement('img');
+img.src = src;
+img.onclick = () => openImage(src);
+track.appendChild(img);
+});
+}
+function openImage(src) {
+document.getElementById('lightbox-img').src = src;
+document.getElementById('lightbox').style.display = 'flex';
+}
+function closeImage() {
+document.getElementById('lightbox').style.display = 'none';
+}
+function scrollToSec(id) {
+const el = document.getElementById(id);
+if(el) {
+const offset = 100;
+const pos = el.offsetTop - offset;
+window.scrollTo({ top: pos, behavior: 'smooth' });
+}
+}
+function setupLanguageToggle() {
+const toggleBtn = document.getElementById('langToggleBtn');
+const dropdown = document.getElementById('langDropdown');
+toggleBtn.onclick = (e) => {
+e.stopPropagation();
+dropdown.classList.toggle('show');
+};
+document.addEventListener('click', (e) => {
+if (!dropdown.contains(e.target) && e.target !== toggleBtn) {
+dropdown.classList.remove('show');
+}
+});
+document.querySelectorAll('.lang-option').forEach(option => {
+option.onclick = function(e) {
+e.preventDefault();
+const langCode = this.dataset.lang;
+if (langCode === 'ar') {
+return;
+} else {
+showSoonPlaceholder();
+dropdown.classList.remove('show');
+}
+};
+});
+}
+function showSoonPlaceholder() {
+const flagContainer = document.querySelector('.lang-toggle-btn');
+flagContainer.innerHTML = '<span class="soon-placeholder">Soon</span>';
+setTimeout(() => {
+flagContainer.innerHTML = '<img src="https://flagcdn.com/w80/eg.png" alt="العربية" id="currentLangFlag">';
+}, 2000);
+}
+// === برامج التوعية الكاملة ===
+const programsData = {
+child: [
+{ q: "ما هو السن المناسب تقنياً ونفسياً للسماح للطفل باستخدام الشاشات؟", src: "الأكاديمية الأمريكية لطب الأطفال (AAP)", ans: "* يُمنع تماماً استخدام الشاشات للأطفال دون سن 18–24 شهراً.<br>* الاستثناء الوحيد في هذا العمر هو مكالمات الفيديو للتواصل مع الأهل فقط.<br>* من سن 2 إلى 5 سنوات، الحد الأقصى هو ساعة واحدة يومياً من محتوى تعليمي.<br>* يجب أن يشاهد الأبوان مع الطفل لضمان فهمه لما يراه وتطبيقه على الواقع." },
+{ q: "كيف أميز بين الاستخدام العادي للهاتف وبين بداية مرحلة العزلة الرقمية؟", src: "الجمعية النفسية الأمريكية (APA)", ans: "* الاستخدام العادي هو وسيلة للترفيه ولا يؤثر على التواصل الاجتماعي الواقعي.<br>* العزلة تبدأ عندما تظهر أعراض الانسحاب مثل العصبية الشديدة عند ترك الجهاز.<br>* فقدان الاهتمام بالهوايات التقليدية واللعب مع الأقران هو مؤشر خطر.<br>* إهمال النظافة الشخصية أو اضطراب مواعيد الأكل والنوم بسبب الشاشة." },
+{ q: "كيف أدير عملية إنهاء وقت الشاشة بسلام ودون نوبات غضب؟", src: "مركز نمو الطفل بجامعة هارفارد", ans: "* استخدام أسلوب التحذير التدريجي قبل 10 و5 دقائق من النهاية.<br>* إعطاء الطفل خياراً (هل تريد الإغلاق الآن أم بعد انتهاء هذا المستوى؟).<br>* ربط نهاية وقت الشاشة بنشاط محبب آخر (مثل اللعب بالمكعبات أو الخروج).<br>* التزام الوالدين بإنهاء وقت شاشتهم أيضاً ليكونوا قدوة للطفل." },
+{ q: "هل توجد تطبيقات معينة تشكل خطراً مباشراً على سلوكيات الأطفال؟", src: "منظمة Common Sense Media", ans: "* تطبيقات الفيديو القصير (مثل تيك توك) بسبب سرعة المشاهد التي تضعف التركيز.<br>* الألعاب التي تحتوي على دردشة مفتوحة مع غرباء (مثل بعض غرف روبلوكس).<br>* التطبيقات التي تشجع على الشراء الداخلي المتكرر وإهدار المال.<br>* المحتوى غير المراقب الذي قد يحتوي على إعلانات غير مناسبة للسن." },
+{ q: "ما هي مخاطر إعطاء الهاتف للطفل أثناء تناول الطعام؟", src: "منظمة الصحة العالمية (WHO)", ans: "* يمنع الطفل من الشعور بالشبع الطبيعي مما يؤدي لمخاطر السمنة.<br>* يضعف مهارات التذوق والتواصل الأسري الفعال أثناء الوجبات.<br>* يجعل الطفل يربط الطعام بالترفيه البصري فقط ويفقد استمتاعه به.<br>* قد يسبب مشاكل في الهضم نتيجة تشتت الانتباه عن عملية المضغ." },
+{ q: "كيف أحمي طفلي من المحتوى غير اللائق الذي يظهر فجأة؟", src: "خبراء الأمن السيبراني", ans: "* تفعيل خاصية YouTube Kids والبحث الآمن في جميع المتصفحات.<br>* استخدام برامج الرقابة الأبوية المتطورة مثل Google Family Link.<br>* جعل استخدام الهاتف دائماً في مكان مفتوح بالمنزل وليس الغرف المغلقة.<br>* توعية الطفل بإغلاق الشاشة فوراً وإخبارك إذا رأى أي شيء غريب." },
+{ q: "هل يؤثر الهاتف على تطور النطق واللغة عند الأطفال؟", src: "مركز مكافحة الأمراض (CDC)", ans: "* نعم، التفاعل مع الشاشة تفاعُل أحادي الجانب ولا يساعد المهارات اللغوية.<br>* يحتاج الأطفال لتفاعل بشري حي لتطوير مخارج الحروف والقدرة على الحوار.<br>* قضاء وقت طويل على الشاشات يقلل من عدد الكلمات التي يكتسبها الطفل.<br>* قد يؤدي الإفراط الرقمي إلى تأخر اجتماعي وصعوبة في فهم لغة الجسد." },
+{ q: "كيف أعالج إدمان طفلي على ألعاب الهاتف؟", src: "الجمعية الوطنية لتربية الأطفال", ans: "* لا تسحب الجهاز فجأة، بل ضع جدولاً زمنياً تدريجياً لتقليل الساعات.<br>* وفّر بدائل ممتعة وجاذبة للطفل (مثل الرسم، الرياضة، القصص الورقية).<br>* كافئ الالتزام بالوقت بنشاط خارجي محبب أو رحلة قصيرة.<br>* شارك طفلك في أنشطة بدنية يومية لتفريغ طاقته بعيداً عن الشاشة." },
+{ q: "ما هو الوقت المثالي لإيقاف الشاشات قبل النوم؟", src: "مؤسسة النوم الوطنية", ans: "* يجب إيقاف جميع الشاشات قبل النوم بساعة كاملة على الأقل.<br>* الضوء الأزرق يمنع إفراز هرمون الميلاتونين المسؤول عن النوم العميق.<br>* استبدل الشاشة بقراءة قصة ورقية أو حديث هادئ مع الطفل.<br>* تأكد من شحن الأجهزة خارج غرف النوم لتجنب إغراء استخدامها ليلاً." },
+{ q: "هل استخدام الأجهزة اللوحية يضعف نظر الأطفال؟", src: "الأكاديمية الأمريكية لطب العيون", ans: "* يسبب جفاف العين وإجهادها ويساهم في زيادة حالات قصر النظر.<br>* يجب اتباع قاعدة (20-20-20): كل 20 دقيقة انظر لشيء بعيد.<br>* تأكد من وجود إضاءة كافية في الغرفة عند استخدام أي جهاز.<br>* حافظ على مسافة آمنة بين عين الطفل وبين شاشة الجهاز اللوحي." },
+{ q: "كيف أجعل من التكنولوجيا أداة تعليمية لطفلي؟", src: "خبراء التقنية التربوية", ans: "* اختر تطبيقات تنمي مهارات التفكير المنطقي والبرمجة البسيطة.<br>* شارك طفلك في حل الألغاز التقنية بدلاً من المشاهدة السلبية.<br>* حدد أهدافاً تعليمية واضحة قبل السماح باستخدام أي تطبيق جديد.<br>* شجّع الطفل على استخدام الكاميرا لتصوير الطبيعة أو مشاريع فنية." },
+{ q: "ماذا أفعل إذا اكتشف طفلي محتوى عنيفاً بالصدفة؟", src: "منظمة اليونيسيف", ans: "* ابقَ هادئاً تماماً ولا توبخ الطفل أو تشعره بالذنب.<br>* اشرح له أن هذا المحتوى غير حقيقي ومؤذٍ لسلامتنا النفسية.<br>* ناقش مشاعره تجاه المشهد وامنحه الأمان ليتحدث عن مخاوفه.<br>* تأكد من سد الثغرة التقنية التي سمحت بظهور هذا المحتوى فوراً." },
+{ q: "هل الأجهزة التعليمية للأطفال آمنة تماماً؟", src: "المنظمة الدولية لمعايير السلامة", ans: "* نعم، إذا كانت غير متصلة بالإنترنت المفتوح أو متاجر التطبيقات غير المراقبة.<br>* تأكد دائماً من جودة المحتوى وعدم وجود رسائل مبطنة أو إعلانات.<br>* افحص تقييمات التطبيق قبل تحميله واقرأ سياسة الخصوصية الخاصة به.<br>* حدد وقتاً معيناً حتى للأجهزة التعليمية لتجنب الإجهاد البصري والذهني." },
+{ q: "كيف أبني ثقة بيني وبين طفلي بخصوص استخدامه للهاتف؟", src: "خبراء التربية الحديثة", ans: "* كن صديقاً رقمياً له، العب معه أحياناً وافهم اهتماماته.<br>* علمه أن يخبرك فوراً إذا رأى أي شيء غريب أو مخيف دون خوف.<br>* اشرح له \"لماذا\" نضع حدوداً للوقت بدلاً من فرض الأوامر دون نقاش.<br>* اجعل القواعد تنطبق على الجميع في المنزل لتكون قدوة صادقة." },
+{ q: "ما هي علامات التعب النفسي الناتج عن الشاشات عند الأطفال؟", src: "معهد صحة الطفل", ans: "* سرعة الغضب وتقلب المزاج الحاد عند محاولة سحب الجهاز منه.<br>* قلة التركيز في المهام اليومية أو تراجع الاهتمام بالدراسة واللعب.<br>* اضطرابات النوم الملحوظة أو الكوابيس المرتبطة بمحتوى رقمي.<br>* العدوانية المفاجئة في التعامل مع الإخوة أو الزملاء في الواقع." },
+{ q: "كيف أطبق 'الصيام الرقمي' في منزلي؟", src: "مبادرة قصص الحضارات", ans: "* حدد يوماً في الأسبوع يكون فيه المنزل خالياً تماماً من الأجهزة.<br>* خصص ساعات معينة يومياً (مثل وقت الطعام) لمنع استخدام الهواتف.<br>* استبدل الوقت الرقمي بألعاب جماعية، حوارات أسرية، أو قراءة كتب.<br>* احتفل بنجاح الأسرة في الالتزام بالصيام الرقمي لتعزيز الروابط." }
+],
+teens: [
+{ q: "كيف أتعامل مع رغبة المراهق في الخصوصية التامة ورفضه لمراقبة هاتفه؟", src: "عالم المراهقة", ans: "* الخصوصية في هذا العمر جزء من بناء الاستقلالية الشخصية.<br>* بدلاً من المراقبة المباشرة (التجسس)، تحول إلى \"الإشراف الواعي\".<br>* اتفق معه على قواعد عامة (مثل عدم استخدام الهاتف في غرف النوم).<br>* اشرح له أن دورك هو الحماية وليس التقييد، وابنِ جسراً من الثقة." },
+{ q: "ما هي علامات وقوع المراهق في فخ 'الابتزاز الإلكتروني' وكيف أتصرف بهدوء؟", src: "عالم المراهقة", ans: "* العلامات تشمل: الانعزال المفاجئ، التوتر الشديد عند وصول رسائل.<br>* إغلاق الهاتف بسرعة عند اقترابك، وتدهور حالته المزاجية أو الدراسية.<br>* التصرف الهادئ يتطلب: احتواء المراهق وطمأنته بأنه ليس وحده.<br>* جمع الأدلة (صور الرسائل)، ثم إبلاغ الجهات المختصة فوراً." },
+{ q: "كيف أحمي ابني/ابنتي من 'هوس المثالية' والمقارنة الدائمة مع مشاهير السوشيال ميديا؟", src: "عالم المراهقة", ans: "* نمّ \"الوعي النقدي\"؛ علّمه أن ما يظهر هو \"لقطات منتقاة\" فقط.<br>* وضّح له أن هناك فلاتر وإضاءة خلف الكواليس لتجميل الواقع.<br>* شجّعه على متابعة شخصيات ملهمة في مجالات حقيقية (علم، رياضة).<br>* ركّز على تعزيز ثقته بنفسه وبإنجازاته الواقعية الملموسة." },
+{ q: "ما هو التصرف الصحيح إذا اكتشفت أن المراهق يتابع مجموعات أو صفحات تروج لأفكار متطرفة؟", src: "عالم المراهقة", ans: "* تجنب الصدمة والهجوم العنيف الذي قد يدفعه للتمسك بها كنوع من التمرد.<br>* ابدأ بحوار فكري هادئ: \"ما الذي جذبك لهذا النوع من المحتوى؟\".<br>* اعرض عليه وجهات نظر بديلة ومنطقية وناقش معه العواقب بوضوح.<br>* استعن بمختص تربوي لمساعدتك في تفكيك هذه الأفكار بشكل احترافي." },
+{ q: "كيف أعلم المراهق إدارة 'سمعته الرقمية' وإدراك أن ما ينشره اليوم سيلاحقه؟", src: "عالم المراهقة", ans: "* أخبره بقاعدة ذهبية: \"لا تنشر شيئاً لا تحب أن يراه مدير عملك المستقبلي\".<br>* وضّح له أن الشركات والجامعات تبحث الآن في التاريخ الرقمي للمتقدمين.<br>* علمه أن \"بصمته الرقمية\" هي سيرته الذاتية الحقيقية التي لا تمحى أبداً.<br>* شجّعه على نشر محتوى يعبر عن مهاراته وإيجابيته أمام العالم." },
+{ q: "كيف نواجه إدمان ألعاب 'الفيديو جيمز' وتأثيرها على التحصيل الدراسي؟", src: "عالم المراهقة", ans: "* لا تمنعها تماماً، بل اجعلها \"مكافأة\" مشروطة بعد إنجاز المهام.<br>* حدد ساعات معينة وقم بتقليلها تدريجياً، خاصة في أيام الدراسة.<br>* شجّعه على ممارسة أنشطة بدنية تعوّضه عن الجلوس الطويل أمام الشاشة.<br>* اهتم بنوعية الألعاب لضمان أنها تنمي مهارات التفكير المنطقي لا العنف." },
+{ q: "ما هي مخاطر تطبيقات الدردشة المجهولة (Anonymous Apps) على المراهقين؟", src: "عالم المراهقة", ans: "* خطورتها تكمن في أنها بيئة خصبة للتنمر القاسي، التحرش، والاستدراج.<br>* غياب الرقابة يرفع احتمالية التعرض للأذى النفسي الشديد من مجهولين.<br>* يجب توعية المراهق بأن هذه التطبيقات قد تستخدم لجمع بياناته لابتزازه.<br>* شجّعه على استخدام منصات التواصل المعروفة بضوابط أمان وخصوصية عالية." },
+{ q: "كيف أقنع المراهق بوضع حدود زمنية لاستخدام الهاتف دون الدخول في صدام؟", src: "عالم المراهقة", ans: "* عبر \"العقد الرقمي\"؛ اجلس معه واتفقا معاً على ساعات الاستخدام اليومي.<br>* عندما يشارك المراهق في وضع القوانين، يكون أكثر التزاماً وجدية في تنفيذها.<br>* ناقش المخاطر الصحية والنفسية معه واشرحها كحقائق علمية لا كأوامر.<br>* يجب أن تكون قدوة له في ترك هاتفك الخاص خلال الأوقات العائلية." },
+{ q: "كيف أتعامل مع 'التنمر الإلكتروني' سواء كان المراهق ضحية أو مشاركاً فيه؟", src: "عالم المراهقة", ans: "* إذا كان ضحية: علمه عدم الرد، حظر المتنمر فوراً، وتوثيق ما حدث.<br>* إذا كان مشاركاً: يجب الوقوف بحزم على العواقب الأخلاقية والقانونية.<br>* نمّ مهارة \"التعاطف\" لديه ليفهم حجم الأذى الذي قد يسببه للغير.<br>* وفّر الدعم النفسي الكامل له لتجاوز آثار التجربة وبناء ثقته بنفسه." },
+{ q: "ما هو دور الأهل في توعية المراهق بمخاطر 'تحديات التيك توك' الخطيرة؟", src: "عالم المراهقة", ans: "* الدور هو \"التحليل المنطقي\"؛ ناقش معه التحدي واسأله عن مخاطره.<br>* شجّعه على التفكير المستقل بدلاً من \"عقلية القطيع\" والتقليد الأعمى.<br>* وضّح له أن اللحاق بالتريند لا يستحق المخاطرة بسلامته الجسدية أبداً.<br>* اطلب منه اقتراح تحديات إيجابية ومفيدة يمكنه المشاركة فيها بأمان." },
+{ q: "كيف يمكن للمراهق استخدام منصات التواصل لبناء 'ملف شخصي' يدعم قبوله؟", src: "عالم المراهقة", ans: "* عن طريق مشاركة إنجازاته: مشاريع مدرسية، عمل تطوعي، أو هوايات مفيدة.<br>* نشر ملخصات لكتب قرأها أو أبحاث أجراها في مجالات تهمه تقنياً.<br>* تحويل حسابه من مستهلك سلبي للمحتوى إلى \"صانع محتوى\" ملهم.<br>* استخدام LinkedIn مبكراً لبناء شبكة علاقات مهنية مستقبلاً." },
+{ q: "ما هي أفضل الطرق لتدريب المراهق على مهارة 'الذكاء الاصطناعي' كأداة للتعلم؟", src: "عالم المراهقة", ans: "* علمه كيف يسأل الذكاء الاصطناعي ليكون بمثابة \"معلم خصوصي\" ذكي.<br>* استخدامه في تلخيص المراجع الضخمة أو البحث عن مصادر معلومات موثوقة.<br>* التأكيد على كتابة الأبحاث بأسلوبه الخاص لضمان تطوير مهاراته العقلية.<br>* تنبيهه لمخاطر الانحياز أو المعلومات الخاطئة التي قد يقدمها الذكاء الاصطناعي." },
+{ q: "كيف أحول اهتمام المراهق بالألعاب الإلكترونية إلى شغف بالبرمجة أو التصميم؟", src: "عالم المراهقة", ans: "* أخبره أن الانتقال من \"لاعب\" إلى \"صانع ومطور\" هو التحدي الحقيقي.<br>* اشترك له في دورات بسيطة لتطوير الألعاب (مثل Roblox Studio) أو الجرافيك.<br>* وضّح له القيمة التقنية والمادية الكبيرة التي يمكن أن يجنيها مستقبلاً.<br>* ساعده في تحميل الأدوات اللازمة لبدء أول مشروع برمجي خاص به." },
+{ q: "كيف ننمي مهارة 'القيادة الرقمية' لدى المراهق ليكون مؤثراً إيجابياً؟", src: "عالم المراهقة", ans: "* شجّعه على الدفاع عن الحق عبر الإنترنت ودعم زملائه ضد التنمر.<br>* نشر معلومات مفيدة واستخدام صوته الإلكتروني لإحداث تغيير في مجتمعه.<br>* علمه كيفية التحقق من صحة الأخبار قبل نشرها لمحاربة الشائعات الكاذبة.<br>* شجّعه على تنظيم مبادرات رقمية توعوية صغيرة في مدرسته أو حيه." },
+{ q: "ما هي الخطوات العملية لتمكين المراهق من إدارة ميزانيته عبر تطبيقات الدفع؟", src: "عالم المراهقة", ans: "* ابدأ بمنحه ميزانية أسبوعية على بطاقة مسبقة الدفع مخصصة لليافعين.<br>* علمه مهارة \"التحقق\" من أمان المواقع قبل الشراء أونلاين وحماية بياناته.<br>* مراجعة كشف الحساب معه شهرياً ليتعلم التخطيط المالي وتوفير الأموال.<br>* توعيته بمخاطر الإعلانات المضللة التي تدفعه لشراء أشياء لا يحتاجها فعلياً." }
+],
+youth: [
+{ q: "كيف أتخلص من تشتت الانتباه الناتج عن التنبيهات المستمرة وأستعيد قدرتي على التركيز العميق؟", src: "خبير إنتاجية رقمية", ans: ".   إيقاف جميع الإشعارات غير الضرورية على الهاتف والكمبيوتر<br>.   جدولة \"فترات تركيز عميق\" باستخدام تقنية <strong>بومودورو</strong> (25 دقيقة عمل / 5 دقائق راحة)<br>.   استخدام أدوات حظر المواقع والتطبيقات المشتتة (مثل Freedom، Cold Turkey)<br>.   تدريب العقل على التركيز من خلال القراءة العميقة أو ممارسة التأمل<br>.   تهيئة بيئة عمل مادية نظيفة وخالية من الفوضى البصرية والضوضاء" },
+{ q: "ما هي أفضل استراتيجيات إدارة الوقت الرقمية (مثل تقنية بومودورو) لزيادة الإنتاجية وتحقيق أهدافي اليومية؟", src: "خبير إدارة الوقت", ans: ".   تطبيق <strong>تقنية بومودورو</strong> لإدارة الطاقة والوقت في دفعات قصيرة مركزة<br>.   استخدام <strong>طريقة \"تناول الضفدع\"</strong> بإنجاز المهمة الأصعب أولاً في اليوم<br>.   تخطيط اليوم عبر <strong>التوقيت الزمني (Time Blocking)</strong> بحجز مواعيد ثابتة للمهام<br>.   تفريغ الذهن وتسجيل كل المهام في تطبيق موحد (مثل Todoist، Microsoft To Do)<br>.   ربط المهام اليومية بالأهداف الأسبوعية والشهرية طويلة المدى" },
+{ q: "كيف أتوقف عن الغرق في \"العمل المزيف\" (مثل الإيميلات والاجتماعات غير الضرورية) وأركز طاقتي على \"العمل الحقيقي\"؟", src: "مستشار إنتاجية", ans: ".   تحديد أهم 1-3 مهام يومياً (MITs) والبدء بها فوراً قبل فتح البريد الإلكتروني<br>.   جدولة فترات زمنية محددة فقط لمراجعة البريد والاجتماعات (مثل 3 مرات يومياً)<br>.   تحدي ضرورة كل اجتماع عبر سؤال: \"هل يمكن استبداله بتحديث مكتوب؟\"<br>.   تطبيق قاعدة الدقيقتين: إنجاز أي مهمة صغيرة (تأخذ دقيقتين أو أقل) فوراً<br>.   تعريف \"العمل الحقيقي\" على أنه المهام التي تقربك مباشرة من أهدافك الأساسية" },
+{ q: "كيف أحمي عيني وجسدي من الإرهاق الناتج عن الجلوس الطويل أمام الشاشات، وأدمج عادات صحية في روتين عملي الرقمي؟", src: "أخصائي صحة رقمية", ans: ".   تطبيق قاعدة <strong>20-20-20</strong> (كل 20 دقيقة، انظر إلى شيء على بعد 20 قدماً لمدة 20 ثانية)<br>.   ضبط إعدادات سطوع الشاشة وتشغيل الوضع الليلي (الضوء الدافئ) تلقائياً<br>.   تحسين وضعية الجلوس وضمان أن تكون الشاشة على مستوى العين<br>.   أخذ استراحة حركية قصيرة كل ساعة (مثل المشي، التمدد)<br>.   استخدام دعامة للقدمين وكرسي مريح، والتفكير في طاولة قابلة للوقوف" },
+{ q: "ما هي مخاطر \"التسويف الرقمي\" وكيف أبني إرادتي لأمنع نفسي من تصفح وسائل التواصل أثناء ساعات العمل؟", src: "خبير سلوك رقمي", ans: ".   <strong>المخاطر:</strong> تأجيل المهام المهمة، زيادة التوتر والقلق، تدني جودة العمل، الشعور بالذنب<br>.   إبعاد الهاتف الذكي عن مجال الرؤية أو وضعه على وضع الطيران أثناء العمل<br>.   تطبيق قاعدة \"البداية لمدة 5 دقائق فقط\" لتجاوز حاجز المماطلة<br>.   ربط البدء في العمل بنشاط محبب (مثل كوب قهوة، موسيقى هادئة)<br>.   تحديد مكافأة صغيرة ومحددة مسبقاً بعد إنجاز المهمة" },
+{ q: "كيف أضع حدودًا رقمية واضحة بين العمل والحياة الشخصية لتجنب الاحتراق الوظيفي؟", src: "أخصائي توازن حياة رقمية", ans: ".   إنشاء \"طقوس انتقالية\" واضحة بعد انتهاء العمل (مثل المشي، تغيير الملابس)<br>.   تحديد أوقات ثابتة لعدم العمل وإبلاغ الزملاء والعملاء بها بوضوح<br>.   استخدام أجهزة منفصلة للعمل والحياة الشخصية، أو حسابات مستخدمين مختلفة<br>.   إيقاف إشعارات العمل على الهاتف الشخصي بعد ساعات الدوام وفي العطلات<br>.   أخذ \"إجازات رقمية\" قصيرة (Digital Detox) خلال عطلات نهاية الأسبوع" },
+{ q: "كيف أنظم بيئتي العملية الرقمية (سطح المكتب، الملفات، التطبيقات) لتقليل الفوضى وزيادة الوضوح الذهني؟", src: "خبير تنظيم رقمي", ans: ".   تطبيق قاعدة <strong>OHIO</strong> (Only Handle It Once): التعامل مع الملف مرة واحدة واتخاذ قرار بشأنه<br>.   هيكلة نظام مجلدات واضح (مثل: مشاريع جارية، مرجعية، مؤرشفة، شخصية)<br>.   الحفاظ على سطح المكتب نظيفاً ووضع اختصارات التطبيقات الأساسية فقط<br>.   استخدام أدوات البحث السريع في النظام (مثل Spotlight على Mac، Everything على Windows)<br>.   جدولة تنظيف أسبوعي للملفات المؤقتة وسلة المحذوفات" },
+{ q: "ما هو التأثير الحقيقي \"لتعدد المهام\" على جودة عملي، وكيف أدرب نفسي على التركيز الكامل في مهمة واحدة؟", src: "عالم أعصاب رقمي", ans: ".   <strong>التأثير:</strong> انخفاض جودة المخرجات، زيادة الأخطاء، استنزاف أسرع للطاقة العقلية<br>.   إغلاق جميع علامات التبويب والنوافذ والتطبيقات غير المتعلقة بالمهمة الحالية<br>.   استخدام قائمة مهام يومية واضحة مرتبة حسب الأولوية وليس الرغبة<br>.   إدارة الانقطاعات بوضع علامة \"مشغول\" والرد في وقت مخصص للمراجعة<br>.   تدريب الدماغ على رفض التبديل عبر التدرج بزيادة فترات التركيز المتواصل" },
+{ q: "كيف أتعامل مع ضغط \"المثالية الرقمية\" وسعار المقارنة عند رؤية إنجازات الآخرين على منصات مثل لينكدإن؟", src: "أخصائي نفسي رقمي", ans: ".   تذكر أن منصات التواصل المهني هي \"معرض للإنجازات\" وليست سيرة ذاتية كاملة<br>.   تحديد معايير النجاح الشخصية الخاصة بك بناءً على أهدافك وقيمتك وليس مقارنة بالآخرين<br>.   تحويل المشاعر السلبية إلى فضول: \"ماذا يمكنني أن أتعلم من تجربته؟\"<br>.   تقليل الوقت المخصص للتصفح السلبي واستبداله بفترات محددة للتفاعل الهادف<br>.   تدوين وتوثيق إنجازاتك وتقدمك الشخصي في دفتر خاص للرجوع إليه" },
+{ q: "ما هي أفضل الأدوات والتطبيقات لتنظيم وإدارة المشاريع الشخصية والمهنية بشكل احترافي وبسيط؟", src: "خبير أدوات رقمية", ans: ".   <strong>للمهام الشخصية:</strong> Todoist، Microsoft To Do، Google Tasks<br>.   <strong>للمشاريع المتوسطة:</strong> Trello (لوحات كانبان)، Asana، ClickUp<br>.   <strong>للملاحظات:</strong> Notion، Evernote، Obsidian<br>.   <strong>لتنظيم الوقت:</strong> Google Calendar، Apple Calendar، Calendly<br>.   <strong>للتعاون:</strong> Google Workspace، Microsoft 365" },
+{ q: "كيف أستخدم الذكاء الاصطناعي كشريك إبداعي ومساعد شخصي يضاعف إنتاجيتي، مع الحفاظ على تميزي البشري؟", src: "خبير ذكاء اصطناعي تطبيقي", ans: ".   استخدامه لتوليد الأفكار الأولية، ومسودات النصوص، والعناوين، والهياكل<br>.   الاستفادة منه في تلخيص المستندات الطويلة، وتنظيم البيانات، والبحث الذكي<br>.   الاعتماد عليه لمراجعة النصوص وتحسين الصياغة والأخطاء اللغوية<br>.   <strong>الحفاظ على التميز البشري</strong> بإضافة السياق الشخصي، والتحرير النقدي، والعاطفة<br>.   اعتباره \"مساعداً ذكياً\" تطرح عليه الأسئلة وتدقق مخرجاته، وليس \"بديلا\"" },
+{ q: "كيف أبني \"نظام تعلم ذاتي\" عبر الإنترنت يضمن لي تحديث مهاراتي باستمرار ومواكبة تطورات سوق العمل؟", src: "خبير تعلم رقمي", ans: ".   تحديد مسار تعلم واضح يركز على المهارات الأكثر طلباً في مجالك وأهدافك<br>.   تخصيص وقت أسبوعي ثابت وغير قابل للمساومة للتعلم (ساعة يومياً أو نصف يوم أسبوعياً)<br>.   الاشتراك في منصات التعلم الإلكتروني الموجهة (Coursera، edX، Udemy)<br>.   تطبيق المعرفة فوراً من خلال مشاريع مصغرة أو تطبيقها في العمل الحالي<br>.   قياس التقدم بالحصول على شهادات أو بناء محفظة أعمال أو مشاركة ما تتعلمه" },
+{ q: "ما هي خطوات تحويل مهاراتي الرقمية إلى مصدر دخل إضافي عبر العمل الحر، وكيف أبدأ بطريقة فعالة ومنظمة؟", src: "خبير عمل حر رقمي", ans: ".   اختيار مهارة واحدة محددة وقابلة للتسويق وتمتلك فيها مستوى جيد<br>.   بناء محفظة أعمال (Portfolio) تحتوي على 2-3 مشاريع نموذجية تظهر أفضل ما لديك<br>.   البحث عن الأسعار السوقية وتحديد عروض أسعار تنافسية في البداية لجذب العملاء الأولى<br>.   إنشاء ملف احترافي على منصات العمل الحر (مثل Upwork، خمسات، مستقل) وشبكة لينكدإن<br>.   البدء بعروض الخدمة لشبكة معارفك، واستخدام عقود بسيطة، وتنظيم الفواتير والضرائب" },
+{ q: "كيف أطور \"علامتي التجارية الشخصية\" على الإنترنت لجذب الفرص المهنية المناسبة وبناء شبكة علاقات مؤثرة؟", src: "خبير تسويق رقمي شخصي", ans: ".   تحديد نطاق تخصصي وشخصيتي المهنية الفريدة والقيمة المميزة التي تقدمها<br>.   تحسين ملف LinkedIn بالكامل: صورة محترفة، عنوان جذاب، ملخص قوي، تفاصيل الخبرات<br>.   نشر محتوى ذو قيمة بشكل منتظم (مقالات، منشورات، تعليقات ثاقبة) في مجالك<br>.   التفاعل البناء مع محتوى الآخرين من خبراء ومؤثرين في مجال اهتمامك<br>.   الحفاظ على اتساق الصورة والرسالة عبر جميع المنصات" },
+{ q: "كيف أحول هاتفي من مصدر للتشتيت إلى أداة تنمية ذاتية؛ لتعلم اللغات، الاستماع للمحتوى التعليمي، أو إدارة مشاريع جانبية؟", src: "خبير استخدام هواتف ذكية", ans: ".   إعادة تنظيم الشاشة الرئيسية: حذف التطبيقات المشتتة أو تجميعها في مجلد واحد بعيد<br>.   تحميل تطبيقات التعلم والتنمية (مثل Duolingo للغات، Brilliant للعلوم، بودكاست تعليمي)<br>.   تحميل تطبيقات الإنتاجية للمشاريع الجانبية (مثل Trello، Notion، Evernote)<br>.   استغلال أوقات الانتظار والمواصلات في الاستماع للبودكاست أو الدروس الصوتية<br>.   تعيين أدوات التعلم والتخطيط على شاشة القفل أو الصفحة الرئيسية لتكون أول ما تراه" },
+{ q: "كيف أتعامل مع \"قلق المعلومات\" والإحساس بأنني لا أستطيع مواكبة كل التطورات والمحتوى في مجالي؟", src: "خبير إدارة معرفة رقمية", ans: ".   تقبل حقيقة أنه من المستحيل معرفة كل شيء، والتركيز على \"التعمق\" بدلاً من \"الاستيعاب السطحي\"<br>.   انتقاء واتباع 2-3 مصادر موثوقة ومتخصصة فقط بدلاً من متابعة عشرات المصادر العشوائية<br>.   استخدام أدوات تجميع المحتوى مثل Feedly أو Pocket لمراجعة العناوين وقراءة المهم فقط لاحقاً<br>.   تخصيص وقت أسبوعي محدد (مثل ساعة يوم الجمعة) لمراجعة أهم التطورات، ثم \"الانفصال\"<br>.   تغيير الهدف من \"المواكبة\" إلى \"التطبيق\": التركيز على المعلومات التي يمكنك استعمالها عملياً" },
+{ q: "ما هو الروتين الرقمي المسائي الذي يساعدني على النوم بعمق ويحسن جودة راحتي بعد يوم من العمل الشاق؟", src: "خبير نوم رقمي", ans: ".   تحديد \"موعد قطع\" رقمي ثابت (ساعة على الأقل قبل موعد النوم)<br>.   تفعيل \"الوضع الليلي\" أو \"الضوء الدافئ\" على جميع الشاشات تلقائياً مع غروب الشمس<br>.   عدم إدخال الهاتف الذكي إلى غرفة النوم، وشحنه في مكان آخر في المنزل<br>.   استبدال الوقت الرقمي قبل النوم بنشاطات مهدئة: قراءة كتاب ورقي، التأمل، الكتابة في اليوميات<br>.   تهيئة بيئة النوم: إظلام تام، درجة حرارة منخفضة، وهدوء" },
+{ q: "كيف أبني تواصلاً فعالاً وثقة مع فريق العمل في بيئة العمل الهجين أو عن بُعد دون الشعور بالعزلة؟", src: "خبير تواصل رقمي", ans: ".   جدولة اتصالات دورية قصيرة ومركزة (مثل اجتماعات الوقوف اليومية Stand-up Meetings)<br>.   استخدام منصات تواصل فورية (مثل Slack، Teams) بقنوات منظمة للمشاريع والمواضيع الاجتماعية<br>.   تخصيص الدقائق الأولى من الاجتماعات الرسمية للحديث غير الرسمي عن أحوال الفريق<br>.   الاتفاق مع الفريق على ساعات العمل المتوقعة وأوقات الاستجابة للرسائل<br>.   الاحتفال بالإنجازات الفردية والجماعية بشكل علني عبر قنوات التواصل المشتركة" },
+{ q: "كيف أحافظ على مهارات التفكير النقدي والإبداع العميق في عصر السيل السطحي للمعلومات عبر وسائل التواصل السريعة؟", src: "فيلسوف رقمي", ans: ".   تخصيص وقت أسبوعي \"بلا شاشات\" للقراءة العميقة في الكتب والمقالات الطويلة<br>.   ممارسة الكتابة التحليلية أو التدوين الذي يجبرك على تنظيم أفكارك وشرحها بوضوح<br>.   تحدي الأفكار الجاهزة بطرح الأسئلة الأساسية: \"ما الدليل؟\"، \"ما الافتراضات؟\"، \"ما البديل؟\"<br>.   الابتعاد المتعمد عن المصادر السريعة للمشي أو التفكير الحر دون مدخلات لمدة 20-30 دقيقة<br>.   الانخراط في نقاشات حقيقية مع أصدقاء أو زملاء يختلفون معك في الرأي بهدف الفهم وليس الفوز" },
+{ q: "ما هي المهارات الإنسانية (كالتعاطف والقيادة) التي لا يمكن للذكاء الاصطناعي تعويضها، وكيف أركز على تطويرها لتعزيز قوتي التنافسية؟", src: "خبير مستقبل العمل", ans: ".   <strong>المهارات الرئيسية:</strong> الذكاء العاطفي، التفاوض، القيادة الملهمة، الإبداع الفني، التفكير الاستراتيجي، الحكم الأخلاقي<br>.   تطويرها عبر <strong>الملاحظة النشطة</strong> و<strong>الاستماع بتركيز</strong> لفظيات ولغة جسد الآخرين<br>.   طلب تغذية راجعة صادقة من الزملاء والمديرين حول مهاراتك الاجتماعية والقيادية<br>.   القراءة في مجالات علم النفس، الفلسفة، والتاريخ لفهم دوافع وسلوك البشر<br>.   الانخراط في أنشطة جماعية أو تطوعية تضعك في مواقف تتطلب تعاوناً وتأثيراً في الآخرين" }
+],
+marriage: [
+{ q: "كيف يؤثر الانشغال الدائم بالهاتف (Phubbing) على جودة التواصل العاطفي بين الزوجين؟", src: "خبير علاقات زوجية رقمية", ans: ".   يخلق شعوراً بعدم الأهمية والتجاهل لدى الطرف الذي يتم تجاهله<br>.   يقلل من جودة الحوار ويقتل فرص المحادثات العفوية العميقة<br>.   يقلل من الاتصال البصري والجسدي الضروري لبناء الألفة<br>.   يزيد من احتمالية سوء الفهم بسبب عدم التركيز الكامل في الحديث<br>.   على المدى الطويل، يبني جداراً من العزلة العاطفية والاستياء داخل العلاقة" },
+{ q: "ما هي حدود الخصوصية الرقمية بين الزوجين وهل يحق لأحدهما تفتيش هاتف الآخر؟", src: "مستشار أسري", ans: ".   المبدأ الأساسي هو <strong>الثقة والاحترام</strong>، وليس الحق المطلق أو المنع المطلق<br>.   من الصحي الاتفاق على \"حدود\" ترضي الطرفين (مثل: عدم إخفاء كلمات المرور، ولكن عدم التفتيش العشوائي)<br>.   التفتيش دون إذن إشارة على أزمة ثقة عميقة ويحتاج إلى علاج السبب وليس ممارسة الرقابة<br>.   الخصوصية حق فردي، لكن الشفافية المتفق عليها تطمئن القلب<br>.   الحل الأمثل هو مناقشة المشاعر التي تدفع لرغبة التفتيش (شك، عدم أمان) وعلاجها" },
+{ q: "كيف نتجنب مقارنة حياتنا الزوجية بالصور المثالية التي يعرضها \"المؤثرون\" على السوشيال ميديا؟", src: "أخصائي نفسي أسري", ans: ".   تذكير أنفسنا باستمرار أن ما نراه هو \"أبرز اللقطات\" وليس الفيلم الكامل للحياة<br>.   التركيز على قصة علاقتنا الفريدة وإنجازاتنا الصغيرة غير المرئية للآخرين<br>.   تقليل الوقت المشترك في التصفح السلبي واستبداله بأنشطة حقيقية تخلق ذكرياتنا الخاصة<br>.   استخدام المحتوى المثالي كمصدر للإلهام لطرق جديدة للتفاعل، وليس كمسطرة للحكم على علاقتنا<br>.   مشاركة شعورك بالمقارنة مع شريكك لمناقشته بشفافية وتخفيف الضغط" },
+{ q: "ما هو تأثير إدمان المواقع الإباحية على العلاقة الحميمية والرضا الزوجي؟", src: "أخصائي علاج إدمان رقمي", ans: ".   يشوه التوقعات الواقعية حول العلاقة الحميمية والجسد<br>.   قد يؤدي إلى صعوبة في الإثارة مع الشريك الحقيقي أو ضعف الأداء<br>.   يقلل من الرغبة في التواصل الحميمي مع الشريك، مما يشعره بالنبذ الجسدي والعاطفي<br>.   يخلق حاجزاً من السرية والخيانة العاطفية حتى بدون علاقة خارجية<br>.   العلاج يكون بالاعتراف بالمشكلة، وطلب المساعدة المهنية، وإعادة بناء الثقة والحميمية خطوة بخطوة" },
+{ q: "كيف يمكننا وضع \"قواعد رقمية\" للمنزل لزيادة الترابط؟", src: "خبير بيئة منزل رقمية", ans: ".   منع الهواتف تماماً على مائدة الطعام وفي غرفة النوم<br>.   تخصيص \"فترة رقمية هادئة\" مسائية يضع فيها كلاكما الأجهزة جانباً<br>.   الاتفاق على عدم استخدام الهواتف أثناء المحادثات المهمة أو عند الحديث عن يومكما<br>.   تخصيص مكان مشترك لشحن الهواتف ليلاً بعيداً عن غرفة النوم<br>.   احترام هذه القواعد بالتبادل وليس كفرض من طرف على الآخر" },
+{ q: "كيف نتصرف إذا تسبب سوء فهم لرسالة نصية في اندلاع مشكلة كبرى بيننا؟", src: "خبير تواصل زوجي", ans: ".   <strong>أولاً: وقف النقاش النصي فوراً.</strong> التواصل النصي يفتقر للتعبير الصوتي والبصري وهو أرض خصبة لسوء الفهم<br>.   الاتصال هاتفياً أو التحدث وجهاً لوجه فوراً لتوضيح النبرة والقصد الحقيقي<br>.   البدء بالاعتذار عن سوء الفهم الناتج، حتى لو لم تكن مقصدك، لأن مشاعر الطرف الآخر حقيقية<br>.   توضيح قصده الحقيقي من الرسالة باستخدام جمل \"أقصد أن...\" أو \"ما حاولت قوله هو...\"<br>.   الاتفاق على قاعدة ذهبية: \"المواضيع الحساسة أو المعقدة لا تُناقش أبداً عبر الرسائل النصية\"" },
+{ q: "ما هي مخاطر الصداقات الافتراضية مع الجنس الآخر عبر الإنترنت وكيف تؤدي للخيانة الزوجية؟", src: "مستشار زواجي", ans: ".   توفر وهم التقارب العاطفي السريع مع إخفاء عيوب الحياة الواقعية<br>.   تشكل مساحة سرية تنمو فيها المشاعر خارج العلاقة الأساسية (خيانة عاطفية)<br>.   تقلل من الاستثمار العاطفي والوقتي الممنوح للشريك الحقيقي<br>.   يمكن أن تكون الخطوة الأولى نحو خيانة فعلية إذا تحولت للقاء<br>.   الوقاية تكون بوضوح الحدود مع الأصدقاء، والشفافية مع الشريك، وإعادة استثمار الطاقة العاطفية في العلاقة الأساسية" },
+{ q: "كيف يؤثر الضوء الأزرق واستخدام الهاتف قبل النوم على دورة النوم المشتركة للزوجين؟", src: "أخصائي نوم أسري", ans: ".   يُخدع الدماغ بالضوء الأزرق فيظنه نور النهار، مما يؤخر إفراز هرمون الميلاتونين المسؤول عن النوم<br>.   يؤدي إلى صعوبة النوم، ونوم متقطع، وتقليل جودة النوم العميق لكلا الطرفين<br>.   يخلق اضطراباً في إيقاع النوم المشترك إذا كان أحد الطرفين يستخدم الهاتف في السرير<br>.   الحل: تفعيل \"الوضع الليلي\" على الأجهزة، ووضع قاعدة بعدم استخدام الشاشات قبل النوم بساعة، وشحن الهواتف خارج غرفة النوم" },
+{ q: "كيف نعالج مشكلة \"الخرس الزوجي الرقمي\" حيث يجلس الطرفان في مكان واحد والاتصال مقطوع؟", src: "أخصائي تواصل أسري", ans: ".   الاعتراف بالمشكلة بصوت عالٍ وبطريقة غير اتهامية: \"أشعر أننا أصبحنا بعيدين رغم وجودنا معاً\"<br>.   تطبيق قاعدة \"الصندوق الرقمي\": تجميع جميع الأجهزة في صندوق محدد لفترة زمنية متفق عليها<br>.   إعادة تعريف \"الوقت المشترك\" بأنشطة لا تسمح باستخدام الهاتف: الطهي معاً، لعب لعبة لوحية، المشي<br>.   طرح أسئلة مفتوحة تثير الحوار (مثل: \"ما أكبر حلم تريد تحقيقه هذا العام؟\")<br>.   البدء بقصص من يومكما بدلاً من الغرق في الهاتف بعد العودة للمنزل" },
+{ q: "ماذا نفعل إذا كان أحد الشريكين يفرط في نشر تفاصيل حياتنا الخاصة على منصات التواصل؟", src: "خبير خصوصية رقمية زوجية", ans: ".   التعبير عن المشاعر الشخصية باستخدام جمل \"أنا\" (مثل: \"أشعر بعدم ارتياح عندما تنشر صورنا الخاصة\")<br>.   مناقشة ووضع اتفاق واضح حول ما هو مسموح نشره وما هو خاص (صور الأطفال، المشاكل، المناسبات العائلية)<br>.   احترام رغبة الطرف الأكثر تحفظاً، لأن الحق في الخصوصية مشترك<br>.   اقتراح بدائل مثل إنشاء محادثة خاصة للعائلة المقربة لمشاركة الأخبار<br>.   فهم الدوافع (الحاجة للتقدير، التأثير) وتقديرها، مع توضيح العواقب على العلاقة" },
+{ q: "كيف نستخدم تطبيقات التقويم المشترك والمهام لتعظيم التنسيق وتخفيف الأعباء المنزلية؟", src: "خبير تنظيم حياة زوجية", ans: ".   استخدام تقويم رقمي مشترك (مثل Google Calendar) لتسجيل جميع المواعيد: العمل، الاجتماعات، المناسبات، المهام المنزلية<br>.   وضع قائمة مهام مشتركة (على تطبيق مثل Todoist أو Microsoft To Do) لتوزيع الأعباء ومتابعتها<br>.   جدولة \"المواعيد الزوجية\" و\"الأسرة\" في التقويم المشترك وتعطيلها كما تُعطل موعد عمل مهم<br>.   استخدام ميزة \"التذكيرات\" للتنسيق في لحظات الشراء أو الاستلام<br>.   مراجعة التقويم والأسبوع القادم معاً بشكل أسبوعي لجلسة تخطيط سريعة" },
+{ q: "كيف يمكن للتكنولوجيا أن تقوي العلاقة في حالات السفر أو العمل الطويل؟", src: "خبير علاقات عن بُعد", ans: ".   جدولة مكالمات فيديو قصيرة ومنتظمة أفضل من مكالمات طويلة عشوائية<br>.   استخدام تطبيقات المراسلة لإرسال رسائل صوتية أو صور عفوية من لحظات اليوم<br>.   مشاهدة فيلم أو مسلسل معاً عن بعد باستخدام ميزة \"Watch Party\" المتوفرة على بعض المنصات<br>.   استخدام تطبيقات الألعاب الإلكترونية البسيطة للمنافسة واللعب معاً عن بُعد<br>.   إرسال هدايا أو طلبات طعام مفاجئة عبر التطبيقات لإظهار الاهتمام" },
+{ q: "ما هي الطرق المبتكرة لاستغلال المحتوى التعليمي عبر الإنترنت لتطوير مهارات الحوار والذكاء العاطفي بيننا؟", src: "خبير تعلم زوجي رقمي", ans: ".   مشاهدة محاضرات أو كورسات قصيرة عن التواصل الزوجي أو الذكاء العاطفي معاً ومناقشتها<br>.   الاستماع لبودكاست عن العلاقات أثناء رحلات السيارة المشتركة والتوقف لمناقشة الأفكار<br>.   استخدام تطبيقات أو كتب إلكترونية تحتوي على أسئلة محفزة للحوار العميق بين الزوجين<br>.   لعب ألعاب لوحية رقمية أو ورقية تركز على التعارف والتخمين وتعزيز الفهم المتبادل<br>.   ممارسة تمارين الاستماع الفعال التي يتعلمانها عبر الإنترنت مع بعضهما البعض" },
+{ q: "كيف نحول هواية مشتركة إلى وقت نوعي يجدد روح الصداقة في الزواج؟", src: "خبير وقت زوجي", ans: ".   تحدي بعضكما في لعبة إلكترونية تعاونية (Co-op) بدلاً من الألعاب الفردية<br>.   إنشاء \"قائمة مشاهدة\" مشتركة وتخصيص ليلة أسبوعية لمشاهدة حلقة معاً مع مناقشتها<br>.   التعلم معاً عبر دروس \"يوتيوب\" لمهارة جديدة متعلقة بهوايتكم (الطبخ، الحرف اليدوية)<br>.   المشاركة في مجتمعات أو منصات أونلاين خاصة بهوايتكم ومشاركة الإنجازات معاً<br>.   تحويل الهواية إلى مشروع صغير مشترك (قناة يوتيوب، مدونة، متجر إلكتروني بسيط)" },
+{ q: "كيف نخطط لمستقبلنا المالي المشترك باستخدام التطبيقات الرقمية بأمان وشفافية؟", src: "خبير تخطيط مالي زوجي", ans: ".   استخدام تطبيقات الميزانية المشتركة (مثل Mint، YNAB) لمشاهدة دخلكما ومصروفاتكما في مكان واحد<br>.   فتح حساب توفير أو استثمار مشترك والاتفاق على قواعد الإيداع والسحب<br>.   استخدام التطبيقات المصرفية لإنشاء \"صناديق\" رقمية مشتركة لأهداف محددة (عمرة، سيارة، طوارئ)<br>.   جدولة \"اجتماع مالي\" شهري قصير لمناقشة المصروفات، المراجعة، والتقدم نحو الأهداف<br>.   الاستفادة من منصات التعلم عن الاستثمار والتخطيط المالي معاً لاتخاذ قرارات مستنيرة" }
+],
+seniors: [
+{ q: "كيف يمكن حماية كبار السن من الوقوع ضحايا لعمليات الاحتيال الهاتفي والإلكتروني؟", src: "خبير أمن رقمي لكبار السن", ans: ".   تحذيرهم من مشاركة أي معلومات شخصية (رقم بطاقة، كود تحويل، كلمة سر) عبر الهاتف أبداً، مهما كانت مزاعم المتصل.<br>.   تعليمهم قاعدة ذهبية: \"البنوك والمؤسسات الرسمية لا تطلب بياناتك السرية عبر الهاتف أو الرسائل.\"<br>.   تثبيت تطبيقات التعرف على المتصلين والمكافحة للسبام والاحتيال على هواتفهم.<br>.   حثهم على استشارة فرد من العائلة قبل إجراء أي عملية دفع أو تحويل بناءً على طلب غير متوقع.<br>.   تبسيط وشرح أشهر طرق الاحتيال (وراثة مزيفة، فوز بجائزة، طلب فدية، انتحال شخصية قريب)." },
+{ q: "ما هي أبسط الطرق لتعليم كبار السن استخدام تطبيقات التواصل (مثل واتساب) لتقليل شعورهم بالعزلة؟", src: "مدرب تكنولوجيا لكبار السن", ans: ".   البدء بجلسة واحدة قصيرة لهدف واحد فقط، مثل: \"اليوم نتعلم إجراء مكالمة فيديو واحدة\".<br>.   استخدام لغة بسيطة وتشبيهات مألوفة (المحادثة مثل الغرفة، الإيموجي مثل تعبيرات الوجه).<br>.   كتابة خطوات التشغيل الرئيسية بخط كبير وواضح على ورقة ولصقها بجانب الجهاز.<br>.   تشجيعهم بالممارسة اليومية مع شخص مقرب (حفيد، صديق) لبناء الثقة.<br>.   ربط استخدام التطبيق بفائدة ملموسة وتفاعل عاطفي (رؤية الأحفاد، التحدث مع صديق بعيد)." },
+{ q: "كيف يمكن تخصيص إعدادات الهاتف (حجم الخط، الصوت، السطوع) لتناسب الاحتياجات الجسدية لكبار السن؟", src: "أخصائي تكنولوجيا مساعدة", ans: ".   تكبير حجم الخط إلى أقصى درجة في إعدادات النظام وفي التطبيقات الرئيسية (الرسائل، الهاتف).<br>.   تفعيل \"عكس الألوان\" أو \"التباين العالي\" لتسهيل القراءة.<br>.   رفع مستوى الصوت الأساسي وتفعيل وضع \"المكبر\" للمكالمات.<br>.   تفعيل خاصية \"القارئ النصي\" (Text-to-Speech) ليقرأ الشاشة بصوت عالٍ.<br>.   إطالة مدة تأمين الشاشة لمنع إغلاقها السريع أثناء القراءة." },
+{ q: "ما هي مخاطر تصديق ونشر الشائعات والأخبار الطبية المزيفة التي تصلهم عبر المجموعات؟", src: "أخصائي إعلام رقمي", ans: ".   تعريض صحتهم للخطر باتباع علاجات وهمية أو التخلي عن أدوية موصوفة.<br>.   التسبب في حالة من الهلع والقلق غير المبرر حول صحتهم أو صحة أحبائهم.<br>.   نشر معلومات خاطئة تضر بالآخرين وتضر بالثقة في المصادر الطبية الحقيقية.<br>.   تحويل المجموعات العائلية من وسيلة للتواصل إلى بيئة لنشر الخوف والتضليل.<br>.   الإضرار بسمعتهم لدى الآخرين بسبب نشرهم لمعلومات يسهل كشف زيفها." },
+{ q: "كيف يمكن للتكنولوجيا المساعدة في تذكير كبار السن بمواعيد الأدوية والفحوصات الدورية بدقة؟", src: "خبير رعاية رقمية", ans: ".   استخدام تطبيقات \"منبه الدواء\" المخصصة (مثل Medisafe) التي تصدر إنذارات صوتية وبصرية قوية.<br>.   برمجة المنبه اليومي الأساسي في الهاتف بأسماء الأدوية وأوقاتها.<br>.   استخدام المساعدات الصوتية (مثل Google Assistant، Siri) لتذكيرهم صوتياً كل يوم.<br>.   وضع تقويم عائلي مشترك (Google Calendar) وتسجيل مواعيد الفحوصات ليتم تذكيرهم ومتابعتهم من قبل العائلة.<br>.   استخدام أقراص تنظيم الأدوية الذكية التي ترسل تنبيهاً للهاتف في حال نسيان الجرعة." },
+{ q: "كيف نتصرف في حالة إدمان كبير السن على متابعة الأخبار السياسية أو المحتوى المحبط رقمياً؟", src: "أخصائي نفسي لكبار السن", ans: ".   التعاطف أولاً وفهم أن هذا السلوك قد ينبع من شعور بالفراغ أو الرغبة في الانشغال.<br>.   عدم المنع المباشر، بل تقنين واستبدال: تحديد أوقات محددة قصيرة للأخبار.<br>.   تقديم بدائل جذابة ومفيدة تشغل وقته (قنوات يوتيوب تعليمية، أفلام وثائقية، ألعاب ذهنية).<br>.   تشجيعه على الانخراط في أنشطة غير رقمية (هوايات قديمة، نزهات، زيارات اجتماعية).<br>.   مشاركته في مشاهدة محتوى إيجابي أو مضحك لتحويل اتجاه انتباهه تدريجياً." },
+{ q: "ما هي أهمية ميزة \"تتبع الموقع\" (GPS) في حماية كبار السن الذين يعانون من مشاكل في الذاكرة؟", src: "خبير تقنيات السلامة", ans: ".   تمكين أفراد العائلة من تحديد مكانهم بسرعة في حال ضياعهم أو خروجهم دون علم.<br>.   توفير طمأنينة نفسية للكبير السن وأهله عند خروجه للتنزه وحده.<br>.   السماح له بالاستقلالية والحركة مع وجود شبكة أمان في حالات الطوارئ.<br>.   تسهيل مهمة فرق البحث والإنقاذ في حالة عدم قدرته على وصف مكانه.<br>.   يمكن ربطها بمنبه على هاتف القريب إذا غادر الشخص منطقة آمنة محددة مسبقاً (Geofencing)." },
+{ q: "كيف نحمي خصوصية كبار السن من تطبيقات جمع البيانات التي قد تستغل قلة خبرتهم التقنية؟", src: "خبير أمن سيبراني", ans: ".   مساعدتهم على مراجعة أذونات التطبيقات وإلغاء ما هو غير ضروري (مثل الوصول للصور، جهات الاتصال).<br>.   تنزيل التطبيقات لهم فقط من المتاجر الرسمية (Google Play، App Store).<br>.   تحذيرهم من النقر على الإعلانات المنبثقة أو روابط \"الفوز بجوائز\" داخل التطبيقات.<br>.   تثبيت برنامج مكافحة فيروسات موثوق على هواتفهم.<br>.   تعليمهم عدم تسجيل الدخول بحساباتهم الشخصية على تطبيقات أو مواقع تبدو مشبوهة." },
+{ q: "ما هو دور الألعاب الذهنية الإلكترونية في تنشيط ذاكرة كبار السن والوقاية من أمراض الشيخوخة؟", src: "أخصائي تأهيل معرفي", ans: ".   تحفيز الوظائف الإدراكية مثل الذاكرة قصيرة المدى، والانتباه، والسرعة في معالجة المعلومات.<br>.   تأخير ظهور أعراض التدهور المعرفي المعتدل من خلال \"تمرين\" الدماغ بانتظام.<br>.   توفير شعور بالإنجاز والتحدي الإيجابي، مما يعزز الصحة النفسية.<br>.   بعض الألعاب مصممة خصيصاً للوقاية من الأمراض مثل الزهايمر تحت إشراف طبي.<br>.   يجب أن تكون جزءاً من روتين يومي متوازن وليست بديلاً عن التفاعل الاجتماعي الحقيقي والنشاط البدني." },
+{ q: "كيف يمكن تدريب كبار السن على إجراء المعاملات الحكومية والبنكية البسيطة من المنزل لتوفير عناء التنقل؟", src: "مدرب خدمات رقمية", ans: ".   البدء بتطبيق واحد موثوق ومركزي (مثل تطبيق \"أبشر\" في السعودية أو نظيره في الدول العربية).<br>.   تسجيل الدخول لهم وكتابة بياناتهم وحفظها بشكل آمن باستخدام مدير كلمات المرور.<br>.   تسجيل فيديو تعليمي قصير على هاتفهم لخطوات المعاملة المتكررة (كدفع فاتورة).<br>.   التدريب على خطوتين أساسيتين: البحث في التطبيق، وطريقة الدفع الإلكتروني الآمن.<br>.   التأكيد على عدم استخدام هذه الخدمات على شبكات الواي فاي العامة، والتحقق دائماً من عنوان الموقع (https)." },
+{ q: "كيف نحول \"اليوتيوب\" إلى مدرسة تعليمية لكبير السن لممارسة هوايات مؤجلة مثل الطبخ أو الحرف؟", src: "خبير تعليم رقمي لكبار السن", ans: ".   مساعدته في إنشاء قائمة تشغيل (Playlist) تحتوي على قنوات تعليمية موثوقة وذات خطوات واضحة.<br>.   اختيار مقاطع فيديو قصيرة أولاً، بلغة عربية فصيحة أو لهجة مفهومة، ذات إخراج واضح وهادئ.<br>.   ربط الهاتف أو الجهاز اللوحي بشاشة التلفزيون لمشاهدة أكثر وضوحاً وراحة.<br>.   تشجيعه على متابعة القناة المفضلة والاشتراك بها للحصول على تنبيهات بالفيديوهات الجديدة.<br>.   تحويل التعلم إلى نشاط اجتماعي من خلال ممارسة الهواية (كطبخ وصفة) مع أحفاده أو أصدقائه." },
+{ q: "ما هي أفضل الوسائل التقنية لمراقبة الحالة الصحية لكبير السن (مثل ساعات قياس النبض) عن بُعد؟", src: "خبير رعاية صحية رقمية", ans: ".   الساعات الذكية (Smartwatches) التي تقيس معدل ضربات القلب، النوم، وربما رسم القلب (ECG).<br>.   أجهزة قياس ضغط الدم والجلوكوز الذكية التي تخزن البيانات وتزامنها مع تطبيق الهاتف.<br>.   أجهزة الاستشعار المنزلية غير التطفلية (مثل أجهزة استشعار الحركة في الغرفة، أجهزة كشف السقوط).<br>.   تطبيقات التواصل المرئي للمتابعة البصرية المنتظمة للحالة العامة.<br>.   أنظمة المراقبة عن بُعد التي تسمح لمقدم الرعاية أو الطبيب بمشاهدة البيانات الحيوية على لوحة تحكم مركزية." },
+{ q: "كيف نساعد كبار السن على توثيق تاريخهم وذكرياتهم بالصوت والصورة للأجيال القادمة؟", src: "خبير تراث رقمي", ans: ".   تحفيزهم على سرد القصص وتسجيلها بصوتهم باستخدام تطبيق التسجيل في الهاتف.<br>.   مسح الصور القديمة ضوئياً وتخزينها في ألبوم رقمي مشترك (مثل Google Photos) وإضافة تعليقات توضيحية بصورتهم.<br>.   تشجيعهم على كتابة مذكرات بسيطة أو الإجابة على أسئلة محددة (\"أجمل ذكريات الطفولة\").<br>.   تصوير فيديوهات قصيرة أثناء حديثهم عن حياتهم، أو عن الأماكن والأشياء المهمة لهم.<br>.   إنشاء شجرة عائلية رقمية باستخدام مواقع متخصصة وجمع المعلومات والصور معاً." },
+{ q: "كيف يمكن للمنصات الرقمية أن تعيد دمج كبار السن في المجتمع من خلال مجموعات الاهتمامات المشتركة؟", src: "أخصائي اجتماع رقمي", ans: ".   مساعدتهم في الانضمام لمجموعات فيسبوك مغلقة وهادئة تتعلق بهواياتهم (حديقة، شعر، تاريخ).<br>.   تشجيعهم على المشاركة في النقاشات أو حتى مجرد القراءة أولاً لمشاهدة التفاعل الإيجابي.<br>.   تعريفهم بمنصات التعلم الإلكتروني التي تحتوي على دورات للمبتدئين في مواضيع مختلفة.<br>.   البحث عن نوادي كتب أو أفلام افتراضية يمكنهم الانضمام إليها ومناقشة المحتوى مع آخرين.<br>.   توجيههم للمشاركة في المجموعات الخاصة بمناطق سكنهم القديمة لاستعادة الروابط الاجتماعية." },
+{ q: "كيف ننمي لدى كبير السن مهارة \"التأكد من المصدر\" قبل إعادة توجيه الرسائل والروابط؟", src: "خبير محو أمية رقمية", ans: ".   تعليمهم علامة التحذير الأولى: \"إذا كانت الرسالة تطلب نشرها أو توعيدك أو إعطاءك وعوداً كبيرة، فتوقف\".<br>.   تبسيط خطوة التحقق: \"ابحث عن اسم الخبر في جوجل قبل نشرها\".<br>.   توجيههم للاكتفاء بمصادر قليلة وموثوقة ومعروفة (كالصفحات الرسمية للوزارات أو القنوات الإخبارية المعتمدة).<br>.   حثهم على استشارة شخص أصغر سناً (حفيد، ابن) قبل نشر أي خبر صادم أو طبي.<br>.   تعزيز ثقتهم بأن التريث والتحقق ليس نقصاً، بل علامة حكمة ومسؤولية." }
+],
+security: [
+{ q: "ماذا أفعل في اللحظات الأولى عند اكتشافي أنني أتعرض لعملية ابتزاز إلكتروني؟", src: "خبير أمن سيبراني", ans: ".   <strong>أهم قاعدة: لا تستسلم ولا تدفع أي مال.</strong> الدفع يشجع المبتز ويزيد من مطالبه.<br>.   <strong>لا تحذف الأدلة.</strong> احتفظ بجميع المحادثات، والرسائل، والصور، والتسجيلات.<br>.   <strong>اقطع التواصل فوراً.</strong> لا ترد على التهديدات أو تتواصل مع المبتز.<br>.   <strong>لا تتفاعل عاطفياً.</strong> الهدف هو إخافتك لاتخاذ قرارات خاطئة، حافظ على هدوئك قدر الإمكان.<br>.   <strong>ابحث عن الدعم فوراً.</strong> أخبر شخصاً تثق به (صديق، قريب) واتصل بالسلطات المختصة." },
+{ q: "كيف أميز بين البريد الإلكتروني الحقيقي ورسائل \"التصيد الاحتيالي\" التي تهدف لسرقة بياناتي؟", src: "خبير أمن رقمي", ans: ".   <strong>افحص عنوان المرسل بعناية:</strong> ابحث عن أخطاء إملائية طفيفة أو اختلافات في اسم الموقع (مثال: amaz0n.com بدلاً من amazon.com).<br>.   <strong>احذر الرسائل العاجلة والمهددة:</strong> التي تخبرك بأن حسابك سيُغلق أو أن هناك مشكلة أمنية وتطلب بياناتك فوراً.<br>.   <strong>لا تضغط على الروابط:</strong> ضع مؤشر الفأرة فوق الرابط (دون النقر) لرؤية عنوان URL الحقيقي، وإذا شككت، ادخل للموقع مباشرة عبر متصفحك.<br>.   <strong>لن تطلب منك المؤسسة الرسمية</strong> كلمة المرور أو الرقم السري للبطاقة عبر البريد.<br>.   <strong>الأخطاء اللغوية:</strong> غالباً تحتوي رسائل التصيد على أخطاء في اللغة أو التنسيق." },
+{ q: "ما هي الخطوات القانونية الرسمية للإبلاغ عن جريمة إلكترونية في بلدي؟", src: "مستشار قانوني رقمي", ans: ".   <strong>تجميع الأدلة:</strong> حفظ صور الشاشة، وتسجيل أسماء الحسابات، وأرقام الهواتف، والبريد الإلكتروني المستخدم في الابتزاز.<br>.   <strong>التوجه للجهة المختصة:</strong> زيارة موقع <strong>النيابة العامة</strong> أو <strong>وزارة الداخلية</strong> في بلدك للوصول لقسم \"الجرائم الإلكترونية\".<br>.   <strong>تقديم البلاغ رقمياً أو شخصياً:</strong> معظم الدول توفر منصة إلكترونية لتقديم البلاغات (مثل \"أمن\" في السعودية)، أو يمكن التوجه لأقرب مركز شرطة.<br>.   <strong>تسليم الأدلة:</strong> تقديم جميع الأدلة التي جمعتها للسلطات.<br>.   <strong>المتابعة:</strong> الحصول على رقم البلاغ ومتابعته، والاستجابة لأي طلبات إضافية من الجهات المختصة." },
+{ q: "كيف أحمي حساباتي من الاختراق باستخدام ميزة \"المصادقة الثنائية\" (2FA)?", src: "خبير أمن معلومات", ans: ".   <strong>تفعيلها على جميع الحسابات الحيوية:</strong> البريد الإلكتروني، والحسابات البنكية، وتطبيقات التواصل، ووسائل التواصل الاجتماعي.<br>.   <strong>استخدام تطبيق المصادقة:</strong> مثل (Google Authenticator، Microsoft Authenticator) بدلاً من الاعتماد على الرسائل النصية (SMS) فقط.<br>.   <strong>حفظ رموز الاستعادة:</strong> قم بحفظ رموز الاستعادة (Backup Codes) التي تقدمها المنصات في مكان آمن، فهي مفتاحك الوحيد إذا فقدت هاتفك.<br>.   <strong>استخدام مفتاح أمني:</strong> للأهمية القصوى، يمكن استخدام مفتاح أمني مادي (مثل YubiKey) للمصادقة.<br>.   <strong>لا تشارك رموز المصادقة:</strong> هذه الرموز هي كلمة المرور المؤقتة الخاصة بك، لا تطلبها منك أي مؤسسة رسمية أبداً." },
+{ q: "هل يمكن للمبتز أن ينفذ تهديده فعلياً إذا قمت بحظره (Block) مباشرة؟", src: "خبير جرائم إلكترونية", ans: ".   <strong>نعم، قد يحاول.</strong> الحظر يمنع التواصل المباشر، لكن لا يمحو المعلومات التي بحوزته.<br>.   <strong>الخطر الأكبر هو قبل الحظر:</strong> إذا كان قد حصل على بيانات أو صور حساسة بالفعل، فقد يستخدمها حتى بعد الحظر.<br>.   <strong>الحظر خطوة ضرورية لكنها ليست كافية:</strong> يجب أن تقترن بالإبلاغ الفوري وجمع الأدلة وعدم الاستسلام للتهديد.<br>.   <strong>التوثيق قبل الحظر:</strong> تأكد من أخذ لقطات شاشة كاملة لكل التهديدات قبل حظر الشخص.<br>.   <strong>حذر من حسابات جديدة:</strong> قد يحاول المبتز إنشاء حسابات جديدة للتواصل مجدداً." },
+{ q: "ما هي مخاطر استخدام شبكات \"الواي فاي\" العامة في الكافيهات والمطارات على بياناتي البنكية؟", src: "خبير أمن شبكات", ans: ".   <strong>التنصت على البيانات:</strong> يمكن للمخترق المتصل بنفس الشبكة اعتراض البيانات غير المشفرة التي ترسلها.<br>.   <strong>التصيد عبر الشبكة:</strong> قد يتم توجيهك لمواقع وهمية تشبه مواقعك المفضلة لسرقة بيانات الدخول.<br>.   <strong>نقاط الوصول المزيفة:</strong> قد ينشئ مخترق شبكة واي فاي تحمل اسماً مشابهاً للشبكة الحقيقية لخداع الضحايا.<br>.   <strong>القاعدة الذهبية:</strong> <strong>لا تقم أبداً بإجراء معاملات بنكية أو إدخال كلمات مرور مهمة أثناء الاتصال بشبكة واي فاي عامة.</strong><br>.   <strong>استخدم VPN موثوقاً:</strong> إذا اضطررت للاتصال، استخدم شبكة افتراضية خاصة (VPN) مشفرة لتأمين اتصالك." },
+{ q: "كيف أكتشف وجود برامج تجسس أو تطبيقات مراقبة مخفية على هاتفي الشخصي؟", src: "خبير أمن أجهزة", ans: ".   <strong>استهلاك غير طبيعي للبطارية والبيانات:</strong> قد تشير التطبيقات الخبيثة إلى نشاط خفي مكثف.<br>.   <strong>أداء الجهاز البطيء:</strong> أو ارتفاع درجة حرارته دون سبب واضح.<br>.   <strong>ظهور تطبيقات غريبة:</strong> افحص قائمة التطبيقات بحثاً عن تطبيقات لا تتذكر تحميلها.<br>.   <strong>سلوك غريب:</strong> مثل إضاءة الشاشة من تلقاء نفسها، أو سماع أصوات غريبة أثناء المكالمات.<br>.   <strong>الحل:</strong> تشغيل فحص بواسطة برنامج مكافحة فيروسات موثوق، وإذا استمر الشك، إعادة ضبط المصنع بعد نسخ بياناتك المهمة." },
+{ q: "ماذا أفعل إذا تم اختراق حسابي على واتساب أو فيسبوك وإرسال رسائل مسيئة باسمي؟", src: "خبير استعادة الحسابات", ans: ".   <strong>حاول استعادة الحساب فوراً:</strong> استخدم خيار \"نسيت كلمة المرور\" على المنصة للبدء بعملية الاستعادة عبر البريد الإلكتروني أو رقم الهاتف.<br>.   <strong>أبلغ جميع جهات اتصالك:</strong> حذر أصدقاءك وعائلتك عبر أي وسيلة أخرى متاحة (مكالمة، منصة أخرى) أن حسابك تم اختراقه ولا تفتح أي روابط يرسلها.<br>.   <strong>أبلغ المنصة:</strong> استخدم نماذج الإبلاغ عن الحساب المخترق الموجودة في صفحات المساعدة الخاصة بـ فيسبوك أو واتساب.<br>.   <strong>غير جميع كلمات المرور:</strong> خاصة كلمة مرور البريد الإلكتروني المرتبط بالحساب المخترق.<br>.   <strong>افحص جهازك:</strong> قد يكون الاختراق بسبب وجود برمجية خبيثة على هاتفك." },
+{ q: "كيف أحمي صوري وملفاتي الخاصة من الوصول إليها في حال ضياع الهاتف أو سرقته؟", src: "خبير أمن بيانات شخصية", ans: ".   <strong>التشفير والتأمين بكلمة مرور:</strong> تأكد من تفعيل قفل الشاشة بقوة (رقم سري معقد، أو بصمة، أو تعرف الوجه).<br>.   <strong>النسخ الاحتياطي في السحابة:</strong> قم برفع ملفاتك المهمة إلى خدمة سحابية موثوقة (مثل iCloud، Google Photos) وحذفها من ذاكرة الهاتف إذا كانت حساسة جداً.<br>.   <strong>استخدام تطبيقات الخزنة الآمنة:</strong> هناك تطبيقات توفر مساحة مشفرة بكلمة مرور منفصلة داخل هاتفك.<br>.   <strong>تفعيل خاصية \"ابحث عن هاتفي\":</strong> مثل (Find My iPhone) أو (Find My Device) على أندرويد، لمسح البيانات عن بُعد في حال الضياع.<br>.   <strong>تجنب حفظ الصور الحساسة:</strong> الفكرة الأكثر أماناً هي عدم التقاط أو حفظ أي شيء لا تريد أن يراه أحد على هاتفك أساساً." },
+{ q: "ما هو الفرق بين التحرش الإلكتروني والابتزاز، وكيف يضع القانون حداً لكل منهما؟", src: "خبير قانون رقمي", ans: ".   <strong>التحرش:</strong> سلوك متكرر يهدف للإزعاج، والإهانة، والتسبب بالقلق النفسي (مثل الرسائل المسيئة، المطاردة).<br>.   <strong>الابتزاز:</strong> تهديد بنشر معلومات أو صور أو أفعال لإجبار الضحية على فعل شيء (كدفع المال، أو تقديم خدمات) مقابل السكوت.<br>.   <strong>الابتزاز جريمة أشد:</strong> لأنه يجمع بين التهديد والإكراه للحصول على منفعة.<br>.   <strong>كيف يواجههما القانون:</strong> يعاقب القانون على كليهما، ولكن عقوبة الابتزاز أقسى عادةً. يجب الإبلاغ فوراً في الحالتين مع تقديم الأدلة الكاملة." },
+{ q: "كيف أتعامل مع روابط \"الجوائز الوهمية\" ووظائف الربح السريع التي تستهدف سرقة الهوية؟", src: "خبير مكافحة الاحتيال", ans: ".   <strong>تذكر قاعدة أساسية:</strong> \"لا يوجد غداء مجاني\". عروض الثراء السريع هي فخ بنسبة 99.9%.<br>.   <strong>لا تضغط على الروابط أبداً:</strong> حتى بدعوى الفضول أو \"لنرى ماذا سيفعلون\".<br>.   <strong>لا تشارك أي معلومات شخصية:</strong> لا تعطي رقم هاتفك، أو بريدك الإلكتروني، أو صور وثائقك لهذه العروض.<br>.   <strong>ابحث عن اسم العرض:</strong> اكتب اسم الشركة أو العرض في محرك البحث مع كلمة \"احتيال\" لترى تجارب الآخرين.<br>.   <strong>بلغ عن الإعلان:</strong> معظم المنصات (فيسبوك، انستقرام) تتيح خاصية الإبلاغ عن الإعلان أو المنشور كاحتيال." },
+{ q: "ما هي الطريقة الآمنة لمسح كافة البيانات من الهاتف قبل بيعه لضمان عدم استرجاعها؟", src: "خبير أمن أجهزة", ans: ".   <strong>قم بنسخ احتياطي كامل</strong> لبياناتك المهمة على كمبيوتر أو خدمة سحابية.<br>.   <strong>قم بتسجيل الخروج من جميع الحسابات</strong> المرتبطة بالجهاز (Google، Apple، Samsung، التطبيقات).<br>.   <strong>قم بإجراء \"إعادة ضبط المصنع\" (Factory Reset)</strong> من خلال إعدادات الجهاز.<br>.   <strong>بعد الإعادة، لا تكتفِ بذلك:</strong> املأ الذاكرة ببيانات عشوائية غير مهمة (مثل تسجيل فيديو طويل) ثم أعد ضبط المصنع مرة أخرى. هذا يجعل استعادة البيانات القديمة أصعب.<br>.   <strong>أخرج بطاقة SIM وبطاقة الذاكرة الخارجية (إذا وجدت)</strong> واحتفظ بها." },
+{ q: "كيف أحمي أطفالي من \"المستدرجين\" (Online Grooming) في غرف الدردشة والألعاب؟", src: "خبير حماية الطفل الرقمي", ans: ".   <strong>التواصل المفتوح:</strong> تحدث مع أطفالك عن مخاطر التحدث مع الغرباء على الإنترنت، دون تخويف.<br>.   <strong>تعيين إعدادات الخصوصية:</strong> تأكد من ضبط خصوصية حساباتهم على \"خاص\" ومراقبة طلبات الصداقة.<br>.   <strong>المشاركة والمراقبة:</strong> اجعل أجهزة الكمبيوتر والألعاب في مكان مشترك، واطلع بين الحين والآخر على نشاطهم.<br>.   <strong>علمهم علامات الخطر:</strong> مثل من يطلب معلومات شخصية، أو صوراً، أو يريد الانتقال للتحدث على تطبيق آخر، أو يطلب اللقاء.<br>.   <strong>شجعهم على الإخبار:</strong> أكد لهم أن بإمكانهم إخبارك بأي شيء يزعجهم دون عقاب، وأنك ستحميهم." },
+{ q: "هل تصفح المواقع المشبوهة يمكن أن يصيب جهازي بفيروسات الفدية (Ransomware)?", src: "خبير أمن برمجيات", ans: ".   <strong>نعم، بشدة.</strong> هذه هي الطريقة الرئيسية لانتشار فيروسات الفدية.<br>.   <strong>المواقع الإباحية، ومواقع التنزيل غير القانونية، ومواقع \"الكورسات المجانية\" المقرصنة</strong> هي بيئة خصبة لهذه الهجمات.<br>.   <strong>النوافذ المنبثقة والإعلانات الخبيثة (Malvertising):</strong> مجرد النقر على إعلان زائف على موقع مشبوه يمكن أن يبدأ عملية التنزيل والتثبيت الخفي للفيروس.<br>.   <strong>الوقاية:</strong> استخدم برنامج مكافحة فيروسات قوي، واحتفظ بنسخ احتياطية منتظمة لملفاتك المهمة على جهاز منفصل، وتجنب زيارة هذه المواقع تماماً." },
+{ q: "كيف أبني \"جدار حماية\" نفسي وتقني يمنع المتسللين من استغلال ثغراتي الشخصية؟", src: "خبير أمن شامل", ans: ".   <strong>جدار الحماية النفسي:</strong><br>        -   <strong>الوعي:</strong> اعرف قيمتك ولا تستخف بمعلوماتك الشخصية.<br>        -   <strong>التشكك الدائم:</strong> لا تثق بسهولة في العروض أو الأشخاص عبر الإنترنت.<br>        -   <strong>الخصوصية:</strong> لا تشارك تفاصيل حياتك اليومية أو مشاكلك الشخصية مع عامة الناس.<br>.   <strong>جدار الحماية التقني:</strong><br>        -   <strong>كلمات مرور قوية وفريدة</strong> لكل حساب، باستخدام مدير كلمات المرور.<br>        -   <strong>تفعيل المصادقة الثنائية (2FA)</strong> على جميع الحسابات المهمة.<br>        -   <strong>تحديث جميع البرامج وأنظمة التشغيل</strong> باستمرار لإغلاق الثغرات الأمنية.<br>        -   <strong>استخدام برامج مكافحة فيروسات</strong> موثوقة وتشغيل فحوصات دورية." }
+]
+};
+function openProgram(type) {
+const container = document.getElementById('questionsContainer');
+container.innerHTML = "";
+const data = programsData[type] || [];
+const programNames = {
+'child': 'الطفولة الرقمية',
+'teens': 'عالم المراهقين',
+'youth': 'الإنتاج والشباب',
+'marriage': 'الزواج السعيد',
+'seniors': 'كبار السن',
+'security': 'الأمان والخصوصية'
+};
+document.getElementById('modalTitle').innerText = programNames[type];
+if (Array.isArray(data)) {
+data.forEach((item, idx) => {
+const div = document.createElement('div');
+div.className = "q-item";
+div.innerText = (idx+1) + ". " + item.q;
+div.onclick = () => showAnswer(item);
+container.appendChild(div);
+});
+}
+document.getElementById('qModal').style.display = 'flex';
+}
+function showAnswer(item) {
+const content = document.getElementById('answerContent');
+const title = document.getElementById('answerTitle');
+title.innerText = item.q;
+content.innerHTML = `
+<span class="ans-src">${item.src}</span>
+<div class="ans-text">${item.ans}</div>
+`;
+document.getElementById('aModal').style.display = 'flex';
+}
+function closePopup(id) {
+document.getElementById(id).style.display = 'none';
+}
+function openMessagesModal() {
+document.getElementById('messages-modal').style.display = 'flex';
+}
+function closeMessagesModal() {
+document.getElementById('messages-modal').style.display = 'none';
+}
+function openReferenceModal(id) {
+document.getElementById(id).style.display = 'block';
+}
+function closeReferenceModal(id) {
+document.getElementById(id).style.display = 'none';
+}
+window.onscroll = function() {
+const btn = document.getElementById('btnUp');
+if(window.scrollY > 300) btn.style.display = 'flex';
+else btn.style.display = 'none';
+};
+</script>
+
+<footer style="background: rgba(0,0,0,0.9); border-top: 2px solid var(--gold); padding: 20px; text-align: center; margin-top: 40px;">
+<div style="color: var(--gold); font-size: 1.1rem; font-weight: bold; padding: 10px 0;">
+© 2025 قصص الحضارات CiviStories - جميع الحقوق محفوظة
+</div>
+<div style="color: var(--gold); font-size: 0.9rem; margin-top: 5px;">
+مبادرة فردية غير ربحية صرخة رقمية لحماية الإنسانية
+</div>
+</footer>
+
+</body>
+</html>
