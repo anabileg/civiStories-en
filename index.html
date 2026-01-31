@@ -1,2645 +1,1127 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>CiviStories | Digital Illusion Tsunami</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- ربط خطوط عربية -->
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
---gold: #d4af37; --white: #ffffff; --red-news: #b30000; --red-num: #ff0000;
---yt: #FF0000; --fb: #1877F2; --tw: #ffffff; --ig: #E4405F; --tk: #ffffff; --pr: #BD081C; --in: #0077B5;
+--gold: #d4af37; --white: #ffffff;
+--red-news: #b30000; --red-num: #ff0000;
+--yt: #FF0000; --fb: #1877F2; --tw:
+#ffffff; --ig: #E4405F; --tk: #ffffff; --pr: #BD081C; --in: #0077B5;
 --wa-color: #25D366;
 --cream-bg: #fdf9f3;
 }
-* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html { scroll-behavior: smooth; }
-body { color: var(--white); font-family: 'Tajawal', 'Cairo', sans-serif; background: #000; overflow-x: hidden; width: 100%; font-weight: bold; font-size: 1rem; }
-.section-main-title { text-align: center; color: var(--gold); font-size: 2.5rem; margin-bottom: 25px; font-weight: bold; }
-.awareness-card, .awareness-card span, #awareness-main-title { user-select: none; -webkit-user-select: none; -ms-user-select: none; outline: none; }
+* { margin: 0; padding: 0; box-sizing:
+border-box; -webkit-tap-highlight-color: transparent; }
+html {
+scroll-behavior: smooth; }
+body {
+color: var(--white); font-family: 'Tajawal', 'Cairo', sans-serif; background:
+#000; overflow-x: hidden; width: 100%; font-weight: bold; font-size: 1rem; }
+.section-main-title { text-align:
+center; color: var(--gold); font-size: 2.5rem; margin-bottom: 25px;
+font-weight: bold; }
+.awareness-card, .awareness-card span,
+#awareness-main-title { user-select: none; -webkit-user-select: none;
+-ms-user-select: none; outline: none; }
 .site-bg {
-position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-background-image: url('image_390e08.jpg'); background-position: center; background-size: cover; z-index: -1;
-animation: kenBurns 35s ease-in-out infinite alternate;
+position:
+fixed; top: 0; left: 0; width: 100%; height: 100%;
+background-image:
+url('image_390e08.jpg'); background-position: center; background-size: cover;
+z-index: -1;
+animation:
+kenBurns 35s ease-in-out infinite alternate;
 }
-@keyframes kenBurns { 0% { transform: scale(1); filter: brightness(0.35);} 100% { transform: scale(1.18); filter: brightness(0.55);} }
+@keyframes kenBurns { 0% { transform:
+scale(1); filter: brightness(0.35);} 100% { transform:
+scale(1.18); filter: brightness(0.55);} }
 .navbar {
-min-height: 90px; background: rgba(0,0,0,0.95); backdrop-filter: blur(15px);
-position: fixed; top: 0; width: 100%; z-index: 10001; border-bottom: 2px solid var(--gold);
-display: flex; align-items: center; justify-content: center;
+min-height:
+90px; background: rgba(0,0,0,0.95); backdrop-filter: blur(15px);
+position:
+fixed; top: 0; width: 100%; z-index: 10001; border-bottom: 2px solid
+var(--gold);
+display:
+flex; align-items: center; justify-content: center;
 }
-.nav-container { width: 95%; max-width: 1400px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
-.nav-right-group { display: flex; align-items: center; gap: 20px; position: relative; }
+.nav-container { width: 95%; max-width:
+1400px; display: flex; flex-direction: row; justify-content: space-between;
+align-items: center; }
+.nav-right-group { display: flex;
+align-items: center; gap: 20px; position: relative; }
 .nav-logo-img { height: 65px; }
-.social-icons { display: flex; gap: 12px; align-items: center; }
-.social-icons a { font-size: 1.2rem; transition: 0.3s; text-decoration: none; }
-.nav-links { display: flex; gap: 20px; align-items: center; }
-.nav-links a { color: var(--gold); text-decoration: none; font-weight: bold; cursor: pointer; transition: 0.3s; font-size: 1.1rem; }
+.social-icons { display: flex; gap:
+12px; align-items: center; }
+.social-icons a { font-size: 1.2rem;
+transition: 0.3s; text-decoration: none; }
+.nav-links { display: flex; gap: 20px;
+align-items: center; }
+.nav-links a { color: var(--gold);
+text-decoration: none; font-weight: bold; cursor: pointer; transition: 0.3s;
+font-size: 1.1rem; }
 .nav-links a:hover { color: #fff; }
-.ic-yt { color: var(--yt); } .ic-fb { color: var(--fb); } .ic-tw { color: var(--tw); } .ic-ig { color: var(--ig); } .ic-tk { color: var(--tk); } .ic-pr { color: var(--pr); } .ic-in { color: var(--in); }
+.ic-yt { color: var(--yt); } .ic-fb {
+color: var(--fb); } .ic-tw { color: var(--tw); } .ic-ig { color: var(--ig); }
+.ic-tk { color: var(--tk); } .ic-pr { color: var(--pr); } .ic-in { color:
+var(--in); }
 .lang-selector {
-position: relative;
-display: inline-block;
+position:
+relative;
+display:
+inline-block;
 }
 .lang-toggle-btn {
-background: none; border: none; padding: 0; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s;
+background:
+none; border: none; padding: 0; cursor: pointer; display: flex; align-items:
+center; justify-content: center; transition: 0.3s;
 }
 .lang-toggle-btn img {
-width: 40px; height: auto; border-radius: 4px; display: block; filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+width:
+40px; height: auto; border-radius: 4px; display: block; filter: drop-shadow(0 0
+5px rgba(0,0,0,0.5));
 }
 .lang-dropdown {
-position: absolute;
-top: 100%;
-right: 0;
-background: #000;
-border: 1px solid var(--gold);
-border-radius: 8px;
-z-index: 10002;
-display: none;
-min-width: 200px;
-max-height: 300px;
-overflow-y: auto;
+position:
+absolute;
+top:
+100%;
+right:
+0;
+background:
+#000;
+border:
+1px solid var(--gold);
+border-radius:
+8px;
+z-index:
+10002;
+display:
+none;
+min-width:
+200px;
+max-height:
+300px;
+overflow-y:
+auto;
 }
 .lang-dropdown.show {
-display: block;
+display:
+block;
 }
 .lang-option {
-display: flex;
-align-items: center;
-gap: 10px;
-padding: 10px 15px;
-cursor: pointer;
-color: var(--white);
-text-decoration: none;
+display:
+flex;
+align-items:
+center;
+gap:
+10px;
+padding:
+10px 15px;
+cursor:
+pointer;
+color:
+var(--white);
+text-decoration:
+none;
 }
 .lang-option:hover {
-background: rgba(212, 175, 55, 0.2);
-}
-
-.lang-option.arabic-flag img,
-#currentLangFlag {
-filter: grayscale(0%) !important;
+background:
+rgba(212, 175,
+55, 0.2);
 }
 .lang-option img {
-width: 24px;
-height: 16px;
-object-fit: contain;
-border-radius: 2px;
+width:
+24px;
+height:
+16px;
+object-fit:
+contain;
+border-radius:
+2px;
 }
-.news-ticker { background: var(--red-news); color: white; height: 45px; position: fixed; top: 90px; width: 100%; z-index: 1000; display: flex; align-items: center; overflow: hidden; }
-.ticker-track { display: flex; white-space: nowrap; width: max-content; }
-.ticker-track span { padding: 0 50px; font-weight: bold; font-size: 1.1rem; }
-.animate-news { animation: marqueeNews 150s linear infinite; }
-@keyframes marqueeNews { 0% { transform: translateX(0);} 100% { transform: translateX(-50%);} }
-[dir="rtl"] .animate-news { animation: marqueeNewsRtl 3000s linear infinite; }
-@keyframes marqueeNewsRtl { 0% { transform: translateX(0);} 100% { transform: translateX(50%);} }
-.hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 160px 5% 60px; }
-.main-alert-title { text-align: center; margin-bottom: 40px; font-size: 2.2rem; line-height: 1.4; color: var(--white); max-width: 100%; }
-.main-alert-title span.highlight { color: var(--red-num); font-weight: 900; }
-.main-alert-title span.gold-text { color: var(--gold); font-weight: 900; }
-.hero-container { display: flex; gap: 40px; width: 100%; align-items: stretch; justify-content: center; }
-.book-static { flex: 0 0 320px; display: flex; flex-direction: column; justify-content: space-between; height: 450px; }
-.book-wrapper { height: calc(100% - 70px); display: flex; align-items: center; justify-content: center; }
-.book-wrapper img { max-height: 100%; width: auto; border-radius: 15px; border: 2px solid var(--gold); box-shadow: 0 10px 30px rgba(212,175,55,0.3); animation: bookFloat 3s ease-in-out infinite; }
-@keyframes bookFloat { 0%, 100% { transform: translateY(0) rotate(0);} 50% { transform: translateY(-15px) rotate(2deg); } }
-.video-container-box { flex: 1; max-width: 800px; height: 450px; border: 2px solid var(--gold); border-radius: 20px; overflow: hidden; box-shadow: 0 0 25px rgba(212,175,55,0.2);}
-.video-container-box iframe { width: 100%; height: 100%; border: none; }
-.awareness-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
-.awareness-card { background: rgba(0,0,0,0.6); border: 1px solid var(--gold); border-radius: 20px; padding: 25px 10px; cursor: pointer; transition: 0.3s; text-align: center; position: relative; }
-.awareness-card:hover { background: rgba(212, 175, 55, 0.1); transform: translateY(-5px); }
-.awareness-card i { font-size: 2.2rem; margin-bottom: 12px; display: block; color: var(--gold); }
-.awareness-card span { font-weight: bold; font-size: 1.1rem; display: block; line-height: 1.3; }
-.carousel-wide { width: 90%; max-width: 1200px; margin: 40px auto; height: 350px; border: 2px solid var(--gold); border-radius: 25px; position: relative; overflow: hidden; background: #000; }
-.track { display: flex; width: max-content; }
-.track img { height: 350px; width: 300px; object-fit: cover; cursor: zoom-in; border-right: 2px solid var(--gold); filter: grayscale(100%); transition: filter 0.3s; flex-shrink: 0; }
+.news-ticker { background:
+var(--red-news); color: white; height: 45px; position: fixed; top: 90px; width:
+100%; z-index: 1000; display: flex; align-items: center; overflow: hidden; }
+.ticker-track { display: flex;
+white-space: nowrap; width: max-content; }
+.ticker-track span { padding: 0 50px;
+font-weight: bold; font-size: 1.1rem; }
+.animate-news { animation: marqueeNews
+150s linear infinite; }
+@keyframes marqueeNews { 0% { transform:
+translateX(0);} 100% { transform: translateX(-50%);} }
+.hero { min-height: 100vh; display:
+flex; flex-direction: column; align-items: center; padding: 160px 5% 60px; }
+.main-alert-title { text-align: center;
+margin-bottom: 40px; font-size: 2.2rem; line-height: 1.4; color: var(--white);
+max-width: 100%; }
+.main-alert-title span.highlight {
+color: var(--red-num); font-weight: 900; }
+.main-alert-title span.gold-text {
+color: var(--gold); font-weight: 900; }
+.hero-container { display: flex; gap:
+40px; width: 100%; align-items: stretch; justify-content: center; }
+.book-static { flex: 0 0 320px; display:
+flex; flex-direction: column; justify-content: space-between; height: 450px; }
+.book-wrapper { height: calc(100% -
+70px); display: flex; align-items: center; justify-content: center; }
+.book-wrapper img { max-height: 100%;
+width: auto; border-radius: 15px; border: 2px solid var(--gold); box-shadow: 0
+10px 30px rgba(212,175,55,0.3); animation: bookFloat 3s ease-in-out infinite; }
+@keyframes bookFloat { 0%, 100% {
+transform: translateY(0) rotate(0);} 50% { transform:
+translateY(-15px) rotate(2deg); } }
+.video-container-box { flex: 1;
+max-width: 800px; height: 450px; border: 2px solid var(--gold); border-radius:
+20px; overflow: hidden; box-shadow: 0 0 25px rgba(212,175,55,0.2);}
+.video-container-box iframe { width:
+100%; height: 100%; border: none; }
+.awareness-grid { display: grid;
+grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
+.awareness-card { background:
+rgba(0,0,0,0.6); border: 1px solid var(--gold); border-radius: 20px; padding:
+25px 10px; cursor: pointer; transition: 0.3s; text-align: center; position:
+relative; }
+.awareness-card:hover { background:
+rgba(212, 175, 55, 0.1); transform: translateY(-5px); }
+.awareness-card i { font-size: 2.2rem;
+margin-bottom: 12px; display: block; color: var(--gold); }
+.awareness-card span { font-weight:
+bold; font-size: 1.1rem; display: block; line-height: 1.3; }
+.carousel-wide { width: 90%; max-width:
+1200px; margin: 40px auto; height: 350px; border: 2px solid var(--gold);
+border-radius: 25px; position: relative; overflow: hidden; background: #000; }
+.track { display: flex; width:
+max-content; }
+.track img { height: 350px; width:
+300px; object-fit: cover; cursor: zoom-in; border-right: 2px solid var(--gold);
+filter: grayscale(100%); transition: filter 0.3s; flex-shrink: 0; }
 .track img:hover { filter: grayscale(0%);}
-.animate-media { animation: mediaScroll 250s linear infinite; }
-@keyframes mediaScroll { 0% { transform: translateX(0);} 100% { transform: translateX(-50%);} }
-[dir="rtl"] .animate-media { animation: mediaScrollRtl 250s linear infinite; }
-@keyframes mediaScrollRtl { 0% { transform: translateX(0);} 100% { transform: translateX(50%);} }
-.lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display: none; justify-content: center; align-items: center; z-index: 20000; }
-.lightbox-container { position: relative; max-width: 90%; max-height: 90vh; }
-.lightbox img { max-width: 100%; max-height: 90vh; border: 3px solid var(--gold); border-radius: 10px; }
-.close-lightbox { position: absolute; top: -20px; left: -20px; color: #ff0000; font-size: 30px; cursor: pointer; background: #000; border: 2px solid #ff0000; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; z-index: 20001; }
-.vision-section, .glass-box { text-align: center; border: 4px solid var(--gold); border-radius: 40px; padding: 60px 5%; margin: 40px 0; background-image: url('image_3a7328.jpg'); background-size: cover; background-position: center; position: relative; overflow: hidden; }
-.vision-section::before, .glass-box::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 0; }
-.vision-section h2, .vision-section p, .glass-box h2, .glass-box .grid, .glass-box .awareness-grid { position: relative; z-index: 1; }
+.animate-media { animation: mediaScroll
+250s linear infinite; }
+@keyframes mediaScroll { 0% { transform:
+translateX(0);} 100% { transform: translateX(-50%);} }
+.lightbox { position: fixed; top: 0;
+left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); display:
+none; justify-content: center; align-items: center; z-index: 20000; }
+.lightbox-container { position:
+relative; max-width: 90%; max-height: 90vh; }
+.lightbox img { max-width: 100%;
+max-height: 90vh; border: 3px solid var(--gold); border-radius: 10px; }
+.close-lightbox { position: absolute;
+top: -20px; left: -20px; color: #ff0000; font-size: 30px; cursor: pointer;
+background: #000; border: 2px solid #ff0000; border-radius: 50%; width: 45px;
+height: 45px; display: flex; align-items: center; justify-content: center;
+z-index: 20001; }
+.vision-section, .glass-box {
+text-align: center; border: 4px solid var(--gold); border-radius: 40px;
+padding: 60px 5%; margin: 40px 0; background-image: url('image_3a7328.jpg');
+background-size: cover; background-position: center; position: relative; overflow:
+hidden; }
+.vision-section::before,
+.glass-box::before { content: ""; position: absolute; top: 0; left:
+0; width: 100%; height: 100%; background: rgba(0,0,0,0.3); z-index: 0; }
+.vision-section h2, .vision-section p,
+.glass-box h2, .glass-box .grid, .glass-box .awareness-grid { position:
+relative; z-index: 1; }
 .section { padding: 40px 5%; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-.card { text-align: center; padding: 40px 25px; background: rgba(0,0,0,0.5); border-radius: 25px; border-bottom: 5px solid var(--gold); position: relative; transition: 0.4s; }
-.info-popup { visibility: hidden; width: 280px; background: var(--gold); color: #000; padding: 15px; position: absolute; bottom: 110%; left: 50%; transform: translateX(-50%); opacity: 0; transition: 0.3s; border-radius: 12px; font-weight: bold; box-shadow: 0 10px 30px #000; z-index: 100; text-align: center; }
-.card:hover .info-popup { visibility: visible; opacity: 1; bottom: 115%; }
-.stat-num { font-size: 3.5rem; font-weight: bold; color: var(--gold); display: block; }
-.loss-num { color: var(--red-num) !important; }
+.grid { display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.card { text-align: center; padding:
+40px 25px; background: rgba(0,0,0,0.5); border-radius: 25px; border-bottom: 5px
+solid var(--gold); position: relative; transition: 0.4s; }
+.info-popup { visibility: hidden; width:
+280px; background: var(--gold); color: #000; padding: 15px; position: absolute;
+bottom: 110%; left: 50%; transform: translateX(-50%); opacity: 0; transition:
+0.3s; border-radius: 12px; font-weight: bold; box-shadow: 0 10px 30px #000;
+z-index: 100; text-align: center; }
+.card:hover .info-popup { visibility:
+visible; opacity: 1; bottom: 115%; }
+.stat-num { font-size: 3.5rem;
+font-weight: bold; color: var(--gold); display: block; }
+.loss-num { color: var(--red-num)
+!important; }
 #vis-desc {
-font-size: 1.4rem;
-font-weight: bold;
-line-height: 1.6;
+font-size:
+1.4rem;
+font-weight:
+bold;
+line-height:
+1.6;
 }
 .card p {
-font-weight: bold !important;
-font-size: 1.15rem;
+font-weight:
+bold !important;
+font-size:
+1.15rem;
 }
-.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: none; justify-content: center; align-items: center; z-index: 50000; }
-.modal-container { position: relative; width: 90%; max-width: 600px; }
-.modal-box { background: var(--cream-bg); border: 3px solid #000; width: 100%; border-radius: 20px; padding: 30px; color: #000; max-height: 80vh; overflow-y: auto; }
+.modal-overlay { position: fixed; top:
+0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display:
+none; justify-content: center; align-items: center; z-index: 50000; }
+.modal-container { position: relative;
+width: 90%; max-width: 600px; }
+.modal-box { background:
+var(--cream-bg); border: 3px solid #000; width: 100%; border-radius: 20px;
+padding: 30px; color: #000; max-height: 80vh; overflow-y: auto; }
 .close-modal {
-position: absolute; top: -20px; left: -20px; font-size: 30px; cursor: pointer;
-color: #ff0000; font-weight: bold; z-index: 50001; background: #000;
-border: 2px solid #ff0000; border-radius: 50%; width: 45px; height: 45px;
-display: flex; align-items: center; justify-content: center;
+position:
+absolute; top: -20px; left: -20px; font-size: 30px; cursor: pointer;
+color:
+#ff0000; font-weight: bold; z-index: 50001; background: #000;
+border:
+2px solid #ff0000; border-radius: 50%; width: 45px; height: 45px;
+display:
+flex; align-items: center; justify-content: center;
 }
-.q-item { padding: 15px; border-bottom: 1px solid rgba(0,0,0,0.1); cursor: pointer; transition: 0.2s; font-weight: bold; color: #000; }
+.q-item { padding: 15px; border-bottom:
+1px solid rgba(0,0,0,0.1); cursor: pointer; transition: 0.2s; font-weight:
+bold; color: #000; }
 .q-item:hover { background: rgba(0,0,0,0.05);}
-.ans-q { color: #ff0000; font-weight: bold; font-size: 1.3rem; margin-bottom: 10px; display: block; text-align: center; }
-.ans-src { color: #008000; font-weight: bold; margin-bottom: 15px; display: block; text-align: center; border-bottom: 1px solid #000; padding-bottom: 5px; }
-.ans-text { line-height: 1.6; font-size: 1.1rem; }
+.ans-q { color: #ff0000; font-weight:
+bold; font-size: 1.3rem; margin-bottom: 10px; display: block; text-align:
+center; }
+.ans-src { color: #008000; font-weight:
+bold; margin-bottom: 15px; display: block; text-align: center; border-bottom:
+1px solid #000; padding-bottom: 5px; }
+.ans-text { line-height: 1.6; font-size:
+1.1rem; }
 .modal-program-title {
-color: #ff0000;
-font-weight: bold;
-font-size: 1.4rem;
-margin-bottom: 10px;
-text-align: center;
+color:
+#ff0000;
+font-weight:
+bold;
+font-size:
+1.4rem;
+margin-bottom:
+10px;
+text-align:
+center;
 }
 .modal-instruction {
-color: #0000ff;
-font-weight: bold;
-font-size: 1.1rem;
-margin-bottom: 15px;
-text-align: center;
-display: none;
+color:
+#0000ff;
+font-weight:
+bold;
+font-size:
+1.1rem;
+margin-bottom:
+15px;
+text-align:
+center;
+display:
+none;
 }
-/* === Modal جديد لـ "رسالاتنا" === */
+/* === New Modal for "Our Messages" === */
 #messages-modal {
-display: none;
-position: fixed;
+display:
+none;
+position:
+fixed;
 top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.85);
-z-index: 60000;
-justify-content: center;
-align-items: center;
+left:
+0;
+width:
+100%;
+height:
+100%;
+background:
+rgba(0, 0, 0,
+0.85);
+z-index:
+60000;
+justify-content:
+center;
+align-items:
+center;
 }
 #messages-modal .modal-content {
-background: var(--cream-bg);
-border: 2px solid var(--gold);
-border-radius: 20px;
-width: 90%;
-max-width: 700px;
-padding: 30px;
-max-height: 85vh;
-overflow-y: auto;
-font-family: 'Tajawal', 'Cairo', sans-serif;
-font-size: 19px;
-font-weight: 500;
-line-height: 1.7;
-color: #000;
-direction: rtl;
-position: relative;
+background:
+var(--cream-bg);
+border:
+2px solid var(--gold);
+border-radius:
+20px;
+width:
+90%;
+max-width:
+700px;
+padding:
+30px;
+max-height:
+85vh;
+overflow-y:
+auto;
+font-family:
+'Tajawal', 'Cairo', sans-serif;
+font-size:
+19px;
+font-weight:
+500;
+line-height:
+1.7;
+color:
+#000;
+direction:
+ltr;
+position:
+relative;
 }
 #messages-modal .close-btn {
-position: absolute;
-top: 10px;
-left: 10px;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-background: #fff;
-border: 2px solid #ff0000;
-color: #ff0000;
-font-weight: bold;
-font-size: 24px;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-z-index: 60001;
+position:
+absolute;
+top:
+10px;
+right:
+10px;
+width:
+40px;
+height:
+40px;
+border-radius:
+50%;
+background:
+#fff;
+border:
+2px solid #ff0000;
+color:
+#ff0000;
+font-weight:
+bold;
+font-size:
+24px;
+display:
+flex;
+align-items:
+center;
+justify-content:
+center;
+cursor:
+pointer;
+z-index:
+60001;
 }
-/* === نوافذ مرجعية عامة === */
+/* === General Reference Windows === */
 .reference-modal {
-display: none;
-position: fixed;
+display:
+none;
+position:
+fixed;
 top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0,0,0,0.85);
-z-index: 70000;
-justify-content: center;
-align-items: center;
+left:
+0;
+width:
+100%;
+height:
+100%;
+background:
+rgba(0,0,0,0.85);
+z-index:
+70000;
+justify-content:
+center;
+align-items:
+center;
 }
 .reference-modal .modal-content {
-background: #fdf9f3;
-border: 2px solid var(--gold);
-border-radius: 20px;
-width: 90%;
-max-width: 700px;
-padding: 30px;
-max-height: 85vh;
-overflow-y: auto;
-font-family: 'Tajawal', 'Cairo', sans-serif;
-font-size: 19px;
-font-weight: 500;
-line-height: 1.7;
-color: #333333;
-direction: rtl;
-position: relative;
+background:
+#fdf9f3;
+border:
+2px solid var(--gold);
+border-radius:
+20px;
+width:
+90%;
+max-width:
+700px;
+padding:
+30px;
+max-height:
+85vh;
+overflow-y:
+auto;
+font-family:
+'Tajawal', 'Cairo', sans-serif;
+font-size:
+19px;
+font-weight:
+500;
+line-height:
+1.7;
+color:
+#333333;
+direction:
+ltr;
+position:
+relative;
 }
 .reference-modal .close-reference {
-position: absolute;
-top: 10px;
-left: 10px;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-background: #ffcccc;
-color: #cc0000;
-font-weight: bold;
-font-size: 24px;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-border: 2px solid #ff6666;
-z-index: 70001;
+position:
+absolute;
+top:
+10px;
+right:
+10px;
+width:
+40px;
+height:
+40px;
+border-radius:
+50%;
+background:
+#ffcccc;
+color:
+#cc0000;
+font-weight:
+bold;
+font-size:
+24px;
+display:
+flex;
+align-items:
+center;
+justify-content:
+center;
+cursor:
+pointer;
+border:
+2px solid #ff6666;
+z-index:
+70001;
 }
 .reference-modal h2 {
-text-align: center;
-color: #b30000;
-font-size: 1.7rem;
-margin-bottom: 20px;
-font-weight: bold;
+text-align:
+center;
+color:
+#b30000;
+font-size:
+1.7rem;
+margin-bottom:
+20px;
+font-weight:
+bold;
 }
 .reference-modal p,
 .reference-modal ul,
 .reference-modal ol,
 .reference-modal table {
-margin-bottom: 15px;
-font-size: 1.1rem;
-font-weight: 500;
+margin-bottom:
+15px;
+font-size:
+1.1rem;
+font-weight:
+500;
 }
 .reference-modal ul,
 .reference-modal ol {
-margin-right: 20px;
+margin-left:
+20px;
 }
 .reference-modal li {
-margin-bottom: 8px;
+margin-bottom:
+8px;
 }
 .reference-modal strong {
-font-weight: bold;
+font-weight:
+bold;
 }
 .reference-modal table {
-width: 100%;
-border-collapse: collapse;
-margin: 20px 0;
+width:
+100%;
+border-collapse:
+collapse;
+margin:
+20px 0;
 }
 .reference-modal th,
 .reference-modal td {
-border: 1px solid #ddd;
-padding: 10px;
-text-align: center;
+border:
+1px solid #ddd;
+padding:
+10px;
+text-align:
+center;
 }
 .reference-modal th {
-background-color: #f0f0f0;
+background-color:
+#f0f0f0;
 }
 .reference-modal tr:nth-child(even) {
-background-color: #f9f9f9;
+background-color:
+#f9f9f9;
 }
-/* === قسم مرجعيتنا الإنسانية === */
+/* === Human Reference Section === */
 .references-section {
-text-align: center;
-border: 4px solid var(--gold);
-border-radius: 40px;
-padding: 60px 5%;
-margin: 40px 0;
-background-image: url('image_3a7328.jpg');
-background-size: cover;
-background-position: center;
-position: relative;
-overflow: hidden;
+text-align:
+center;
+border:
+4px solid var(--gold);
+border-radius:
+40px;
+padding:
+60px 5%;
+margin:
+40px 0;
+background-image:
+url('image_3a7328.jpg');
+background-size:
+cover;
+background-position:
+center;
+position:
+relative;
+overflow:
+hidden;
 }
 .references-section::before {
 content: "";
-position: absolute;
+position:
+absolute;
 top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0,0,0,0.3);
-z-index: 0;
+left:
+0;
+width:
+100%;
+height:
+100%;
+background:
+rgba(0,0,0,0.3);
+z-index:
+0;
 }
 .references-section h2,
 .references-section .references-grid {
-position: relative;
-z-index: 1;
+position:
+relative;
+z-index:
+1;
 }
 .references-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 20px;
-margin-top: 30px;
+display:
+grid;
+grid-template-columns:
+repeat(3, 1fr);
+gap:
+20px;
+margin-top:
+30px;
 }
 .reference-card {
-background: rgba(0,0,0,0.5);
-border: 1px solid var(--gold);
-border-radius: 20px;
-padding: 25px 10px;
-cursor: pointer;
-transition: 0.3s;
-text-align: center;
-position: relative;
+background:
+rgba(0,0,0,0.5);
+border:
+1px solid var(--gold);
+border-radius:
+20px;
+padding:
+25px 10px;
+cursor:
+pointer;
+transition:
+0.3s;
+text-align:
+center;
+position:
+relative;
 }
 .reference-card:hover {
-background: rgba(212, 175, 55, 0.1);
-transform: translateY(-5px);
+background:
+rgba(212, 175,
+55, 0.1);
+transform:
+translateY(-5px);
 }
 .reference-card span {
-font-weight: bold;
-font-size: 1.1rem;
-display: block;
-line-height: 1.3;
+font-weight:
+bold;
+font-size:
+1.1rem;
+display:
+block;
+line-height:
+1.3;
 }
 @media (max-width: 992px) {
-.nav-container { flex-direction: column; gap: 15px; }
+.nav-container { flex-direction: column;
+gap: 15px; }
 .news-ticker { top: 160px; }
 .hero { padding-top: 240px; }
-.hero-container { flex-direction: column; align-items: center; }
-.video-container-box { width: 100%; height: 250px; }
-.awareness-grid { grid-template-columns: repeat(2, 1fr); }
-.references-grid { grid-template-columns: repeat(2, 1fr); }
+.hero-container { flex-direction:
+column; align-items: center; }
+.video-container-box { width: 100%;
+height: 250px; }
+.awareness-grid { grid-template-columns:
+repeat(2, 1fr); }
+.references-grid {
+grid-template-columns: repeat(2, 1fr); }
 .section-main-title { font-size: 2rem; }
-.close-modal { top: -15px; left: -15px; width: 35px; height: 35px; font-size: 22px; }
+.close-modal { top: -15px; right: -15px;
+width: 35px; height: 35px; font-size: 22px; }
 #messages-modal .modal-content,
 .reference-modal .modal-content {
-padding: 20px;
-font-size: 17px;
+padding:
+20px;
+font-size:
+17px;
 }
 }
-.btn-action { text-align:center; text-decoration:none; color:#000; background:var(--gold); padding:15px; display:block; margin-top:20px; border-radius:10px; font-weight:bold; transition: 0.3s; cursor: pointer; }
-.btn-action:hover { background: #fff; transform: scale(1.05);}
+.btn-action { text-align:center;
+text-decoration:none; color:#000; background:var(--gold); padding:15px;
+display:block; margin-top:20px; border-radius:10px; font-weight:bold;
+transition: 0.3s; cursor: pointer; }
+.btn-action:hover { background: #fff;
+transform: scale(1.05);}
 #btnUp {
-position: fixed;
-bottom: 30px;
-left: 30px;
-width: 50px;
-height: 50px;
-background: var(--gold);
-color: #000;
-border-radius: 50%;
-display: none;
-justify-content: center;
-align-items: center;
-font-size: 24px;
-cursor: pointer;
-z-index: 9999;
-box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+position:
+fixed;
+bottom:
+30px;
+right:
+30px;
+width:
+50px;
+height:
+50px;
+background:
+var(--gold);
+color:
+#000;
+border-radius:
+50%;
+display:
+none;
+justify-content:
+center;
+align-items:
+center;
+font-size:
+24px;
+cursor:
+pointer;
+z-index:
+9999;
+box-shadow:
+0 4px 10px rgba(0,0,0,0.5);
 }
 .soon-placeholder {
-display: inline-block;
-width: 24px;
-height: 16px;
-background: #b30000;
-color: white;
-font-size: 10px;
-font-weight: bold;
-text-align: center;
-line-height: 16px;
-border-radius: 2px;
-margin-right: 10px;
+display:
+inline-block;
+width:
+24px;
+height:
+16px;
+background:
+#b30000;
+color:
+white;
+font-size:
+10px;
+font-weight:
+bold;
+text-align:
+center;
+line-height:
+16px;
+border-radius:
+2px;
+margin-left:
+10px;
 }
 </style>
 </head>
-<body onload="initPage()">
-<div class="site-bg"></div>
-
-<!-- 👇 الرسالة الحمراء 👇 -->
-<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 99999; text-align: center; width: 90%; max-width: 800px;">
-  <div style="background: radial-gradient(circle, rgba(255,0,0,0.9) 0%, rgba(180,0,0,0.9) 100%); border-radius: 50%; width: 100%; padding: 40px; text-align: center; box-shadow: 0 0 30px rgba(255,0,0,0.7);">
-    <h1 style="color: #ffffff; font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">Welcome</h1>
-    <p style="color: #ffffff; font-size: 1.8rem; font-weight: 700; line-height: 1.5; margin-bottom: 20px;">
-      From the cradle of civilization, Egypt, to the world...<br>
-      We raise our cry to save humanity from the tsunami of digital illusion
-    </p>
-    <p style="color: #ffffff; font-size: 1.7rem; font-weight: 800; margin-bottom: 15px;">
-      Translation in progress...<br>
-      We're working hard to launch it soon
-    </p>
-    <h2 style="color: #ffffff; font-size: 2.2rem; font-weight: 900; margin-top: 20px;">CiviStories</h2>
-  </div>
+<body
+onload="initPage()">
+<div
+class="site-bg"></div>
+ 
+<div
+style="position: fixed; top: 50%; left: 50%; transform: translate(-50%,
+-50%); z-index: 99999; text-align: center; width: 90%; max-width: 800px;">
+  <div style="background:
+radial-gradient(circle, rgba(255,0,0,0.9) 0%, rgba(180,0,0,0.9) 100%);
+border-radius: 50%; width: 100%; padding: 40px; text-align: center; box-shadow:
+0 0 30px rgba(255,0,0,0.7);">
+    <h1 style="color: #ffffff; font-size:
+2.8rem; font-weight: 900; margin-bottom: 15px;">Welcome</h1>
+    <p style="color: #ffffff; font-size: 1.8rem;
+font-weight: 700; line-height: 1.5; margin-bottom: 20px;">
+      From the cradle of civilization, Egypt, to the
+world...<br>
+      We raise our cry to save humanity from the
+tsunami of digital illusion
+    </p>
+    <p style="color: #ffffff; font-size: 1.7rem;
+font-weight: 800; margin-bottom: 15px;">
+      Translation in progress...<br>
+      We're working hard to launch it soon
+    </p>
+    <h2 style="color: #ffffff; font-size:
+2.2rem; font-weight: 900; margin-top: 20px;">CiviStories</h2>
+  </div>
 </div>
-<!-- 👆 انتهى الرسالة الحمراء 👆 -->
-
-<div id="btnUp" onclick="window.scrollTo({top:0, behavior:'smooth'})"><i class="fas fa-arrow-up"></i></div>
-<!-- Modal for Questions -->
-<div id="qModal" class="modal-overlay">
-<div class="modal-container">
-<span class="close-modal" onclick="closePopup('qModal')">×</span>
-<div class="modal-box">
-<h2 id="modalTitle" class="modal-program-title">الطفولة الرقمية</h2>
-<p class="modal-instruction">اضغط على السؤال لمعرفة الإجابة</p>
-<div id="questionsContainer"></div>
+ 
+<div
+id="btnUp" onclick="window.scrollTo({top:0,
+behavior:'smooth'})"><i class="fas
+fa-arrow-up"></i></div>
+<div
+id="qModal" class="modal-overlay">
+<div
+class="modal-container">
+<span
+class="close-modal"
+onclick="closePopup('qModal')">×</span>
+<div
+class="modal-box">
+<h2
+id="modalTitle" class="modal-program-title">Digital Childhood</h2>
+<p
+class="modal-instruction">Click on the question to see the answer</p>
+<div
+id="questionsContainer"></div>
 </div>
 </div>
 </div>
-<!-- Modal for Answers -->
-<div id="aModal" class="modal-overlay">
-<div class="modal-container">
-<span class="close-modal" onclick="closePopup('aModal')">×</span>
-<div class="modal-box">
-<h2 id="answerTitle" class="modal-program-title"></h2>
-<div id="answerContent"></div>
+<div
+id="aModal" class="modal-overlay">
+<div
+class="modal-container">
+<span
+class="close-modal"
+onclick="closePopup('aModal')">×</span>
+<div
+class="modal-box">
+<h2
+id="answerTitle" class="modal-program-title"></h2>
+<div
+id="answerContent"></div>
 </div>
 </div>
 </div>
-<!-- Modal رسالاتنا -->
 <div id="messages-modal">
 <div class="modal-content">
-<span class="close-btn" onclick="closeMessagesModal()">×</span>
+<span class="close-btn"
+onclick="closeMessagesModal()">×</span>
 <div>
-🌍 قصص الحضارات: صرخة عالمية للرحمة الرقمية<br><br>
-من قلب مصر، حيث تُسجّل ألف حالة طلاق سنويًّا بسبب سوء استخدام الشاشات.<br>
-وحيث تُهدر مليارات الجنيهات بين خسائر إنتاجية، نصب إلكتروني، وعلاج نفسي.<br>
-نرفع صوتنا ليس كمصرين فقط بل كبشر يرون أن الإنسانية تتعرض لاختبارٍ جديد.<br><br>
-ليس الهدف من هذه المنصة اتهام التكنولوجيا، بل إنقاذ العلاقة الإنسانية منها.<br><br>
-نحن لا نطلب حظر الهواتف، بل ندعو إلى استخدامها بضمير.<br><br>
-كل طفل في طوكيو أو طرابلس، في ساو باولو أو سيول يستحق أن ينظر في عيني أمه دون شاشة تفصل بينهما.<br>
-كل شاب في كيب تاون أو كوالالمبور يستحق أن يبني هويته من واقعه، لا من وهم الخوارزميات.<br><br>
-السوشيال ميديا ليست شرًّا لكنها ليست محايدة فهي مرآةٌ لنيّاتِ مَن يُوجّهها.<br>
-هي اليوم إن لم تُوجَّه بالرحمة قد تصبح أسرع طريقٍ لتفكيك الأسر، زرع اليأس، ودفع البعض إلى الانتحار.<br><br>
-لهذا، تطلق قصص الحضارات:<br>
-نداءً إنسانيًّا مفتوحًا لكل حكومة، مؤسسة دينية، ثقافية، أو مدنية للمشاركة في بناء فضاء رقمي يحمي الكرامة، لا يهددها.<br><br>
-بدأنا بمصر — لأن الصدق يبدأ من البيت.<br>
-لكن رسالتنا ليست لمصر وحدها بل للعالم أجمع.<br><br>
-✨ ما نطلبه اليوم:<br>
-- من الآباء: أن يعودوا ليكونوا أول "فلتر" لأبنائهم.<br>
-- من الحكومات: أن تضع سياسات تحمي الأطفال من الإدمان الرقمي.<br>
-- من المنصات: أن تختار الإنسان على حساب الربح.<br>
-- من المؤسسات الروحية والثقافية: أن تُرشد الضمير لا أن تصمت.<br>
-- كل مرجعية في العالم — دينية، فلسفية، أو إنسانية —<br>
-أن تنضم إلى هذه الصيحة، بلغتها وقيمها ورؤيتها.<br><br>
-> شاركنا رسالتنا وانقذ من تحب احمِ الإنسانية قبل أن تصبح ذكرى رقمية.<br>
-> لا تدع الشاشة تسرق منك طفولة طفلك، سلام بيتك، أو رجاءك في الحياة.
+🌍 CiviStories: A Global Cry for Digital Mercy<br><br>
+From the heart of Egypt, where a thousand cases of divorce are recorded annually due to screen misuse.<br>
+And where billions of pounds are wasted between productivity losses, electronic fraud, and psychological treatment.<br>
+We raise our voice not just as Egyptians, but as humans who see that humanity is undergoing a new test.<br><br>
+The goal of this platform is not to accuse technology, but to save human relations from it.<br><br>
+We do not ask for a ban on phones, but we call for using them with a conscience.<br><br>
+Every child in Tokyo or Tripoli, in Sao Paulo or Seoul, deserves to look into their mother's eyes without a screen separating them.<br>
+Every young person in Cape Town or Kuala Lumpur deserves to build their identity from their reality, not from the illusion of algorithms.<br><br>
+Social media is not evil, but it is not neutral either; it is a mirror of the intentions of those who direct it.<br>
+Today, if not directed by mercy, it may become the fastest way to dismantle families, sow despair, and push some to suicide.<br><br>
+Therefore, CiviStories launches:<br>
+A human appeal open to every government, religious, cultural, or civil institution to participate in building a digital space that protects dignity, not threatens it.<br><br>
+We started in Egypt — because honesty starts at home.<br>
+But our message is not for Egypt alone, but for the entire world.<br><br>
+✨ What we ask for today:<br>
+- From parents: To return to being the first "filter" for their children.<br>
+- From governments: To set policies that protect children from digital addiction.<br>
+- From platforms: To choose humans over profit.<br>
+- From spiritual and cultural institutions: To guide the conscience, not to remain silent.<br>
+- Every reference in the world — religious, philosophical, or human —<br>
+To join this cry, with its language, values, and vision.<br><br>
+> Share our message and save those you love. Protect humanity before it becomes a digital memory.<br>
+> Do not let the screen steal your child's childhood, your home's peace, or your hope in life.
 </div>
 </div>
 </div>
-<!-- نوافذ مرجعيتنا الإنسانية -->
-<!-- الجاينية - المحتوى الكامل مع جداول وقوائم -->
-<div id="reference-eastern" class="reference-modal">
+<div id="reference-eastern"
+class="reference-modal">
 <div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-eastern')">×</span>
-<h2>إزالة الأذى الرقمي: رؤية جاينية لحماية المسيرة الإنسانية</h2>
+<span class="close-reference"
+onclick="closeReferenceModal('reference-eastern')">×</span>
+<h2>Removing Digital Harm: A Jain Vision for Protecting the Human Journey</h2>
 <p>
-تستند الجاينية إلى مبادئ اللاحَرْم (أهيمسا) المطلقة والتحرر الروحي. 
-في العصر الرقمي، حيث أصبح الفضاء الافتراضي مجالاً للوجود والتفاعل تظهر حاجة ماسة لتطبيق المبادئ الجاينية لحماية الأرواح (جيفا) من أشكال الأذى الجديدة.
+Jainism is based on the principles of absolute non-violence (Ahimsa) and spiritual liberation. 
+In the digital age, where virtual space has become a field of existence and interaction, there is an urgent need to apply Jain principles to protect souls (Jiva) from new forms of harm.
 </p>
-<p><strong>الأول: اللاحَرْم (أهيمسا) في الفضاء الرقمي</strong><br>
-اللاحَرْم في الجاينية هي عدم الإيذاء بجميع أشكاله: بالجسد بالكلام وبالفكر. العالم الرقمي يمثل تحدياً ثلاثياً:
+<p><strong>First: Non-violence (Ahimsa) in Digital Space</strong><br>
+Ahimsa in Jainism is not harming in all forms: by body, speech, and thought. The digital world presents a triple challenge:
 </p>
 <table>
 <tr>
-<th>مستوى اللاحَرْم</th>
-<th>التحدي الرقمي</th>
-<th>الممارسة الجاينية المقترحة</th>
+<th>Level of Ahimsa</th>
+<th>Digital Challenge</th>
+<th>Proposed Jain Practice</th>
 </tr>
 <tr>
-<td>الجسدي</td>
-<td>إرهاق الحواس، اضطراب النوم</td>
-<td>تحديد أوقات استخدام، فترات راحة</td>
+<td>Physical</td>
+<td>Sensory fatigue, sleep disturbance</td>
+<td>Setting usage times, rest periods</td>
 </tr>
 <tr>
-<td>اللفظي</td>
-<td>خطاب الكراهية، التنمر، التشهير</td>
-<td>الكلام الحقيقي، اللطيف، النافع</td>
+<td>Verbal</td>
+<td>Hate speech, bullying, defamation</td>
+<td>Truthful, kind, and beneficial speech</td>
 </tr>
 <tr>
-<td>الفكري</td>
-<td>الكراهية، الحقد، الاستياء الخفي</td>
-<td>مراقبة الأفكار، تنقية النية</td>
+<td>Intellectual</td>
+<td>Hatred, malice, hidden resentment</td>
+<td>Monitoring thoughts, purifying intention</td>
 </tr>
 </table>
 <p>
-كل روح (جيفا) هي كائني العزيز (لورد ماهافيرا) هذا يشمل الأرواح التي نلتقيها رقمياً.
+Every soul (Jiva) is my dear being (Lord Mahavira); this includes the souls we meet digitally.
 </p>
-<p><strong>الثاني: الخمسة نذور عظمى (ماهافراتاس) في العصر الرقمي</strong></p>
+<p><strong>Second: The Five Great Vows (Mahavratas) in the Digital Age</strong></p>
 <ol>
-<li><strong>اللاحَرْم (أهيمسا):</strong>
+<li><strong>Ahimsa (Non-violence):</strong>
 <ul>
-<li>عدم نشر محتوى يسبب أذىً نفسياً أو روحياً</li>
-<li>حماية المستخدمين الضعفاء من المحتوى الضار</li>
-<li>تجنب المشاركة في خطاب الكراهية أو التهميش</li>
+<li>Not publishing content that causes psychological or spiritual harm</li>
+<li>Protecting vulnerable users from harmful content</li>
+<li>Avoiding participation in hate speech or marginalization</li>
 </ul>
 </li>
-<li><strong>الصدق (ساتيا):</strong>
+<li><strong>Satya (Truth):</strong>
 <ul>
-<li>التحقق من المعلومات قبل نشرها</li>
-<li>التصحيح العلني للأخطاء</li>
-<li>رفض إنشاء أو نشر أخبار مزيفة</li>
+<li>Verifying information before publishing</li>
+<li>Publicly correcting errors</li>
+<li>Refusing to create or publish fake news</li>
 </ul>
 </li>
-<li><strong>عدم السرقة (أستيا):</strong>
+<li><strong>Asteya (Non-stealing):</strong>
 <ul>
-<li>احترام الملكية الفكرية الرقمية</li>
-<li>عدم انتحال الهويات أو المحتوى</li>
-<li>تقليل الفجوة الرقمية (عدالة الوصول للمعلومات)</li>
+<li>Respecting digital intellectual property</li>
+<li>Not impersonating identities or content</li>
+<li>Reducing the digital divide (justice in access to info)</li>
 </ul>
 </li>
-<li><strong>العفة (براهماتشاريا):</strong>
+<li><strong>Brahmacharya (Chastity):</strong>
 <ul>
-<li>ضبط الاستخدام الرقمي (الإدمان الرقمي كشكل من عدم العفة)</li>
-<li>تجنب المحتوى الاستغلالي أو الجنسي الضار</li>
-<li>الحفاظ على النقاء الفكري والروحي</li>
+<li>Discipline in digital usage (addiction as non-chastity)</li>
+<li>Avoiding exploitative or harmful sexual content</li>
+<li>Maintaining intellectual and spiritual purity</li>
 </ul>
 </li>
-<li><strong>عدم التملك (أباريجراها):</strong>
+<li><strong>Aparigraha (Non-possession):</strong>
 <ul>
-<li>التحرر من التعلق بالهوية الرقمية</li>
-<li>تقليل البصمة الرقمية غير الضرورية</li>
-<li>بساطة في الاستخدام والتواصل</li>
+<li>Liberation from attachment to digital identity</li>
+<li>Reducing unnecessary digital footprint</li>
+<li>Simplicity in usage and communication</li>
 </ul>
 </li>
 </ol>
-<p><strong>الثالث: نظافة الكلام (بهاشا ساميتي)</strong><br>
-لورد ماهافيرا وضع قواعد دقيقة للكلام، تنطبق رقمياً:
+<p><strong>Third: Cleanliness of Speech (Bhasha Samiti)</strong><br>
+Lord Mahavira set precise rules for speech, applied digitally:
 </p>
 <ol>
-<li>الكلام يجب أن يكون:
+<li>Speech must be:
 <ul>
-<li>حقيقياً (لا تضليل أو تزييف)</li>
-<li>مفيداً (لا لغو أو إهدار للوقت)</li>
-<li>لطيفاً (لا جارح أو مؤذ)</li>
-<li>محدداً (لا غموض أو إبهام)</li>
+<li>Truthful (no misleading or faking)</li>
+<li>Useful (no nonsense or time wasting)</li>
+<li>Kind (not hurtful or harmful)</li>
+<li>Specific (no ambiguity or vagueness)</li>
 </ul>
 </li>
-<li>التأمل قبل النشر الرقمي:
+<li>Reflection before digital posting:
 <ul>
-<li>هل هذه الحقيقة كاملة؟</li>
-<li>هل ستفيد المتلقي؟</li>
-<li>هل تعبر بلطف واحترام؟</li>
-<li>هل واضحة وغير قابلة لسوء الفهم؟</li>
+<li>Is this the whole truth?</li>
+<li>Will it benefit the receiver?</li>
+<li>Does it express kindness and respect?</li>
+<li>Is it clear and not subject to misunderstanding?</li>
 </ul>
 </li>
 </ol>
-<p><strong>الرابع: مفهوم الكارما الرقمي</strong><br>
-في الجاينية الكارما هي مادة دقيقة تلتصق بالروح. 
-الأفعال الرقمية تولد كارما جديدة:
+<p><strong>Fourth: The Concept of Digital Karma</strong><br>
+In Jainism, Karma is a subtle matter that sticks to the soul. 
+Digital actions generate new karma:
 </p>
 <table>
 <tr>
-<th>الفعل الرقمي</th>
-<th>نوع الكارما</th>
-<th>التأثير الروحي</th>
+<th>Digital Action</th>
+<th>Type of Karma</th>
+<th>Spiritual Impact</th>
 </tr>
 <tr>
-<td>نشر كذب</td>
-<td>كارما الجهل (موهنييا)</td>
-<td>يحجب الحقيقة، يعزز الوهم</td>
+<td>Posting lies</td>
+<td>Karma of Ignorance (Mohaniya)</td>
+<td>Obscures truth, reinforces illusion</td>
 </tr>
 <tr>
-<td>خطاب كراهية</td>
-<td>كارما المشاعر السلبية</td>
-<td>يعزز الغضب، الكراهية، التعلق</td>
+<td>Hate speech</td>
+<td>Karma of negative emotions</td>
+<td>Reinforces anger, hate, attachment</td>
 </tr>
 <tr>
-<td>إدمان رقمي</td>
-<td>كارما التعلق (ميسريا)</td>
-<td>يربط الروح بالعالم المادي</td>
+<td>Digital addiction</td>
+<td>Karma of attachment (Mishrya)</td>
+<td>Binds the soul to the material world</td>
 </tr>
 <tr>
-<td>مساعدة رقمياً</td>
-<td>كارما الفضيلة (بونيا)</td>
-<td>يخفف الكارما السابقة</td>
+<td>Digital assistance</td>
+<td>Karma of virtue (Punya)</td>
+<td>Relieves previous karma</td>
 </tr>
 </table>
-<p><strong>الخامس: الصيام الرقمي والانضباط</strong><br>
-كما يمارس الجاينيون الصوم الجسدي، يقترح:
+<p><strong>Fifth: Digital Fasting and Discipline</strong><br>
+As Jains practice physical fasting, it is suggested:
 </p>
 <ol>
-<li><strong>صيام وسائط:</strong>
+<li><strong>Media Fasting:</strong>
 <ul>
-<li>أيام بدون وسائط اجتماعية</li>
-<li>فترات صمت رقمي يومية</li>
-<li>صوم أخبار دوري</li>
+<li>Days without social media</li>
+<li>Daily digital silence periods</li>
+<li>Periodic news fasting</li>
 </ul>
 </li>
-<li><strong>انضباط المشاهدة:</strong>
+<li><strong>Viewing Discipline:</strong>
 <ul>
-<li>وعي بما نستهلكه رقمياً</li>
-<li>اختيار المحتوى الذي يرفع الروح</li>
-<li>تجنب المحتوى العنيف أو الاستغلالي</li>
+<li>Awareness of what we consume digitally</li>
+<li>Choosing content that uplifts the soul</li>
+<li>Avoiding violent or exploitative content</li>
 </ul>
 </li>
-<li><strong>تنقية البيئة الرقمية:</strong>
+<li><strong>Purifying Digital Environment:</strong>
 <ul>
-<li>كما ننظف بيوتنا جسدياً</li>
-<li>تنظيف جهات الاتصال السامة</li>
-<li>تنقية مصادر المعلومات</li>
+<li>As we clean our physical homes</li>
+<li>Cleaning toxic contacts</li>
+<li>Purifying information sources</li>
 </ul>
 </li>
 </ol>
-<p><strong>التوصيات الجاينية العملية</strong></p>
+<p><strong>Practical Jain Recommendations</strong></p>
 <ol>
-<li>ممارسة يومية للفحص الثلاثي قبل أي تفاعل رقمي:
+<li>Daily practice of the triple check before digital interaction:
 <ul>
-<li>فحص الجسد: هل وضعيتي صحية؟ هل عيناي مرتاحتان؟</li>
-<li>فحص الكلام: هل كلماتي صادقة، مفيدة، لطيفة؟</li>
-<li>فحص الفكر: هل نيتي نقية؟ هل أفكاري خالية من الكراهية؟</li>
+<li>Check Body: Is my posture healthy? Are eyes rested?</li>
+<li>Check Speech: Are my words true, useful, kind?</li>
+<li>Check Thought: Is my intent pure? Are my thoughts free of hate?</li>
 </ul>
 </li>
-<li>خلق ملاذات رقمية آمنة:
+<li>Creating safe digital havens:
 <ul>
-<li>مجموعات مبنية على الاحترام المتبادل</li>
-<li>منصات تلتزم بمبادئ اللاحَرْم</li>
-<li>مساحات للحوار المتسامح</li>
-</ul>
-</li>
-<li>تربية على اللاحَرْم الرقمي:
-<ul>
-<li>تعليم الأطفال أن الكلمات الرقمية لها وزن كارمي</li>
-<li>تدريب على التواصل الرقمي المحترم</li>
-<li>تقديم القدوات في السلوك الرقمي الأخلاقي</li>
-</ul>
-</li>
-<li>تطوير تقنيات تعزز اللاحَرْم:
-<ul>
-<li>خوارزميات تكشف خطاب الكراهية وتقلله</li>
-<li>أدوات للتحقق من المعلومات</li>
-<li>أنظمة تحمي خصوصية المستخدمين</li>
-</ul>
-</li>
-<li>ممارسة اللاحَرْم تجاه الذات رقمياً:
-<ul>
-<li>عدم الإفراط في الاستخدام المؤذي للذات</li>
-<li>حماية الوقت والطاقة الروحية</li>
-<li>التوازن بين العالمين الرقمي والحقيقي</li>
+<li>Groups based on mutual respect</li>
+<li>Platforms committed to Ahimsa principles</li>
+<li>Spaces for tolerant dialogue</li>
 </ul>
 </li>
 </ol>
-<p><strong>روح واحدة تتعذب وروح واحدة تتحرر في كل لحظة</strong> (نص جايني)</p>
+<p><strong>One soul suffers and one soul is liberated in every moment</strong> (Jain Text)</p>
 <p>
-كل تفاعل رقمي هو فرصة لممارسة اللاحَرْم أو مخالفتها. الفضاء الرقمي كساحة جديدة للوجود يدعونا لتطبيق الانضباط الجايني بدقة أكبر لأن تأثير أفعالنا الرقمية قد يكون أوسع وأسرع من أي وقت مضى.
-</p>
-<p>
-الطريق نحو التحرر (موكشا) يمر اليوم عبر الفضاء الرقمي أيضاً. 
-إزالة الأذى الرقمي ليست مجرد مسؤولية اجتماعية بل هي ضرورة روحية لأي ساع نحو النقاء والتحرر.
-</p>
-</div>
-</div>
-  <!-- Reference Modals -->
-    <div id="reference-african" class="reference-modal">
-        <div class="modal-content">
-            <span class="close-reference" onclick="closeReferenceModal('reference-african')">×</span>
-            <h2>إزالة الأذى في العصر الرقمي: رؤية الفلسفة الإفريقية التقليدية لحماية المسيرة الإنسانية</h2>
-            <p>
-                في الفلسفات الإفريقية التقليدية الكون ككل عضوي مترابط والعلاقات البشرية مقدسة والحكمة الجماعية هي الأساس. الفضاء الرقمي الحديث يُختبر من خلال عدسة الأوبونتا (الوحدة في التعددية) والأوجانجو (الإنسانية المشتركة) وضرورة الحفاظ على إيكو (الانسجام الكوني).
-            </p>
-            <p><strong>الأول: الفضاء الرقمي كساحة جديدة للجماعة</strong><br>
-            أنا لأننا نحن ونحن لأنني أنا - مثل إفريقي
-            في الرؤية الإفريقية الهوية فردية وجماعية في آن. 
-            الفضاء الرقمي:
-            - قد يعزز الجماعة عبر وصل المشتتين وحفظ التراث
-            - قد يُضعف الجماعة إذا استُخدم للانقسام والنميمة (السامبيا)
-            - يجب أن يخدم الأوجانجو (إنسانيتنا المشتركة) لا يُفقدها
-            الحكمة التقليدية: 
-            كل كلمة تُقال تُسمعها الأسلاف والذين لم يولدوا بعد. الرقمي لا يُلغي هذه المسؤولية بل يوسعها.
-            </p>
-            <p><strong>الثاني: إزالة الأشواك عن الطريق كمسؤولية جماعية</strong><br>
-            كما في مجتمعات الأكان واليوروبا والبانتو حيث تنظيف الطريق مسؤولية مشتركة:
-            </p>
-            <table>
-                <tr>
-                    <th>المفهوم الإفريقي</th>
-                    <th>تطبيقه الرقمي</th>
-                    <th>خطر تركه</th>
-                </tr>
-                <tr>
-                    <td>أوبونتا (الترابط)</td>
-                    <td>ربط الحكمة التقليدية بالمعرفة الحديثة</td>
-                    <td>قطيعة الأجيال، تهديد الهوية</td>
-                </tr>
-                <tr>
-                    <td>إيكو (الانسجام)</td>
-                    <td>خلق توازن بين التقليد والحداثة</td>
-                    <td>اختلال التوازن الثقافي</td>
-                </tr>
-                <tr>
-                    <td>أوجانجو (الإنسانية)</td>
-                    <td>معاملة الآخر رقميًا كأخ في الإنسانية</td>
-                    <td>تجريد الآخر من إنسانيته</td>
-                </tr>
-            </table>
-            <p><strong>الثالث: أخلاقيات الكلام في العصر الرقمي</strong><br>
-            في فلسفة اليوروبا: كلماتنا تخلق عالمنا (أووو). 
-            في الفضاء الرقمي:
-            </p>
-            <ol>
-                <li><strong>قوة الكلمة (أشيه):</strong>
-                    <ul>
-                        <li>الكلمات الرقمية لها وجود روحي</li>
-                        <li>يمكنها أن تُشفي أو تُمرض المجتمع</li>
-                        <li>تتطلب إتوتو (اللياقة والأدب)</li>
-                    </ul>
-                </li>
-                <li><strong>المقاطع الإفريقية الثلاثة:</strong>
-                    <ul>
-                        <li>ما نراه (المحتوى المرئي): يجب أن يحترم أبيلمو (الكرامة)</li>
-                        <li>ما نقوله (النص والصوت): يجب أن يعكس أوتيتو (الحقيقة)</li>
-                        <li>ما نفعله (المشاركات): يجب أن تخدم أرو (المجتمع)</li>
-                    </ul>
-                </li>
-            </ol>
-            <p><strong>الرابع: الحكمة الجماعية (الأدينكانسي) ضد الفردية الرقمية</strong><br>
-            الحكمة ليست في رأس واحد - مثل إفريقي
-            الخطر الرقمي: تضخيم الفردية على حساب الجماعة. 
-            العلاج الإفريقي:
-            </p>
-            <ol>
-                <li><strong>مجالس الحكمة الرقمية:</strong>
-                    <ul>
-                        <li>مجموعات استشارية افتراضية</li>
-                        <li>حوارات بين الأجيال</li>
-                        <li>مشاركة الحكمة التقليدية رقميًا</li>
-                    </ul>
-                </li>
-                <li><strong>إعادة اكتشاف القصص والحكايات:</strong>
-                    <ul>
-                        <li>رقمنة الحكايات الشعبية</li>
-                        <li>استخدام السرد لتعليم الأخلاق الرقمية</li>
-                        <li>الحكايات كبديل للتلقين المباشر</li>
-                    </ul>
-                </li>
-            </ol>
-            <p><strong>الخامس: مفهوم الزمن الإفريقي والسرعة الرقمية</strong><br>
-            الوقت ليس مالاً الوقت هو علاقة رؤية إفريقية
-            السرعة الرقمية تتعارض مع الزمن العضوي الإفريقي حيث:
-            - الزمن دوري لا خطي
-            - القيمة في العمق لا في السرعة
-            - العلاقات تحتاج زمنها الطبيعي
-            </p>
-            <p><strong>ممارسة مقترحة:</strong><br>
-            إيقاف إفريقي رقمي - التوقف لاستعادة إيقاع العلاقات الحقيقي.
-            </p>
-            <p><strong>التوصيات من المنظور الإفريقي</strong></p>
-            <ol>
-                <li><strong>إحياء مجلس الشيوخ الرقمي:</strong>
-                    <ul>
-                        <li>منصات تُعطي صوتًا للحكماء التقليديين</li>
-                        <li>قنوات نقل الحكمة بين الأجيال</li>
-                        <li>حوارات لا جدالات</li>
-                    </ul>
-                </li>
-                <li><strong>عقلية القرية الرقمية:</strong>
-                    <ul>
-                        <li>معاملة المساحة الرقمية كساحة قرية مشتركة</li>
-                        <li>تحمل المسؤولية الجماعية عن نظافتها الأخلاقية</li>
-                        <li>تطبيق قيم الهارامبي (العمل الجماعي) في المشاريع الرقمية</li>
-                    </ul>
-                </li>
-                <li><strong>طقوس العبور الرقمية:</strong>
-                    <ul>
-                        <li>طقوس دخول المراهقين إلى العالم الرقمي</li>
-                        <li>احتفالات التخرج الرقمي مع توجيهات أخلاقية</li>
-                        <li>مجالس لفض النزاعات الرقمية</li>
-                    </ul>
-                </li>
-                <li><strong>اقتصاد الهدية الرقمي:</strong>
-                    <ul>
-                        <li>مشاركة المعرفة كهدية لا كسلعة</li>
-                        <li>تبادل المحتوى النافع دون مقابل</li>
-                        <li>أوبونتا في الإبداع المشترك</li>
-                    </ul>
-                </li>
-                <li><strong>الأسلاف والذاكرة الرقمية:</strong>
-                    <ul>
-                        <li>رقمنة وتكريم تراث الأسلاف</li>
-                        <li>استخدام التقنية لحفظ اللغات المهددة</li>
-                        <li>ربط الأجيال عبر الزمن الرقمي</li>
-                    </ul>
-                </li>
-            </ol>
-            <p><strong>الخاتمة: العودة إلى الجذور عبر التقنية</strong><br>
-            عندما يموت عجوز في إفريقيا تحترق مكتبة كاملة - أمادو هامباتي با
-            الفضاء الرقمي فرصة تاريخية لحفظ مكتبات إفريقيا الحية قبل أن تحترق. 
-            لكن يجب أن يكون هذا الحفظ:
-            - باحترام للسياقات الثقافية
-            - بمشاركة المجتمعات الأصلية
-            - بوعي بأن التقنية وسيلة لا غاية
-            </p>
-            <p><strong>الشجرة التي تنجو من العاصفة هي ذات الجذور العميقة</strong></p>
-            <p><strong>الخلاصة:</strong><br>
-            الفلسفة الإفريقية تدعونا لاستخدام العالم الرقمي لتعميق جذورنا لا لاقتلاعها؛ لتعزيز الجماعة لا تفكيكها لحفظ الحكمة لا تبديدها. 
-            إزالة الأذى الرقمي هي عملية إعادة توازن بين التقدم التقني والحكمة التقليدية بين الفرد والجماعة بين السرعة والعمق.
-            </p>
-        </div>
-    </div>
-    
-    <div id="reference-confucianism" class="reference-modal">
-        <div class="modal-content">
-            <span class="close-reference" onclick="closeReferenceModal('reference-confucianism')">×</span>
-            <h2>إزالة العوائق في العصر الرقمي: رؤية كونفوشيوسية لحماية المسيرة الإنسانية</h2>
-            <p>
-                تقوم الكونفوشيوسية على مبادئ <strong>الفضيلة (دِي) والعلاقات الإنسانية المتناغمة ورعاية المجتمع</strong>. 
-                في العصر الرقمي حيث تحول الفضاء الافتراضي إلى طريق (داو) جديد للمجتمع تظهر حاجة ملحة لتطبيق الحكمة التقليدية لحماية النظام الأخلاقي والإنساني.
-            </p>
-            <p><strong>أولاً: مفهوم إزالة العوائق في الفكر الكونفوشيوسي</strong><br>
-            لم يذكر كونفوشيوس إزالة الأذى عن الطريق حرفياً لكن المبدأ متجذر في فكرته عن رين (الإنسانية) ويي (الاستقامة). 
-            الرجل المثالي (جونزي) يسعى لتحقيق النظام الاجتماعي المتناغم عبر:
-            - تطهير القلب/النوايا قبل الفعل
-            - تصحيح الأسماء (تحديد المسؤوليات بدقة)
-            - إزالة ما يعكر صفاء العلاقات الإنسانية
-            </p>
-            <p>
-            في العصر الرقمي الطريق لم يعد حجراً أو شوكاً مادياً بل أصبح:
-            - معلومات مضللة تُعكِّر صفاء الفكر
-            - خطابٌ يُفسد العلاقات الإنسانية
-            - محتوى يُضعف الأخلاق الفردية والاجتماعية
-            </p>
-            <p><strong>ثانياً: خمسة أنواع من العوائق الرقمية التي تفسد المجتمع المتناغم</strong></p>
-            <table>
-                <tr>
-                    <th>العائق الرقمي</th>
-                    <th>تأثيره على الفضائل الخمس</th>
-                </tr>
-                <tr>
-                    <td>الكذب والتضليل</td>
-                    <td>يُفسد الثقة (شين) بين الحاكم والمحكوم، بين الصديقين وفي السوق</td>
-                </tr>
-                <tr>
-                    <td>الخطاب المُفرِّق</td>
-                    <td>يُضعف الانسجام الأسري والاجتماعي (الشياو - البر بالوالدين)</td>
-                </tr>
-                <tr>
-                    <td>المحتوى الفاسد</td>
-                    <td>يُشوِّه اللياقة والأدب (لي) ويُضعف ضبط النفس</td>
-                </tr>
-                <tr>
-                    <td>الإلهاء المستمر</td>
-                    <td>يُعطِّل الحكمة والمعرفة (تشيه) والجدية في التعلم</td>
-                </tr>
-                <tr>
-                    <td>العزلة الافتراضية</td>
-                    <td>تُقوِّض العلاقات الإنسانية الواقعية وواجباتها</td>
-                </tr>
-            </table>
-            <p><strong>ثالثاً: المسؤولية المتدرجة في الفضاء الرقمي توسعة مفهوم تصحيح الأسماء</strong><br>
-            مبدأ تصحيح الأسماء (تشينغ مينغ) يحدد أن كل شخص يجب أن يعرف مسؤولياته ويتبعها. 
-            في الفضاء الرقمي:
-            </p>
-            <ol>
-                <li><strong>الحاكم/المسؤول:</strong> مسؤول عن وضع أنظمة رقمية تعزز القيم الأخلاقية</li>
-                <li><strong>المعلم:</strong> مسؤول عن تربية التلاميذ على الاستخدام الحكيم للتقنية</li>
-                <li><strong>الأب:</strong> مسؤول عن إدارة استخدام الأسرة للفضاء الرقمي</li>
-                <li><strong>الصديق:</strong> مسؤول عن نصح أصدقائه عند انحرافهم رقمياً</li>
-                <li><strong>الفرد:</strong> مسؤول عن ضبط نفسه وتنقية نيته</li>
-            </ol>
-            <p>
-            الفضاء الرقمي لا يلغي هذه المسؤوليات بل يوسع نطاقها.
-            </p>
-            <p><strong>رابعاً: تطبيق الطريق الوسط (تشونغ يونغ) في التعامل الرقمي</strong><br>
-            الطريق الوسط يرفض التطرف:
-            - لا رفضاً كاملاً للتقنية تجنب العزلة عن تطور العصر
-            - لا انغماساً كاملاً فيها تجنب فقدان الجوهر الإنساني
-            بل استخدام متوازن يحقق:
-            - فائدة عملية مع حفظ القيم الأخلاقية
-            - اتصال معلوماتي مع حماية العمق الفكري
-            - تحديث الوسائل مع الحفاظ على الأصول الأخلاقية
-            </p>
-            <p><strong>خامساً: خطر الفضاء الرقمي على طقوس اللياقة (لي)</strong><br>
-            اللياقة (لي) في الكونفوشيوسية ليست شكليات فارغة بل تعبير خارجي عن احترام داخلي. 
-            الفضاء الرقمي يهددها من خلال:
-            - الاختصارات اللغوية التي تُفقِد الكلام وقاره
-            - التفاعلات السريعة التي تهمل التسلسل الهرمي الاجتماعي
-            - الشفافية المفرطة التي تنتهك حدود العلاقات الخاصة
-            - السرعة الرقمية التي تُضعف التأني والتأمل قبل الكلام
-            </p>
-            <p><strong>خاتمة: توصيات من منظور كونفوشيوسي</strong></p>
-            <ol>
-                <li>تطوير آداب رقمية (لي شوما) تستند إلى الأصول الأخلاقية الكونفوشيوسية</li>
-                <li>إنشاء منصات رقمية تُقدِّم النماذج الأخلاقية (جونزي) القديمة في قوالب عصرية</li>
-                <li>تضمين التربية الرقمية في منهج التعلم الذاتي وتحسين الذات</li>
-                <li>تشجيع الحوارات الرقمية البناءة التي تحترم التسلسل الهرمي واللياقة</li>
-                <li>استخدام التقنية لتعزيز الطقوس العائلية والاجتماعية لا لتقويضها</li>
-            </ol>
-            <p><strong>إن كان المرء لا يعرف أن يتكلم بما يليق، فليس له أن يتكلم</strong> - مناقشات 4:24</p>
-            <p>
-            الفضاء الرقمي اختبار حقيقي للإنسان المثالي (جونزي) في عصرنا. 
-            كل كلمة نكتبها كل صورة نشاركها كل تفاعل رقمي نقوم به هو فرصة لممارسة الإنسانية (رين) والاستقامة (يي) واللياقة (لي). 
-            إزالة العوائق الرقمية ليست مجرد تنظيف تقني بل هي تطهير أخلاقي للطريق الذي تسير عليه الإنسانية جمعاء نحو المجتمع المتناغم الأكبر.
-            </p>
-        </div>
-    </div>
-    
-    <div id="reference-taoism" class="reference-modal">
-        <div class="modal-content">
-            <span class="close-reference" onclick="closeReferenceModal('reference-taoism')">×</span>
-            <h2>تطهير الدرب الرقمي: رؤية طاوية لحماية المسيرة الإنسانية</h2>
-            <p>
-                في الفلسفة الطاوية الطريق (تاو) يُظهر نفسه عبر العفوية والتوازن. 
-                العالم الرقمي الحديث هو تعبير جديد عن تدفق التاو لكنه قد يحيد عن جريانه الطبيعي إذا اختل توازن الـ"ين واليانغ".
-            </p>
-            <p><strong>الأول: التاو الرقمي والتدفق الطبيعي</strong><br>
-            التاو يتدفق كالماء يملأ الفراغات دون جهد. العالم الرقمي:
-            - قد يُعيق الـ"وو وي" (العمل من خلال عدم الفعل) عندما تصبح التفاعلات قسرية
-            - قد يخلق فائضاً من اليانغ (فعل مفرط) من خلال التحفيز المستمر
-            - قد يُضعف الـ"تزو ران" (العفوية الطبيعية) عبر التخطيط المبالغ للتواصل
-            </p>
-            <p>
-            التاو الذي يمكن وصفه ليس التاو الأزلي التحدي الرقمي يكمن في محاولة احتواء اللا محدود في واجهات محدودة.
-            </p>
-            <p><strong>الثاني: تشو الزائد وعسر الهضم الرقمي</strong><br>
-            مبدأ التشو (الفراغ/ الحيز) أساسي في الطاوية. 
-            العالم الرقمي غالباً:
-            - يملأ كل فراغ بالتشويش والمعلومات
-            - يُقلص المساحة الداخلية للتأمل واللا فعل
-            - يُحول الـ"شن" (الروح/ العقل) إلى مستودع مزدحم
-            </p>
-            <p>
-            ثلاثون متحدثاً يتحدون في محور واحد لكن الفراغ بينهم هو ما يجعل العربة مفيدة (التاو ته تشينغ)<br>
-            قيمة التواصل تكمن في المساحات بين الرسائل لا في تراكمها.
-            </p>
-            <p><strong>الثالث: الين واليانغ الرقمي</strong></p>
-            <table>
-                <tr>
-                    <th>العنصر الرقمي</th>
-                    <th>طاقته</th>
-                    <th>خطر الخلل</th>
-                </tr>
-                <tr>
-                    <td>المحتوى المستهلك</td>
-                    <td>يانغ (استقبال نشط)</td>
-                    <td>فرط اليانغ: إرهاق الحواس</td>
-                </tr>
-                <tr>
-                    <td>الصمت الرقمي</td>
-                    <td>ين (استيعاب سلبي)</td>
-                    <td>فرط الين: انفصال عن تدفق المعلومات</td>
-                </tr>
-                <tr>
-                    <td>التواصل السريع</td>
-                    <td>يانغ (دفق نشط)</td>
-                    <td>سرعة تتعارض مع تدفق التاو الطبيعي</td>
-                </tr>
-                <tr>
-                    <td>التأمل ما رقمي</td>
-                    <td>ين (توقف سلبي)</td>
-                    <td>ضروري لاستعادة التوازن</td>
-                </tr>
-            </table>
-            <p><strong>الرابع: العودة إلى البساطة (بو)</strong><br>
-            البساطة الطبيعية (بو - الكتلة غير المنحوتة) تتعرض للخطر عبر:
-            - التعقيد الزائد للواجهات والتطبيقات
-            - الاصطناع في الهويات والتواصل الرقمي
-            - التراكم الرقمي غير الضروري
-            </p>
-            <p><strong>ممارسة طاوية رقمية:</strong><br>
-            حذف ما لا يخدم الجوهر تبسيط الوجود الرقمي، العودة إلى الوظائف الأساسية.
-            </p>
-            <p><strong>الخامس: تشي الرقمي وتناغم الإنسان مع الكون</strong><br>
-            طاقة الـ"تشي" الشخصية تتأثر بالعالم الرقمي:
-            - تشي السماء (طاقة الكون): تنقطع بسبب الانشغال بالشاشات
-            - تشي الأرض (طاقة الطبيعة): تُهمل لصالح الواقع الافتراضي
-            - تشي الإنسان (طاقة الجسد والروح): تُستنزف بالتحديق الطويل
-            </p>
-            <p><strong>التمرين الطاوي:</strong><br>
-            ممارسة تشي غونغ رقمي - تنظيم التنفس - أخذ فترات راحة للعينين - ممارسة النظر إلى البعيد بين الجلسات
-            </p>
-            <p><strong>التوصيات الطاوية للوجود الرقمي المتوازن</strong></p>
-            <ol>
-                <li><strong>مبدأ 30-70 الرقمي:</strong>
-                    <ul>
-                        <li>30% من الوقت في الفعل الرقمي (يانغ)</li>
-                        <li>70% في الوجود الطبيعي غير الرقمي (ين)</li>
-                    </ul>
-                </li>
-                <li><strong>طقوس فضاء التشو:</strong>
-                    <ul>
-                        <li>تخصيص أوقات يومية خالية من الشاشات</li>
-                        <li>إنشاء مناطق منزلية خالية من الأجهزة</li>
-                        <li>ممارسة الصيام الرقمي القمري (يوم كل شهر قمري)</li>
-                    </ul>
-                </li>
-                <li><strong>فن الحذف البطيء:</strong>
-                    <ul>
-                        <li>إلغاء اشتراكات غير ضرورية شهرياً</li>
-                        <li>تقليل جهات الاتصال إلى الجوهرية فقط</li>
-                        <li>تنقية التطبيقات كما تُنقى المياه الراكدة</li>
-                    </ul>
-                </li>
-                <li><strong>التواصل كتدفق مائي:</strong>
-                    <ul>
-                        <li>عدم الإجبار على الرد الفوري</li>
-                        <li>السماح للمحادثات بالتدفق الطبيعي</li>
-                        <li>تقبل فترات الصمت الرقمي كجزء من الإيقاع الطبيعي</li>
-                    </ul>
-                </li>
-                <li><strong>الوجود الرقمي الحضوري:</strong>
-                    <ul>
-                        <li>جلسة واحدة كاملة كل مرة بدون تعدد مهام</li>
-                        <li>وعي كامل بالجلسة الرقمية كما في التأمل</li>
-                        <li>إنهاء كامل قبل الانتقال للنشاط التالي</li>
-                    </ul>
-                </li>
-            </ol>
-            <p><strong>الطريق الذي يمكن سلوكه ليس الطريق الدائم والاسم الذي يمكن نطقه ليس الاسم الدائم</strong> (التاو ته تشينغ)</p>
-            <p>
-            العالم الرقمي هو تعبير مؤقت عن التاو كالنهر الذي يتغير مجراه باستمرار. 
-            الحكمة تكمن في الانسياب مع التدفق الرقمي دون التعلق به في استخدام الأداة دون أن نصبح أداة لها في الاتصال دون فقدان الجوهر وفي التقدم التقني مع الحفاظ على البساطة الأصلية.
-            </p>
-            <p>
-            الطريق الأمثل هو الطريق الأوسط الرقمي: 
-            استخدام التقنية كجسر لا كغاية كوسيلة للتواصل مع التاو لا كحاجز عنه.
-            عندما نعيد التوازن يعود تدفق التشي ويعود الانسجام مع الطريق الكبير الذي يسري في كل شيء حتى في البتات والبايتات.
-            </p>
-        </div>
-    </div>
-
-<!-- الزرادشتية - المحتوى الكامل مع جداول وقوائم -->
-<div id="reference-indigenous" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-indigenous')">×</span>
-<h2>إزالة الأذى في العصر الرقمي: رؤية زرادشتية لحماية المسيرة الإنسانية</h2>
-<p>
-تقوم الزرادشتية على الصراع الكوني بين أهورامزدا (النور/الحقيقة/النظام) وأهريمان (الظلام/الكذب/الفوضى).
-في العصر الرقمي أصبح الفضاء الافتراضي ساحة جديدة لهذا الصراع حيث تظهر أشكال حديثة من الدروج (الكذب/الفساد) التي تهدد النظام الأخلاقي.
-</p>
-<p><strong>الأول: الفضاء الرقمي كميدان للصراع الكوني</strong><br>
-في الرؤية الزرادشتية العالم ميدان للاختيار بين أشا (الحقيقة/النظام) ودروج (الكذب/الفوضى). 
-الفضاء الرقمي:
-- يعزز أشا عندما ينشر المعرفة النافعة، العدل، والحقيقة
-- يعزز دروج عندما ينشر الكذب، الفوضى الأخلاقية، والتمييز
-- أصبح ساحة معركة حيث كل تفاعل رقمي هو تصويت لصالح النور أو الظلام
-باختياراتنا نصنع العالم كل نقرة كل مشاركة هي اختيار في الصراع الكوني.
-</p>
-<p><strong>الثاني: الدروج الرقمية أشكال الكذب الحديثة</strong></p>
-<table>
-<tr>
-<th>نوع الدروج (الفساد)</th>
-<th>مظاهره الرقمية</th>
-<th>تأثيره على نظام أشا</th>
-</tr>
-<tr>
-<td>دروج الكذب</td>
-<td>الأخبار المزيفة، المعلومات المضللة</td>
-<td>يُضعف أساس المجتمع: الثقة والحقيقة</td>
-</tr>
-<tr>
-<td>دروج الفوضى</td>
-<td>خطاب الكراهية، التحريض على العنف</td>
-<td>يُدمر النظام الاجتماعي والوئام</td>
-</tr>
-<tr>
-<td>دروج التلوث الفكري</td>
-<td>المحتوى الفاسد، المواد الإباحية</td>
-<td>يُلوث العقل (المانا) والروح (الروفان)</td>
-</tr>
-<tr>
-<td>دروج الانقسام</td>
-<td>خلق الفتنة، تعزيز التعصب</td>
-<td>يُقسّم المجتمع ضد نفسه</td>
-</tr>
-</table>
-<p><strong>الثالث: الفضائل الست (أميشا سبينتا) في العصر الرقمي</strong></p>
-<ol>
-<li><strong>فهو مانا (الفكر الصالح):</strong>
-<ul>
-<li>تنقية المحتوى المستهلك</li>
-<li>التأمل قبل النشر</li>
-<li>مقاومة الأفكار الضارة</li>
-</ul>
-</li>
-<li><strong>أشا فهشتا (الحق الأفضل):</strong>
-<ul>
-<li>السعي للدقة والمصداقية</li>
-<li>تصحيح المعلومات الخاطئة</li>
-<li>مقاومة التضليل الإعلامي</li>
-</ul>
-</li>
-<li><strong>خشترا ويريا (القوة المثلى):</strong>
-<ul>
-<li>استخدام التقنية لخدمة الخير</li>
-<li>حماية الضعفاء رقمياً</li>
-<li>مواجهة الظلم الرقمي</li>
-</ul>
-</li>
-<li><strong>سبنتا أرمايتي (التفاني المقدس):</strong>
-<ul>
-<li>الإخلاص في التواصل</li>
-<li>العمق بدلاً من السطحية</li>
-<li>الالتزام بالأخلاق الرقمية</li>
-</ul>
-</li>
-<li><strong>هاورفاتات (الكمال):</strong>
-<ul>
-<li>السعي للاكتمال في المعلومات</li>
-<li>تجنب النقص والتشويه</li>
-<li>تقديم الصورة الكاملة</li>
-</ul>
-</li>
-<li><strong>أميرتات (الخلود):</strong>
-<ul>
-<li>خلق محتوى خالد قيميًا</li>
-<li>ترك إرث رقمي إيجابي</li>
-<li>ربط الحاضر بالمبادئ الأبدية</li>
-</ul>
-</li>
-</ol>
-<p><strong>الرابع: مفهوم الثنائية الرقمية</strong><br>
-الثنائية الزرادشتية (النور/الظلام) تتجلى رقمياً:
-</p>
-<table>
-<tr>
-<th>قوى النور</th>
-<th>قوى الظلام</th>
-</tr>
-<tr>
-<td>المحتوى النافع</td>
-<td>المحتوى الضار</td>
-</tr>
-<tr>
-<td>الكلام الصادق</td>
-<td>الكلام الكاذب</td>
-</tr>
-<tr>
-<td>الوحدة والتعاون</td>
-<td>الانقسام والصراع</td>
-</tr>
-<tr>
-<td>التوازن والاعتدال</td>
-<td>الإفراط والإدمان</td>
-</tr>
-</table>
-<p>
-الممارسة الزرادشتية: تعزيز قوى النور في كل تفاعل رقمي ومقاومة قوى الظلام بنشاط.
-</p>
-<p><strong>الخامس: دور الإنسان كحارس ومعاون للنظام</strong><br>
-الإنسان في الزرادشتية هو حليف أهورامزدا في محاربة الظلام. في العصر الرقمي:
-</p>
-<ol>
-<li><strong>الحراسة (الرعاية):</strong>
-<ul>
-<li>حراسة العائلة من المحتوى الضار</li>
-<li>حماية المجتمع من المعلومات المضللة</li>
-<li>رعاية القيم الأخلاقية في الفضاء العام</li>
-</ul>
-</li>
-<li><strong>الإعمار (الإصلاح):</strong>
-<ul>
-<li>إصلاح الأخطاء المعلوماتية</li>
-<li>بناء مساحات رقمية نظيفة</li>
-<li>تعزيز المحتوى البنّاء</li>
-</ul>
-</li>
-<li><strong>المقاومة (المواجهة):</strong>
-<ul>
-<li>مقاومة خطاب الكراهية</li>
-<li>مواجهة التضليل الإعلامي</li>
-<li>تحدي المحتوى الفاسد</li>
-</ul>
-</li>
-</ol>
-<p><strong>التوصيات الزرادشتية العملية</strong></p>
-<ol>
-<li>ممارسة "التفكير-الكلام-الفعل" المتوافق:
-<ul>
-<li>التفكير الصالح قبل الكتابة</li>
-<li>الكلام الصادق أثناء التواصل</li>
-<li>الفعل النافع في المشاركة</li>
-</ul>
-</li>
-<li>إنشاء أوقات النور الرقمية:
-<ul>
-<li>فترات مخصصة للتعلم والمحتوى النافع</li>
-<li>مساحات للحوار البناء والمنطقي</li>
-<li>مجموعات تركز على الإعمار لا الهدم</li>
-</ul>
-</li>
-<li>طقوس التنقية الرقمية:
-<ul>
-<li>تنظيف الجهاز والتطبيقات بشكل دوري كما تُنظف البيوت</li>
-<li>مراجعة جهات الاتصال والمتابعات</li>
-<li>تهوية المساحات الرقمية من المحتوى الراكد</li>
-</ul>
-</li>
-<li>تربية على الثنائية الأخلاقية:
-<ul>
-<li>تعليم الأطفال التمييز بين النور والظلام رقمياً</li>
-<li>تدريب على مقاومة الإغراءات الرقمية الضارة</li>
-<li>تعزيز الفضائل الزرادشتية في الاستخدام الرقمي</li>
-</ul>
-</li>
-<li>مقاومة دروج الكذب:
-<ul>
-<li>تطوير مهارات التحقق من المعلومات</li>
-<li>المشاركة في مبادرات تصحيح المعلومات</li>
-<li>دعم المنصات التي تلتزم بالصدق</li>
-</ul>
-</li>
-</ol>
-<p><strong>الخاتمة: الفضاء الرقمي كفرصة للانتصار النهائي</strong></p>
-<p>
-من خلال: 
-الأفكار الصالحة 
-الأقوال الصالحة
-الأفعال الصالحة
-نقترب من أهورامزدا"** (من نصوص الأفيستا)
+Every digital interaction is a chance to practice Ahimsa or violate it. The digital space as a new arena for existence calls us to apply Jain discipline with greater precision because the impact of our digital actions may be wider and faster than ever.
 </p>
 <p>
-العصر الرقمي ليس تهديداً فحسب بل هو فرصة عظيمة لنشر النور والحقيقة على نطاق غير مسبوق. 
-كل إنسان مرتبط بالإنترنت هو جندي محتمل في جيش النور قادر على اختيار أشا على دروج في كل لحظة.
-</p>
-<p>
-الزرادشتية تدعونا لنكون فاعلين لا منفعلين في هذه الساحة الجديدة. 
-إزالة الأذى الرقمي هو واجب ديني وأخلاقي لأنه جزء من الحرب الكونية ضد قوى الظلام والفساد. 
-عندما ننقي الفضاء الرقمي، لا ننظف شاشات فحسب بل نساهم في انتصار النور النهائي على الظلام.
+The path toward liberation (Moksha) passes through the digital space today as well. 
+Removing digital harm is not just a social responsibility but a spiritual necessity for anyone seeking purity and liberation.
 </p>
 </div>
 </div>
-<!-- الشنتو - المحتوى الكامل مع جداول وقوائم -->
-<div id="reference-shinto" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-shinto')">×</span>
-<h2>تطهير الطريق الرقمي: رؤية شنتوية لحماية المسيرة الإنسانية</h2>
-<p>
-في العقيدة الشنتوية الطهارة (هاراي) والتناغم مع الكامي هما جوهر الوجود. 
-فالعالم الرقمي الحديث كطريق جديد تسلكه الأرواح يحتاج إلى تطبيق مبادئ الشنتو للحفاظ على النقاء الروحي والانسجام الاجتماعي.
-</p>
-<p><strong>الأول: الطريق كفضاء مقدس للكامي</strong><br>
-في الشنتو الطرق والأماكن العامة هي مسالك للكامي (الأرواح الإلهية). 
-الفضاء الرقمي اليوم:
-- أصبح طريقاً رقمياً تسلكه أرواح البشر يومياً
-- يحتاج إلى تطهير مستمر كما تُطهر المزارات والمقدسات
-- يصبح مكاناً لتجلي الكامي أو للتدنيس إذا أسيء استخدامه
-</p>
-<p>
-الكلمة المنطوقة لها روحها وهذا ينطبق على الكلمة المكتوبة رقمياً أيضاً. 
-كل محتوى رقمي يحمل طاقة روحية (كيه) تؤثر على مسار الإنسان.
-</p>
-<p><strong>الثاني: أنواع التدنيس الرقمي (كيغاري)</strong><br>
-التدنيس الروحي (كيغاري) في العصر الرقمي يتجلى في:
-</p>
-<table>
-<tr>
-<th>نوع التدنيس</th>
-<th>مظهره الرقمي</th>
-<th>تأثيره على التناغم (وا)</th>
-</tr>
-<tr>
-<td>تدنيس الكلمة</td>
-<td>الكلام البذيء، الشتائم، الخطاب البغيض</td>
-<td>يُبعد الكامي، يُفسد نقاء المكان الرقمي</td>
-</tr>
-<tr>
-<td>تدنيس الصورة</td>
-<td>الصور المؤذية، المحتوى المستهجن</td>
-<td>يُضعف قدسية الوجود البشري والطبيعي</td>
-</tr>
-<tr>
-<td>تدنيس العلاقة</td>
-<td>قطع الروابط، التنمر، العزلة الاجتماعية</td>
-<td>يُعطل تناغم المجتمع (شا-إن-وا)</td>
-</tr>
-<tr>
-<td>تدنيس الذاكرة</td>
-<td>تزوير التاريخ، تشويه التراث</td>
-<td>يقطع الصلة بالأسلاف والكامي الحارسين</td>
-</tr>
-</table>
-<p><strong>الثالث: ممارسات التطهير الرقمي (هاراي / ميسوغي)</strong><br>
-كما تُطهر المزارات والأجساد، يجب تطهير الفضاء الرقمي:
-</p>
-<ol>
-<li><strong>تطهير المحتوى الشخصي:</strong>
-<ul>
-<li>حذف المنشورات السلبية القديمة</li>
-<li>تنقية قواصد الصداقة والمتابعة</li>
-<li>تنظيم المساحات الرقمية كتنظيم المذبح المنزلي (كاميدانا)</li>
-</ul>
-</li>
-<li><strong>طقوس رقمية يومية:</strong>
-<ul>
-<li>بدء الجلسة الرقمية بنية طاهرة</li>
-<li>ترشيد المياه الرمزي قبل التفاعل المهم (كما في تيميزو)</li>
-<li>إغلاق الجلسات بشكر الكامي على الاتصالات المتناغمة</li>
-</ul>
-</li>
-<li><strong>تطهير مجتمعي رقمي:</strong>
-<ul>
-<li>إنشاء مساحات رقمية مقدسة خالية من السلبية</li>
-<li>تطوير آداب سلوك رقمية تحاكي آداب زيارة المزارات</li>
-<li>علامات تحذير رقمية عند مداخل المحتوى الحساس (كما تحذر المزارات من الدخول غير الطاهر)</li>
-</ul>
-</li>
-</ol>
-<p><strong>الرابع: الكامي الرقمي وعبادة الأسلاف</strong><br>
-الفضاء الرقمي يؤثر على علاقتنا بـ:
-- كامي الطبيعة: انفصال عن الطبيعة بسبب الإدمان الرقمي
-- أرواح الأسلاف: استبدال طقوس الذكرى بالتواصل السطحي
-- كامي المكان: تجاهل الأماكن المقدسة الحقيقية لصالح الواقع الافتراضي
-</p>
-<p>
-الممارسة الموصى بها: 
-استخدام التقنية لتسجيل وتكريم الأماكن المقدسة والأسلاف لا للهروب منها.
-</p>
-<p><strong>الخامس: فن الميسوغي الرقمي (التنقية الذاتية)</strong></p>
-<p><strong>التمرين الروحي:</strong></p>
-<ul>
-<li>صيام رقمي دوري كشكل من أشكال التطهير</li>
-<li>مراجعة العلاقات الرقمية والتخلص مما لا يحافظ على التناغم</li>
-<li>خلق مساحات صامتة في الجدول الرقمي للتأمل والاتصال بالطبيعة</li>
-</ul>
-<p><strong>التوصيات العملية من منظور شنتوي</strong></p>
-<ol>
-<li><strong>تصميم منصات رقمية بمساحات مقدسة:</strong>
-<ul>
-<li>أقسام للنقاش المهذب فقط</li>
-<li>مناطق محمية من الخطاب السلبي</li>
-<li>معايير تصميم تراعي الراحة الروحية</li>
-</ul>
-</li>
-<li><strong>طقوس رقمية للبدء والإنهاء:</strong>
-<ul>
-<li>تأمل قصير قبل فتح المنصات</li>
-<li>تعبير عن الامتنان للتفاعلات الإيجابية</li>
-<li>حفل تنظيف رقمي أسبوعي (حذف ما لا يخدم التناغم)</li>
-</ul>
-</li>
-<li><strong>تربية على الاحترام الرقمي:</strong>
-<ul>
-<li>تعليم أن الكلمات الرقمية تحمل أرواحاً</li>
-<li>تدريب على الاستماع الرقمي كما نستمع في المزارات</li>
-<li>تذكير بأن الشاشة نافذة على عالم تسكنه الأرواح</li>
-</ul>
-</li>
-<li><strong>توازن بين الواقع والافتراضي:</strong>
-<ul>
-<li>أولوية زيارة الأماكن المقدسة الحقيقية</li>
-<li>استخدام التقنية لتعزيز هذه الزيارات لا استبدالها</li>
-<li>ربط المحتوى الرقمي بالطبيعة والمقدسات الواقعية</li>
-</ul>
-</li>
-<li><strong>مبادئ للخلق الرقمي:</strong>
-<ul>
-<li>هل هذا المحتوى يخدم التناغم (وا)؟</li>
-<li>هل يحترم الأرواح والكامي؟</li>
-<li>هل يحافظ على الطهارة (هاراي)؟</li>
-<li>هل يعزز الامتنان للطبيعة والأسلاف؟</li>
-</ul>
-</li>
-</ol>
-<p><strong>إن النقاء أساس كل شيء، ومنه ينبع التناغم مع قوى الكون</strong> - حكمة شنتوية</p>
-<p>
-الطريق الرقمي ككل الطرق يجب أن يُسلك بنقاء قلب وتواضع روح. 
-كل تفاعل رقمي هو لقاء مع أرواح الآخرين ومع الكامي التي تسكن العالم. 
-تطهير هذا الطريق ليس رفاهية بل ضرورة روحية لتحقيق التناغم بين العالم المادي والرقمي بين الإنسان والكامي بين الحاضر وتراث الأسلاف. 
-في النقاء الرقمي نجد الطريق إلى الانسجام الحقيقي.
-</p>
-</div>
-</div>
-<!-- باقي النوافذ موجودة في الملف الأصلي -->
-<div id="reference-buddhism" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-buddhism')">×</span>
-<h2>إزالة المعاناة في العصر الرقمي: رؤية بوذية لحماية المسيرة الإنسانية</h2>
-<p>
-تستند البوذية إلى مبادئ "النبلاء الأربعة" والتخلّص من المعاناة (دوكها).
-في العصر الرقمي حيث تحول الفضاء الافتراضي إلى مسار يومي للوعي يصبح تطبيق "الطريق الثماني النبيل" ضرورياً لمواجهة أشكال المعاناة الجديدة التي تولدها المنصات الرقمية.
-</p>
-<p><strong>أولاً: اللاحَرْم (أهيمسا) تتجاوز العالم المادي</strong><br>
-مبدأ عدم الإيذاء هو أساس الأخلاق البوذية.
-لا يقتصر هذا على الأفعال الجسدية بل يشمل الكلام (فاجا) والفكر.
-يقول بوذا: "الكلمات التي لا تسبب ندمًا... هي كلمات حسنة". الفضاء الرقمي يضخّم قدرة الكلمة على الإيذاء مما يجعل "الخطاب السليم" (صحيح الكلام) من أهم الممارسات في عصرنا.
-</p>
-<p><strong>ثانياً: ثلاثة أنواع من السموم الرقمية</strong><br>
-تعلم البوذية أن أصل المعاناة يكمن في السموم الثلاثة:
-<ul>
-<li>الجهل (أفيديا) المتمثل في المعلومات المضللة والأخبار الكاذبة</li>
-<li>التعلق (راغا) المتمثل في الإدمان الرقمي والبحث الدائم عن التحفيز</li>
-<li>الكراهية (دڤيشا) المتمثل في خطاب الكراهية والاستقطاب</li>
-</ul>
-المنصات الرقمية غالباً ما تغذي هذه السموم بدلاً من تخفيفها.
-</p>
-<p><strong>ثالثاً: الوعي (ساتي) كحارس للطريق الرقمي</strong><br>
-"الوعي" في البوذية هو الحارس عند بوابة الحواس في العالم الرقمي حيث تتدفق المحفزات بلا توقف تصبح ممارسة الوعي ضرورية:
-<ul>
-<li>الوعي بما نستهلكه رقمياً</li>
-<li>الوعي بردود أفعالنا العاطفية</li>
-<li>الوعي بتأثير المحتوى على حالتنا الذهنية</li>
-</ul>
-ممارسة الوعي تحول المستهلك السلبي إلى مشارك واعي.
-</p>
-<p><strong>رابعاً: الخوارزميات واللا-ذات (أناتا)</strong><br>
-تواجه البوذية معضلة رقمية: الخوارزميات تبني "ذاتاً" وهمية (أناتا) من خلال:
-<ul>
-<li>إنشاء فقاعات تصورية تعزز الأنا الوهمية</li>
-<li>تعزيز التعلق بوجهات نظر محددة</li>
-<li>خلق هوية رقمية منفصلة ومتغيرة باستمرار</li>
-</ul>
-هذا يتعارض مع فهم اللا-ذات والتخلص من التعلقات.
-</p>
-<p><strong>خامساً: التعاطف (كارونا) والحكمة (براجنا) في الفضاء الافتراضي</strong><br>
-يجب أن يوجه التعاطف والحكمة تفاعلاتنا الرقمية:
-<ul>
-<li>التعاطف: التوقف قبل نشر محتوى قد يسبب معاناة</li>
-<li>الحكمة: التمييز بين المحتوى النافع والضار</li>
-<li>الفعل السليم: استخدام المنصات لنشر السلام والتفاهم</li>
-</ul>
-الطريق الوسط يمنع التطرف بين رفض التكنولوجيا كلياً والانغماس الكامل فيها.
-</p>
-<p><strong>سادساً: العزلة والاتصال في زمن الترابط</strong><br>
-يخلق العالم الرقمي مفارقة: اتصال سطحي يؤدي إلى عزلة عميقة. الممارسات البوذية تذكرنا بأن:
-<ul>
-<li>الصمت الداخلي (ساماثا) ضروري حتى وسط الضجيج الرقمي</li>
-<li>التواصل الحقيقي يتطلب حضوراً واهتماماً كاملاً</li>
-<li>العلاقات العميقة تتجاوز التفاعلات السريعة</li>
-</ul>
-</p>
-<p><strong>خاتمة وتوصيات من منظور بوذي:</strong><br>
-<ol>
-<li>ممارسة رقمية واعية: تطوير برامج تأمل تركز على الوعي الرقمي، و"صيام" دوري من المنصات.</li>
-<li>تطوير أدوات رقمية تعزز القيم البوذية: خوارزميات تشجع على التعاطف والتفاهم بدلاً من الغضب والاستقطاب.</li>
-<li>تعليم أخلاقيات رقمية بوذية: دمج مفاهيم "الكلام السليم" و"الفعل السليم" في التربية الرقمية.</li>
-<li>مجتمعات رقمية داعمة للممارسة: إنشاء فضاءات افتراضية تدعم الممارسة الروحية بدلاً من تشتيت الانتباه.</li>
-<li>البساطة الرقمية: تشجيع استخدام التكنولوجيا بطريقة متوازنة، تخفف التعلق وتحرر الوقت للتأمل والممارسة.</li>
-</ol>
-</p>
-<p>"نحن ما نكرره. التميز، إذاً، ليس فعلًا بل عادة." - مقولة بوذية<br>
-كل نقرة كل تفاعل كل ساعة نقضيها في العالم الرقمي هي فرصة لممارسة الوعي والتعاطف أو فرصة لتغذية السموم الثلاثة. الاختيار هو ممارسة يومية والطريق الرقمي مثل كل الطرق يمكن أن يقود إما إلى مزيد من المعاناة أو إلى اليقظة والتحرر.
-</p>
-</div>
-</div>
-<div id="reference-judaism" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-judaism')">×</span>
-<h2>إزالة الأذى في العصر الرقمي: رؤية اليهودية لحماية المسيرة الإنسانية</h2>
-<p>
-تستند اليهودية إلى مبادئ الرحمة والبناء وتأمر بفعل "التِكّوم" (إزالة العثرة من الطريق) ليس كواجب فردي فحسب بل كمنهج أخلاقي شامل.
-في عصر وسائل التواصل الاجتماعي، تحول الطريق من مسار مادي إلى فضاء رقمي يسلكه الإنسان يومياً وقد يتعرض فيه لما قد يضر بعقله وقلبه وعلاقاته من هنا تنبع الحاجة لفهم أعمق لمفهوم الأذى والطريق في ضوء مقاصد الشريعة اليهودية (הלכה) وقيمها الأخلاقية (מוסר).
-</p>
-<p><strong>أولاً: إزالة الأذى واجب إنساني عام</strong><br>
-لم تحدد التعاليم اليهودية هذا الواجب بأتباع الديانة اليهودية فقط. ففي سفر التثنية (22: 4) يُؤمر المرء بمساعدة من سقط حِمله حتى لو كان من خصومه.
-أن مبدأ "לֹא תַעֲמֹד עַל דַּם רֵעֶךָ" (لا تقف مكتوف الأيدي على دم قريبك سفر اللاويين 19:16) يشمل منع كل ضرر محتمل.
-الحكمة اليهودية ترى في حفظ الحياة والرفق بالآخرين ("פיקוח נפש" و"דרכי שלום") قيماً عليا تشمل الجميع دون تمييز.
-</p>
-<p><strong>ثانياً: الأذى يتجاوز المادي إلى المعنوي والأخلاقي</strong><br>
-الأذى المراد إزالته لا يقتصر على الحجارة أو العوائق الملموسة بل يشمل:
-<ul>
-<li>الكلام المؤذي أو البغيض (לשון הרע - نميمة وكلام السوء).</li>
-<li>الخداع والتضليل (גניבת דעת - سرقة الفكر أو خداع العقل).</li>
-<li>السلوك الذي يسبب الألم النفسي أو الارتباك للآخرين.</li>
-</ul>
-حكماء التلمود أكدوا أن "العار أقسى من الموت"، وأن الأذى النفسي والمعنوي قد يكون أكثر فتكاً من الجسدي.
-</p>
-<p><strong>ثالثاً: الحياة رحلة أخلاقية مستمرة</strong><br>
-تنظر اليهودية إلى الحياة الدنيا كمسيرة ("דרך") يختبر فيها الإنسان ويبني عالمه "في كل الطرق اَعرفوه" (משלי ג:ו) دعوة للوعي الأخلاقي في كل مسار كل لحظة هي فرصة لاختيار: هل نساهم في تسهيل طريق الآخرين وبناء مجتمع ("תיקון עולם") أم نضع فيه العوائق وننشر الفساد?
-</p>
-<p><strong>رابعاً: تدمير الفكر والعقل من أشد الأذى</strong><br>
-ما يضعف عقل الإنسان أو يدفعه للخطأ كبث الشكوك الهدامة أو نشر اليأس القاتل أو التحريض على الكراهية غير المبررة هو أذى خطير. العقل هو أداة فهم الإرادة الإلهية وتطبيق الشرعة ومسؤولية حمايته عظيمة.
-من ينشر ما يفسد الأفكار ويشوه الحقيقة كمن يسمم بئر ماء يشرب منه الجميع.
-</p>
-<p><strong>خامساً: وسائل التواصل الاجتماعي: الطريق الرقمي للأذى المعاصر</strong><br>
-أصبحت المنصات الرقمية طريقاً افتراضياً يسلكه الملايين وقد أدى سوء استخدامها إلى:
-<ul>
-<li>تمزيق أواصر العائلة والمجتمع (השכנת שלום - إحلال السلام هو فضيلة عليا).</li>
-<li>التحريض على العنف والانتقام (הקמת חמה - إثارة الغضب الباطل مرفوض).</li>
-<li>التسبب في أزمات نفسية حادة.</li>
-</ul>
-هذا أذى مركب يجمع بين الإيذاء النفسي والاجتماعي والروحي. من يساهم في جعل هذا الطريق ساماً، فإنه ينتهك مبدأ "לא תשים דמים בביתך" (لا تجعل في بيتك سبباً لسفك الدماء، تثنية 22:8 بمفهوم موسع).
-</p>
-<p><strong>سادساً: الخوارزميات ليست محايدة، بل توجهها الربحية</strong><br>
-معظم خوارزميات المنصات لا تميز بين الحق والباطل بل بين ما يدر ربحاً وما لا يدر.
-هي تغذي المستخدم بما يلبي ميوله حتى لو كان ذلك يدمره نفسياً أو أخلاقياً. لذلك على الإنسان الواعي أن:
-<ul>
-<li>يتحرى عن مصادره ("דע מה שתשיב" - اعرف كيف تجيب، أي كن مستعداً).</li>
-<li>يختار محتواه بوعي وبمسؤولية.</li>
-<li>يدرب نفسه على التمييز والنقد البناء، لا على الانجراف السلبي.</li>
-</ul>
-</p>
-<p><strong>خاتمة وتوصيات في ضوء الرؤية اليهودية:</strong><br>
-<ol>
-<li>الدعوة إلى خطاب توعوي يستند إلى القيم اليهودية الأصيلة ("ואהבת לרעך כמוך" - أحب لغيرك كما تحب لنفسك، سفر اللاويين 19:18) لإيضاح خطر الأذى الرقمي.</li>
-<li>دعم مبادرات ومحتوى غير ربحي يعزز القيم الإنسانية والأخلاقية ويساهم في إصلاح العالم ("תיקון עולם").</li>
-<li>تأهيل الأسر والمعلمين لفهم آليات العالم الرقمي وكيفية تربية الأبناء على الاستخدام الحكيم والآمن مع التركيز على مسؤولية الكلام ("משמרת הלשון").</li>
-<li>التأكيد على أن النية الحسنة لا تكفي بل يجب أن يقترن العمل والمحتوى بالفائدة الحقيقية والبعد عن الضرر.</li>
-<li>اعتبار حماية العقل والنفس الإنسانية من الأولويات المجتمعية كما تحمى الأجساد من الأوبئة، فهذا من أعلى درجات حفظ الحياة ("פיקוח נפש").</li>
-</ol>
-</p>
-<p>"مَنْ أَهْلَكَ نَفْسًا وَاحِدَةً، فَكَأَنَّمَا أَهْلَكَ عَالَمًا كَامِلًا، وَمَنْ أَحْيَا نَفْسًا وَاحِدَةً، فَكَأَنَّمَا أَحْيَا عَالَمًا كَامِلًا" (المشناه، سنهدرين 4:5).<br>
-العقل والروح هما عالم الإنسان الكامل وحمايتهما من الشرور الرقمية هي من أعظم صور إحياء النفس والإسهام في بناء عالم أكثر أماناً وكرامة.
-</p>
-</div>
-</div>
-<div id="reference-christianity" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-christianity')">×</span>
-<h2>إزالة الأذى في العصر الرقمي: رؤية مسيحية لحماية المسيرة الإنسانية</h2>
-<p>
-تقوم المسيحية على محبة الله ومحبة القريب، وتدعو إلى إزالة كل ما يعترض طريق الخير والسلام.
-في عصر الوسائط الرقمية، حيث أصبح العالم الافتراضي طريقاً يسلكه الملايين يومياً تبرز الحاجة إلى فهم أعمق لدعوتنا كتلاميذ للمسيح في هذا المجال الجديد.
-</p>
-<p><strong>أولاً: خدمة القريب في الفضاء الرقمي</strong><br>
-لم يحدد السيد المسيح وصية محبة القريب (مرقس ١٢:٣١) بحدود الجغرافيا أو الوسيط بل شملت كل إنسان نلتقيه.
-يقول القديس بولس: "احملوا بعضكم أثقالاً وهكذا تمموا ناموس المسيح" (غلاطية ٦:٢).
-إزالة الأذى الرقمي - سواء بالكلمة أو الصورة أو المعلومة - هي شكل حديث من أشكال حمل أثقال القريب، خاصة في عالم يعاني من العزلة والقلق.
-</p>
-<p><strong>ثانيًا: الأذى الجديد لأخوة المسيح</strong><br>
-يحذر الكتاب المقدس من قوة الكلام: "الموت والحياة في يد اللسان" (أمثال ١٨:٢١).
-في عصرنا امتد هذا اللسان إلى منصات التواصل الأذى الرقمي يشمل:
-<ul>
-<li>الكلام البذيء والإساءة (أفسس ٤:٢٩)</li>
-<li>الشائعات والافتراء (٢ كورنثوس ١٢:٢٠)</li>
-<li>إثارة الفتنة والانقسام (غلاطية ٥:١٩-٢١)</li>
-<li>الإغراء والخطية (متى ١٨:٦)</li>
-</ul>
-كل هذا ينتهك وصية "أحبب قريبك كنفسك" ويكون خطية ضد جسد المسيح الواحد.
-</p>
-<p><strong>ثالثاً: الحياة رحلة نحو الملكوت</strong><br>
-يرى المسيحيون الحياة كرحلة حج نحو ملكوت الله الفضاء الرقمي أصبح جزءاً من هذه الرحلة.
-السؤال الذي يوجه ضمير المؤمن: هل أستخدم هذه الوسائل لخدمة إخوتي في الرحلة، أم أضع عثرات في طريقهم؟ (رومية ١٤:١٣). الدعوة هي أن نكون "ملحاً ونوراً" حتى في العالم الرقمي (متى ٥:١٣-١٦).
-</p>
-<p><strong>رابعاً: تجديد الذهن أمام التحدي الرقمي</strong><br>
-يؤكد القديس بولس: "لا تشاكلوا هذا الدهر، بل تغيروا عن شكلكم بتجديد أذهانكم" (رومية ١٢:٢).
-الخطر الأكبر في العصر الرقمي هو تشكيل أذهاننا وفقاً لقيم العالم لا لكلمة الله.
-المحتوى الذي يشكك في الكرامة الإنسانية أو يبشر بالعنف أو يستغل الضعفاء هو أذى روحي يهدد خلاص النفوس.
-</p>
-<p><strong>خامساً: المسؤولية تجاه الضعفاء</strong><br>
-يحمل المسيحيون مسؤولية خاصة تجاه "هؤلاء الصغار" (متى ١٨:٦).
-المنصات الرقمية تعرض الصغار - سواء في السن أو في الإيمان - لمخاطر جسيمة:
-<ul>
-<li>التنمر والاستغلال</li>
-<li>التضليل والهرطقات</li>
-<li>الإدمان والعزلة</li>
-</ul>
-من يساهم في هذه الأضعة يكون كمن أعثر أحد هؤلاء الصغار (متى ١٨:٦).
-</p>
-<p><strong>سادساً: الحرية المسؤولة في عالم الخوارزميات</strong><br>
-تدعو المسيحية إلى الحرية، ولكن "لا تتخذوا الحرية ذريعة للجسد" (غلاطية ٥:١٣).
-الخوارزميات التي تغذي الشهوات والغضب تناقض دعوتنا للفضيلة وضبط النفس. على المؤمن أن:
-<ul>
-<li>يفحص كل شيء، ويتمسك بالحسن (١ تسالونيكي ٥:٢١)</li>
-<li>يزرع للروح لا للجسد (غلاطية ٦:٨)</li>
-<li>يكون سيد التكنولوجيا لا عبداً لها</li>
-</ul>
-</p>
-<p><strong>خاتمة وتوصيات من منظور مسيحي:</strong><br>
-<ol>
-<li>تطبيق وصايا المحبة رقمياً: تطوير لاهوت رعوي رقمي يترجم وصايا المحبة والعدل إلى سلوك عملي في الفضاء الافتراضي.</li>
-<li>مجتمعات رقمية مسيحية: بناء مجتمعات ومواقع رقمية تقدم محتوى بنّاءً، تشجع على المصالحة، وتقدم الرجاء في عالم يفتقدهما.</li>
-<li>تربية رقمية مسيحية: إدراج التربية على الاستخدام المسيحي للتقنية في برامج التربية الدينية والتربية الأسَرية، مع التركيز على حماية الصغار.</li>
-<li>الشهادة الرقمية: تشجيع المؤمنين على أن يكونوا شهوداً للمسيح في العالم الرقمي من خلال المحبة والاحترام والحوار البناء، وليس من خلال الجدال والانقسام.</li>
-<li>الصلاة واليقظة: تذكير المؤمنين بضرورة الصلاة من أجل الحكمة في استخدام التقنية، واليقظة الروحية ضد إغراءات العالم الرقمي.</li>
-</ol>
-</p>
-<p>"كل ما تريدون أن يفعل الناس بكم افعلوا هكذا أنتم بهم" (متى ٧:١٢)<br>
-هذه القاعدة الذهبية هي المفتاح لتعامل مسيحي أخلاقي في العصر الرقمي.
-عندما نتعامل مع الآخرين عبر الشاشات علينا أن نتذكر أننا نتعامل مع أنفس مخلوقة على صورة الله ودُعينا لنكون حراساً لإخوتنا ساعين لبناء ملكوت المحبة حتى في أصغر تفاعلاتنا الرقمية.
-</p>
-</div>
-</div>
-<div id="reference-islam" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-islam')">×</span>
-<h2>إماطة الأذى في العصر الرقمي: رؤية إسلامية لحماية المسيرة الإنسانية</h2>
-<p>
-الإسلام دين الرحمة والبناء يأمر بإماطة الأذى عن الطريق، لا فقط كفعل فردي، بل كمنهج حضاري شامل. وفي عصر السوشيال ميديا، تحوّل الطريق من مسار مادي إلى فضاء رقمي يمشيه الإنسان يوميًّا، ويُعرض فيه على ما قد يُهلك فكره، قلبه، وعلاقاته. من هنا تبرز الحاجة إلى فهم أعمق لمفهوم الأذى والطريق في ضوء مقاصد الشريعة.
-</p>
-<p><strong>أولًا: إماطة الأذى ليست حكرًا على المسلمين</strong><br>
-لم يُقيّد النبي ﷺ إماطة الأذى بالمسلمين فقط، بل جعلها من شُعَب الإيمان العامّة. قال ﷺ: «الإيمانُ بضعٌ وسبعون شُعبة... وأدناها إماطةُ الأذى عن الطريق» (رواه مسلم). وهذا يشمل كل من يسلك الطريق مسلمًا كان أو غيره، لأن مقصد الشريعة حفظ الكلّ من الضرر دون تمييز بينهم.
-</p>
-<p><strong>ثانيًا: الأذى ليس ماديًّا فحسب، بل معنويٌّ أخطر</strong><br>
-الأذى المراد إزالته لا يقتصر على الحجارة أو الشوك، بل يشمل:
-<ul>
-<li>الكلمة الجارحة</li>
-<li>النظرات المحرّمة</li>
-<li>الدعوات المضلّلة</li>
-<li>السلوك الذي يُربك الناس أو يُقلقهم</li>
-</ul>
-قال ابن القيم: «أعظم الأذى ما أفسد القلوب والعقول».
-المقصود أن كل ما يُشوّش على الإنسان في مسيرته هو أذىٌ يجب إماطته.
-</p>
-<p><strong>ثالثًا: الحياة طريقٌ من المهد إلى اللحد</strong><br>
-الحياة الدنيا مسيرة مؤقتة، قال ﷺ: «كُن في الدنيا كأنك غريبٌ أو عابرُ سبيلٍ» (رواه البخاري).
-كل لحظة فيها اختبار: هل نُسهّل الطريق للناس؟ أم نضع فيه ما يُعثّرهم؟
-من هنا فإن الطريق في الحديث النبوي ليس مكانًا جغرافيًّا، بل رحلة وجودية.
-</p>
-<p><strong>رابعًا: تدمير الفكر أذىٌ من أخطر الأذى</strong><br>
-ما يُضعف عقل الإنسان أو يدفعه لقرار خاطئ كالتشكيك في القيم أو نشر اليأس أو التحريض على الغضب هو أذىٌ روحي وفكري.
-العقل محلّ التكليف، قال تعالى: «إِنَّ السَّمْعَ وَالْبَصَرَ وَالْفُؤَادَ كُلُّ أُولَٰئِكَ كَانَ عَنْهُ مَسْئُولًا» (سورة الإسراء: 36).
-من ينشر ما يُفسد الأفكار كمن ينشر السمّ في الطعام.
-</p>
-<p><strong>خامسًا: السوشيال ميديا طريقٌ جديدٌ للأذى الحديث</strong><br>
-منصات التواصل أصبحت طريقًا افتراضيًّا يمشيه الملايين يوميًّا.
-واستخدامها الخاطئ أدّى إلى:
-<ul>
-<li>قطع الأرحام</li>
-<li>تحريض على الانتقام</li>
-<li>دفع البعض إلى الانتحار</li>
-</ul>
-وهذا أذىٌ مركّب يجمع بين الإيذاء النفسي، الاجتماعي، والروحي.
-ومن سلك هذا الطريق المليء بالسموم، فقد خان الأمانة وخالف قوله ﷺ: «لا ضرر ولا ضرار».
-</p>
-<p><strong>سادسًا: البرامج ليست محايدة، بل تُدار بالربح لا بالهداية</strong><br>
-الغالب من خوارزميات السوشيال ميديا لا تميّز بين الحق والباطل، بل بين ما يُدرّ ربحًا وما لا يُدرّ.
-هي تُغذّيك بما تفضّله نفسيًّا حتى لو كان يُدمّرك روحيًّا.
-لذا، على المسلم أن:
-<ul>
-<li>يُراقب مصادره</li>
-<li>يختار محتواه بوعي</li>
-<li>يُدرّب نفسه على التمييز لا على الانجراف</li>
-</ul>
-</p>
-<p><strong>خاتمة وتوصيات</strong><br>
-<ol>
-<li>الدعوة إلى تبني خطاب توعوي إسلامي يُبيّن خطر الأذى الرقمي كأحد أشكال الإيذاء المحرّم.</li>
-<li>دعم برامج توعوية غير ربحية تُعزّز القيم، لا الرغبات.</li>
-<li>تأهيل الأسر والمربين لفهم آليات المنصات وكيفية حماية الأبناء منها.</li>
-<li>التأكيد على أن النية ليست كافية، بل يجب أن يكون المحتوى أيضًا نافعًا.</li>
-<li>اعتبار حماية العقول من أولويات العمل الدعوي والاجتماعي، كحماية الأجساد من الأوبئة.</li>
-</ol>
-</p>
-<p>«وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا» (سورة المائدة: 32)<br>
-العقل سِرّ الحياة، وحمايته من أعظم أبواب الإحياء.
-</p>
-</div>
-</div>
-<div id="reference-taoism" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-taoism')">×</span>
-<h2>الطاوية</h2>
-</div>
-</div>
-<div id="reference-confucianism" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-confucianism')">×</span>
-<h2>الكونفوشيوسية</h2>
-</div>
-</div>
-<div id="reference-hinduism" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-hinduism')">×</span>
-<h2>إزالة الأذى في العصر الرقمي: رؤية الهندوسية لحماية المسيرة الإنسانية</h2>
-<p>
-تُؤسس الهندوسية للحياة الأخلاقية على مفاهيم :
-الدارما (الواجب/ الفضيلة/ القانون الكوني)
-اللاحَرْم (عدم الإيذاء)
-الكارما (قانون السببية)
-في عصر الوسائط الرقمية حيث يُصبح الفضاء الافتراضي طريقًا يوميًا للملايين، تبرز الحاجة لتطبيق هذه المبادئ لحماية الرحلة الإنسانية من الأذى الجديد.
-</p>
-<p><strong>أولًا: إزالة الأذى (اللاحَرْم) واجب كوني وشامل</strong><br>
-مبدأ اللاحَرْم (अहिंसा) هو أساس أخلاقي عالٍ لا يقتصر على أتباع الهندوسية بل هو واجب إنساني كوني يتجاوز كل الحدود.
-في نصوص مثل ماهابهاراتا يُقال: اللاحَرْم هي أعلى دارما.
-كما أن تعاليم الفاسوديفا كوتومباكام (رؤية العالم كأسرة واحدة) تدعو إلى رعاية كل الكائنات.
-إزالة الأذى عن الطريق ماديًا كان أم معنويًا هو جزء من خدمة العالم (लोक संग्रह) وواجب كل إنسان.
-</p>
-<p><strong>ثانيًا: الأذى يتجلى في مستويات ثلاثية: الجسدي، الذهني، الروحي</strong><br>
-الدارما تُعلمنا أن الأذى (هيما) لا يقتصر على الضرر المادي بل يشمل الأذى الأكثر خطورة:
-<ul>
-<li>الأذى الكلامي والذهني: الكلمات الجارحة، التشهير، الأخبار الكاذبة ونشر الخطاب الذي يثير الغضب أو الخوف.</li>
-<li>الأذى العاطفي: الإحراج، العزلة الاجتماعية عبر التنمر أو استغلال المشاعر.</li>
-<li>الأذى الروحي أو الفلسفي: نشر الأفكار التي تشجع على الجهل (أفيديا) أو الكراهية أو الأنانية والتي تحجب الحقيقة الأعلى وتُبعد الإنسان عن طريقه الروحي.</li>
-</ul>
-</p>
-<p><strong>ثالثًا: الحياة رحلة (ياترا) نحو التحرر</strong><br>
-الحياة في الفلسفة الهندوسية هي رحلة ياترا للروح عبر دورات متعددة سامسارا تهدف في النهاية إلى التحرر موكشا.
-كل فعل وكل كلمة وكل تفاعل هو خطوة على هذا الطريق.
-السؤال الجوهري: هل أفعالنا على هذا الطريق الرقمي تُسهل رحلة الآخرين وتُزيل العوائق تنقية الكارما أم تخلق معاناة جديدة وتزيد من الارتباطات تراكم الكارما السلبية؟
-</p>
-<p><strong>رابعًا: تلوث العقل أخطر أنواع التلوث</strong><br>
-تنص النصوص على وجود ثلاثة أنواع من التلوث (دوشاس) داخل الإنسان: تاماس (الجهل والكسل) وراجاس (الشهوة والغضب). المحتوى الرقمي الضار يُمكن أن يُغذي هذه الدوشاس بشكل هائل ويُلوث العقل (ماناس) أكثر من أي قذارة مادية.
-العقل الهادئ والنقي (ساتفيك) هو أداة ضرورية للتمييز (فيفيكا) وللمعرفة (جنانا).
-أي شيء يشوه العقل ويبعده عن طبيعته الساتفيكية هو أذى عظيم يجب إزالته.
-</p>
-<p><strong>خامسًا: المنصات الرقمية: ساحة جديدة للكارما والدارما</strong><br>
-أصبحت وسائل التواصل الاجتماعي ساحة حية حيث تُخلق الكارما بسرعة هائلة. استخدامها الخاطئ يؤدي إلى:
-<ul>
-<li>تفكيك تماسك المجتمع (الضروري للسادة انا، النظام الاجتماعي).</li>
-<li>تحريض الغرائد الدنيا (كاما، كرودها) على حساب الفضائل العليا.</li>
-<li>خلق أوهام (مايا) جماعية وتشويه للإدراك الحقيقي.</li>
-</ul>
-هذا يُولد كارما سلبية جماعية (ساماشتي كارما) تؤثر على سلام المجتمع وتقدمه الروحي.
-</p>
-<p><strong>سادسًا: الخوارزميات تُغذي الأنا (أهانكارا) وتُعزز الجهل (أفيديا)</strong><br>
-تغذي معظم الخوارزميات الأهانكارا الغرور والشعور بالانفصال من خلال إحاطة المستخدم بما يؤكد تحيزاته ويُرضي رغباته الذاتية الضيقة، مما يُعزز الأفيديا الجهل الأساسي بوحدة الوجود.
-هذا ضد جوهر التعاليم التي تدعو إلى تجاوز الأنا والبحث عن الحقيقة الموحدة (أدفايتا).
-</p>
-<p><strong>خاتمة وتوصيات في ضوء الحكمة الهندوسية:</strong><br>
-<ol>
-<li>الوعي بالدارما الرقمية: الدعوة لتبني مفهوم الدارما الرقمية - مجموعة المبادئ الأخلاقية التي تحكم تفاعلنا في العالم الافتراضي قائمة على اللاحرم والصدق (ساتيا) والنقاء.</li>
-<li>تطهير المنبع والوعي: تشجيع ممارسات مثل التأمل (ديانا) ومراقبة الكلام (موناش) وانتقاء المحتوى (ساتفيك أحارا للعقل) لتنقية العقل والحد من تأثر السلبي.</li>
-<li>تعليم التمييز (فيفيكا): تثقيف الشباب والأسر على مهارة فيفيكا - التمييز بين الحقيقي والزائف، النافع والضار، الأبدي والعابر في مواجهة فيض المعلومات.</li>
-<li>الإبداع الساتفيك: تشجيع إنشاء ومشاركة محتوى ساتفيك (نقي، هادف، موحد) يُلهم ويرفع الوعي، بدلاً من المحتوى الراجاسي (مثير) أو التاماسي (مظلم).</li>
-<li>تذكر الهدف الأعلى:
-وضع التفاعل الرقمي في إطار الرحلة الروحية الأكبر.
-كل نقرة كل مشاركة هي فرصة لممارسة اللاحرم وخدمة الآخرين (سيوا) والسير خطوة على طريق التحرر.</li>
-</ol>
-</p>
-<p>"أتمنى السلام لجميع الكائنات في كل العوالم." (شانتي مانترا)<br>
-الفضاء الرقمي أصبح أحد العوالم التي نسكنها.
-تطبيق مبدأ اللاحرم فيه ليس رفاهية بل ضرورة روحية وأخلاقية لإصلاح عالمنا المشترك (لوكا سانغراها) وخلق مسار آمن للجميع في رحلتهم نحو النور والحكمة.
-</p>
-</div>
-</div>
-<div id="reference-african" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-african')">×</span>
-<h2>الفلسفة الأفريقية</h2>
-</div>
-</div>
-<div id="reference-secular" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-secular')">×</span>
-<h2>إزالة الأذى في العصر الرقمي: رؤية أخلاقية إنسانية لحماية المسيرة الإنسانية</h2>
-<p>
-تنطلق الرؤية الأخلاقية الإنسانية من مبدأين أساسيين: كرامة الإنسان المتأصلة والمسؤولية العقلانية تجاه البشرية جمعاء. 
-في العصر الرقمي حيث تحول الفضاء الافتراضي إلى بيئة وجودية جديدة تظهر حاجة ملحة لتطبيق التفكير الأخلاقي العقلاني لحماية الإنسانية من أذى قد يكون غير مسبوق في تاريخها.
-</p>
-<p><strong>الأول: العقلانية الأخلاقية كمنطلق</strong><br>
-"يجب أن نتعامل مع الإنسانية سواء في شخصنا أو في شخص الآخرين دائماً كغاية في حد ذاتها وليس مجرد وسيلة"
- إيمانويل كانط (الصيغة الإنسانية للأمر القاطع)
-</p>
-<p>
-الفضاء الرقمي يُختبر من خلال معيارين إنسانيين أساسيين:
-</p>
-<ol>
-<li>الاحترام المتساوي لكرامة كل إنسان بغض النظر عن وجوده رقمياً أو مادياً</li>
-<li>الالتزام بالحقيقة والعقلانية كأساس للتواصل البشري</li>
-</ol>
-<p><strong>الثاني: أنواع الأذى الرقمي من منظور إنساني</strong></p>
-<table border="1" cellpadding="10" style="width:100%; border-collapse: collapse; margin: 20px 0;">
-<tr style="background-color: #f0f0f0;">
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">نوع الأذى</th>
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">أسبابه الرقمية</th>
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">انتهاكه للمبادئ الإنسانية</th>
-</tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>الأذى المعرفي</strong></td>
-<td style="border: 1px solid #ddd; padding: 10px;">المعلومات المضللة، الأخبار المزيفة</td>
-<td style="border: 1px solid #ddd; padding: 10px;">يهدم أساس المجتمع العقلاني: المعرفة الموثوقة</td>
-</tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>الأذى النفسي</strong></td>
-<td style="border: 1px solid #ddd; padding: 10px;">التنمر، خطاب الكراهية، الترهيب</td>
-<td style="border: 1px solid #ddd; padding: 10px;">ينتهك الكرامة الإنسانية والصحة النفسية</td>
-</tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>الأذى الاجتماعي</strong></td>
-<td style="border: 1px solid #ddd; padding: 10px;">التمييز الرقمي، الفقاعات المعرفية</td>
-<td style="border: 1px solid #ddd; padding: 10px;">يُضعف التضامن الإنساني والعدالة الاجتماعية</td>
-</tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>الأذى الوجودي</strong></td>
-<td style="border: 1px solid #ddd; padding: 10px;">الإدمان الرقمي، تشتيت الانتباه المستمر</td>
-<td style="border: 1px solid #ddd; padding: 10px;">يعيق تحقيق الإمكانات البشرية الكاملة</td>
-</tr>
-</table>
-<p><strong>الثالث: المبادئ الإنسانية السبعة للسلوك الرقمي</strong></p>
-<ol>
-<li><strong>مبدأ الكرامة الإنسانية:</strong>
-<ul>
-<li>معاملة كل مستخدم كإنسان ذي قيمة متأصلة</li>
-<li>رفض أي تجريد للبشرية أو تشييء للآخرين</li>
-</ul>
-</li>
-<li><strong>مبدأ الحقيقة والعقلانية:</strong>
-<ul>
-<li>السعي للدقة والتحقق قبل المشاركة</li>
-<li>التصحيح العلني للأخطاء</li>
-<li>تقديم الأدلة والحجج العقلانية</li>
-</ul>
-</li>
-<li><strong>مبدأ العدالة الرقمية:</strong>
-<ul>
-<li>تكافؤ الفرص في الوصول للمعلومات</li>
-<li>محاربة التمييز الخوارزمي</li>
-<li>ضمان تمثيل الأصوات المهمشة</li>
-</ul>
-</li>
-<li><strong>مبدأ المسؤولية:</strong>
-<ul>
-<li>تحمل تبعات أفعالنا الرقمية</li>
-<li>اعتبار التأثيرات البعيدة لأفعالنا القريبة</li>
-<li>الموازنة بين الحرية الفردية والمسؤولية المجتمعية</li>
-</ul>
-</li>
-<li><strong>مبدأ التضامن الإنساني:</strong>
-<ul>
-<li>استخدام التقنية لربط لا لفصل البشرية</li>
-<li>التعاطف مع المعاناة أينما وجدت</li>
-<li>بناء تحالفات عابرة للحدود الرقمية</li>
-</ul>
-</li>
-<li><strong>مبدأ الاستقلالية الواعية:</strong>
-<ul>
-<li>حماية حرية التفكير من التلاعب</li>
-<li>تنمية النقد الذاتي والوعي النقدي</li>
-<li>مقاومة التلقين والإملاء الفكري</li>
-</ul>
-</li>
-<li><strong>مبدأ الاستدامة الوجودية:</strong>
-<ul>
-<li>حماية التوازن بين العالم الرقمي والمادي</li>
-<li>الحفاظ على العمق الفكري في عصر السطحية</li>
-<li>ضمان استمرارية القيم الإنسانية عبر الأجيال</li>
-</ul>
-</li>
-</ol>
-<p><strong>الرابع: العقد الاجتماعي الرقمي الجديد</strong><br>
-"الحقوق تقابلها مسؤوليات" مفهوم إنساني أساسي
-</p>
-<p>
-فالمستخدم الرقمي في الرؤية الإنسانية ليس مستهلكاً سلبيًا بل مواطن رقمي بكل ما تحمله الكلمة من حقوق وواجبات:
-</p>
-<table border="1" cellpadding="10" style="width:100%; border-collapse: collapse; margin: 20px 0;">
-<tr style="background-color: #f0f0f0;">
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">حقوق المواطن الرقمي</th>
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">واجبات المواطن الرقمي</th>
-</tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 10px;">الخصوصية والبيانات الآمنة</td>
-<td style="border: 1px solid #ddd; padding: 10px;">احترام خصوصية الآخرين</td>
-</tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 10px;">الوصول للمعلومات الموثوقة</td>
-<td style="border: 1px solid #ddd; padding: 10px;">التحقق والمشاركة المسؤولة</td>
-</tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 10px;">حرية التعبير البناء</td>
-<td style="border: 1px solid #ddd; padding: 10px;">تجنب الخطاب المؤذي</td>
-</tr>
-<tr>
-<td style="border: 1px solid #ddd; padding: 10px;">المشاركة في تشكيل البيئة الرقمية</td>
-<td style="border: 1px solid #ddd; padding: 10px;">المساهمة في تحسينها للأجيال القادمة</td>
-</tr>
-</table>
-<p><strong>الخامس: العقلانية النقدية ضد الخوارزميات الانفعالية</strong></p>
-<p>
-الخطر الأكبر: تحويل البشر إلى كائنات رد فعل بدلاً من كائنات تفكر. 
-</p>
-<p><strong>الممارسة الإنسانية:</strong></p>
-<ol>
-<li><strong>تثقيف النقد الذاتي:</strong>
-<ul>
-<li>لماذا أشعر بهذا الشعور بعد مشاهدة هذا المحتوى؟</li>
-<li>ما المصالح التي تخدمها هذه المعلومة؟</li>
-<li>كيف أعرف أن ما أراه حقيقي؟</li>
-</ul>
-</li>
-<li><strong>ممارسة التأجيل الحكمي:</strong>
-<ul>
-<li>عدم الرد الانفعالي الفوري</li>
-<li>إعطاء الوقت للتفكير والتأمل</li>
-<li>التمييز بين الرأي الشخصي والحقيقة الموضوعية</li>
-</ul>
-</li>
-<li><strong>تنمية الفضول البنّاء:</strong>
-<ul>
-<li>البحث عن وجهات النظر المخالفة</li>
-<li>استكشاف المصادر الأولية</li>
-<li>السعي لفهم السياقات الكاملة</li>
-</ul>
-</li>
-</ol>
-<p><strong>التوصيات العملية من منظور إنساني</strong></p>
-<ol>
-<li><strong>برامج التربية الرقمية الإنسانية:</strong>
-<ul>
-<li>دمج التفكير النقدي في مناهج التعليم الرقمي</li>
-<li>تعليم تاريخ الأفكار والأخلاق مع التقنية</li>
-<li>تدريب على الحوار العقلاني البناء</li>
-</ul>
-</li>
-<li><strong>مؤسسات الرقابة المدنية:</strong>
-<ul>
-<li>هيئات مستقلة لمراقبة الخوارزميات</li>
-<li>منظمات للتحقق من المعلومات بمعايير إنسانية</li>
-<li>مراصد لحماية الحقوق الرقمية</li>
-</ul>
-</li>
-<li><strong>ممارسات الفرد الواعي:</strong>
-<ul>
-<li>الفحص الثلاثي قبل النشر: هل هذا صحيح؟ هل هذا ضروري؟ هل هذا محترم؟</li>
-<li>الصيام الرقمي التفكري: أيام بدون أجهزة للتفكير العميق</li>
-<li>القراءة المعاكسة: متابعة من يخالفون رأيك لفهم أوسع</li>
-</ul>
-</li>
-<li><strong>تصميم أنظمة إنسانية:</strong>
-<ul>
-<li>خوارزميات تعزز المحتوى البنّاء لا الانفعالي</li>
-<li>واجهات تشجع على التأمل لا الاندفاع</li>
-<li>أنظمة تحمي الضعفاء وتكافح التمييز</li>
-</ul>
-</li>
-<li><strong>حوار إنساني عابر للثقافات:</strong>
-<ul>
-<li>منصات للحوار بين مختلف التوجهات الفكرية</li>
-<li>مشاريع ترجمة للمعارف الإنسانية العالمية</li>
-<li>تحالفات للقضايا الإنسانية المشتركة</li>
-</ul>
-</li>
-</ol>
-<p><strong>الخاتمة: الإنسانية في مواجهة نفسها رقمياً</strong></p>
-<p>
-ما لا يمكن قياسه ليس أقل واقعية وما لا يمكن رقمنته ليس أقل إنسانية.
-</p>
-<p>
-التحدي الأخلاقي الأعظم في العصر الرقمي: أن نبقى بشراً في عالم يحاول أحياناً تجاوز إنسانيتنا. 
-إزالة الأذى الرقمي ليست مهمة تقنية فحسب بل هي مشروع إنساني وجودي لحماية جوهرنا المشترك.
-</p>
-<p>
-الرؤية الإنسانية تذكرنا: التقنية تخدم الإنسانية عندما تُستخدم لتعزيز كرامتنا، حريتنا الواعية، تضامننا، وعقلانيتنا. 
-عندما تُستخدم ضد هذه القيم يجب أن نعيد توجيهها أو نرفضها.
-</p>
-<p>
-الاختبار النهائي: أي فعل رقمي أي منصة أي خوارزمية هل تزيد من إنسانيتنا المشتركة أم تنقص منها؟ الجواب على هذا السؤال هو بوصلة أخلاقيتنا في العصر الرقمي.
-</p>
-</div>
-</div>
-<div id="lightbox" class="lightbox">
-<div class="lightbox-container">
-<button class="close-lightbox" onclick="closeImage()">X</button>
-<img id="lightbox-img" src="">
-</div>
-</div>
-<nav class="navbar">
-  <div class="nav-container">
-    <div class="nav-links">
-      <div class="lang-selector">
-        <button class="lang-toggle-btn" id="langToggleBtn">
-          <img src="https://flagcdn.com/w80/eg.png" alt="العربية" id="currentLangFlag">
-       </button>
-<div class="lang-dropdown" id="langDropdown">
-  <a href="https://anabileg.github.io/---CiviStories/#stats" class="lang-option arabic-flag" data-lang="ar"><img src="https://flagcdn.com/w80/eg.png" alt="العربية"> العربية</a>
-  <a href="en.html" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w80/gb.png" alt="English"> English</a>
-  <a href="fr.html" class="lang-option" data-lang="fr"><img src="https://flagcdn.com/w80/fr.png" alt="Français"> Français</a>
-  <a href="es.html" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w80/es.png" alt="Español"> Español</a>
-  <a href="de.html" class="lang-option" data-lang="de"><img src="https://flagcdn.com/w80/de.png" alt="Deutsch"> Deutsch</a>
-  <a href="it.html" class="lang-option" data-lang="it"><img src="https://flagcdn.com/w80/it.png" alt="Italiano"> Italiano</a>
-  <a href="pt.html" class="lang-option" data-lang="pt"><img src="https://flagcdn.com/w80/pt.png" alt="Português"> Português</a>
-  <a href="tr.html" class="lang-option" data-lang="tr"><img src="https://flagcdn.com/w80/tr.png" alt="Türkçe"> Türkçe</a>
-  <a href="el.html" class="lang-option" data-lang="el"><img src="https://flagcdn.com/w80/gr.png" alt="Ελληνικά"> Ελληνικά</a>
-  <a href="nl.html" class="lang-option" data-lang="nl"><img src="https://flagcdn.com/w80/nl.png" alt="Nederlands"> Nederlands</a>
-  <a href="ro.html" class="lang-option" data-lang="ro"><img src="https://flagcdn.com/w80/ro.png" alt="Română"> Română</a>
-  <a href="sv.html" class="lang-option" data-lang="sv"><img src="https://flagcdn.com/w80/se.png" alt="Svenska"> Svenska</a>
-  <a href="pl.html" class="lang-option" data-lang="pl"><img src="https://flagcdn.com/w80/pl.png" alt="Polski"> Polski</a>
-  <a href="fi.html" class="lang-option" data-lang="fi"><img src="https://flagcdn.com/w80/fi.png" alt="Suomi"> Suomi</a>
-  <a href="da.html" class="lang-option" data-lang="da"><img src="https://flagcdn.com/w80/dk.png" alt="Dansk"> Dansk</a>
-  <a href="no.html" class="lang-option" data-lang="no"><img src="https://flagcdn.com/w80/no.png" alt="Norsk"> Norsk</a>
-  <a href="hu.html" class="lang-option" data-lang="hu"><img src="https://flagcdn.com/w80/hu.png" alt="Magyar"> Magyar</a>
-  <a href="sk.html" class="lang-option" data-lang="sk"><img src="https://flagcdn.com/w80/sk.png" alt="Slovenčina"> Slovenčina</a>
-  <a href="hr.html" class="lang-option" data-lang="hr"><img src="https://flagcdn.com/w80/hr.png" alt="Hrvatski"> Hrvatski</a>
-  <a href="sl.html" class="lang-option" data-lang="sl"><img src="https://flagcdn.com/w80/si.png" alt="Slovenščina"> Slovenščina</a>
-  <a href="bg.html" class="lang-option" data-lang="bg"><img src="https://flagcdn.com/w80/bg.png" alt="Български"> Български</a>
-  <a href="sr.html" class="lang-option" data-lang="sr"><img src="https://flagcdn.com/w80/rs.png" alt="Српски"> Српски</a>
-  <a href="cs.html" class="lang-option" data-lang="cs"><img src="https://flagcdn.com/w80/cz.png" alt="Čeština"> Čeština</a>
-  <a href="ru.html" class="lang-option" data-lang="ru"><img src="https://flagcdn.com/w80/ru.png" alt="Русский"> Русский</a>
-  <a href="uk.html" class="lang-option" data-lang="uk"><img src="https://flagcdn.com/w80/ua.png" alt="Українська"> Українська</a>
-  <a href="zh.html" class="lang-option" data-lang="zh"><img src="https://flagcdn.com/w80/cn.png" alt="中文"> 中文 (普通话)</a>
-  <a href="yue.html" class="lang-option" data-lang="yue"><img src="https://flagcdn.com/w80/hk.png" alt="廣東話"> 廣東話</a>
-  <a href="ja.html" class="lang-option" data-lang="ja"><img src="https://flagcdn.com/w80/jp.png" alt="日本語"> 日本語</a>
-  <a href="ko.html" class="lang-option" data-lang="ko"><img src="https://flagcdn.com/w80/kr.png" alt="한국어"> 한국어</a>
-  <a href="hi.html" class="lang-option" data-lang="hi"><img src="https://flagcdn.com/w80/in.png" alt="हिन्दी"> हिन्दी</a>
-  <a href="te.html" class="lang-option" data-lang="te"><img src="https://flagcdn.com/w80/in.png" alt="తెలుగు"> తెలుగు</a>
-  <a href="mr.html" class="lang-option" data-lang="mr"><img src="https://flagcdn.com/w80/in.png" alt="मराठी"> मराठी</a>
-  <a href="ta.html" class="lang-option" data-lang="ta"><img src="https://flagcdn.com/w80/in.png" alt="தமிழ்"> தமிழ்</a>
-  <a href="ur.html" class="lang-option" data-lang="ur"><img src="https://flagcdn.com/w80/pk.png" alt="اردو"> اردو</a>
-  <a href="gu.html" class="lang-option" data-lang="gu"><img src="https://flagcdn.com/w80/in.png" alt="ગુજરાતી"> ગુજરાતી</a>
-  <a href="kn.html" class="lang-option" data-lang="kn"><img src="https://flagcdn.com/w80/in.png" alt="ಕನ್ನಡ"> ಕನ್ನಡ</a>
-  <a href="ml.html" class="lang-option" data-lang="ml"><img src="https://flagcdn.com/w80/in.png" alt="മലയാളം"> മലയാളം</a>
-  <a href="or.html" class="lang-option" data-lang="or"><img src="https://flagcdn.com/w80/in.png" alt="ଓଡ଼ିଆ"> ଓଡ଼ିଆ</a>
-  <a href="pa.html" class="lang-option" data-lang="pa"><img src="https://flagcdn.com/w80/pk.png" alt="ਪੰਜਾਬੀ"> ਪੰਜਾਬੀ</a>
-  <a href="sd.html" class="lang-option" data-lang="sd"><img src="https://flagcdn.com/w80/pk.png" alt="سنڌي"> سنڌي</a>
-  <a href="ps.html" class="lang-option" data-lang="ps"><img src="https://flagcdn.com/w80/af.png" alt="پښتو"> پښتو</a>
-  <a href="bal.html" class="lang-option" data-lang="bal"><img src="https://flagcdn.com/w80/pk.png" alt="بلوچی"> بلوچی</a>
-  <a href="si.html" class="lang-option" data-lang="si"><img src="https://flagcdn.com/w80/lk.png" alt="සිංහල"> සිංහල</a>
-  <a href="bn.html" class="lang-option" data-lang="bn"><img src="https://flagcdn.com/w80/bd.png" alt="বাংলা"> বাংলা</a>
-  <a href="zh-sg.html" class="lang-option" data-lang="zh-sg"><img src="https://flagcdn.com/w80/sg.png" alt="中文 (新加坡)"> 中文 (新加坡)</a>
-  <a href="ms.html" class="lang-option" data-lang="ms"><img src="https://flagcdn.com/w80/sg.png" alt="Bahasa Melayu"> Bahasa Melayu</a>
-  <a href="id.html" class="lang-option" data-lang="id"><img src="https://flagcdn.com/w80/id.png" alt="Bahasa Indonesia"> Bahasa Indonesia</a>
-  <a href="jv.html" class="lang-option" data-lang="jv"><img src="https://flagcdn.com/w80/id.png" alt="Jawa"> Jawa</a>
-  <a href="su.html" class="lang-option" data-lang="su"><img src="https://flagcdn.com/w80/id.png" alt="Sunda"> Sunda</a>
-  <a href="bbc.html" class="lang-option" data-lang="bbc"><img src="https://flagcdn.com/w80/id.png" alt="Batak"> Batak</a>
-  <a href="my.html" class="lang-option" data-lang="my"><img src="https://flagcdn.com/w80/mm.png" alt="ဗမာစာ"> ဗမာစာ</a>
-  <a href="kar.html" class="lang-option" data-lang="kar"><img src="https://flagcdn.com/w80/mm.png" alt="ကရင်စာ"> ကရင်စာ</a>
-  <a href="rhg.html" class="lang-option" data-lang="rhg"><img src="https://flagcdn.com/w80/mm.png" alt="রোহিঙ্গা"> রোহিঙ্গা</a>
-  <a href="mnw.html" class="lang-option" data-lang="mnw"><img src="https://flagcdn.com/w80/mm.png" alt="မွန်စာ"> မွန်စာ</a>
-  <a href="shn.html" class="lang-option" data-lang="shn"><img src="https://flagcdn.com/w80/mm.png" alt="ရှမ်းစာ"> ရှမ်းစာ</a>
-  <a href="tl.html" class="lang-option" data-lang="tl"><img src="https://flagcdn.com/w80/ph.png" alt="Filipino"> Filipino</a>
-  <a href="th.html" class="lang-option" data-lang="th"><img src="https://flagcdn.com/w80/th.png" alt="ไทย"> ไทย</a>
-  <a href="vi.html" class="lang-option" data-lang="vi"><img src="https://flagcdn.com/w80/vn.png" alt="Tiếng Việt"> Tiếng Việt</a>
-  <a href="fa.html" class="lang-option" data-lang="fa"><img src="https://flagcdn.com/w80/ir.png" alt="فارسی"> فارسی</a>
-  <a href="yo.html" class="lang-option" data-lang="yo"><img src="https://flagcdn.com/w80/ng.png" alt="Yorùbá"> Yorùbá</a>
-  <a href="am.html" class="lang-option" data-lang="am"><img src="https://flagcdn.com/w80/et.png" alt="አማርኛ"> አማርኛ</a>
-  <a href="sw.html" class="lang-option" data-lang="sw"><img src="https://flagcdn.com/w80/tz.png" alt="Kiswahili"> Kiswahili</a>
-  <a href="sw-ke.html" class="lang-option" data-lang="sw-ke"><img src="https://flagcdn.com/w80/ke.png" alt="Kiswahili (Kenya)"> Kiswahili (Kenya)</a>
-  <a href="ln.html" class="lang-option" data-lang="ln"><img src="https://flagcdn.com/w80/cd.png" alt="Lingála"> Lingála</a>
-  <a href="zu.html" class="lang-option" data-lang="zu"><img src="https://flagcdn.com/w80/za.png" alt="isiZulu"> isiZulu</a>
-  <a href="lg.html" class="lang-option" data-lang="lg"><img src="https://flagcdn.com/w80/ug.png" alt="Luganda"> Luganda</a>
-  <a href="ak.html" class="lang-option" data-lang="ak"><img src="https://flagcdn.com/w80/gh.png" alt="Akan"> Akan</a>
-  <a href="ff.html" class="lang-option" data-lang="ff"><img src="https://flagcdn.com/w80/cm.png" alt="Fula"> Fula</a>
-  <a href="dyu.html" class="lang-option" data-lang="dyu"><img src="https://flagcdn.com/w80/ci.png" alt="Dioula"> Dioula</a>
-  <a href="mg.html" class="lang-option" data-lang="mg"><img src="https://flagcdn.com/w80/mg.png" alt="Malagasy"> Malagasy</a>
-  <a href="din.html" class="lang-option" data-lang="din"><img src="https://flagcdn.com/w80/ss.png" alt="Dinka"> Dinka</a>
-  <a href="srr.html" class="lang-option" data-lang="srr"><img src="https://flagcdn.com/w80/td.png" alt="Sara"> Sara</a>
-  <a href="so.html" class="lang-option" data-lang="so"><img src="https://flagcdn.com/w80/so.png" alt="Soomaali"> Soomaali</a>
-  <a href="sn.html" class="lang-option" data-lang="sn"><img src="https://flagcdn.com/w80/zw.png" alt="Shona"> Shona</a>
-  <a href="bem.html" class="lang-option" data-lang="bem"><img src="https://flagcdn.com/w80/zm.png" alt="Bemba"> Bemba</a>
-  <a href="ny.html" class="lang-option" data-lang="ny"><img src="https://flagcdn.com/w80/mw.png" alt="Chichewa"> Chichewa</a>
-  <a href="wo.html" class="lang-option" data-lang="wo"><img src="https://flagcdn.com/w80/sn.png" alt="Wolof"> Wolof</a>
-  <a href="bm.html" class="lang-option" data-lang="bm"><img src="https://flagcdn.com/w80/ml.png" alt="Bambara"> Bambara</a>
-  <a href="ha.html" class="lang-option" data-lang="ha"><img src="https://flagcdn.com/w80/ne.png" alt="Hausa"> Hausa</a>
-  <a href="mos.html" class="lang-option" data-lang="mos"><img src="https://flagcdn.com/w80/bf.png" alt="Mossi"> Mossi</a>
-  <a href="rw.html" class="lang-option" data-lang="rw"><img src="https://flagcdn.com/w80/rw.png" alt="Kinyarwanda"> Kinyarwanda</a>
-  <a href="rn.html" class="lang-option" data-lang="rn"><img src="https://flagcdn.com/w80/bi.png" alt="Kirundi"> Kirundi</a>
-</div>
-      </div>
-      <a onclick="scrollToSec('about')">أهدافنا</a>
-      <a onclick="scrollToSec('about')">صرختنا</a>
-      <a onclick="openMessagesModal()">رسالاتنا</a>
-      <a onclick="scrollToSec('inst')">وعي وطني</a>
-      <a onclick="scrollToSec('media-sec')">ميديا</a>
-      <a onclick="scrollToSec('stats')">إحصائيات</a>
-      <a onclick="scrollToSec('losses')">خسائر</a>
-      <a onclick="scrollToSec('awareness-sec')">برامج توعية</a>
-      <a onclick="scrollToSec('human-vision')">رؤية إنسانية</a>
-      <a onclick="scrollToSec('references')">مرجعياتنا الإنسانية</a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=civistories@gmail.com&cc=anabileg@gmail.com" target="_blank">تواصل معنا</a>
-    </div>
-    <div class="nav-right-group">
-      <div class="social-icons">
-        <a href="https://wa.me/201009995015" target="_blank" style="color: var(--wa-color);"><i class="fab fa-whatsapp"></i></a>
-              </div>
-      <img src="logo.png" class="nav-logo-img" alt="Logo">
-    </div>
-  </div>
-</nav>
-<div class="news-ticker"><div class="ticker-track animate-news" id="tickerTrack"></div></div>
-<section class="hero" id="home">
-<h1 class="main-alert-title" id="main-hero-title">
-<span class="highlight">تسونامي</span> <span class="gold-text">الوهم الرقمي: من مهد الحضارة مصر إلى العالم... صرخة لإنقاذ الإنسانية</span>
-</h1>
-<div class="hero-container">
-<div class="book-static">
-<div class="book-wrapper"><img src="CIVISTORIES Book.png" alt="Book Cover"></div>
-<a href="https://heyzine.com/flip-book/48ab3792ec.html" target="_blank" id="btn-browse" class="btn-action">تصفح الكتاب</a>
-</div>
-<div class="video-container-box">
-<iframe src="https://www.youtube.com/embed/ite_9cHeOO4?autoplay=1&mute=1&loop=1&playlist=ite_9cHeOO4&controls=1&rel=0" allowfullscreen></iframe>
-</div>
-</div>
-</section>
-<section id="about" class="vision-section">
-<h2 id="vis-title" class="section-main-title" style="font-size: 3rem; font-weight: 900;">أهدافنا الاستراتيجية</h2>
-<p id="vis-desc">نهدف من خلال مبادرة "قصص الحضارات" إلى حماية النسيج المجتمعي المصري من مخاطر التفكك الإلكتروني، عبر تمكين الأسرة واستعادة التوازن النفسي والاجتماعي.<br>بدأنا من مصر، حيث يهدد الوهم الرقمي استقرار الأسرة والمجتمع، ونطمح إلى إطلاق صرخة عالمية لحماية الإنسانية من مخاطر الإدمان الرقمي — عبر تمكين الأسرة، واستعادة التوازن النفسي، وبناء فضاء رقمي إنساني.</p>
-</section>
-<section id="messages" class="section">
-<div class="glass-box">
-<h2 class="section-main-title" style="font-size: 3rem; font-weight: 900;">صرختنا</h2>
-<p style="font-size: 1.4rem; font-weight: bold; line-height: 1.6; color: var(--white);">
-من قلب الحضارة المصرية، نطلق رسائلنا إلى العالم:<br>
-• التكنولوجيا أداة، وليس بديلاً عن الإنسانية.<br>
-• الأسرة هي الحصن الأول ضد الانهيار الرقمي.<br>
-• الوعي الرقمي حقٌّ لكل فرد، وواجبٌ على كل مجتمع.<br>
-• لا مستقبل آمن دون توازن بين التقدم الرقمي والقيم الإنسانية.
-</p>
-</div>
-</section>
-<section id="inst" class="section">
-<div class="glass-box">
-<h2 id="part-title" class="section-main-title" style="font-size: 3rem; font-weight: bold;">وعي وطني</h2>
-<div class="grid">
-<div class="card">
-<div class="info-popup" id="src-p1">المصدر: إحصائيات مركز الفتوى الإلكترونية بالأزهر</div>
-<img src="100.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
-<h3 id="p1-name">الأزهر الشريف</h3>
-<p id="p1-desc">رصد ومعالجة حالات التفكك الأسري الناتج عن الإدمان الرقمي عبر لجان الفتوى المتخصصة.</p>
-</div>
-<div class="card">
-<div class="info-popup" id="src-p2">المصدر: تقارير المشورة الأسرية بالكنيسة</div>
-<img src="300.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
-<h3 id="p2-name">الكنيسة المصرية</h3>
-<p id="p2-desc">العمل على استقرار الأسرة ومواجهة الانعزال الرقمي داخل البيت الواحد عبر برامج المشورة.</p>
-</div>
-<div class="card">
-<div class="info-popup" id="src-p3">المصدر: وزارة الأوقاف المصرية</div>
-<img src="200.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
-<h3 id="p3-name">وزارة الأوقاف</h3>
-<p id="p3-desc">مبادرة سكن ومودة لتثقيف المتزوجين بمخاطر التكنولوجيا على استقرارهم النفسي.</p>
-</div>
-</div>
-</div>
-</section>
-<div style="text-align:center; margin-top:40px;">
-<h2 id="media-guideline" class="section-main-title">اضغط على الصورة لتصلك رسالتنا</h2>
-</div>
-<section id="media-sec" class="carousel-wide">
-<div class="track animate-media" id="track-imgs"></div>
-</section>
-<section id="stats" class="section">
-<div class="glass-box">
-<h2 id="st-title" class="section-main-title" style="font-size: 3rem; font-weight: 900;">إحصائيات</h2>
-<div class="grid">
-<div class="card">
-<div class="info-popup" id="src1">المصدر: الجهاز المركزي للتعبئة العامة والإحصاء</div>
-<span class="stat-num counter" id="cnt1" data-target="311">0</span>
-<p id="st1-txt">ألف حالة طلاق سنوياً</p>
-</div>
-<div class="card">
-<div class="info-popup" id="src2">المصدر: وزارة الاتصالات وتكنولوجيا المعلومات</div>
-<span class="stat-num counter" id="cnt2" data-target="104">0</span>
-<p id="st2-txt">مليون هاتف محمول</p>
-</div>
-<div class="card">
-<div class="info-popup" id="src3">المصدر: وزارة التضامن الاجتماعي</div>
-<span class="stat-num counter" id="cnt3" data-target="5.7">0</span>
-<p id="st3-txt">ساعات يومية أمام الشاشات للأطفال</p>
-</div>
-</div>
-</div>
-</section>
-<section id="losses" class="section">
-<div class="glass-box" style="border-color: var(--red-num);">
-<h2 id="ls-title" class="section-main-title" style="color: var(--red-num); font-size: 3rem; font-weight: 900;">الخسائر</h2>
-<div class="grid">
-<div class="card" style="border-bottom-color: var(--red-num);">
-<div class="info-popup" id="src4">المصدر: دراسات الجدوى الاقتصادية</div>
-<span class="stat-num loss-num counter" id="cnt4" data-target="15">0</span>
-<p id="ls1-txt">مليار جنيه خسائر إنتاجية سنوياً</p>
-</div>
-<div class="card" style="border-bottom-color: var(--red-num);">
-<div class="info-popup" id="src5">المصدر: تقارير الصحة النفسية</div>
-<span class="stat-num loss-num counter" id="cnt5" data-target="4.5">0</span>
-<p id="ls2-txt">مليار جنيه تكلفة العلاج النفسي</p>
-</div>
-<div class="card" style="border-bottom-color: var(--red-num);">
-<div class="info-popup" id="src6">المصدر: تقارير الأمن السيبراني</div>
-<span class="stat-num loss-num counter" id="cnt6" data-target="2.1">0</span>
-<p id="ls3-txt">مليار جنيه خسائر النصب الإلكتروني</p>
-</div>
-</div>
-</div>
-</section>
-<section id="awareness-sec" class="section">
-<div class="glass-box">
-<h2 id="awareness-main-title" class="section-main-title">برامج التوعية</h2>
-<div class="awareness-grid">
-<div class="awareness-card" onclick="openProgram('child')"><i class="fas fa-child"></i><span id="aw-c1">الطفولة الرقمية</span></div>
-<div class="awareness-card" onclick="openProgram('teens')"><i class="fas fa-user-friends"></i><span id="aw-c2">عالم المراهقين</span></div>
-<div class="awareness-card" onclick="openProgram('youth')"><i class="fas fa-briefcase"></i><span id="aw-c3">الإنتاج والشباب</span></div>
-<div class="awareness-card" onclick="openProgram('marriage')"><i class="fas fa-heart"></i><span id="aw-c4">الزواج السعيد</span></div>
-<div class="awareness-card" onclick="openProgram('seniors')"><i class="fas fa-blind"></i><span id="aw-c5">كبار السن</span></div>
-<div class="awareness-card" onclick="openProgram('security')"><i class="fas fa-user-shield"></i><span id="aw-c6">الأمان والخصوصية</span></div>
-</div>
-</div>
-</section>
-<section id="human-vision" class="section">
-<div class="glass-box">
-<h2 class="section-main-title" style="font-size: 3rem; font-weight: bold;">رؤية إنسانية</h2>
-<p style="font-size: 1.4rem; font-weight: bold; line-height: 1.6; color: var(--white);">
-في عالم يتسارع نحو الرقمنة بلا حدود، ندعو إلى:<br>
-• إعادة الإنسان إلى مركز الاهتمام.<br>
-• بناء جسور بين الحضارات عبر القيم المشتركة.<br>
-• تحويل التكنولوجيا من مصدر للعزلة إلى أداة للتواصل والتفاهم.<br>
-• غرس روح المسؤولية الرقمية في نفوس الأجيال القادمة.<br>
-لأن الحضارة الحقيقية لا تقاس بالشاشات، بل بالإنسان.
-</p>
-</div>
-</section>
-<!-- قسم مرجعيتنا الإنسانية -->
-<section id="references" class="references-section">
-<h2 class="section-main-title">مرجعياتنا الإنسانية</h2>
-<div class="references-grid">
-<div class="reference-card" onclick="openReferenceModal('reference-islam')"><span>الإسلام</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-christianity')"><span>المسيحية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-judaism')"><span>اليهودية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-buddhism')"><span>البوذية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-hinduism')"><span>الهندوسية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-confucianism')"><span>الكونفوشيوسية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-taoism')"><span>الطاوية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-shinto')"><span>الشنتو</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-eastern')"><span>الجاينية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-indigenous')"><span>الزرادشتية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-african')"><span>الفلسفة الأفريقية</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-secular')"><span>الأخلاق الإنسانية</span></div>
-</div>
-</section>
-<script>
-function initPage() {
-scrollToSec('home');
-updateTicker();
-loadMedia();
-setupLanguageToggle();
-initCountersObserver();
-}
-function initCountersObserver() {
-const counters = document.querySelectorAll('.counter');
-counters.forEach(c => c.innerText = '0');
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if(entry.isIntersecting) {
-const el = entry.target;
-const target = parseFloat(el.getAttribute('data-target'));
-let start = 0;
-const duration = 2000;
-const step = target / (duration / 30);
-const timer = setInterval(() => {
-start += step;
-if(start >= target) {
-el.innerText = target;
-clearInterval(timer);
-} else {
-el.innerText = start.toFixed(1).replace('.0','');
-}
-}, 30);
-observer.unobserve(el);
-}
-});
-}, { threshold: 0.3 });
-document.querySelectorAll('#stats .counter, #losses .counter').forEach(c => {
-observer.observe(c);
-});
-}
-function updateTicker() {
-const track = document.getElementById('tickerTrack');
-const list = [
-"الأزهر: حالة طلاق كل 2.5 دقيقة بسبب الإدمان الرقمي",
-"الأوقاف: الهواتف سبب رئيسي للخرس الزوجي",
-"إنذار: التفكك الرقمي يهدد استقرار مصر",
-"وزارة الصحة: ٣ ملايين زيارة سنوية للعيادات النفسية بسبب اضطرابات السوشيال ميديا",  
-"الكنيسة المصرية: ٦٠% من المشاكل الأسرية مرتبطة بالانعزال والإفراط الرقمي",
-"القصر العيني: محاولة انتحار كل ٦ ساعات تقريباً بسبب التنمر عبر الإنترنت",
-"وزارة المالية: ١٥ مليار جنيه خسائر إنتاجية سنوية بسبب الإدمان الرقمي",
-"اليونيسف: ٤٧% من أطفال مصر تعرضوا للتنمر الإلكتروني المؤذي",
-"الإحصاء: زيادة ٥٧% في معدلات الطلاق خلال ٥ سنوات سابقة",
-"وزارة الداخلية: ٤٠% من بلاغات العنف الأسري سببها تطبيقات التواصل الاجتماعي",
-"البنك الدولي: ٤.٥ مليار جنيه تكلفة علاج الاضطرابات النفسية الرقمية سنوياً",
-"الأمن القومي: رصد ٨٧٠ جماعة إلكترونية منظمة لبث الفرقة والفتنة",
-"دراسة: ٨٥% من طلاب الثانوي يعانون آثار التنمر الرقمي النفسية",
-"كارثة: ٢.١ مليار جنيه خسائر سنوية بسبب عمليات النصب الإلكتروني",
-"تسجيل ٩٣ ألف و٣٠٠ حالة طلاق سنوياً مرتبطة بالسوشيال ميديا",
-"حدوث ٢٥٥ حالة طلاق يومياً بسبب وسائل التواصل الاجتماعي",
-"ذكر وسائل التواصل كسبب مباشر في ٣٠% من حالات الطلاق",
-"صدور ١٠٠ ألف فتوى سنوياً عن مشاكل أسرية ٢٣% منها بسبب التواصل الاجتماعي",
-"٣٠% من فتاوى مجمع البحوث الإسلامية تتعلق بالقطيعة العائلية",
-"٢٩% من فتاوى مجمع البحوث الإسلامية تتعلق بالعلاقات المحرمة",  
-"٦٠% من المشاكل الأسرية في المجتمع القبطي مرتبطة بالسوشيال ميديا",
-"معاناة ٥٠ ألف أسرة قبطية سنوياً من مشاكل التواصل الاجتماعي",
-"زيادة معدلات الطلاق في مصر بنسبة ٥٧% خلال ٥ سنوات (٢٠١٨-٢٠٢٣) ",
-"ارتفاع حالات الطلاق من ١٩٨ ألف حالة عام ٢٠١٨ إلى ٣١١ ألف حالة عام ٢٠٢٣",
-"تسجيل متوسط يومي ٨٥٢ حالة طلاق في مصر",
-"٤٠% من بلاغات العنف الأسري بدأت بمشاجرات على وسائل التواصل",
-"تسجيل ١٤٥ ألف بلاغ عنف أسري عام ٢٠٢٣ منها ٤٣ ألف و٥٠٠ مرتبطة بمشاكل إلكترونية",
-"وجود ٢٢ ألف قضية خيانة زوجية بأدلة إلكترونية",
-"وقوع ١٢٢ جريمة قتل بين أزواج منها ٤٠ حالة بسبب الغيرة من منشورات",
-"٦٥% من مراجعي العيادات النفسية يشكون من اضطرابات مرتبطة بالسوشيال ميديا",
-"تسجيل ٣ مليون زيارة للعيادات النفسية عام ٢٠٢٣ ٤٠% منها مرتبطة بالسوشيال ميديا",
-"الفئة العمرية من ١٥ إلى ٣٥ سنة تمثل ٦٨% من حالات الاضطرابات النفسية الرقمية",
-"٥٠% من حالات الطلاق في السنة الأولى من الزواج سببها السوشيال ميديا",
-"خسارة إنتاجية تقدر بـ١٥ مليار جنيه سنوياً بسبب المشاكل النفسية الرقمية",
-"تعرض ٤٧% من الأطفال (٨-١٨ سنة) للتنمر الإلكتروني",
-"وصول متوسط الوقت اليومي للأطفال على الشاشات إلى ٥.٧ ساعات",
-"تعرض ٦٣% من الأطفال لمحتوى غير لائق عبر الإنترنت",
-"خسائر الإنتاجية بسبب الإدمان الرقمي تصل إلى ٢.٣% من الناتج المحلي",
-"تكلفة علاج الاضطرابات النفسية المرتبطة بالرقمنة تبلغ ٤ مليار و٥٠٠ ألف جنيه سنوياً",
-"فقدان ١٨ مليون يوم عمل سنوياً بسبب التداعيات الرقمية",
-"تسجيل متوسط ٣ صداقات مقطوعة لكل شاب بسبب الخلافات الرقمية",
-"٨٥% من طلاب الثانوي يعانون من التنمر الرقمي",
-"٣٥% من طلاب الثانوي حاولوا الانتحار مرة على الأقل",
-"٦٤% من طلاب الجامعات يعانون من اضطرابات نوم بسبب السوشيال ميديا",
-"٤٢% من طلاب الجامعات تأثرت درجاتهم الأكاديمية سلباً",
-"تعرض ١٧% من طلاب الجامعات للابتزاز الإلكتروني",
-"وقوع محاولة انتحار كل ٦ ساعات بسبب التنمر الرقمي أو القطيعة",
-"تسجيل ١٤٦٠ محاولة انتحار عام ٢٠٢٣ ٦٠% منها لأسباب رقمية",  
-"٤٠% من المسنين يعانون من العزلة بسبب انشغال أبنائهم بالسوشيال ميديا",
-"٢ مليون مسن مصري يعيشون في عزلة رقمية",
-"وصول نسبة حالات الطلاق في السنة الأولى من الزواج إلى ٣٤%",
-"متوسط عمر الزواج عند الطلاق يبلغ ٣.٧ سنة",
-"تسجيل ١٢ ألف و٥٠٠ حالة طلاق رقمي سنوياً",
-"متوسط عدد حسابات السوشيال ميديا للفرد المصري ٣.٨ حساب",
-"٧١% من المصريين يبدأون يومهم بتصفح السوشيال ميديا",
-"٥٢% من المشاكل الأسرية تبدأ عبر تطبيق الواتساب",
-"طلاق زوجين بعد ٣٢ سنة زواج بسبب تعليق كومنت",
-"مقتل شقيقين في المنصورة بعد مشاجرة بسبب منشور سياسي",
-"انتحار طالبة طب بجامعة عين شمس لمشاهدتها ١٠٠ فيديو يومياً عن فشل الحياة الطبية",
-"انقسام عائلة من ١٥ فرداً بالإسكندرية بسبب صورة حفلة عيد ميلاد",
-"زوج يطلق زوجته في الجيزة بعد اكتشاف فيديوهات رقص لها على تيك توك",
-"معدل انتشار الاكتئاب بين مستخدمي السوشيال ميديا يصل إلى ٣١%",
-"٧٦% من المستخدمين يقومون بمقارنات اجتماعية سلبية",
-"خسائر أسرية بسبب النصب الإلكتروني تبلغ ٢.١ مليار جنيه سنوياً",
-"رصد أكثر من ١٥ ألف صفحة إلكترونية مجهولة تنشر الفتنة",
-"رصد ٨٧٠ جماعة إلكترونية منظمة لبث الفرقة",
-"تعرض تماسك الأسرة المصرية لـ١٢٠ هجمة إلكترونية يومياً",
-"تآكل القيم الأسرية التقليدية بنسبة ٢٢% خلال ٥ سنوات",
-"المحتوى الأجنبي المؤثر سلباً يمثل ٦٨% من المحتوى المتداول",
-"توقع وصول حالات الطلاق إلى ٤٥٠ ألف حالة سنوياً بحلول ٢٠٣٠ في حال عدم التدخل",
-"توقع تجاوز الخسائر الاقتصادية الرقمية ٣٥ مليار جنيه سنوياً بحلول ٢٠٣٠",
-"٣٠% من حالات الطلاق تذكر وسائل التواصل كسبب مباشر",
-"٩٣ ألف و٣٠٠ حالة طلاق سنوياً مرتبطة بالسوشيال ميديا",
-"٢٥٥ حالة طلاق يومياً مرتبطة بالسوشيال ميديا",
-"١٠٠ ألف فتوى سنوياً عن مشاكل أسرية منهم ٢٣% بسبب التواصل الاجتماعي",
-"٣٠% فتوى عن القطيعة العائلية",
-"٢٩% فتوى عن العلاقات المحرمة",
-"٦٠% من المشاكل الأسرية في المجتمع القبطي مرتبطة بالسوشيال ميديا",
-"٥٠ ألف أسرة قبطية تعاني سنوياً",
-"زيادة ٥٧% في معدلات الطلاق خلال ٥ سنوات (٢٠١٨-٢٠٢٣) ",
-"٤٠% من بلاغات العنف الأسري بدأت بمشاجرات على وسائل التواصل",
-"عام ٢٠٢٣: ١٤٥ ألف بلاغ عنف أسري منهم ٤٣ ألف و٥٠٠ مرتبطة بمشاكل إلكترونية تمثل ٣٠%",
-"٢٢ ألف قضية خيانة زوجية بأدلة إلكترونية",
-"١٢٢ جريمة قتل بين أزواج منهم ٤٠ حالة بسبب غيرة من منشورات",
-"٦٥% من مراجعي العيادات النفسية يشكون من اضطرابات مرتبطة بالسوشيال ميديا",
-"عام ٢٠٢٣: ٣ مليون زيارة للعيادات النفسية ٤٠% من الحالات مرتبطة بالسوشيال ميديا",
-"الفئة العمرية من ١٥-٣٥ سنة تمثل ٦٨% من الحالات النفسية",
-"٥٠% من حالات الطلاق في السنة الأولى بسبب السوشيال ميديا",
-"خسارة إنتاجية بسبب المشاكل النفسية الرقمية تقدر بـ١٥ مليار جنيه سنوياً",
-"نسبة الأطفال ٨-١٨ سنة الذين تعرضوا للتنمر الإلكتروني: ٤٧%",
-"متوسط الوقت اليومي على الشاشات: ٥.٧ ساعات",
-"نسبة تعرض الأطفال لمحتوى غير لائق: ٦٣%",
-"خسائر الإنتاجية بسبب الإدمان الرقمي في مصر تصل إلى ٢.٣% من الناتج المحلي",
-"تكلفة علاج الاضطرابات النفسية المرتبطة: ٤ مليار و٥٠٠ ألف جنيه سنوياً",
-"أيام العمل المفقودة ١٨ مليون يوم عمل سنوياً",
-"متوسط ٣ صداقات مقطوعة لكل شاب",
-"٨٥% من طلاب ثانوي يعانون من التنمر الرقمي",
-"٣٥% من طلاب ثانوي حاولوا الانتحار مرة على الأقل",
-"٥٨% من طلاب الجامعات يعانون من التنمر الإلكتروني",
-"٦٤% يعانون من اضطرابات نوم بسبب السوشيال ميديا",
-"٤٢% تأثرت درجاتهم الأكاديمية سلباً",
-"١٧% تعرضوا للابتزاز الإلكتروني",
-"محاولة انتحار كل ٦ ساعات بسبب التنمر الرقمي أو القطيعة",
-"عام ٢٠٢٣: ١٤٦٠ محاولة انتحار منهم ٦٠% لأسباب رقمية ومرتبطة بالسوشيال ميديا",
-"٤٠% من المسنين يعانون من العزلة لأن أبناءهم مشغولون بالسوشيال ميديا",
-"٢ مليون مسن مصري يعيشون في عزلة رقمية",
-"نسبة حالات الطلاق في السنة الأولى من الزواج ٣٤%",
-"متوسط عمر الزواج عند الطلاق ٣.٧ سنة",
-"حالات الطلاق الرقمي ١٢ ألف و٥٠٠ حالة سنوياً",
-"متوسط عدد حسابات السوشيال ميديا للفرد ٣.٨ حساب",
-"نسبة المصريين الذين يبدأون يومهم بالسوشيال ميديا ٧١%",
-"نسبة المشاكل الأسرية التي تبدأ عبر الواتساب ٥٢%",
-"طلاق بعد ٣٢ سنة زواج بسبب كومنت",
-"شقيقان بالمنصورة تشاجرا حتى الموت بسبب منشور سياسي",
-"انتحار طالبة بكلية طب عين شمس لمشاهدتها ١٠٠ فيديو يومياً عن فشل الحياة الطبية",
-"انقسام عائلة من ١٥ فرداً بالإسكندرية بسبب صورة حفلة عيد ميلاد",
-"زوج يطلق زوجته في الجيزة بعد اكتشاف فيديوهات رقص لها على تيك توك",
-"معدل انتشار الاكتئاب بين مستخدمي السوشيال ميديا ٣١%",
-"نسبة المقارنات الاجتماعية السلبية ٧٦%",
-"حالات القلق الاجتماعي المتزايد ٤٤%",
-"خسائر اقتصادية أسرية بسبب النصب الإلكتروني ٢.١ مليار جنيه سنوياً",
-"رصد أكثر من ١٥ ألف صفحة إلكترونية مجهولة تنشر الفتنة",
-"رصد ٨٧٠ جماعة إلكترونية منظمة لبث الفرقة",
-"هجمات إلكترونية على تماسك الأسرة المصرية بمتوسط ١٢٠ هجمة يومياً",
-"تآكل القيم الأسرية التقليدية ٢٢% خلال ٥ سنوات الأخيرة",
-"انتشار نماذج حياة غير واقعية تؤثر على ٨١% من الشباب",
-"نسبة المحتوى الأجنبي المؤثر سلباً ٦٨% من المحتوى المتداول",
-"زيادة الطلاق الرقمي ٢٠% سنوياً",
-"زيادة الجريمة الأسرية الرقمية ١٥% سنوياً",
-"زيادة الاضطرابات النفسية ٢٥% سنوياً",
-"زيادة التنمر الإلكتروني ٣٠% سنوياً",
-"٥٠% من الأسر المصرية معرضة للتفكك",
-"توقع وصول حالات الطلاق إلى ٤٥٠ ألف حالة سنوياً عام ٢٠٣٠",
-"توقع خسائر اقتصادية تتجاوز ٣٥ مليار جنيه سنوياً عام ٢٠٣٠"
-];
-track.innerHTML = "";
-[...list, ...list].forEach(txt => {
-const s = document.createElement('span');
-s.innerText = txt;
-track.appendChild(s);
-});
-}
-function loadMedia() {
-const track = document.getElementById('track-imgs');
-track.innerHTML = "";
-const imgs = [];
-for(let i=101; i<=124; i++) { imgs.push(i + ".jpg"); }
-[...imgs, ...imgs].forEach(src => {
-const img = document.createElement('img');
-img.src = src;
-img.onclick = () => openImage(src);
-track.appendChild(img);
-});
-}
-function openImage(src) {
-document.getElementById('lightbox-img').src = src;
-document.getElementById('lightbox').style.display = 'flex';
-}
-function closeImage() {
-document.getElementById('lightbox').style.display = 'none';
-}
-function scrollToSec(id) {
-const el = document.getElementById(id);
-if(el) {
-const offset = 100;
-const pos = el.offsetTop - offset;
-window.scrollTo({ top: pos, behavior: 'smooth' });
-}
-}
-function setupLanguageToggle() {
-const toggleBtn = document.getElementById('langToggleBtn');
-const dropdown = document.getElementById('langDropdown');
-toggleBtn.onclick = (e) => {
-e.stopPropagation();
-dropdown.classList.toggle('show');
-};
-document.addEventListener('click', (e) => {
-if (!dropdown.contains(e.target) && e.target !== toggleBtn) {
-dropdown.classList.remove('show');
-}
-});
-document.querySelectorAll('.lang-option').forEach(option => {
-option.onclick = function(e) {
-e.preventDefault();
-const langCode = this.dataset.lang;
-if (langCode === 'ar') {
-return;
-} else {
-showSoonPlaceholder();
-dropdown.classList.remove('show');
-}
-};
-});
-}
-function showSoonPlaceholder() {
-const flagContainer = document.querySelector('.lang-toggle-btn');
-flagContainer.innerHTML = '<span class="soon-placeholder">Soon</span>';
-setTimeout(() => {
-flagContainer.innerHTML = '<img src="https://flagcdn.com/w80/eg.png" alt="العربية" id="currentLangFlag">';
-}, 2000);
-}
-// === برامج التوعية الكاملة ===
-const programsData = {
-child: [
-{ q: "ما هو السن المناسب تقنياً ونفسياً للسماح للطفل باستخدام الشاشات؟", src: "الأكاديمية الأمريكية لطب الأطفال (AAP)", ans: "* يُمنع تماماً استخدام الشاشات للأطفال دون سن 18–24 شهراً.<br>* الاستثناء الوحيد في هذا العمر هو مكالمات الفيديو للتواصل مع الأهل فقط.<br>* من سن 2 إلى 5 سنوات، الحد الأقصى هو ساعة واحدة يومياً من محتوى تعليمي.<br>* يجب أن يشاهد الأبوان مع الطفل لضمان فهمه لما يراه وتطبيقه على الواقع." },
-{ q: "كيف أميز بين الاستخدام العادي للهاتف وبين بداية مرحلة العزلة الرقمية؟", src: "الجمعية النفسية الأمريكية (APA)", ans: "* الاستخدام العادي هو وسيلة للترفيه ولا يؤثر على التواصل الاجتماعي الواقعي.<br>* العزلة تبدأ عندما تظهر أعراض الانسحاب مثل العصبية الشديدة عند ترك الجهاز.<br>* فقدان الاهتمام بالهوايات التقليدية واللعب مع الأقران هو مؤشر خطر.<br>* إهمال النظافة الشخصية أو اضطراب مواعيد الأكل والنوم بسبب الشاشة." },
-{ q: "كيف أدير عملية إنهاء وقت الشاشة بسلام ودون نوبات غضب؟", src: "مركز نمو الطفل بجامعة هارفارد", ans: "* استخدام أسلوب التحذير التدريجي قبل 10 و5 دقائق من النهاية.<br>* إعطاء الطفل خياراً (هل تريد الإغلاق الآن أم بعد انتهاء هذا المستوى؟).<br>* ربط نهاية وقت الشاشة بنشاط محبب آخر (مثل اللعب بالمكعبات أو الخروج).<br>* التزام الوالدين بإنهاء وقت شاشتهم أيضاً ليكونوا قدوة للطفل." },
-{ q: "هل توجد تطبيقات معينة تشكل خطراً مباشراً على سلوكيات الأطفال؟", src: "منظمة Common Sense Media", ans: "* تطبيقات الفيديو القصير (مثل تيك توك) بسبب سرعة المشاهد التي تضعف التركيز.<br>* الألعاب التي تحتوي على دردشة مفتوحة مع غرباء (مثل بعض غرف روبلوكس).<br>* التطبيقات التي تشجع على الشراء الداخلي المتكرر وإهدار المال.<br>* المحتوى غير المراقب الذي قد يحتوي على إعلانات غير مناسبة للسن." },
-{ q: "ما هي مخاطر إعطاء الهاتف للطفل أثناء تناول الطعام؟", src: "منظمة الصحة العالمية (WHO)", ans: "* يمنع الطفل من الشعور بالشبع الطبيعي مما يؤدي لمخاطر السمنة.<br>* يضعف مهارات التذوق والتواصل الأسري الفعال أثناء الوجبات.<br>* يجعل الطفل يربط الطعام بالترفيه البصري فقط ويفقد استمتاعه به.<br>* قد يسبب مشاكل في الهضم نتيجة تشتت الانتباه عن عملية المضغ." },
-{ q: "كيف أحمي طفلي من المحتوى غير اللائق الذي يظهر فجأة؟", src: "خبراء الأمن السيبراني", ans: "* تفعيل خاصية YouTube Kids والبحث الآمن في جميع المتصفحات.<br>* استخدام برامج الرقابة الأبوية المتطورة مثل Google Family Link.<br>* جعل استخدام الهاتف دائماً في مكان مفتوح بالمنزل وليس الغرف المغلقة.<br>* توعية الطفل بإغلاق الشاشة فوراً وإخبارك إذا رأى أي شيء غريب." },
-{ q: "هل يؤثر الهاتف على تطور النطق واللغة عند الأطفال؟", src: "مركز مكافحة الأمراض (CDC)", ans: "* نعم، التفاعل مع الشاشة تفاعُل أحادي الجانب ولا يساعد المهارات اللغوية.<br>* يحتاج الأطفال لتفاعل بشري حي لتطوير مخارج الحروف والقدرة على الحوار.<br>* قضاء وقت طويل على الشاشات يقلل من عدد الكلمات التي يكتسبها الطفل.<br>* قد يؤدي الإفراط الرقمي إلى تأخر اجتماعي وصعوبة في فهم لغة الجسد." },
-{ q: "كيف أعالج إدمان طفلي على ألعاب الهاتف؟", src: "الجمعية الوطنية لتربية الأطفال", ans: "* لا تسحب الجهاز فجأة، بل ضع جدولاً زمنياً تدريجياً لتقليل الساعات.<br>* وفّر بدائل ممتعة وجاذبة للطفل (مثل الرسم، الرياضة، القصص الورقية).<br>* كافئ الالتزام بالوقت بنشاط خارجي محبب أو رحلة قصيرة.<br>* شارك طفلك في أنشطة بدنية يومية لتفريغ طاقته بعيداً عن الشاشة." },
-{ q: "ما هو الوقت المثالي لإيقاف الشاشات قبل النوم؟", src: "مؤسسة النوم الوطنية", ans: "* يجب إيقاف جميع الشاشات قبل النوم بساعة كاملة على الأقل.<br>* الضوء الأزرق يمنع إفراز هرمون الميلاتونين المسؤول عن النوم العميق.<br>* استبدل الشاشة بقراءة قصة ورقية أو حديث هادئ مع الطفل.<br>* تأكد من شحن الأجهزة خارج غرف النوم لتجنب إغراء استخدامها ليلاً." },
-{ q: "هل استخدام الأجهزة اللوحية يضعف نظر الأطفال؟", src: "الأكاديمية الأمريكية لطب العيون", ans: "* يسبب جفاف العين وإجهادها ويساهم في زيادة حالات قصر النظر.<br>* يجب اتباع قاعدة (20-20-20): كل 20 دقيقة انظر لشيء بعيد.<br>* تأكد من وجود إضاءة كافية في الغرفة عند استخدام أي جهاز.<br>* حافظ على مسافة آمنة بين عين الطفل وبين شاشة الجهاز اللوحي." },
-{ q: "كيف أجعل من التكنولوجيا أداة تعليمية لطفلي؟", src: "خبراء التقنية التربوية", ans: "* اختر تطبيقات تنمي مهارات التفكير المنطقي والبرمجة البسيطة.<br>* شارك طفلك في حل الألغاز التقنية بدلاً من المشاهدة السلبية.<br>* حدد أهدافاً تعليمية واضحة قبل السماح باستخدام أي تطبيق جديد.<br>* شجّع الطفل على استخدام الكاميرا لتصوير الطبيعة أو مشاريع فنية." },
-{ q: "ماذا أفعل إذا اكتشف طفلي محتوى عنيفاً بالصدفة؟", src: "منظمة اليونيسيف", ans: "* ابقَ هادئاً تماماً ولا توبخ الطفل أو تشعره بالذنب.<br>* اشرح له أن هذا المحتوى غير حقيقي ومؤذٍ لسلامتنا النفسية.<br>* ناقش مشاعره تجاه المشهد وامنحه الأمان ليتحدث عن مخاوفه.<br>* تأكد من سد الثغرة التقنية التي سمحت بظهور هذا المحتوى فوراً." },
-{ q: "هل الأجهزة التعليمية للأطفال آمنة تماماً؟", src: "المنظمة الدولية لمعايير السلامة", ans: "* نعم، إذا كانت غير متصلة بالإنترنت المفتوح أو متاجر التطبيقات غير المراقبة.<br>* تأكد دائماً من جودة المحتوى وعدم وجود رسائل مبطنة أو إعلانات.<br>* افحص تقييمات التطبيق قبل تحميله واقرأ سياسة الخصوصية الخاصة به.<br>* حدد وقتاً معيناً حتى للأجهزة التعليمية لتجنب الإجهاد البصري والذهني." },
-{ q: "كيف أبني ثقة بيني وبين طفلي بخصوص استخدامه للهاتف؟", src: "خبراء التربية الحديثة", ans: "* كن صديقاً رقمياً له، العب معه أحياناً وافهم اهتماماته.<br>* علمه أن يخبرك فوراً إذا رأى أي شيء غريب أو مخيف دون خوف.<br>* اشرح له \"لماذا\" نضع حدوداً للوقت بدلاً من فرض الأوامر دون نقاش.<br>* اجعل القواعد تنطبق على الجميع في المنزل لتكون قدوة صادقة." },
-{ q: "ما هي علامات التعب النفسي الناتج عن الشاشات عند الأطفال؟", src: "معهد صحة الطفل", ans: "* سرعة الغضب وتقلب المزاج الحاد عند محاولة سحب الجهاز منه.<br>* قلة التركيز في المهام اليومية أو تراجع الاهتمام بالدراسة واللعب.<br>* اضطرابات النوم الملحوظة أو الكوابيس المرتبطة بمحتوى رقمي.<br>* العدوانية المفاجئة في التعامل مع الإخوة أو الزملاء في الواقع." },
-{ q: "كيف أطبق 'الصيام الرقمي' في منزلي؟", src: "مبادرة قصص الحضارات", ans: "* حدد يوماً في الأسبوع يكون فيه المنزل خالياً تماماً من الأجهزة.<br>* خصص ساعات معينة يومياً (مثل وقت الطعام) لمنع استخدام الهواتف.<br>* استبدل الوقت الرقمي بألعاب جماعية، حوارات أسرية، أو قراءة كتب.<br>* احتفل بنجاح الأسرة في الالتزام بالصيام الرقمي لتعزيز الروابط." }
-],
-teens: [
-{ q: "كيف أتعامل مع رغبة المراهق في الخصوصية التامة ورفضه لمراقبة هاتفه؟", src: "عالم المراهقة", ans: "* الخصوصية في هذا العمر جزء من بناء الاستقلالية الشخصية.<br>* بدلاً من المراقبة المباشرة (التجسس)، تحول إلى \"الإشراف الواعي\".<br>* اتفق معه على قواعد عامة (مثل عدم استخدام الهاتف في غرف النوم).<br>* اشرح له أن دورك هو الحماية وليس التقييد، وابنِ جسراً من الثقة." },
-{ q: "ما هي علامات وقوع المراهق في فخ 'الابتزاز الإلكتروني' وكيف أتصرف بهدوء؟", src: "عالم المراهقة", ans: "* العلامات تشمل: الانعزال المفاجئ، التوتر الشديد عند وصول رسائل.<br>* إغلاق الهاتف بسرعة عند اقترابك، وتدهور حالته المزاجية أو الدراسية.<br>* التصرف الهادئ يتطلب: احتواء المراهق وطمأنته بأنه ليس وحده.<br>* جمع الأدلة (صور الرسائل)، ثم إبلاغ الجهات المختصة فوراً." },
-{ q: "كيف أحمي ابني/ابنتي من 'هوس المثالية' والمقارنة الدائمة مع مشاهير السوشيال ميديا؟", src: "عالم المراهقة", ans: "* نمّ \"الوعي النقدي\"؛ علّمه أن ما يظهر هو \"لقطات منتقاة\" فقط.<br>* وضّح له أن هناك فلاتر وإضاءة خلف الكواليس لتجميل الواقع.<br>* شجّعه على متابعة شخصيات ملهمة في مجالات حقيقية (علم، رياضة).<br>* ركّز على تعزيز ثقته بنفسه وبإنجازاته الواقعية الملموسة." },
-{ q: "ما هو التصرف الصحيح إذا اكتشفت أن المراهق يتابع مجموعات أو صفحات تروج لأفكار متطرفة؟", src: "عالم المراهقة", ans: "* تجنب الصدمة والهجوم العنيف الذي قد يدفعه للتمسك بها كنوع من التمرد.<br>* ابدأ بحوار فكري هادئ: \"ما الذي جذبك لهذا النوع من المحتوى؟\".<br>* اعرض عليه وجهات نظر بديلة ومنطقية وناقش معه العواقب بوضوح.<br>* استعن بمختص تربوي لمساعدتك في تفكيك هذه الأفكار بشكل احترافي." },
-{ q: "كيف أعلم المراهق إدارة 'سمعته الرقمية' وإدراك أن ما ينشره اليوم سيلاحقه؟", src: "عالم المراهقة", ans: "* أخبره بقاعدة ذهبية: \"لا تنشر شيئاً لا تحب أن يراه مدير عملك المستقبلي\".<br>* وضّح له أن الشركات والجامعات تبحث الآن في التاريخ الرقمي للمتقدمين.<br>* علمه أن \"بصمته الرقمية\" هي سيرته الذاتية الحقيقية التي لا تمحى أبداً.<br>* شجّعه على نشر محتوى يعبر عن مهاراته وإيجابيته أمام العالم." },
-{ q: "كيف نواجه إدمان ألعاب 'الفيديو جيمز' وتأثيرها على التحصيل الدراسي؟", src: "عالم المراهقة", ans: "* لا تمنعها تماماً، بل اجعلها \"مكافأة\" مشروطة بعد إنجاز المهام.<br>* حدد ساعات معينة وقم بتقليلها تدريجياً، خاصة في أيام الدراسة.<br>* شجّعه على ممارسة أنشطة بدنية تعوّضه عن الجلوس الطويل أمام الشاشة.<br>* اهتم بنوعية الألعاب لضمان أنها تنمي مهارات التفكير المنطقي لا العنف." },
-{ q: "ما هي مخاطر تطبيقات الدردشة المجهولة (Anonymous Apps) على المراهقين؟", src: "عالم المراهقة", ans: "* خطورتها تكمن في أنها بيئة خصبة للتنمر القاسي، التحرش، والاستدراج.<br>* غياب الرقابة يرفع احتمالية التعرض للأذى النفسي الشديد من مجهولين.<br>* يجب توعية المراهق بأن هذه التطبيقات قد تستخدم لجمع بياناته لابتزازه.<br>* شجّعه على استخدام منصات التواصل المعروفة بضوابط أمان وخصوصية عالية." },
-{ q: "كيف أقنع المراهق بوضع حدود زمنية لاستخدام الهاتف دون الدخول في صدام؟", src: "عالم المراهقة", ans: "* عبر \"العقد الرقمي\"؛ اجلس معه واتفقا معاً على ساعات الاستخدام اليومي.<br>* عندما يشارك المراهق في وضع القوانين، يكون أكثر التزاماً وجدية في تنفيذها.<br>* ناقش المخاطر الصحية والنفسية معه واشرحها كحقائق علمية لا كأوامر.<br>* يجب أن تكون قدوة له في ترك هاتفك الخاص خلال الأوقات العائلية." },
-{ q: "كيف أتعامل مع 'التنمر الإلكتروني' سواء كان المراهق ضحية أو مشاركاً فيه؟", src: "عالم المراهقة", ans: "* إذا كان ضحية: علمه عدم الرد، حظر المتنمر فوراً، وتوثيق ما حدث.<br>* إذا كان مشاركاً: يجب الوقوف بحزم على العواقب الأخلاقية والقانونية.<br>* نمّ مهارة \"التعاطف\" لديه ليفهم حجم الأذى الذي قد يسببه للغير.<br>* وفّر الدعم النفسي الكامل له لتجاوز آثار التجربة وبناء ثقته بنفسه." },
-{ q: "ما هو دور الأهل في توعية المراهق بمخاطر 'تحديات التيك توك' الخطيرة؟", src: "عالم المراهقة", ans: "* الدور هو \"التحليل المنطقي\"؛ ناقش معه التحدي واسأله عن مخاطره.<br>* شجّعه على التفكير المستقل بدلاً من \"عقلية القطيع\" والتقليد الأعمى.<br>* وضّح له أن اللحاق بالتريند لا يستحق المخاطرة بسلامته الجسدية أبداً.<br>* اطلب منه اقتراح تحديات إيجابية ومفيدة يمكنه المشاركة فيها بأمان." },
-{ q: "كيف يمكن للمراهق استخدام منصات التواصل لبناء 'ملف شخصي' يدعم قبوله؟", src: "عالم المراهقة", ans: "* عن طريق مشاركة إنجازاته: مشاريع مدرسية، عمل تطوعي، أو هوايات مفيدة.<br>* نشر ملخصات لكتب قرأها أو أبحاث أجراها في مجالات تهمه تقنياً.<br>* تحويل حسابه من مستهلك سلبي للمحتوى إلى \"صانع محتوى\" ملهم.<br>* استخدام LinkedIn مبكراً لبناء شبكة علاقات مهنية مستقبلاً." },
-{ q: "ما هي أفضل الطرق لتدريب المراهق على مهارة 'الذكاء الاصطناعي' كأداة للتعلم؟", src: "عالم المراهقة", ans: "* علمه كيف يسأل الذكاء الاصطناعي ليكون بمثابة \"معلم خصوصي\" ذكي.<br>* استخدامه في تلخيص المراجع الضخمة أو البحث عن مصادر معلومات موثوقة.<br>* التأكيد على كتابة الأبحاث بأسلوبه الخاص لضمان تطوير مهاراته العقلية.<br>* تنبيهه لمخاطر الانحياز أو المعلومات الخاطئة التي قد يقدمها الذكاء الاصطناعي." },
-{ q: "كيف أحول اهتمام المراهق بالألعاب الإلكترونية إلى شغف بالبرمجة أو التصميم؟", src: "عالم المراهقة", ans: "* أخبره أن الانتقال من \"لاعب\" إلى \"صانع ومطور\" هو التحدي الحقيقي.<br>* اشترك له في دورات بسيطة لتطوير الألعاب (مثل Roblox Studio) أو الجرافيك.<br>* وضّح له القيمة التقنية والمادية الكبيرة التي يمكن أن يجنيها مستقبلاً.<br>* ساعده في تحميل الأدوات اللازمة لبدء أول مشروع برمجي خاص به." },
-{ q: "كيف ننمي مهارة 'القيادة الرقمية' لدى المراهق ليكون مؤثراً إيجابياً؟", src: "عالم المراهقة", ans: "* شجّعه على الدفاع عن الحق عبر الإنترنت ودعم زملائه ضد التنمر.<br>* نشر معلومات مفيدة واستخدام صوته الإلكتروني لإحداث تغيير في مجتمعه.<br>* علمه كيفية التحقق من صحة الأخبار قبل نشرها لمحاربة الشائعات الكاذبة.<br>* شجّعه على تنظيم مبادرات رقمية توعوية صغيرة في مدرسته أو حيه." },
-{ q: "ما هي الخطوات العملية لتمكين المراهق من إدارة ميزانيته عبر تطبيقات الدفع؟", src: "عالم المراهقة", ans: "* ابدأ بمنحه ميزانية أسبوعية على بطاقة مسبقة الدفع مخصصة لليافعين.<br>* علمه مهارة \"التحقق\" من أمان المواقع قبل الشراء أونلاين وحماية بياناته.<br>* مراجعة كشف الحساب معه شهرياً ليتعلم التخطيط المالي وتوفير الأموال.<br>* توعيته بمخاطر الإعلانات المضللة التي تدفعه لشراء أشياء لا يحتاجها فعلياً." }
-],
-youth: [
-{ q: "كيف أتخلص من تشتت الانتباه الناتج عن التنبيهات المستمرة وأستعيد قدرتي على التركيز العميق؟", src: "خبير إنتاجية رقمية", ans: ".   إيقاف جميع الإشعارات غير الضرورية على الهاتف والكمبيوتر<br>.   جدولة \"فترات تركيز عميق\" باستخدام تقنية <strong>بومودورو</strong> (25 دقيقة عمل / 5 دقائق راحة)<br>.   استخدام أدوات حظر المواقع والتطبيقات المشتتة (مثل Freedom، Cold Turkey)<br>.   تدريب العقل على التركيز من خلال القراءة العميقة أو ممارسة التأمل<br>.   تهيئة بيئة عمل مادية نظيفة وخالية من الفوضى البصرية والضوضاء" },
-{ q: "ما هي أفضل استراتيجيات إدارة الوقت الرقمية (مثل تقنية بومودورو) لزيادة الإنتاجية وتحقيق أهدافي اليومية؟", src: "خبير إدارة الوقت", ans: ".   تطبيق <strong>تقنية بومودورو</strong> لإدارة الطاقة والوقت في دفعات قصيرة مركزة<br>.   استخدام <strong>طريقة \"تناول الضفدع\"</strong> بإنجاز المهمة الأصعب أولاً في اليوم<br>.   تخطيط اليوم عبر <strong>التوقيت الزمني (Time Blocking)</strong> بحجز مواعيد ثابتة للمهام<br>.   تفريغ الذهن وتسجيل كل المهام في تطبيق موحد (مثل Todoist، Microsoft To Do)<br>.   ربط المهام اليومية بالأهداف الأسبوعية والشهرية طويلة المدى" },
-{ q: "كيف أتوقف عن الغرق في \"العمل المزيف\" (مثل الإيميلات والاجتماعات غير الضرورية) وأركز طاقتي على \"العمل الحقيقي\"؟", src: "مستشار إنتاجية", ans: ".   تحديد أهم 1-3 مهام يومياً (MITs) والبدء بها فوراً قبل فتح البريد الإلكتروني<br>.   جدولة فترات زمنية محددة فقط لمراجعة البريد والاجتماعات (مثل 3 مرات يومياً)<br>.   تحدي ضرورة كل اجتماع عبر سؤال: \"هل يمكن استبداله بتحديث مكتوب؟\"<br>.   تطبيق قاعدة الدقيقتين: إنجاز أي مهمة صغيرة (تأخذ دقيقتين أو أقل) فوراً<br>.   تعريف \"العمل الحقيقي\" على أنه المهام التي تقربك مباشرة من أهدافك الأساسية" },
-{ q: "كيف أحمي عيني وجسدي من الإرهاق الناتج عن الجلوس الطويل أمام الشاشات، وأدمج عادات صحية في روتين عملي الرقمي؟", src: "أخصائي صحة رقمية", ans: ".   تطبيق قاعدة <strong>20-20-20</strong> (كل 20 دقيقة، انظر إلى شيء على بعد 20 قدماً لمدة 20 ثانية)<br>.   ضبط إعدادات سطوع الشاشة وتشغيل الوضع الليلي (الضوء الدافئ) تلقائياً<br>.   تحسين وضعية الجلوس وضمان أن تكون الشاشة على مستوى العين<br>.   أخذ استراحة حركية قصيرة كل ساعة (مثل المشي، التمدد)<br>.   استخدام دعامة للقدمين وكرسي مريح، والتفكير في طاولة قابلة للوقوف" },
-{ q: "ما هي مخاطر \"التسويف الرقمي\" وكيف أبني إرادتي لأمنع نفسي من تصفح وسائل التواصل أثناء ساعات العمل؟", src: "خبير سلوك رقمي", ans: ".   <strong>المخاطر:</strong> تأجيل المهام المهمة، زيادة التوتر والقلق، تدني جودة العمل، الشعور بالذنب<br>.   إبعاد الهاتف الذكي عن مجال الرؤية أو وضعه على وضع الطيران أثناء العمل<br>.   تطبيق قاعدة \"البداية لمدة 5 دقائق فقط\" لتجاوز حاجز المماطلة<br>.   ربط البدء في العمل بنشاط محبب (مثل كوب قهوة، موسيقى هادئة)<br>.   تحديد مكافأة صغيرة ومحددة مسبقاً بعد إنجاز المهمة" },
-{ q: "كيف أضع حدودًا رقمية واضحة بين العمل والحياة الشخصية لتجنب الاحتراق الوظيفي؟", src: "أخصائي توازن حياة رقمية", ans: ".   إنشاء \"طقوس انتقالية\" واضحة بعد انتهاء العمل (مثل المشي، تغيير الملابس)<br>.   تحديد أوقات ثابتة لعدم العمل وإبلاغ الزملاء والعملاء بها بوضوح<br>.   استخدام أجهزة منفصلة للعمل والحياة الشخصية، أو حسابات مستخدمين مختلفة<br>.   إيقاف إشعارات العمل على الهاتف الشخصي بعد ساعات الدوام وفي العطلات<br>.   أخذ \"إجازات رقمية\" قصيرة (Digital Detox) خلال عطلات نهاية الأسبوع" },
-{ q: "كيف أنظم بيئتي العملية الرقمية (سطح المكتب، الملفات، التطبيقات) لتقليل الفوضى وزيادة الوضوح الذهني؟", src: "خبير تنظيم رقمي", ans: ".   تطبيق قاعدة <strong>OHIO</strong> (Only Handle It Once): التعامل مع الملف مرة واحدة واتخاذ قرار بشأنه<br>.   هيكلة نظام مجلدات واضح (مثل: مشاريع جارية، مرجعية، مؤرشفة، شخصية)<br>.   الحفاظ على سطح المكتب نظيفاً ووضع اختصارات التطبيقات الأساسية فقط<br>.   استخدام أدوات البحث السريع في النظام (مثل Spotlight على Mac، Everything على Windows)<br>.   جدولة تنظيف أسبوعي للملفات المؤقتة وسلة المحذوفات" },
-{ q: "ما هو التأثير الحقيقي \"لتعدد المهام\" على جودة عملي، وكيف أدرب نفسي على التركيز الكامل في مهمة واحدة؟", src: "عالم أعصاب رقمي", ans: ".   <strong>التأثير:</strong> انخفاض جودة المخرجات، زيادة الأخطاء، استنزاف أسرع للطاقة العقلية<br>.   إغلاق جميع علامات التبويب والنوافذ والتطبيقات غير المتعلقة بالمهمة الحالية<br>.   استخدام قائمة مهام يومية واضحة مرتبة حسب الأولوية وليس الرغبة<br>.   إدارة الانقطاعات بوضع علامة \"مشغول\" والرد في وقت مخصص للمراجعة<br>.   تدريب الدماغ على رفض التبديل عبر التدرج بزيادة فترات التركيز المتواصل" },
-{ q: "كيف أتعامل مع ضغط \"المثالية الرقمية\" وسعار المقارنة عند رؤية إنجازات الآخرين على منصات مثل لينكدإن؟", src: "أخصائي نفسي رقمي", ans: ".   تذكر أن منصات التواصل المهني هي \"معرض للإنجازات\" وليست سيرة ذاتية كاملة<br>.   تحديد معايير النجاح الشخصية الخاصة بك بناءً على أهدافك وقيمتك وليس مقارنة بالآخرين<br>.   تحويل المشاعر السلبية إلى فضول: \"ماذا يمكنني أن أتعلم من تجربته؟\"<br>.   تقليل الوقت المخصص للتصفح السلبي واستبداله بفترات محددة للتفاعل الهادف<br>.   تدوين وتوثيق إنجازاتك وتقدمك الشخصي في دفتر خاص للرجوع إليه" },
-{ q: "ما هي أفضل الأدوات والتطبيقات لتنظيم وإدارة المشاريع الشخصية والمهنية بشكل احترافي وبسيط؟", src: "خبير أدوات رقمية", ans: ".   <strong>للمهام الشخصية:</strong> Todoist، Microsoft To Do، Google Tasks<br>.   <strong>للمشاريع المتوسطة:</strong> Trello (لوحات كانبان)، Asana، ClickUp<br>.   <strong>للملاحظات:</strong> Notion، Evernote، Obsidian<br>.   <strong>لتنظيم الوقت:</strong> Google Calendar، Apple Calendar، Calendly<br>.   <strong>للتعاون:</strong> Google Workspace، Microsoft 365" },
-{ q: "كيف أستخدم الذكاء الاصطناعي كشريك إبداعي ومساعد شخصي يضاعف إنتاجيتي، مع الحفاظ على تميزي البشري؟", src: "خبير ذكاء اصطناعي تطبيقي", ans: ".   استخدامه لتوليد الأفكار الأولية، ومسودات النصوص، والعناوين، والهياكل<br>.   الاستفادة منه في تلخيص المستندات الطويلة، وتنظيم البيانات، والبحث الذكي<br>.   الاعتماد عليه لمراجعة النصوص وتحسين الصياغة والأخطاء اللغوية<br>.   <strong>الحفاظ على التميز البشري</strong> بإضافة السياق الشخصي، والتحرير النقدي، والعاطفة<br>.   اعتباره \"مساعداً ذكياً\" تطرح عليه الأسئلة وتدقق مخرجاته، وليس \"بديلا\"" },
-{ q: "كيف أبني \"نظام تعلم ذاتي\" عبر الإنترنت يضمن لي تحديث مهاراتي باستمرار ومواكبة تطورات سوق العمل؟", src: "خبير تعلم رقمي", ans: ".   تحديد مسار تعلم واضح يركز على المهارات الأكثر طلباً في مجالك وأهدافك<br>.   تخصيص وقت أسبوعي ثابت وغير قابل للمساومة للتعلم (ساعة يومياً أو نصف يوم أسبوعياً)<br>.   الاشتراك في منصات التعلم الإلكتروني الموجهة (Coursera، edX، Udemy)<br>.   تطبيق المعرفة فوراً من خلال مشاريع مصغرة أو تطبيقها في العمل الحالي<br>.   قياس التقدم بالحصول على شهادات أو بناء محفظة أعمال أو مشاركة ما تتعلمه" },
-{ q: "ما هي خطوات تحويل مهاراتي الرقمية إلى مصدر دخل إضافي عبر العمل الحر، وكيف أبدأ بطريقة فعالة ومنظمة؟", src: "خبير عمل حر رقمي", ans: ".   اختيار مهارة واحدة محددة وقابلة للتسويق وتمتلك فيها مستوى جيد<br>.   بناء محفظة أعمال (Portfolio) تحتوي على 2-3 مشاريع نموذجية تظهر أفضل ما لديك<br>.   البحث عن الأسعار السوقية وتحديد عروض أسعار تنافسية في البداية لجذب العملاء الأولى<br>.   إنشاء ملف احترافي على منصات العمل الحر (مثل Upwork، خمسات، مستقل) وشبكة لينكدإن<br>.   البدء بعروض الخدمة لشبكة معارفك، واستخدام عقود بسيطة، وتنظيم الفواتير والضرائب" },
-{ q: "كيف أطور \"علامتي التجارية الشخصية\" على الإنترنت لجذب الفرص المهنية المناسبة وبناء شبكة علاقات مؤثرة؟", src: "خبير تسويق رقمي شخصي", ans: ".   تحديد نطاق تخصصي وشخصيتي المهنية الفريدة والقيمة المميزة التي تقدمها<br>.   تحسين ملف LinkedIn بالكامل: صورة محترفة، عنوان جذاب، ملخص قوي، تفاصيل الخبرات<br>.   نشر محتوى ذو قيمة بشكل منتظم (مقالات، منشورات، تعليقات ثاقبة) في مجالك<br>.   التفاعل البناء مع محتوى الآخرين من خبراء ومؤثرين في مجال اهتمامك<br>.   الحفاظ على اتساق الصورة والرسالة عبر جميع المنصات" },
-{ q: "كيف أحول هاتفي من مصدر للتشتيت إلى أداة تنمية ذاتية؛ لتعلم اللغات، الاستماع للمحتوى التعليمي، أو إدارة مشاريع جانبية؟", src: "خبير استخدام هواتف ذكية", ans: ".   إعادة تنظيم الشاشة الرئيسية: حذف التطبيقات المشتتة أو تجميعها في مجلد واحد بعيد<br>.   تحميل تطبيقات التعلم والتنمية (مثل Duolingo للغات، Brilliant للعلوم، بودكاست تعليمي)<br>.   تحميل تطبيقات الإنتاجية للمشاريع الجانبية (مثل Trello، Notion، Evernote)<br>.   استغلال أوقات الانتظار والمواصلات في الاستماع للبودكاست أو الدروس الصوتية<br>.   تعيين أدوات التعلم والتخطيط على شاشة القفل أو الصفحة الرئيسية لتكون أول ما تراه" },
-{ q: "كيف أتعامل مع \"قلق المعلومات\" والإحساس بأنني لا أستطيع مواكبة كل التطورات والمحتوى في مجالي؟", src: "خبير إدارة معرفة رقمية", ans: ".   تقبل حقيقة أنه من المستحيل معرفة كل شيء، والتركيز على \"التعمق\" بدلاً من \"الاستيعاب السطحي\"<br>.   انتقاء واتباع 2-3 مصادر موثوقة ومتخصصة فقط بدلاً من متابعة عشرات المصادر العشوائية<br>.   استخدام أدوات تجميع المحتوى مثل Feedly أو Pocket لمراجعة العناوين وقراءة المهم فقط لاحقاً<br>.   تخصيص وقت أسبوعي محدد (مثل ساعة يوم الجمعة) لمراجعة أهم التطورات، ثم \"الانفصال\"<br>.   تغيير الهدف من \"المواكبة\" إلى \"التطبيق\": التركيز على المعلومات التي يمكنك استعمالها عملياً" },
-{ q: "ما هو الروتين الرقمي المسائي الذي يساعدني على النوم بعمق ويحسن جودة راحتي بعد يوم من العمل الشاق؟", src: "خبير نوم رقمي", ans: ".   تحديد \"موعد قطع\" رقمي ثابت (ساعة على الأقل قبل موعد النوم)<br>.   تفعيل \"الوضع الليلي\" أو \"الضوء الدافئ\" على جميع الشاشات تلقائياً مع غروب الشمس<br>.   عدم إدخال الهاتف الذكي إلى غرفة النوم، وشحنه في مكان آخر في المنزل<br>.   استبدال الوقت الرقمي قبل النوم بنشاطات مهدئة: قراءة كتاب ورقي، التأمل، الكتابة في اليوميات<br>.   تهيئة بيئة النوم: إظلام تام، درجة حرارة منخفضة، وهدوء" },
-{ q: "كيف أبني تواصلاً فعالاً وثقة مع فريق العمل في بيئة العمل الهجين أو عن بُعد دون الشعور بالعزلة؟", src: "خبير تواصل رقمي", ans: ".   جدولة اتصالات دورية قصيرة ومركزة (مثل اجتماعات الوقوف اليومية Stand-up Meetings)<br>.   استخدام منصات تواصل فورية (مثل Slack، Teams) بقنوات منظمة للمشاريع والمواضيع الاجتماعية<br>.   تخصيص الدقائق الأولى من الاجتماعات الرسمية للحديث غير الرسمي عن أحوال الفريق<br>.   الاتفاق مع الفريق على ساعات العمل المتوقعة وأوقات الاستجابة للرسائل<br>.   الاحتفال بالإنجازات الفردية والجماعية بشكل علني عبر قنوات التواصل المشتركة" },
-{ q: "كيف أحافظ على مهارات التفكير النقدي والإبداع العميق في عصر السيل السطحي للمعلومات عبر وسائل التواصل السريعة؟", src: "فيلسوف رقمي", ans: ".   تخصيص وقت أسبوعي \"بلا شاشات\" للقراءة العميقة في الكتب والمقالات الطويلة<br>.   ممارسة الكتابة التحليلية أو التدوين الذي يجبرك على تنظيم أفكارك وشرحها بوضوح<br>.   تحدي الأفكار الجاهزة بطرح الأسئلة الأساسية: \"ما الدليل؟\"، \"ما الافتراضات؟\"، \"ما البديل؟\"<br>.   الابتعاد المتعمد عن المصادر السريعة للمشي أو التفكير الحر دون مدخلات لمدة 20-30 دقيقة<br>.   الانخراط في نقاشات حقيقية مع أصدقاء أو زملاء يختلفون معك في الرأي بهدف الفهم وليس الفوز" },
-{ q: "ما هي المهارات الإنسانية (كالتعاطف والقيادة) التي لا يمكن للذكاء الاصطناعي تعويضها، وكيف أركز على تطويرها لتعزيز قوتي التنافسية؟", src: "خبير مستقبل العمل", ans: ".   <strong>المهارات الرئيسية:</strong> الذكاء العاطفي، التفاوض، القيادة الملهمة، الإبداع الفني، التفكير الاستراتيجي، الحكم الأخلاقي<br>.   تطويرها عبر <strong>الملاحظة النشطة</strong> و<strong>الاستماع بتركيز</strong> لفظيات ولغة جسد الآخرين<br>.   طلب تغذية راجعة صادقة من الزملاء والمديرين حول مهاراتك الاجتماعية والقيادية<br>.   القراءة في مجالات علم النفس، الفلسفة، والتاريخ لفهم دوافع وسلوك البشر<br>.   الانخراط في أنشطة جماعية أو تطوعية تضعك في مواقف تتطلب تعاوناً وتأثيراً في الآخرين" }
-],
-marriage: [
-{ q: "كيف يؤثر الانشغال الدائم بالهاتف (Phubbing) على جودة التواصل العاطفي بين الزوجين؟", src: "خبير علاقات زوجية رقمية", ans: ".   يخلق شعوراً بعدم الأهمية والتجاهل لدى الطرف الذي يتم تجاهله<br>.   يقلل من جودة الحوار ويقتل فرص المحادثات العفوية العميقة<br>.   يقلل من الاتصال البصري والجسدي الضروري لبناء الألفة<br>.   يزيد من احتمالية سوء الفهم بسبب عدم التركيز الكامل في الحديث<br>.   على المدى الطويل، يبني جداراً من العزلة العاطفية والاستياء داخل العلاقة" },
-{ q: "ما هي حدود الخصوصية الرقمية بين الزوجين وهل يحق لأحدهما تفتيش هاتف الآخر؟", src: "مستشار أسري", ans: ".   المبدأ الأساسي هو <strong>الثقة والاحترام</strong>، وليس الحق المطلق أو المنع المطلق<br>.   من الصحي الاتفاق على \"حدود\" ترضي الطرفين (مثل: عدم إخفاء كلمات المرور، ولكن عدم التفتيش العشوائي)<br>.   التفتيش دون إذن إشارة على أزمة ثقة عميقة ويحتاج إلى علاج السبب وليس ممارسة الرقابة<br>.   الخصوصية حق فردي، لكن الشفافية المتفق عليها تطمئن القلب<br>.   الحل الأمثل هو مناقشة المشاعر التي تدفع لرغبة التفتيش (شك، عدم أمان) وعلاجها" },
-{ q: "كيف نتجنب مقارنة حياتنا الزوجية بالصور المثالية التي يعرضها \"المؤثرون\" على السوشيال ميديا؟", src: "أخصائي نفسي أسري", ans: ".   تذكير أنفسنا باستمرار أن ما نراه هو \"أبرز اللقطات\" وليس الفيلم الكامل للحياة<br>.   التركيز على قصة علاقتنا الفريدة وإنجازاتنا الصغيرة غير المرئية للآخرين<br>.   تقليل الوقت المشترك في التصفح السلبي واستبداله بأنشطة حقيقية تخلق ذكرياتنا الخاصة<br>.   استخدام المحتوى المثالي كمصدر للإلهام لطرق جديدة للتفاعل، وليس كمسطرة للحكم على علاقتنا<br>.   مشاركة شعورك بالمقارنة مع شريكك لمناقشته بشفافية وتخفيف الضغط" },
-{ q: "ما هو تأثير إدمان المواقع الإباحية على العلاقة الحميمية والرضا الزوجي؟", src: "أخصائي علاج إدمان رقمي", ans: ".   يشوه التوقعات الواقعية حول العلاقة الحميمية والجسد<br>.   قد يؤدي إلى صعوبة في الإثارة مع الشريك الحقيقي أو ضعف الأداء<br>.   يقلل من الرغبة في التواصل الحميمي مع الشريك، مما يشعره بالنبذ الجسدي والعاطفي<br>.   يخلق حاجزاً من السرية والخيانة العاطفية حتى بدون علاقة خارجية<br>.   العلاج يكون بالاعتراف بالمشكلة، وطلب المساعدة المهنية، وإعادة بناء الثقة والحميمية خطوة بخطوة" },
-{ q: "كيف يمكننا وضع \"قواعد رقمية\" للمنزل لزيادة الترابط؟", src: "خبير بيئة منزل رقمية", ans: ".   منع الهواتف تماماً على مائدة الطعام وفي غرفة النوم<br>.   تخصيص \"فترة رقمية هادئة\" مسائية يضع فيها كلاكما الأجهزة جانباً<br>.   الاتفاق على عدم استخدام الهواتف أثناء المحادثات المهمة أو عند الحديث عن يومكما<br>.   تخصيص مكان مشترك لشحن الهواتف ليلاً بعيداً عن غرفة النوم<br>.   احترام هذه القواعد بالتبادل وليس كفرض من طرف على الآخر" },
-{ q: "كيف نتصرف إذا تسبب سوء فهم لرسالة نصية في اندلاع مشكلة كبرى بيننا؟", src: "خبير تواصل زوجي", ans: ".   <strong>أولاً: وقف النقاش النصي فوراً.</strong> التواصل النصي يفتقر للتعبير الصوتي والبصري وهو أرض خصبة لسوء الفهم<br>.   الاتصال هاتفياً أو التحدث وجهاً لوجه فوراً لتوضيح النبرة والقصد الحقيقي<br>.   البدء بالاعتذار عن سوء الفهم الناتج، حتى لو لم تكن مقصدك، لأن مشاعر الطرف الآخر حقيقية<br>.   توضيح قصده الحقيقي من الرسالة باستخدام جمل \"أقصد أن...\" أو \"ما حاولت قوله هو...\"<br>.   الاتفاق على قاعدة ذهبية: \"المواضيع الحساسة أو المعقدة لا تُناقش أبداً عبر الرسائل النصية\"" },
-{ q: "ما هي مخاطر الصداقات الافتراضية مع الجنس الآخر عبر الإنترنت وكيف تؤدي للخيانة الزوجية؟", src: "مستشار زواجي", ans: ".   توفر وهم التقارب العاطفي السريع مع إخفاء عيوب الحياة الواقعية<br>.   تشكل مساحة سرية تنمو فيها المشاعر خارج العلاقة الأساسية (خيانة عاطفية)<br>.   تقلل من الاستثمار العاطفي والوقتي الممنوح للشريك الحقيقي<br>.   يمكن أن تكون الخطوة الأولى نحو خيانة فعلية إذا تحولت للقاء<br>.   الوقاية تكون بوضوح الحدود مع الأصدقاء، والشفافية مع الشريك، وإعادة استثمار الطاقة العاطفية في العلاقة الأساسية" },
-{ q: "كيف يؤثر الضوء الأزرق واستخدام الهاتف قبل النوم على دورة النوم المشتركة للزوجين؟", src: "أخصائي نوم أسري", ans: ".   يُخدع الدماغ بالضوء الأزرق فيظنه نور النهار، مما يؤخر إفراز هرمون الميلاتونين المسؤول عن النوم<br>.   يؤدي إلى صعوبة النوم، ونوم متقطع، وتقليل جودة النوم العميق لكلا الطرفين<br>.   يخلق اضطراباً في إيقاع النوم المشترك إذا كان أحد الطرفين يستخدم الهاتف في السرير<br>.   الحل: تفعيل \"الوضع الليلي\" على الأجهزة، ووضع قاعدة بعدم استخدام الشاشات قبل النوم بساعة، وشحن الهواتف خارج غرفة النوم" },
-{ q: "كيف نعالج مشكلة \"الخرس الزوجي الرقمي\" حيث يجلس الطرفان في مكان واحد والاتصال مقطوع؟", src: "أخصائي تواصل أسري", ans: ".   الاعتراف بالمشكلة بصوت عالٍ وبطريقة غير اتهامية: \"أشعر أننا أصبحنا بعيدين رغم وجودنا معاً\"<br>.   تطبيق قاعدة \"الصندوق الرقمي\": تجميع جميع الأجهزة في صندوق محدد لفترة زمنية متفق عليها<br>.   إعادة تعريف \"الوقت المشترك\" بأنشطة لا تسمح باستخدام الهاتف: الطهي معاً، لعب لعبة لوحية، المشي<br>.   طرح أسئلة مفتوحة تثير الحوار (مثل: \"ما أكبر حلم تريد تحقيقه هذا العام؟\")<br>.   البدء بقصص من يومكما بدلاً من الغرق في الهاتف بعد العودة للمنزل" },
-{ q: "ماذا نفعل إذا كان أحد الشريكين يفرط في نشر تفاصيل حياتنا الخاصة على منصات التواصل؟", src: "خبير خصوصية رقمية زوجية", ans: ".   التعبير عن المشاعر الشخصية باستخدام جمل \"أنا\" (مثل: \"أشعر بعدم ارتياح عندما تنشر صورنا الخاصة\")<br>.   مناقشة ووضع اتفاق واضح حول ما هو مسموح نشره وما هو خاص (صور الأطفال، المشاكل، المناسبات العائلية)<br>.   احترام رغبة الطرف الأكثر تحفظاً، لأن الحق في الخصوصية مشترك<br>.   اقتراح بدائل مثل إنشاء محادثة خاصة للعائلة المقربة لمشاركة الأخبار<br>.   فهم الدوافع (الحاجة للتقدير، التأثير) وتقديرها، مع توضيح العواقب على العلاقة" },
-{ q: "كيف نستخدم تطبيقات التقويم المشترك والمهام لتعظيم التنسيق وتخفيف الأعباء المنزلية؟", src: "خبير تنظيم حياة زوجية", ans: ".   استخدام تقويم رقمي مشترك (مثل Google Calendar) لتسجيل جميع المواعيد: العمل، الاجتماعات، المناسبات، المهام المنزلية<br>.   وضع قائمة مهام مشتركة (على تطبيق مثل Todoist أو Microsoft To Do) لتوزيع الأعباء ومتابعتها<br>.   جدولة \"المواعيد الزوجية\" و\"الأسرة\" في التقويم المشترك وتعطيلها كما تُعطل موعد عمل مهم<br>.   استخدام ميزة \"التذكيرات\" للتنسيق في لحظات الشراء أو الاستلام<br>.   مراجعة التقويم والأسبوع القادم معاً بشكل أسبوعي لجلسة تخطيط سريعة" },
-{ q: "كيف يمكن للتكنولوجيا أن تقوي العلاقة في حالات السفر أو العمل الطويل؟", src: "خبير علاقات عن بُعد", ans: ".   جدولة مكالمات فيديو قصيرة ومنتظمة أفضل من مكالمات طويلة عشوائية<br>.   استخدام تطبيقات المراسلة لإرسال رسائل صوتية أو صور عفوية من لحظات اليوم<br>.   مشاهدة فيلم أو مسلسل معاً عن بعد باستخدام ميزة \"Watch Party\" المتوفرة على بعض المنصات<br>.   استخدام تطبيقات الألعاب الإلكترونية البسيطة للمنافسة واللعب معاً عن بُعد<br>.   إرسال هدايا أو طلبات طعام مفاجئة عبر التطبيقات لإظهار الاهتمام" },
-{ q: "ما هي الطرق المبتكرة لاستغلال المحتوى التعليمي عبر الإنترنت لتطوير مهارات الحوار والذكاء العاطفي بيننا؟", src: "خبير تعلم زوجي رقمي", ans: ".   مشاهدة محاضرات أو كورسات قصيرة عن التواصل الزوجي أو الذكاء العاطفي معاً ومناقشتها<br>.   الاستماع لبودكاست عن العلاقات أثناء رحلات السيارة المشتركة والتوقف لمناقشة الأفكار<br>.   استخدام تطبيقات أو كتب إلكترونية تحتوي على أسئلة محفزة للحوار العميق بين الزوجين<br>.   لعب ألعاب لوحية رقمية أو ورقية تركز على التعارف والتخمين وتعزيز الفهم المتبادل<br>.   ممارسة تمارين الاستماع الفعال التي يتعلمانها عبر الإنترنت مع بعضهما البعض" },
-{ q: "كيف نحول هواية مشتركة إلى وقت نوعي يجدد روح الصداقة في الزواج؟", src: "خبير وقت زوجي", ans: ".   تحدي بعضكما في لعبة إلكترونية تعاونية (Co-op) بدلاً من الألعاب الفردية<br>.   إنشاء \"قائمة مشاهدة\" مشتركة وتخصيص ليلة أسبوعية لمشاهدة حلقة معاً مع مناقشتها<br>.   التعلم معاً عبر دروس \"يوتيوب\" لمهارة جديدة متعلقة بهوايتكم (الطبخ، الحرف اليدوية)<br>.   المشاركة في مجتمعات أو منصات أونلاين خاصة بهوايتكم ومشاركة الإنجازات معاً<br>.   تحويل الهواية إلى مشروع صغير مشترك (قناة يوتيوب، مدونة، متجر إلكتروني بسيط)" },
-{ q: "كيف نخطط لمستقبلنا المالي المشترك باستخدام التطبيقات الرقمية بأمان وشفافية؟", src: "خبير تخطيط مالي زوجي", ans: ".   استخدام تطبيقات الميزانية المشتركة (مثل Mint، YNAB) لمشاهدة دخلكما ومصروفاتكما في مكان واحد<br>.   فتح حساب توفير أو استثمار مشترك والاتفاق على قواعد الإيداع والسحب<br>.   استخدام التطبيقات المصرفية لإنشاء \"صناديق\" رقمية مشتركة لأهداف محددة (عمرة، سيارة، طوارئ)<br>.   جدولة \"اجتماع مالي\" شهري قصير لمناقشة المصروفات، المراجعة، والتقدم نحو الأهداف<br>.   الاستفادة من منصات التعلم عن الاستثمار والتخطيط المالي معاً لاتخاذ قرارات مستنيرة" }
-],
-seniors: [
-{ q: "كيف يمكن حماية كبار السن من الوقوع ضحايا لعمليات الاحتيال الهاتفي والإلكتروني؟", src: "خبير أمن رقمي لكبار السن", ans: ".   تحذيرهم من مشاركة أي معلومات شخصية (رقم بطاقة، كود تحويل، كلمة سر) عبر الهاتف أبداً، مهما كانت مزاعم المتصل.<br>.   تعليمهم قاعدة ذهبية: \"البنوك والمؤسسات الرسمية لا تطلب بياناتك السرية عبر الهاتف أو الرسائل.\"<br>.   تثبيت تطبيقات التعرف على المتصلين والمكافحة للسبام والاحتيال على هواتفهم.<br>.   حثهم على استشارة فرد من العائلة قبل إجراء أي عملية دفع أو تحويل بناءً على طلب غير متوقع.<br>.   تبسيط وشرح أشهر طرق الاحتيال (وراثة مزيفة، فوز بجائزة، طلب فدية، انتحال شخصية قريب)." },
-{ q: "ما هي أبسط الطرق لتعليم كبار السن استخدام تطبيقات التواصل (مثل واتساب) لتقليل شعورهم بالعزلة؟", src: "مدرب تكنولوجيا لكبار السن", ans: ".   البدء بجلسة واحدة قصيرة لهدف واحد فقط، مثل: \"اليوم نتعلم إجراء مكالمة فيديو واحدة\".<br>.   استخدام لغة بسيطة وتشبيهات مألوفة (المحادثة مثل الغرفة، الإيموجي مثل تعبيرات الوجه).<br>.   كتابة خطوات التشغيل الرئيسية بخط كبير وواضح على ورقة ولصقها بجانب الجهاز.<br>.   تشجيعهم بالممارسة اليومية مع شخص مقرب (حفيد، صديق) لبناء الثقة.<br>.   ربط استخدام التطبيق بفائدة ملموسة وتفاعل عاطفي (رؤية الأحفاد، التحدث مع صديق بعيد)." },
-{ q: "كيف يمكن تخصيص إعدادات الهاتف (حجم الخط، الصوت، السطوع) لتناسب الاحتياجات الجسدية لكبار السن؟", src: "أخصائي تكنولوجيا مساعدة", ans: ".   تكبير حجم الخط إلى أقصى درجة في إعدادات النظام وفي التطبيقات الرئيسية (الرسائل، الهاتف).<br>.   تفعيل \"عكس الألوان\" أو \"التباين العالي\" لتسهيل القراءة.<br>.   رفع مستوى الصوت الأساسي وتفعيل وضع \"المكبر\" للمكالمات.<br>.   تفعيل خاصية \"القارئ النصي\" (Text-to-Speech) ليقرأ الشاشة بصوت عالٍ.<br>.   إطالة مدة تأمين الشاشة لمنع إغلاقها السريع أثناء القراءة." },
-{ q: "ما هي مخاطر تصديق ونشر الشائعات والأخبار الطبية المزيفة التي تصلهم عبر المجموعات؟", src: "أخصائي إعلام رقمي", ans: ".   تعريض صحتهم للخطر باتباع علاجات وهمية أو التخلي عن أدوية موصوفة.<br>.   التسبب في حالة من الهلع والقلق غير المبرر حول صحتهم أو صحة أحبائهم.<br>.   نشر معلومات خاطئة تضر بالآخرين وتضر بالثقة في المصادر الطبية الحقيقية.<br>.   تحويل المجموعات العائلية من وسيلة للتواصل إلى بيئة لنشر الخوف والتضليل.<br>.   الإضرار بسمعتهم لدى الآخرين بسبب نشرهم لمعلومات يسهل كشف زيفها." },
-{ q: "كيف يمكن للتكنولوجيا المساعدة في تذكير كبار السن بمواعيد الأدوية والفحوصات الدورية بدقة؟", src: "خبير رعاية رقمية", ans: ".   استخدام تطبيقات \"منبه الدواء\" المخصصة (مثل Medisafe) التي تصدر إنذارات صوتية وبصرية قوية.<br>.   برمجة المنبه اليومي الأساسي في الهاتف بأسماء الأدوية وأوقاتها.<br>.   استخدام المساعدات الصوتية (مثل Google Assistant، Siri) لتذكيرهم صوتياً كل يوم.<br>.   وضع تقويم عائلي مشترك (Google Calendar) وتسجيل مواعيد الفحوصات ليتم تذكيرهم ومتابعتهم من قبل العائلة.<br>.   استخدام أقراص تنظيم الأدوية الذكية التي ترسل تنبيهاً للهاتف في حال نسيان الجرعة." },
-{ q: "كيف نتصرف في حالة إدمان كبير السن على متابعة الأخبار السياسية أو المحتوى المحبط رقمياً؟", src: "أخصائي نفسي لكبار السن", ans: ".   التعاطف أولاً وفهم أن هذا السلوك قد ينبع من شعور بالفراغ أو الرغبة في الانشغال.<br>.   عدم المنع المباشر، بل تقنين واستبدال: تحديد أوقات محددة قصيرة للأخبار.<br>.   تقديم بدائل جذابة ومفيدة تشغل وقته (قنوات يوتيوب تعليمية، أفلام وثائقية، ألعاب ذهنية).<br>.   تشجيعه على الانخراط في أنشطة غير رقمية (هوايات قديمة، نزهات، زيارات اجتماعية).<br>.   مشاركته في مشاهدة محتوى إيجابي أو مضحك لتحويل اتجاه انتباهه تدريجياً." },
-{ q: "ما هي أهمية ميزة \"تتبع الموقع\" (GPS) في حماية كبار السن الذين يعانون من مشاكل في الذاكرة؟", src: "خبير تقنيات السلامة", ans: ".   تمكين أفراد العائلة من تحديد مكانهم بسرعة في حال ضياعهم أو خروجهم دون علم.<br>.   توفير طمأنينة نفسية للكبير السن وأهله عند خروجه للتنزه وحده.<br>.   السماح له بالاستقلالية والحركة مع وجود شبكة أمان في حالات الطوارئ.<br>.   تسهيل مهمة فرق البحث والإنقاذ في حالة عدم قدرته على وصف مكانه.<br>.   يمكن ربطها بمنبه على هاتف القريب إذا غادر الشخص منطقة آمنة محددة مسبقاً (Geofencing)." },
-{ q: "كيف نحمي خصوصية كبار السن من تطبيقات جمع البيانات التي قد تستغل قلة خبرتهم التقنية؟", src: "خبير أمن سيبراني", ans: ".   مساعدتهم على مراجعة أذونات التطبيقات وإلغاء ما هو غير ضروري (مثل الوصول للصور، جهات الاتصال).<br>.   تنزيل التطبيقات لهم فقط من المتاجر الرسمية (Google Play، App Store).<br>.   تحذيرهم من النقر على الإعلانات المنبثقة أو روابط \"الفوز بجوائز\" داخل التطبيقات.<br>.   تثبيت برنامج مكافحة فيروسات موثوق على هواتفهم.<br>.   تعليمهم عدم تسجيل الدخول بحساباتهم الشخصية على تطبيقات أو مواقع تبدو مشبوهة." },
-{ q: "ما هو دور الألعاب الذهنية الإلكترونية في تنشيط ذاكرة كبار السن والوقاية من أمراض الشيخوخة؟", src: "أخصائي تأهيل معرفي", ans: ".   تحفيز الوظائف الإدراكية مثل الذاكرة قصيرة المدى، والانتباه، والسرعة في معالجة المعلومات.<br>.   تأخير ظهور أعراض التدهور المعرفي المعتدل من خلال \"تمرين\" الدماغ بانتظام.<br>.   توفير شعور بالإنجاز والتحدي الإيجابي، مما يعزز الصحة النفسية.<br>.   بعض الألعاب مصممة خصيصاً للوقاية من الأمراض مثل الزهايمر تحت إشراف طبي.<br>.   يجب أن تكون جزءاً من روتين يومي متوازن وليست بديلاً عن التفاعل الاجتماعي الحقيقي والنشاط البدني." },
-{ q: "كيف يمكن تدريب كبار السن على إجراء المعاملات الحكومية والبنكية البسيطة من المنزل لتوفير عناء التنقل؟", src: "مدرب خدمات رقمية", ans: ".   البدء بتطبيق واحد موثوق ومركزي (مثل تطبيق \"أبشر\" في السعودية أو نظيره في الدول العربية).<br>.   تسجيل الدخول لهم وكتابة بياناتهم وحفظها بشكل آمن باستخدام مدير كلمات المرور.<br>.   تسجيل فيديو تعليمي قصير على هاتفهم لخطوات المعاملة المتكررة (كدفع فاتورة).<br>.   التدريب على خطوتين أساسيتين: البحث في التطبيق، وطريقة الدفع الإلكتروني الآمن.<br>.   التأكيد على عدم استخدام هذه الخدمات على شبكات الواي فاي العامة، والتحقق دائماً من عنوان الموقع (https)." },
-{ q: "كيف نحول \"اليوتيوب\" إلى مدرسة تعليمية لكبير السن لممارسة هوايات مؤجلة مثل الطبخ أو الحرف؟", src: "خبير تعليم رقمي لكبار السن", ans: ".   مساعدته في إنشاء قائمة تشغيل (Playlist) تحتوي على قنوات تعليمية موثوقة وذات خطوات واضحة.<br>.   اختيار مقاطع فيديو قصيرة أولاً، بلغة عربية فصيحة أو لهجة مفهومة، ذات إخراج واضح وهادئ.<br>.   ربط الهاتف أو الجهاز اللوحي بشاشة التلفزيون لمشاهدة أكثر وضوحاً وراحة.<br>.   تشجيعه على متابعة القناة المفضلة والاشتراك بها للحصول على تنبيهات بالفيديوهات الجديدة.<br>.   تحويل التعلم إلى نشاط اجتماعي من خلال ممارسة الهواية (كطبخ وصفة) مع أحفاده أو أصدقائه." },
-{ q: "ما هي أفضل الوسائل التقنية لمراقبة الحالة الصحية لكبير السن (مثل ساعات قياس النبض) عن بُعد؟", src: "خبير رعاية صحية رقمية", ans: ".   الساعات الذكية (Smartwatches) التي تقيس معدل ضربات القلب، النوم، وربما رسم القلب (ECG).<br>.   أجهزة قياس ضغط الدم والجلوكوز الذكية التي تخزن البيانات وتزامنها مع تطبيق الهاتف.<br>.   أجهزة الاستشعار المنزلية غير التطفلية (مثل أجهزة استشعار الحركة في الغرفة، أجهزة كشف السقوط).<br>.   تطبيقات التواصل المرئي للمتابعة البصرية المنتظمة للحالة العامة.<br>.   أنظمة المراقبة عن بُعد التي تسمح لمقدم الرعاية أو الطبيب بمشاهدة البيانات الحيوية على لوحة تحكم مركزية." },
-{ q: "كيف نساعد كبار السن على توثيق تاريخهم وذكرياتهم بالصوت والصورة للأجيال القادمة؟", src: "خبير تراث رقمي", ans: ".   تحفيزهم على سرد القصص وتسجيلها بصوتهم باستخدام تطبيق التسجيل في الهاتف.<br>.   مسح الصور القديمة ضوئياً وتخزينها في ألبوم رقمي مشترك (مثل Google Photos) وإضافة تعليقات توضيحية بصورتهم.<br>.   تشجيعهم على كتابة مذكرات بسيطة أو الإجابة على أسئلة محددة (\"أجمل ذكريات الطفولة\").<br>.   تصوير فيديوهات قصيرة أثناء حديثهم عن حياتهم، أو عن الأماكن والأشياء المهمة لهم.<br>.   إنشاء شجرة عائلية رقمية باستخدام مواقع متخصصة وجمع المعلومات والصور معاً." },
-{ q: "كيف يمكن للمنصات الرقمية أن تعيد دمج كبار السن في المجتمع من خلال مجموعات الاهتمامات المشتركة؟", src: "أخصائي اجتماع رقمي", ans: ".   مساعدتهم في الانضمام لمجموعات فيسبوك مغلقة وهادئة تتعلق بهواياتهم (حديقة، شعر، تاريخ).<br>.   تشجيعهم على المشاركة في النقاشات أو حتى مجرد القراءة أولاً لمشاهدة التفاعل الإيجابي.<br>.   تعريفهم بمنصات التعلم الإلكتروني التي تحتوي على دورات للمبتدئين في مواضيع مختلفة.<br>.   البحث عن نوادي كتب أو أفلام افتراضية يمكنهم الانضمام إليها ومناقشة المحتوى مع آخرين.<br>.   توجيههم للمشاركة في المجموعات الخاصة بمناطق سكنهم القديمة لاستعادة الروابط الاجتماعية." },
-{ q: "كيف ننمي لدى كبير السن مهارة \"التأكد من المصدر\" قبل إعادة توجيه الرسائل والروابط؟", src: "خبير محو أمية رقمية", ans: ".   تعليمهم علامة التحذير الأولى: \"إذا كانت الرسالة تطلب نشرها أو توعيدك أو إعطاءك وعوداً كبيرة، فتوقف\".<br>.   تبسيط خطوة التحقق: \"ابحث عن اسم الخبر في جوجل قبل نشرها\".<br>.   توجيههم للاكتفاء بمصادر قليلة وموثوقة ومعروفة (كالصفحات الرسمية للوزارات أو القنوات الإخبارية المعتمدة).<br>.   حثهم على استشارة شخص أصغر سناً (حفيد، ابن) قبل نشر أي خبر صادم أو طبي.<br>.   تعزيز ثقتهم بأن التريث والتحقق ليس نقصاً، بل علامة حكمة ومسؤولية." }
-],
-security: [
-{ q: "ماذا أفعل في اللحظات الأولى عند اكتشافي أنني أتعرض لعملية ابتزاز إلكتروني؟", src: "خبير أمن سيبراني", ans: ".   <strong>أهم قاعدة: لا تستسلم ولا تدفع أي مال.</strong> الدفع يشجع المبتز ويزيد من مطالبه.<br>.   <strong>لا تحذف الأدلة.</strong> احتفظ بجميع المحادثات، والرسائل، والصور، والتسجيلات.<br>.   <strong>اقطع التواصل فوراً.</strong> لا ترد على التهديدات أو تتواصل مع المبتز.<br>.   <strong>لا تتفاعل عاطفياً.</strong> الهدف هو إخافتك لاتخاذ قرارات خاطئة، حافظ على هدوئك قدر الإمكان.<br>.   <strong>ابحث عن الدعم فوراً.</strong> أخبر شخصاً تثق به (صديق، قريب) واتصل بالسلطات المختصة." },
-{ q: "كيف أميز بين البريد الإلكتروني الحقيقي ورسائل \"التصيد الاحتيالي\" التي تهدف لسرقة بياناتي؟", src: "خبير أمن رقمي", ans: ".   <strong>افحص عنوان المرسل بعناية:</strong> ابحث عن أخطاء إملائية طفيفة أو اختلافات في اسم الموقع (مثال: amaz0n.com بدلاً من amazon.com).<br>.   <strong>احذر الرسائل العاجلة والمهددة:</strong> التي تخبرك بأن حسابك سيُغلق أو أن هناك مشكلة أمنية وتطلب بياناتك فوراً.<br>.   <strong>لا تضغط على الروابط:</strong> ضع مؤشر الفأرة فوق الرابط (دون النقر) لرؤية عنوان URL الحقيقي، وإذا شككت، ادخل للموقع مباشرة عبر متصفحك.<br>.   <strong>لن تطلب منك المؤسسة الرسمية</strong> كلمة المرور أو الرقم السري للبطاقة عبر البريد.<br>.   <strong>الأخطاء اللغوية:</strong> غالباً تحتوي رسائل التصيد على أخطاء في اللغة أو التنسيق." },
-{ q: "ما هي الخطوات القانونية الرسمية للإبلاغ عن جريمة إلكترونية في بلدي؟", src: "مستشار قانوني رقمي", ans: ".   <strong>تجميع الأدلة:</strong> حفظ صور الشاشة، وتسجيل أسماء الحسابات، وأرقام الهواتف، والبريد الإلكتروني المستخدم في الابتزاز.<br>.   <strong>التوجه للجهة المختصة:</strong> زيارة موقع <strong>النيابة العامة</strong> أو <strong>وزارة الداخلية</strong> في بلدك للوصول لقسم \"الجرائم الإلكترونية\".<br>.   <strong>تقديم البلاغ رقمياً أو شخصياً:</strong> معظم الدول توفر منصة إلكترونية لتقديم البلاغات (مثل \"أمن\" في السعودية)، أو يمكن التوجه لأقرب مركز شرطة.<br>.   <strong>تسليم الأدلة:</strong> تقديم جميع الأدلة التي جمعتها للسلطات.<br>.   <strong>المتابعة:</strong> الحصول على رقم البلاغ ومتابعته، والاستجابة لأي طلبات إضافية من الجهات المختصة." },
-{ q: "كيف أحمي حساباتي من الاختراق باستخدام ميزة \"المصادقة الثنائية\" (2FA)?", src: "خبير أمن معلومات", ans: ".   <strong>تفعيلها على جميع الحسابات الحيوية:</strong> البريد الإلكتروني، والحسابات البنكية، وتطبيقات التواصل، ووسائل التواصل الاجتماعي.<br>.   <strong>استخدام تطبيق المصادقة:</strong> مثل (Google Authenticator، Microsoft Authenticator) بدلاً من الاعتماد على الرسائل النصية (SMS) فقط.<br>.   <strong>حفظ رموز الاستعادة:</strong> قم بحفظ رموز الاستعادة (Backup Codes) التي تقدمها المنصات في مكان آمن، فهي مفتاحك الوحيد إذا فقدت هاتفك.<br>.   <strong>استخدام مفتاح أمني:</strong> للأهمية القصوى، يمكن استخدام مفتاح أمني مادي (مثل YubiKey) للمصادقة.<br>.   <strong>لا تشارك رموز المصادقة:</strong> هذه الرموز هي كلمة المرور المؤقتة الخاصة بك، لا تطلبها منك أي مؤسسة رسمية أبداً." },
-{ q: "هل يمكن للمبتز أن ينفذ تهديده فعلياً إذا قمت بحظره (Block) مباشرة؟", src: "خبير جرائم إلكترونية", ans: ".   <strong>نعم، قد يحاول.</strong> الحظر يمنع التواصل المباشر، لكن لا يمحو المعلومات التي بحوزته.<br>.   <strong>الخطر الأكبر هو قبل الحظر:</strong> إذا كان قد حصل على بيانات أو صور حساسة بالفعل، فقد يستخدمها حتى بعد الحظر.<br>.   <strong>الحظر خطوة ضرورية لكنها ليست كافية:</strong> يجب أن تقترن بالإبلاغ الفوري وجمع الأدلة وعدم الاستسلام للتهديد.<br>.   <strong>التوثيق قبل الحظر:</strong> تأكد من أخذ لقطات شاشة كاملة لكل التهديدات قبل حظر الشخص.<br>.   <strong>حذر من حسابات جديدة:</strong> قد يحاول المبتز إنشاء حسابات جديدة للتواصل مجدداً." },
-{ q: "ما هي مخاطر استخدام شبكات \"الواي فاي\" العامة في الكافيهات والمطارات على بياناتي البنكية؟", src: "خبير أمن شبكات", ans: ".   <strong>التنصت على البيانات:</strong> يمكن للمخترق المتصل بنفس الشبكة اعتراض البيانات غير المشفرة التي ترسلها.<br>.   <strong>التصيد عبر الشبكة:</strong> قد يتم توجيهك لمواقع وهمية تشبه مواقعك المفضلة لسرقة بيانات الدخول.<br>.   <strong>نقاط الوصول المزيفة:</strong> قد ينشئ مخترق شبكة واي فاي تحمل اسماً مشابهاً للشبكة الحقيقية لخداع الضحايا.<br>.   <strong>القاعدة الذهبية:</strong> <strong>لا تقم أبداً بإجراء معاملات بنكية أو إدخال كلمات مرور مهمة أثناء الاتصال بشبكة واي فاي عامة.</strong><br>.   <strong>استخدم VPN موثوقاً:</strong> إذا اضطررت للاتصال، استخدم شبكة افتراضية خاصة (VPN) مشفرة لتأمين اتصالك." },
-{ q: "كيف أكتشف وجود برامج تجسس أو تطبيقات مراقبة مخفية على هاتفي الشخصي؟", src: "خبير أمن أجهزة", ans: ".   <strong>استهلاك غير طبيعي للبطارية والبيانات:</strong> قد تشير التطبيقات الخبيثة إلى نشاط خفي مكثف.<br>.   <strong>أداء الجهاز البطيء:</strong> أو ارتفاع درجة حرارته دون سبب واضح.<br>.   <strong>ظهور تطبيقات غريبة:</strong> افحص قائمة التطبيقات بحثاً عن تطبيقات لا تتذكر تحميلها.<br>.   <strong>سلوك غريب:</strong> مثل إضاءة الشاشة من تلقاء نفسها، أو سماع أصوات غريبة أثناء المكالمات.<br>.   <strong>الحل:</strong> تشغيل فحص بواسطة برنامج مكافحة فيروسات موثوق، وإذا استمر الشك، إعادة ضبط المصنع بعد نسخ بياناتك المهمة." },
-{ q: "ماذا أفعل إذا تم اختراق حسابي على واتساب أو فيسبوك وإرسال رسائل مسيئة باسمي؟", src: "خبير استعادة الحسابات", ans: ".   <strong>حاول استعادة الحساب فوراً:</strong> استخدم خيار \"نسيت كلمة المرور\" على المنصة للبدء بعملية الاستعادة عبر البريد الإلكتروني أو رقم الهاتف.<br>.   <strong>أبلغ جميع جهات اتصالك:</strong> حذر أصدقاءك وعائلتك عبر أي وسيلة أخرى متاحة (مكالمة، منصة أخرى) أن حسابك تم اختراقه ولا تفتح أي روابط يرسلها.<br>.   <strong>أبلغ المنصة:</strong> استخدم نماذج الإبلاغ عن الحساب المخترق الموجودة في صفحات المساعدة الخاصة بـ فيسبوك أو واتساب.<br>.   <strong>غير جميع كلمات المرور:</strong> خاصة كلمة مرور البريد الإلكتروني المرتبط بالحساب المخترق.<br>.   <strong>افحص جهازك:</strong> قد يكون الاختراق بسبب وجود برمجية خبيثة على هاتفك." },
-{ q: "كيف أحمي صوري وملفاتي الخاصة من الوصول إليها في حال ضياع الهاتف أو سرقته؟", src: "خبير أمن بيانات شخصية", ans: ".   <strong>التشفير والتأمين بكلمة مرور:</strong> تأكد من تفعيل قفل الشاشة بقوة (رقم سري معقد، أو بصمة، أو تعرف الوجه).<br>.   <strong>النسخ الاحتياطي في السحابة:</strong> قم برفع ملفاتك المهمة إلى خدمة سحابية موثوقة (مثل iCloud، Google Photos) وحذفها من ذاكرة الهاتف إذا كانت حساسة جداً.<br>.   <strong>استخدام تطبيقات الخزنة الآمنة:</strong> هناك تطبيقات توفر مساحة مشفرة بكلمة مرور منفصلة داخل هاتفك.<br>.   <strong>تفعيل خاصية \"ابحث عن هاتفي\":</strong> مثل (Find My iPhone) أو (Find My Device) على أندرويد، لمسح البيانات عن بُعد في حال الضياع.<br>.   <strong>تجنب حفظ الصور الحساسة:</strong> الفكرة الأكثر أماناً هي عدم التقاط أو حفظ أي شيء لا تريد أن يراه أحد على هاتفك أساساً." },
-{ q: "ما هو الفرق بين التحرش الإلكتروني والابتزاز، وكيف يضع القانون حداً لكل منهما؟", src: "خبير قانون رقمي", ans: ".   <strong>التحرش:</strong> سلوك متكرر يهدف للإزعاج، والإهانة، والتسبب بالقلق النفسي (مثل الرسائل المسيئة، المطاردة).<br>.   <strong>الابتزاز:</strong> تهديد بنشر معلومات أو صور أو أفعال لإجبار الضحية على فعل شيء (كدفع المال، أو تقديم خدمات) مقابل السكوت.<br>.   <strong>الابتزاز جريمة أشد:</strong> لأنه يجمع بين التهديد والإكراه للحصول على منفعة.<br>.   <strong>كيف يواجههما القانون:</strong> يعاقب القانون على كليهما، ولكن عقوبة الابتزاز أقسى عادةً. يجب الإبلاغ فوراً في الحالتين مع تقديم الأدلة الكاملة." },
-{ q: "كيف أتعامل مع روابط \"الجوائز الوهمية\" ووظائف الربح السريع التي تستهدف سرقة الهوية؟", src: "خبير مكافحة الاحتيال", ans: ".   <strong>تذكر قاعدة أساسية:</strong> \"لا يوجد غداء مجاني\". عروض الثراء السريع هي فخ بنسبة 99.9%.<br>.   <strong>لا تضغط على الروابط أبداً:</strong> حتى بدعوى الفضول أو \"لنرى ماذا سيفعلون\".<br>.   <strong>لا تشارك أي معلومات شخصية:</strong> لا تعطي رقم هاتفك، أو بريدك الإلكتروني، أو صور وثائقك لهذه العروض.<br>.   <strong>ابحث عن اسم العرض:</strong> اكتب اسم الشركة أو العرض في محرك البحث مع كلمة \"احتيال\" لترى تجارب الآخرين.<br>.   <strong>بلغ عن الإعلان:</strong> معظم المنصات (فيسبوك، انستقرام) تتيح خاصية الإبلاغ عن الإعلان أو المنشور كاحتيال." },
-{ q: "ما هي الطريقة الآمنة لمسح كافة البيانات من الهاتف قبل بيعه لضمان عدم استرجاعها؟", src: "خبير أمن أجهزة", ans: ".   <strong>قم بنسخ احتياطي كامل</strong> لبياناتك المهمة على كمبيوتر أو خدمة سحابية.<br>.   <strong>قم بتسجيل الخروج من جميع الحسابات</strong> المرتبطة بالجهاز (Google، Apple، Samsung، التطبيقات).<br>.   <strong>قم بإجراء \"إعادة ضبط المصنع\" (Factory Reset)</strong> من خلال إعدادات الجهاز.<br>.   <strong>بعد الإعادة، لا تكتفِ بذلك:</strong> املأ الذاكرة ببيانات عشوائية غير مهمة (مثل تسجيل فيديو طويل) ثم أعد ضبط المصنع مرة أخرى. هذا يجعل استعادة البيانات القديمة أصعب.<br>.   <strong>أخرج بطاقة SIM وبطاقة الذاكرة الخارجية (إذا وجدت)</strong> واحتفظ بها." },
-{ q: "كيف أحمي أطفالي من \"المستدرجين\" (Online Grooming) في غرف الدردشة والألعاب؟", src: "خبير حماية الطفل الرقمي", ans: ".   <strong>التواصل المفتوح:</strong> تحدث مع أطفالك عن مخاطر التحدث مع الغرباء على الإنترنت، دون تخويف.<br>.   <strong>تعيين إعدادات الخصوصية:</strong> تأكد من ضبط خصوصية حساباتهم على \"خاص\" ومراقبة طلبات الصداقة.<br>.   <strong>المشاركة والمراقبة:</strong> اجعل أجهزة الكمبيوتر والألعاب في مكان مشترك، واطلع بين الحين والآخر على نشاطهم.<br>.   <strong>علمهم علامات الخطر:</strong> مثل من يطلب معلومات شخصية، أو صوراً، أو يريد الانتقال للتحدث على تطبيق آخر، أو يطلب اللقاء.<br>.   <strong>شجعهم على الإخبار:</strong> أكد لهم أن بإمكانهم إخبارك بأي شيء يزعجهم دون عقاب، وأنك ستحميهم." },
-{ q: "هل تصفح المواقع المشبوهة يمكن أن يصيب جهازي بفيروسات الفدية (Ransomware)?", src: "خبير أمن برمجيات", ans: ".   <strong>نعم، بشدة.</strong> هذه هي الطريقة الرئيسية لانتشار فيروسات الفدية.<br>.   <strong>المواقع الإباحية، ومواقع التنزيل غير القانونية، ومواقع \"الكورسات المجانية\" المقرصنة</strong> هي بيئة خصبة لهذه الهجمات.<br>.   <strong>النوافذ المنبثقة والإعلانات الخبيثة (Malvertising):</strong> مجرد النقر على إعلان زائف على موقع مشبوه يمكن أن يبدأ عملية التنزيل والتثبيت الخفي للفيروس.<br>.   <strong>الوقاية:</strong> استخدم برنامج مكافحة فيروسات قوي، واحتفظ بنسخ احتياطية منتظمة لملفاتك المهمة على جهاز منفصل، وتجنب زيارة هذه المواقع تماماً." },
-{ q: "كيف أبني \"جدار حماية\" نفسي وتقني يمنع المتسللين من استغلال ثغراتي الشخصية؟", src: "خبير أمن شامل", ans: ".   <strong>جدار الحماية النفسي:</strong><br>        -   <strong>الوعي:</strong> اعرف قيمتك ولا تستخف بمعلوماتك الشخصية.<br>        -   <strong>التشكك الدائم:</strong> لا تثق بسهولة في العروض أو الأشخاص عبر الإنترنت.<br>        -   <strong>الخصوصية:</strong> لا تشارك تفاصيل حياتك اليومية أو مشاكلك الشخصية مع عامة الناس.<br>.   <strong>جدار الحماية التقني:</strong><br>        -   <strong>كلمات مرور قوية وفريدة</strong> لكل حساب، باستخدام مدير كلمات المرور.<br>        -   <strong>تفعيل المصادقة الثنائية (2FA)</strong> على جميع الحسابات المهمة.<br>        -   <strong>تحديث جميع البرامج وأنظمة التشغيل</strong> باستمرار لإغلاق الثغرات الأمنية.<br>        -   <strong>استخدام برامج مكافحة فيروسات</strong> موثوقة وتشغيل فحوصات دورية." }
-]
-};
-function openProgram(type) {
-const container = document.getElementById('questionsContainer');
-container.innerHTML = "";
-const data = programsData[type] || [];
-const programNames = {
-'child': 'الطفولة الرقمية',
-'teens': 'عالم المراهقين',
-'youth': 'الإنتاج والشباب',
-'marriage': 'الزواج السعيد',
-'seniors': 'كبار السن',
-'security': 'الأمان والخصوصية'
-};
-document.getElementById('modalTitle').innerText = programNames[type];
-if (Array.isArray(data)) {
-data.forEach((item, idx) => {
-const div = document.createElement('div');
-div.className = "q-item";
-div.innerText = (idx+1) + ". " + item.q;
-div.onclick = () => showAnswer(item);
-container.appendChild(div);
-});
-}
-document.getElementById('qModal').style.display = 'flex';
-}
-function showAnswer(item) {
-const content = document.getElementById('answerContent');
-const title = document.getElementById('answerTitle');
-title.innerText = item.q;
-content.innerHTML = `
-<span class="ans-src">${item.src}</span>
-<div class="ans-text">${item.ans}</div>
-`;
-document.getElementById('aModal').style.display = 'flex';
-}
-function closePopup(id) {
-document.getElementById(id).style.display = 'none';
-}
-function openMessagesModal() {
-document.getElementById('messages-modal').style.display = 'flex';
-}
-function closeMessagesModal() {
-document.getElementById('messages-modal').style.display = 'none';
-}
-function openReferenceModal(id) {
-document.getElementById(id).style.display = 'block';
-}
-function closeReferenceModal(id) {
-document.getElementById(id).style.display = 'none';
-}
-window.onscroll = function() {
-const btn = document.getElementById('btnUp');
-if(window.scrollY > 300) btn.style.display = 'flex';
-else btn.style.display = 'none';
-};
-</script>
-
-<footer style="background: rgba(0,0,0,0.9); border-top: 2px solid var(--gold); padding: 20px; text-align: center; margin-top: 40px;">
-<div style="color: var(--gold); font-size: 1.1rem; font-weight: bold; padding: 10px 0;">
-© 2025 قصص الحضارات CiviStories - جميع الحقوق محفوظة
-</div>
-<div style="color: var(--gold); font-size: 0.9rem; margin-top: 5px;">
-مبادرة فردية غير ربحية صرخة رقمية لحماية الإنسانية
-</div>
-</footer>
-
+      <div id="reference-african" class="reference-modal">
+        <div class="modal-content">
+            <span class="close-reference"
+onclick="closeReferenceModal('reference-african')">×</span>
+            <h2>Removing Harm in the Digital Age: African Traditional Philosophy Vision for Protecting the Human Journey</h2>
+            <p>
+                In traditional African philosophies, the universe is an organic interconnected whole, human relationships are sacred, and collective wisdom is the foundation. 
+Modern digital space is tested through the lens of Ubuntu (unity in plurality), Ujanjo (common humanity), and the necessity of maintaining Iko (cosmic harmony).
+            </p>
+            <p><strong>First: Digital Space as a New Arena for the Community</strong><br>
+            I am because we are, and we are because I am - African Proverb.
+            In the African vision, identity is both individual and collective. 
+            Digital Space:
+            - May strengthen community by connecting the scattered and preserving heritage.
+            - May weaken community if used for division and gossip (Sambia).
+            - Must serve Ujanjo (our shared humanity) and not lose it.
+            Traditional Wisdom: 
+            Every word spoken is heard by ancestors and those not yet born. Digital does not cancel this responsibility; it expands it.
+            </p>
+            <p><strong>Second: Removing Thorns from the Path as a Collective Responsibility</strong><br>
+            As in the Akan, Yoruba, and Bantu societies, where cleaning the path is a shared duty:
+            </p>
+            <table>
+                <tr>
+                    <th>African Concept</th>
+                    <th>Digital Application</th>
+                    <th>Danger of Neglecting It</th>
+                </tr>
+                <tr>
+                    <td>Ubuntu (Connectivity)</td>
+                    <td>Linking traditional wisdom with modern knowledge</td>
+                    <td>Generational gap, identity threat</td>
+                </tr>
+                <tr>
+                    <td>Iko (Harmony)</td>
+                    <td>Creating balance between tradition and modernity</td>
+                    <td>Cultural imbalance</td>
+                </tr>
+                <tr>
+                    <td>Ujanjo (Humanity)</td>
+                    <td>Treating others digitally as human brothers</td>
+                    <td>Dehumanizing the other</td>
+                </tr>
+            </table>
+            <p><strong>Third: Ethics of Speech in the Digital Age</strong><br>
+            In Yoruba philosophy: Our words create our world (Owo). 
+            In the digital space:
+            </p>
+            <ol>
+                <li><strong>Power of the Word (Ashe):</strong>
+                    <ul>
+                        <li>Digital words have a spiritual presence</li>
+                        <li>Can heal or sicken society</li>
+                        <li>Requires Etutu (propriety and politeness)</li>
+                    </ul>
+                </li>
+                <li><strong>The Three African Sections:</strong>
+                    <ul>
+                        <li>What we see (Visual): Must respect Abilmo (Dignity)</li>
+                        <li>What we say (Audio/Text): Must reflect Otito (Truth)</li>
+                        <li>What we do (Actions): Must serve Aro (Community)</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>Fourth: Collective Wisdom (Adinkansi) vs. Digital Individualism</strong><br>
+            Wisdom is not in one head - African Proverb.
+            Digital Danger: Amplifying individualism at the expense of community. 
+            African Remedy:
+            </p>
+            <ol>
+                <li><strong>Digital Councils of Wisdom:</strong>
+                    <ul>
+                        <li>Virtual advisory groups</li>
+                        <li>Intergenerational dialogues</li>
+                        <li>Sharing traditional wisdom digitally</li>
+                    </ul>
+                </li>
+                <li><strong>Rediscovering Stories and Tales:</strong>
+                    <ul>
+                        <li>Digitizing folk tales</li>
+                        <li>Using narratives to teach digital ethics</li>
+                        <li>Tales as an alternative to direct indoctrination</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>Fifth: African Concept of Time and Digital Speed</strong><br>
+            Time is not money, Time is relationship - African Vision.
+            Digital speed conflicts with organic African time where:
+            - Time is cyclical, not linear.
+            - Value is in depth, not speed.
+            - Relationships need natural time.
+            </p>
+            <p><strong>Proposed Practice:</strong><br>
+            African Digital Pause - Stopping to restore the rhythm of true relationships.
+            </p>
+            <p><strong>Conclusion: Returning to Roots through Tech</strong><br>
+            When an old man dies in Africa, a whole library burns - Amadou Hampâté Bâ.
+            Digital space is a historical opportunity to preserve Africa's living libraries before they burn. 
+            But this preservation must be:
+            - Respecting cultural contexts.
+            - With the participation of indigenous communities.
+            - With awareness that technology is a means, not an end.
+            </p>
+            <p><strong>The tree that survives the storm has deep roots.</strong></p>
+            <p><strong>Summary:</strong><br>
+            African philosophy calls us to use the digital world to...
+            </p>
+        </div>
+    </div>
 </body>
 </html>
-
