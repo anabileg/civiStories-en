@@ -1,11 +1,14 @@
+أقدم لك الكود المرفق كما هو بالضبط، ثم سأقوم بترجمته ثقافياً للغة الإنجليزية:
+
+```html
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>CiviStories | Digital Illusion Tsunami</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- Link Arabic Fonts -->
+<!-- ربط خطوط عربية -->
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -77,6 +80,7 @@ text-decoration: none;
 .lang-option:hover {
 background: rgba(212, 175, 55, 0.2);
 }
+
 .lang-option.arabic-flag img,
 #currentLangFlag {
 filter: grayscale(0%) !important;
@@ -170,7 +174,7 @@ margin-bottom: 15px;
 text-align: center;
 display: none;
 }
-/* === New Modal for "Our Messages" === */
+/* === Modal جديد لـ "رسالاتنا" === */
 #messages-modal {
 display: none;
 position: fixed;
@@ -197,13 +201,13 @@ font-size: 19px;
 font-weight: 500;
 line-height: 1.7;
 color: #000;
-direction: ltr;
+direction: rtl;
 position: relative;
 }
 #messages-modal .close-btn {
 position: absolute;
 top: 10px;
-right: 10px;
+left: 10px;
 width: 40px;
 height: 40px;
 border-radius: 50%;
@@ -218,7 +222,7 @@ justify-content: center;
 cursor: pointer;
 z-index: 60001;
 }
-/* === General Reference Windows === */
+/* === نوافذ مرجعية عامة === */
 .reference-modal {
 display: none;
 position: fixed;
@@ -245,13 +249,13 @@ font-size: 19px;
 font-weight: 500;
 line-height: 1.7;
 color: #333333;
-direction: ltr;
+direction: rtl;
 position: relative;
 }
 .reference-modal .close-reference {
 position: absolute;
 top: 10px;
-right: 10px;
+left: 10px;
 width: 40px;
 height: 40px;
 border-radius: 50%;
@@ -283,7 +287,7 @@ font-weight: 500;
 }
 .reference-modal ul,
 .reference-modal ol {
-margin-left: 20px;
+margin-right: 20px;
 }
 .reference-modal li {
 margin-bottom: 8px;
@@ -308,7 +312,7 @@ background-color: #f0f0f0;
 .reference-modal tr:nth-child(even) {
 background-color: #f9f9f9;
 }
-/* === Our Human References Section === */
+/* === قسم مرجعيتنا الإنسانية === */
 .references-section {
 text-align: center;
 border: 4px solid var(--gold);
@@ -414,30 +418,32 @@ margin-right: 10px;
 </head>
 <body onload="initPage()">
 <div class="site-bg"></div>
-<!-- 👇 Red Message 👇 -->
+
+<!-- 👇 الرسالة الحمراء 👇 -->
 <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 99999; text-align: center; width: 90%; max-width: 800px;">
-<div style="background: radial-gradient(circle, rgba(255,0,0,0.9) 0%, rgba(180,0,0,0.9) 100%); border-radius: 50%; width: 100%; padding: 40px; text-align: center; box-shadow: 0 0 30px rgba(255,0,0,0.7);">
-<h1 style="color: #ffffff; font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">Welcome</h1>
-<p style="color: #ffffff; font-size: 1.8rem; font-weight: 700; line-height: 1.5; margin-bottom: 20px;">
-From the cradle of civilization, Egypt, to the world...<br>
-We raise our cry to save humanity from the tsunami of digital illusion
-</p>
-<p style="color: #ffffff; font-size: 1.7rem; font-weight: 800; margin-bottom: 15px;">
-Translation in progress...<br>
-We're working hard to launch it soon
-</p>
-<h2 style="color: #ffffff; font-size: 2.2rem; font-weight: 900; margin-top: 20px;">CiviStories</h2>
+  <div style="background: radial-gradient(circle, rgba(255,0,0,0.9) 0%, rgba(180,0,0,0.9) 100%); border-radius: 50%; width: 100%; padding: 40px; text-align: center; box-shadow: 0 0 30px rgba(255,0,0,0.7);">
+    <h1 style="color: #ffffff; font-size: 2.8rem; font-weight: 900; margin-bottom: 15px;">Welcome</h1>
+    <p style="color: #ffffff; font-size: 1.8rem; font-weight: 700; line-height: 1.5; margin-bottom: 20px;">
+      From the cradle of civilization, Egypt, to the world...<br>
+      We raise our cry to save humanity from the tsunami of digital illusion
+    </p>
+    <p style="color: #ffffff; font-size: 1.7rem; font-weight: 800; margin-bottom: 15px;">
+      Translation in progress...<br>
+      We're working hard to launch it soon
+    </p>
+    <h2 style="color: #ffffff; font-size: 2.2rem; font-weight: 900; margin-top: 20px;">CiviStories</h2>
+  </div>
 </div>
-</div>
-<!-- 👆 Red Message Ended 👆 -->
+<!-- 👆 انتهى الرسالة الحمراء 👆 -->
+
 <div id="btnUp" onclick="window.scrollTo({top:0, behavior:'smooth'})"><i class="fas fa-arrow-up"></i></div>
 <!-- Modal for Questions -->
 <div id="qModal" class="modal-overlay">
 <div class="modal-container">
 <span class="close-modal" onclick="closePopup('qModal')">×</span>
 <div class="modal-box">
-<h2 id="modalTitle" class="modal-program-title">Digital Childhood</h2>
-<p class="modal-instruction">Click on the question to see the answer</p>
+<h2 id="modalTitle" class="modal-program-title">الطفولة الرقمية</h2>
+<p class="modal-instruction">اضغط على السؤال لمعرفة الإجابة</p>
 <div id="questionsContainer"></div>
 </div>
 </div>
@@ -452,1480 +458,1504 @@ We're working hard to launch it soon
 </div>
 </div>
 </div>
-<!-- Modal Our Messages -->
+<!-- Modal رسالاتنا -->
 <div id="messages-modal">
 <div class="modal-content">
 <span class="close-btn" onclick="closeMessagesModal()">×</span>
 <div>
-🌍 Stories of Civilizations: A global cry for digital mercy<br><br>
-From the heart of Egypt, where a thousand divorce cases occur annually due to screen misuse.<br>
-Where billions of pounds are wasted between lost productivity, cyber fraud, and psychological treatment.<br>
-We raise our voice not just as Egyptians but as humans who see humanity facing a new test.<br><br>
-The goal of this platform is not to blame technology, but to save human relationships from it.<br><br>
-We don't demand banning phones, but we call for using them with conscience.<br><br>
-Every child in Tokyo or Tripoli, in Sao Paulo or Seoul deserves to look into their mother's eyes without a screen separating them.<br>
-Every young person in Cape Town or Kuala Lumpur deserves to build their identity from reality, not from algorithmic illusion.<br><br>
-Social media is not evil, but it is not neutral—it is a mirror of the intentions of those who direct it.<br>
-Today, if not directed with mercy, it may become the fastest path to dismantling families, planting despair, and driving some to suicide.<br><br>
-Therefore, Stories of Civilizations launches:<br>
-An open human call to every government, religious institution, cultural or civil organization to participate in building a digital space that protects dignity, not threatens it.<br><br>
-We started with Egypt—because honesty begins at home.<br>
-But our message is not for Egypt alone, but for the entire world.<br><br>
-✨ What we ask today:<br>
-- From parents: to return to being the first "filter" for their children.<br>
-- From governments: to establish policies that protect children from digital addiction.<br>
-- From platforms: to choose humanity over profit.<br>
-- From spiritual and cultural institutions: to guide conscience, not remain silent.<br>
-- Every reference in the world—religious, philosophical, or humanitarian—<br>
-to join this cry, in its language, values, and vision.<br><br>
-> Share our message and save those you love, protect humanity before it becomes a digital memory.<br>
-> Don't let the screen steal your child's childhood, your home's peace, or your hope in life.
+🌍 قصص الحضارات: صرخة عالمية للرحمة الرقمية<br><br>
+من قلب مصر، حيث تُسجّل ألف حالة طلاق سنويًّا بسبب سوء استخدام الشاشات.<br>
+وحيث تُهدر مليارات الجنيهات بين خسائر إنتاجية، نصب إلكتروني، وعلاج نفسي.<br>
+نرفع صوتنا ليس كمصرين فقط بل كبشر يرون أن الإنسانية تتعرض لاختبارٍ جديد.<br><br>
+ليس الهدف من هذه المنصة اتهام التكنولوجيا، بل إنقاذ العلاقة الإنسانية منها.<br><br>
+نحن لا نطلب حظر الهواتف، بل ندعو إلى استخدامها بضمير.<br><br>
+كل طفل في طوكيو أو طرابلس، في ساو باولو أو سيول يستحق أن ينظر في عيني أمه دون شاشة تفصل بينهما.<br>
+كل شاب في كيب تاون أو كوالالمبور يستحق أن يبني هويته من واقعه، لا من وهم الخوارزميات.<br><br>
+السوشيال ميديا ليست شرًّا لكنها ليست محايدة فهي مرآةٌ لنيّاتِ مَن يُوجّهها.<br>
+هي اليوم إن لم تُوجَّه بالرحمة قد تصبح أسرع طريقٍ لتفكيك الأسر، زرع اليأس، ودفع البعض إلى الانتحار.<br><br>
+لهذا، تطلق قصص الحضارات:<br>
+نداءً إنسانيًّا مفتوحًا لكل حكومة، مؤسسة دينية، ثقافية، أو مدنية للمشاركة في بناء فضاء رقمي يحمي الكرامة، لا يهددها.<br><br>
+بدأنا بمصر — لأن الصدق يبدأ من البيت.<br>
+لكن رسالتنا ليست لمصر وحدها بل للعالم أجمع.<br><br>
+✨ ما نطلبه اليوم:<br>
+- من الآباء: أن يعودوا ليكونوا أول "فلتر" لأبنائهم.<br>
+- من الحكومات: أن تضع سياسات تحمي الأطفال من الإدمان الرقمي.<br>
+- من المنصات: أن تختار الإنسان على حساب الربح.<br>
+- من المؤسسات الروحية والثقافية: أن تُرشد الضمير لا أن تصمت.<br>
+- كل مرجعية في العالم — دينية، فلسفية، أو إنسانية —<br>
+أن تنضم إلى هذه الصيحة، بلغتها وقيمها ورؤيتها.<br><br>
+> شاركنا رسالتنا وانقذ من تحب احمِ الإنسانية قبل أن تصبح ذكرى رقمية.<br>
+> لا تدع الشاشة تسرق منك طفولة طفلك، سلام بيتك، أو رجاءك في الحياة.
 </div>
 </div>
 </div>
-<!-- Our Human References Windows -->
-<!-- Jainism - Full content with tables and lists -->
+<!-- نوافذ مرجعيتنا الإنسانية -->
+<!-- الجاينية - المحتوى الكامل مع جداول وقوائم -->
 <div id="reference-eastern" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-eastern')">×</span>
-<h2>Removing Digital Harm: A Jain Vision for Protecting the Human Journey</h2>
+<h2>إزالة الأذى الرقمي: رؤية جاينية لحماية المسيرة الإنسانية</h2>
 <p>
-Jainism is based on the principles of absolute non-violence (Ahimsa) and spiritual liberation.
-In the digital age, where the virtual space has become a field of existence and interaction, there is an urgent need to apply Jain principles to protect souls (jiva) from new forms of harm.
+تستند الجاينية إلى مبادئ اللاحَرْم (أهيمسا) المطلقة والتحرر الروحي. 
+في العصر الرقمي، حيث أصبح الفضاء الافتراضي مجالاً للوجود والتفاعل تظهر حاجة ماسة لتطبيق المبادئ الجاينية لحماية الأرواح (جيفا) من أشكال الأذى الجديدة.
 </p>
-<p><strong>First: Non-Violence (Ahimsa) in Digital Space</strong><br>
-Ahimsa in Jainism is the avoidance of harm in all its forms: physical, verbal, and mental. The digital world represents a triple challenge:
+<p><strong>الأول: اللاحَرْم (أهيمسا) في الفضاء الرقمي</strong><br>
+اللاحَرْم في الجاينية هي عدم الإيذاء بجميع أشكاله: بالجسد بالكلام وبالفكر. العالم الرقمي يمثل تحدياً ثلاثياً:
 </p>
 <table>
 <tr>
-<th>Level of Ahimsa</th>
-<th>Digital Challenge</th>
-<th>Proposed Jain Practice</th>
+<th>مستوى اللاحَرْم</th>
+<th>التحدي الرقمي</th>
+<th>الممارسة الجاينية المقترحة</th>
 </tr>
 <tr>
-<td>Physical</td>
-<td>Sensory fatigue, sleep disorders</td>
-<td>Set usage times, rest periods</td>
+<td>الجسدي</td>
+<td>إرهاق الحواس، اضطراب النوم</td>
+<td>تحديد أوقات استخدام، فترات راحة</td>
 </tr>
 <tr>
-<td>Verbal</td>
-<td>Hate speech, bullying, defamation</td>
-<td>Truthful, gentle, beneficial speech</td>
+<td>اللفظي</td>
+<td>خطاب الكراهية، التنمر، التشهير</td>
+<td>الكلام الحقيقي، اللطيف، النافع</td>
 </tr>
 <tr>
-<td>Mental</td>
-<td>Hatred, resentment, hidden malice</td>
-<td>Monitor thoughts, purify intention</td>
+<td>الفكري</td>
+<td>الكراهية، الحقد، الاستياء الخفي</td>
+<td>مراقبة الأفكار، تنقية النية</td>
 </tr>
 </table>
 <p>
-Every soul (jiva) is precious (Lord Mahavira). This includes the souls we encounter digitally.
+كل روح (جيفا) هي كائني العزيز (لورد ماهافيرا) هذا يشمل الأرواح التي نلتقيها رقمياً.
 </p>
-<p><strong>Second: The Five Great Vows (Mahavratas) in the Digital Age</strong></p>
+<p><strong>الثاني: الخمسة نذور عظمى (ماهافراتاس) في العصر الرقمي</strong></p>
 <ol>
-<li><strong>Non-Violence (Ahimsa):</strong>
+<li><strong>اللاحَرْم (أهيمسا):</strong>
 <ul>
-<li>Avoid publishing content that causes psychological or spiritual harm</li>
-<li>Protect vulnerable users from harmful content</li>
-<li>Avoid participating in hate speech or marginalization</li>
+<li>عدم نشر محتوى يسبب أذىً نفسياً أو روحياً</li>
+<li>حماية المستخدمين الضعفاء من المحتوى الضار</li>
+<li>تجنب المشاركة في خطاب الكراهية أو التهميش</li>
 </ul>
 </li>
-<li><strong>Truthfulness (Satya):</strong>
+<li><strong>الصدق (ساتيا):</strong>
 <ul>
-<li>Verify information before publishing</li>
-<li>Publicly correct errors</li>
-<li>Refuse to create or publish fake news</li>
+<li>التحقق من المعلومات قبل نشرها</li>
+<li>التصحيح العلني للأخطاء</li>
+<li>رفض إنشاء أو نشر أخبار مزيفة</li>
 </ul>
 </li>
-<li><strong>Non-Stealing (Asteya):</strong>
+<li><strong>عدم السرقة (أستيا):</strong>
 <ul>
-<li>Respect digital intellectual property</li>
-<li>Avoid identity or content impersonation</li>
-<li>Reduce digital divide (fair access to information)</li>
+<li>احترام الملكية الفكرية الرقمية</li>
+<li>عدم انتحال الهويات أو المحتوى</li>
+<li>تقليل الفجوة الرقمية (عدالة الوصول للمعلومات)</li>
 </ul>
 </li>
-<li><strong>Celibacy (Brahmacharya):</strong>
+<li><strong>العفة (براهماتشاريا):</strong>
 <ul>
-<li>Control digital usage (digital addiction as a form of non-celibacy)</li>
-<li>Avoid exploitative or harmful sexual content</li>
-<li>Maintain mental and spiritual purity</li>
+<li>ضبط الاستخدام الرقمي (الإدمان الرقمي كشكل من عدم العفة)</li>
+<li>تجنب المحتوى الاستغلالي أو الجنسي الضار</li>
+<li>الحفاظ على النقاء الفكري والروحي</li>
 </ul>
 </li>
-<li><strong>Non-Possession (Aparigraha):</strong>
+<li><strong>عدم التملك (أباريجراها):</strong>
 <ul>
-<li>Free yourself from attachment to digital identity</li>
-<li>Reduce unnecessary digital footprint</li>
-<li>Simplicity in usage and communication</li>
+<li>التحرر من التعلق بالهوية الرقمية</li>
+<li>تقليل البصمة الرقمية غير الضرورية</li>
+<li>بساطة في الاستخدام والتواصل</li>
 </ul>
 </li>
 </ol>
-<p><strong>Third: Purity of Speech (Bhasha Samiti)</strong><br>
-Lord Mahavira established precise rules for speech, applicable digitally:
+<p><strong>الثالث: نظافة الكلام (بهاشا ساميتي)</strong><br>
+لورد ماهافيرا وضع قواعد دقيقة للكلام، تنطبق رقمياً:
 </p>
 <ol>
-<li>Speech must be:
+<li>الكلام يجب أن يكون:
 <ul>
-<li>True (no deception or distortion)</li>
-<li>Beneficial (no idle talk or time waste)</li>
-<li>Gentle (not harsh or harmful)</li>
-<li>Specific (no ambiguity or vagueness)</li>
+<li>حقيقياً (لا تضليل أو تزييف)</li>
+<li>مفيداً (لا لغو أو إهدار للوقت)</li>
+<li>لطيفاً (لا جارح أو مؤذ)</li>
+<li>محدداً (لا غموض أو إبهام)</li>
 </ul>
 </li>
-<li>Reflection before digital publishing:
+<li>التأمل قبل النشر الرقمي:
 <ul>
-<li>Is this the complete truth?</li>
-<li>Will it benefit the recipient?</li>
-<li>Does it express kindness and respect?</li>
-<li>Is it clear and not open to misunderstanding?</li>
+<li>هل هذه الحقيقة كاملة؟</li>
+<li>هل ستفيد المتلقي؟</li>
+<li>هل تعبر بلطف واحترام؟</li>
+<li>هل واضحة وغير قابلة لسوء الفهم؟</li>
 </ul>
 </li>
 </ol>
-<p><strong>Fourth: The Concept of Digital Karma</strong><br>
-In Jainism, karma is a subtle substance that adheres to the soul.
-Digital actions generate new karma:
+<p><strong>الرابع: مفهوم الكارما الرقمي</strong><br>
+في الجاينية الكارما هي مادة دقيقة تلتصق بالروح. 
+الأفعال الرقمية تولد كارما جديدة:
 </p>
 <table>
 <tr>
-<th>Digital Action</th>
-<th>Type of Karma</th>
-<th>Spiritual Effect</th>
+<th>الفعل الرقمي</th>
+<th>نوع الكارما</th>
+<th>التأثير الروحي</th>
 </tr>
 <tr>
-<td>Publishing lies</td>
-<td>Ignorance karma (Mohniya)</td>
-<td>Obscures truth, reinforces illusion</td>
+<td>نشر كذب</td>
+<td>كارما الجهل (موهنييا)</td>
+<td>يحجب الحقيقة، يعزز الوهم</td>
 </tr>
 <tr>
-<td>Hate speech</td>
-<td>Negative emotions karma</td>
-<td>Reinforces anger, hatred, attachment</td>
+<td>خطاب كراهية</td>
+<td>كارما المشاعر السلبية</td>
+<td>يعزز الغضب، الكراهية، التعلق</td>
 </tr>
 <tr>
-<td>Digital addiction</td>
-<td>Attachment karma (Mishriya)</td>
-<td>Binds the soul to the material world</td>
+<td>إدمان رقمي</td>
+<td>كارما التعلق (ميسريا)</td>
+<td>يربط الروح بالعالم المادي</td>
 </tr>
 <tr>
-<td>Digital help</td>
-<td>Virtue karma (Punya)</td>
-<td>Reduces previous karma</td>
+<td>مساعدة رقمياً</td>
+<td>كارما الفضيلة (بونيا)</td>
+<td>يخفف الكارما السابقة</td>
 </tr>
 </table>
-<p><strong>Fifth: Digital Fasting and Discipline</strong><br>
-As Jains practice physical fasting, it is suggested:
+<p><strong>الخامس: الصيام الرقمي والانضباط</strong><br>
+كما يمارس الجاينيون الصوم الجسدي، يقترح:
 </p>
 <ol>
-<li><strong>Media Fasting:</strong>
+<li><strong>صيام وسائط:</strong>
 <ul>
-<li>Days without social media</li>
-<li>Daily digital silence periods</li>
-<li>Periodic news fasting</li>
+<li>أيام بدون وسائط اجتماعية</li>
+<li>فترات صمت رقمي يومية</li>
+<li>صوم أخبار دوري</li>
 </ul>
 </li>
-<li><strong>Viewing Discipline:</strong>
+<li><strong>انضباط المشاهدة:</strong>
 <ul>
-<li>Awareness of what we consume digitally</li>
-<li>Choosing content that elevates the soul</li>
-<li>Avoiding violent or exploitative content</li>
+<li>وعي بما نستهلكه رقمياً</li>
+<li>اختيار المحتوى الذي يرفع الروح</li>
+<li>تجنب المحتوى العنيف أو الاستغلالي</li>
 </ul>
 </li>
-<li><strong>Purifying the Digital Environment:</strong>
+<li><strong>تنقية البيئة الرقمية:</strong>
 <ul>
-<li>Just as we clean our homes physically</li>
-<li>Cleaning toxic contacts</li>
-<li>Purifying information sources</li>
+<li>كما ننظف بيوتنا جسدياً</li>
+<li>تنظيف جهات الاتصال السمية</li>
+<li>تنقية مصادر المعلومات</li>
 </ul>
 </li>
 </ol>
-<p><strong>Practical Jain Recommendations</strong></p>
+<p><strong>التوصيات الجاينية العملية</strong></p>
 <ol>
-<li>Daily practice of triple examination before any digital interaction:
+<li>ممارسة يومية للفحص الثلاثي قبل أي تفاعل رقمي:
 <ul>
-<li>Body examination: Is my posture healthy? Are my eyes comfortable?</li>
-<li>Speech examination: Are my words truthful, beneficial, gentle?</li>
-<li>Thought examination: Is my intention pure? Are my thoughts free from hatred?</li>
+<li>فحص الجسد: هل وضعيتي صحية؟ هل عيناي مرتاحتان؟</li>
+<li>فحص الكلام: هل كلماتي صادقة، مفيدة، لطيفة؟</li>
+<li>فحص الفكر: هل نيتي نقية؟ هل أفكاري خالية من الكراهية؟</li>
 </ul>
 </li>
-<li>Creating safe digital havens:
+<li>خلق ملاذات رقمية آمنة:
 <ul>
-<li>Groups built on mutual respect</li>
-<li>Platforms that adhere to Ahimsa principles</li>
-<li>Spaces for tolerant dialogue</li>
+<li>مجموعات مبنية على الاحترام المتبادل</li>
+<li>منصات تلتزم بمبادئ اللاحَرْم</li>
+<li>مساحات للحوار المتسامح</li>
 </ul>
 </li>
-<li>Education on digital Ahimsa:
+<li>تربية على اللاحَرْم الرقمي:
 <ul>
-<li>Teaching children that digital words have karmic weight</li>
-<li>Training on respectful digital communication</li>
-<li>Providing role models in ethical digital behavior</li>
+<li>تعليم الأطفال أن الكلمات الرقمية لها وزن كارمي</li>
+<li>تدريب على التواصل الرقمي المحترم</li>
+<li>تقديم القدوات في السلوك الرقمي الأخلاقي</li>
 </ul>
 </li>
-<li>Developing technologies that enhance Ahimsa:
+<li>تطوير تقنيات تعزز اللاحَرْم:
 <ul>
-<li>Algorithms that detect and reduce hate speech</li>
-<li>Tools for information verification</li>
-<li>Systems that protect user privacy</li>
+<li>خوارزميات تكشف خطاب الكراهية وتقلله</li>
+<li>أدوات للتحقق من المعلومات</li>
+<li>أنظمة تحمي خصوصية المستخدمين</li>
 </ul>
 </li>
-<li>Practicing Ahimsa towards oneself digitally:
+<li>ممارسة اللاحَرْم تجاه الذات رقمياً:
 <ul>
-<li>Avoiding excessive self-harmful usage</li>
-<li>Protecting time and spiritual energy</li>
-<li>Balancing the digital and real worlds</li>
+<li>عدم الإفراط في الاستخدام المؤذي للذات</li>
+<li>حماية الوقت والطاقة الروحية</li>
+<li>التوازن بين العالمين الرقمي والحقيقي</li>
 </ul>
 </li>
 </ol>
-<p><strong>One soul suffers and one soul liberates in every moment</strong> (Jain text)</p>
+<p><strong>روح واحدة تتعذب وروح واحدة تتحرر في كل لحظة</strong> (نص جايني)</p>
 <p>
-Every digital interaction is an opportunity to practice Ahimsa or violate it. The digital space as a new field of existence calls us to apply Jain discipline more precisely, because the impact of our digital actions may be wider and faster than ever before.
+كل تفاعل رقمي هو فرصة لممارسة اللاحَرْم أو مخالفتها. الفضاء الرقمي كساحة جديدة للوجود يدعونا لتطبيق الانضباط الجايني بدقة أكبر لأن تأثير أفعالنا الرقمية قد يكون أوسع وأسرع من أي وقت مضى.
 </p>
 <p>
-The path to liberation (Moksha) today passes through the digital space as well.
-Removing digital harm is not just a social responsibility but a spiritual necessity for anyone seeking purity and liberation.
+الطريق نحو التحرر (موكشا) يمر اليوم عبر الفضاء الرقمي أيضاً. 
+إزالة الأذى الرقمي ليست مجرد مسؤولية اجتماعية بل هي ضرورة روحية لأي ساع نحو النقاء والتحرر.
 </p>
 </div>
 </div>
-<!-- Remaining reference modals fully translated -->
-<div id="reference-african" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-african')">×</span>
-<h2>Removing Harm in the Digital Age: An African Philosophical Vision for Protecting the Human Journey</h2>
-<p>
-In traditional African philosophies, the universe is an organic whole, human relationships are sacred, and collective wisdom is the foundation. The modern digital space is tested through the lens of Ubuntu (unity in diversity), Ujamaa (shared humanity), and the necessity of preserving Eko (cosmic harmony).
-</p>
-<p><strong>First: Digital Space as a New Community Square</strong><br>
-"I am because we are, and we are because I am" - African proverb
-In the African vision, identity is both individual and collective.
-The digital space:
-- May strengthen community by connecting the dispersed and preserving heritage
-- May weaken community if used for division and gossip (Sambiza)
-- Must serve Ujamaa (our shared humanity), not lose it
-Traditional wisdom:
-Every word spoken is heard by ancestors and those yet unborn. The digital does not eliminate this responsibility but expands it.
-</p>
-<p><strong>Second: Removing Thorns from the Path as a Collective Responsibility</strong><br>
-As in Akan, Yoruba, and Bantu communities where cleaning the path is a shared responsibility:
-</p>
-<table>
-<tr>
-<th>African Concept</th>
-<th>Digital Application</th>
-<th>Danger of Leaving It</th>
-</tr>
-<tr>
-<td>Ubuntu (Interconnectedness)</td>
-<td>Connecting traditional wisdom with modern knowledge</td>
-<td>Generational disconnect, identity threat</td>
-</tr>
-<tr>
-<td>Eko (Harmony)</td>
-<td>Creating balance between tradition and modernity</td>
-<td>Cultural imbalance</td>
-</tr>
-<tr>
-<td>Ujamaa (Humanity)</td>
-<td>Treating others digitally as brothers in humanity</td>
-<td>Dehumanizing the other</td>
-</tr>
-</table>
-<p><strong>Third: Ethics of Speech in the Digital Age</strong><br>
-In Yoruba philosophy: our words create our world (Owo).
-In digital space:
-</p>
-<ol>
-<li><strong>Power of the Word (Ase):</strong>
-<ul>
-<li>Digital words have spiritual existence</li>
-<li>They can heal or sicken society</li>
-<li>Require Etutu (propriety and etiquette)</li>
-</ul>
-</li>
-<li><strong>The Three African Criteria:</strong>
-<ul>
-<li>What we see (visual content): must respect Abilmo (dignity)</li>
-<li>What we say (text and voice): must reflect Otitu (truth)</li>
-<li>What we do (shares): must serve Aro (community)</li>
-</ul>
-</li>
-</ol>
-<p><strong>Fourth: Collective Wisdom (Adinkra) Against Digital Individualism</strong><br>
-Wisdom is not in one head - African proverb
-Digital danger: amplifying individualism at the expense of community.
-African remedy:
-</p>
-<ol>
-<li><strong>Digital Wisdom Councils:</strong>
-<ul>
-<li>Virtual advisory groups</li>
-<li>Dialogues between generations</li>
-<li>Sharing traditional wisdom digitally</li>
-</ul>
-</li>
-<li><strong>Rediscovering Stories and Tales:</strong>
-<ul>
-<li>Digitalizing folk tales</li>
-<li>Using storytelling to teach digital ethics</li>
-<li>Tales as an alternative to direct indoctrination</li>
-</ul>
-</li>
-</ol>
-<p><strong>Fifth: The African Concept of Time and Digital Speed</strong><br>
-Time is not money, time is relationship - African vision
-Digital speed conflicts with organic African time where:
-- Time is cyclical, not linear
-- Value is in depth, not speed
-- Relationships need their natural time
-</p>
-<p><strong>Suggested Practice:</strong><br>
-African digital pause - stopping to restore the rhythm of real relationships.
-</p>
-<p><strong>Recommendations from the African Perspective</strong></p>
-<ol>
-<li><strong>Reviving the Digital Council of Elders:</strong>
-<ul>
-<li>Platforms that give voice to traditional sages</li>
-<li>Channels for wisdom transmission between generations</li>
-<li>Dialogues, not debates</li>
-</ul>
-</li>
-<li><strong>Village Mindset Digitally:</strong>
-<ul>
-<li>Treating digital space as a shared village square</li>
-<li>Bearing collective responsibility for its ethical cleanliness</li>
-<li>Applying Harambee (collective work) values in digital projects</li>
-</ul>
-</li>
-<li><strong>Digital Rites of Passage:</strong>
-<ul>
-<li>Rites for teenagers entering the digital world</li>
-<li>Digital graduation celebrations with ethical guidance</li>
-<li>Councils for resolving digital conflicts</li>
-</ul>
-</li>
-<li><strong>Digital Gift Economy:</strong>
-<ul>
-<li>Sharing knowledge as a gift, not a commodity</li>
-<li>Exchanging beneficial content without compensation</li>
-<li>Ubuntu in collaborative creation</li>
-</ul>
-</li>
-<li><strong>Ancestors and Digital Memory:</strong>
-<ul>
-<li>Digitalizing and honoring ancestral heritage</li>
-<li>Using technology to preserve endangered languages</li>
-<li>Connecting generations through digital time</li>
-</ul>
-</li>
-</ol>
-<p><strong>Conclusion: Returning to Roots Through Technology</strong><br>
-When an elder dies in Africa, an entire library burns - Amadou Hampâté Bâ
-The digital space is a historic opportunity to preserve Africa's living libraries before they burn.
-But this preservation must be:
-- With respect for cultural contexts
-- With participation of original communities
-- With awareness that technology is a means, not an end
-</p>
-<p><strong>The tree that survives the storm is the one with deep roots</strong></p>
-<p><strong>Summary:</strong><br>
-African philosophy calls us to use the digital world to deepen our roots, not uproot them; to strengthen community, not dismantle it; to preserve wisdom, not dissipate it.
-Removing digital harm is a process of rebalancing between technological progress and traditional wisdom, between individual and community, between speed and depth.
-</p>
-</div>
-</div>
-<div id="reference-confucianism" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-confucianism')">×</span>
-<h2>Removing Obstacles in the Digital Age: A Confucian Vision for Protecting the Human Journey</h2>
-<p>
-Confucianism is based on principles of <strong>virtue (De), harmonious human relationships, and community care</strong>.
-In the digital age, where the virtual space has become a new path (Dao) for society, there is an urgent need to apply traditional wisdom to protect moral and human order.
-</p>
-<p><strong>First: The Concept of Removing Obstacles in Confucian Thought</strong><br>
-Confucius did not mention removing harm from the path literally, but the principle is rooted in his idea of Ren (humanity) and Yi (righteousness).
-The ideal man (Junzi) seeks to achieve harmonious social order through:
-- Purifying the heart/intentions before action
-- Correcting names (defining responsibilities accurately)
-- Removing what clouds the purity of human relationships
-</p>
-<p>
-In the digital age, the path is no longer physical stones or thorns but has become:
-- Misleading information that clouds mental clarity
-- Speech that corrupts human relationships
-- Content that weakens individual and social ethics
-</p>
-<p><strong>Second: Five Types of Digital Obstacles that Corrupt Harmonious Society</strong></p>
-<table>
-<tr>
-<th>Digital Obstacle</th>
-<th>Impact on the Five Virtues</th>
-</tr>
-<tr>
-<td>Lying and deception</td>
-<td>Corrupts trust (Xin) between ruler and ruled, between friends, and in the market</td>
-</tr>
-<tr>
-<td>Divisive speech</td>
-<td>Weakens family and social harmony (Xiao - filial piety)</td>
-</tr>
-<tr>
-<td>Corrupt content</td>
-<td>Distorts propriety and etiquette (Li) and weakens self-control</td>
-</tr>
-<tr>
-<td>Constant distraction</td>
-<td>Disables wisdom and knowledge (Zhi) and seriousness in learning</td>
-</tr>
-<tr>
-<td>Virtual isolation</td>
-<td>Undermines real human relationships and their duties</td>
-</tr>
-</table>
-<p><strong>Third: Graduated Responsibility in Digital Space - Expanding the Concept of Correcting Names</strong><br>
-The principle of correcting names (Cheng Ming) determines that every person must know their responsibilities and follow them.
-In digital space:
-</p>
-<ol>
-<li><strong>Ruler/Official:</strong> Responsible for establishing digital systems that promote ethical values</li>
-<li><strong>Teacher:</strong> Responsible for educating students on wise technology use</li>
-<li><strong>Father:</strong> Responsible for managing the family's digital space usage</li>
-<li><strong>Friend:</strong> Responsible for advising friends when they deviate digitally</li>
-<li><strong>Individual:</strong> Responsible for self-control and purifying intention</li>
-</ol>
-<p>
-The digital space does not eliminate these responsibilities but expands their scope.
-</p>
-<p><strong>Fourth: Applying the Middle Way (Zhong Yong) in Digital Interaction</strong><br>
-The Middle Way rejects extremism:
-- Not complete rejection of technology to avoid isolation from era's development
-- Not complete immersion in it to avoid losing human essence
-But balanced use that achieves:
-- Practical benefit with preservation of ethical values
-- Information connection with protection of intellectual depth
-- Modernizing means while preserving ethical foundations
-</p>
-<p><strong>Fifth: Danger of Digital Space to Ritual Propriety (Li)</strong><br>
-Propriety (Li) in Confucianism is not empty formalities but external expression of internal respect.
-The digital space threatens it through:
-- Linguistic shortcuts that strip speech of its dignity
-- Rapid interactions that neglect social hierarchy
-- Excessive transparency that violates boundaries of private relationships
-- Digital speed that weakens patience and reflection before speech
-</p>
-<p><strong>Conclusion: Recommendations from a Confucian Perspective</strong></p>
-<ol>
-<li>Develop digital etiquette (Li Shuma) based on Confucian ethical foundations</li>
-<li>Create digital platforms that present ancient ethical models (Junzi) in modern formats</li>
-<li>Include digital education in self-learning and self-improvement curricula</li>
-<li>Encourage constructive digital dialogues that respect hierarchy and propriety</li>
-<li>Use technology to enhance family and social rituals, not undermine them</li>
-</ol>
-<p><strong>If one does not know how to speak appropriately, they should not speak at all</strong> - Discussions 4:24</p>
-<p>
-The digital space is a true test for the ideal man (Junzi) in our era.
-Every word we write, every image we share, every digital interaction we make is an opportunity to practice humanity (Ren), righteousness (Yi), and propriety (Li).
-Removing digital obstacles is not just technical cleaning but ethical purification of the path on which all humanity walks toward the greater harmonious society.
-</p>
-</div>
-</div>
-<div id="reference-taoism" class="reference-modal">
-<div class="modal-content">
-<span class="close-reference" onclick="closeReferenceModal('reference-taoism')">×</span>
-<h2>Purifying the Digital Path: A Taoist Vision for Protecting the Human Journey</h2>
-<p>
-In Taoist philosophy, the Way (Tao) reveals itself through spontaneity and balance.
-The modern digital world is a new expression of the Tao's flow, but it may deviate from its natural flow if the balance of Yin and Yang is disrupted.
-</p>
-<p><strong>First: The Digital Tao and Natural Flow</strong><br>
-The Tao flows like water, filling voids without effort. The digital world:
-- May obstruct "Wu Wei" (action through non-action) when interactions become forced
-- May create excess Yang (excessive action) through constant stimulation
-- May weaken "Ziran" (natural spontaneity) through over-planned communication
-</p>
-<p>
-The Tao that can be described is not the eternal Tao. The digital challenge lies in attempting to contain the infinite within limited interfaces.
-</p>
-<p><strong>Second: Excess Zhuo and Digital Indigestion</strong><br>
-The principle of Zhuo (void/space) is fundamental in Taoism.
-The digital world often:
-- Fills every void with noise and information
-- Reduces inner space for reflection and non-action
-- Transforms "Shen" (spirit/mind) into a crowded warehouse
-</p>
-<p>
-Thirty spokes share the wheel's hub; it is the center hole that makes it useful (Tao Te Ching)<br>
-The value of communication lies in the spaces between messages, not in their accumulation.
-</p>
-<p><strong>Third: Yin and Yang in the Digital Realm</strong></p>
-<table>
-<tr>
-<th>Digital Element</th>
-<th>Its Energy</th>
-<th>Danger of Imbalance</th>
-</tr>
-<tr>
-<td>Consumed content</td>
-<td>Yang (active reception)</td>
-<td>Excess Yang: sensory overload</td>
-</tr>
-<tr>
-<td>Digital silence</td>
-<td>Yin (passive absorption)</td>
-<td>Excess Yin: disconnection from information flow</td>
-</tr>
-<tr>
-<td>Rapid communication</td>
-<td>Yang (active flow)</td>
-<td>Speed conflicting with Tao's natural flow</td>
-</tr>
-<tr>
-<td>Non-digital reflection</td>
-<td>Yin (passive pause)</td>
-<td>Necessary for restoring balance</td>
-</tr>
-</table>
-<p><strong>Fourth: Return to Simplicity (Pu)</strong><br>
-Natural simplicity (Pu - the uncarved block) is threatened by:
-- Excessive complexity of interfaces and applications
-- Artificiality in digital identities and communication
-- Unnecessary digital accumulation
-</p>
-<p><strong>Taoist Digital Practice:</strong><br>
-Delete what doesn't serve the essence, simplify digital existence, return to core functions.
-</p>
-<p><strong>Fifth: Digital Qi and Human Harmony with the Cosmos</strong><br>
-Personal "Qi" energy is affected by the digital world:
-- Heaven Qi (cosmic energy): interrupted by screen preoccupation
-- Earth Qi (nature's energy): neglected in favor of virtual reality
-- Human Qi (body and spirit energy): depleted by prolonged staring
-</p>
-<p><strong>Taoist Exercise:</strong><br>
-Digital Qi Gong - regulated breathing, eye rest periods, practicing distant gazing between sessions
-</p>
-<p><strong>Taoist Recommendations for Balanced Digital Existence</strong></p>
-<ol>
-<li><strong>Digital 30-70 Principle:</strong>
-<ul>
-<li>30% of time in digital action (Yang)</li>
-<li>70% in non-digital natural existence (Yin)</li>
-</ul>
-</li>
-<li><strong>Zhuo Space Rituals:</strong>
-<ul>
-<li>Dedicated daily screen-free periods</li>
-<li>Creating device-free zones in the home</li>
-<li>Practicing lunar digital fasting (one day per lunar month)</li>
-</ul>
-</li>
-<li><strong>Art of Slow Deletion:</strong>
-<ul>
-<li>Canceling unnecessary subscriptions monthly</li>
-<li>Reducing contacts to only essential ones</li>
-<li>Purifying applications like purifying stagnant water</li>
-</ul>
-</li>
-<li><strong>Communication as Water Flow:</strong>
-<ul>
-<li>No forcing immediate responses</li>
-<li>Allowing conversations to flow naturally</li>
-<li>Accepting digital silence periods as part of natural rhythm</li>
-</ul>
-</li>
-<li><strong>Present Digital Existence:</strong>
-<ul>
-<li>One complete session at a time without multitasking</li>
-<li>Full awareness during digital sessions like in meditation</li>
-<li>Complete closure before transitioning to next activity</li>
-</ul>
-</li>
-</ol>
-<p><strong>The Way that can be walked is not the eternal Way; the name that can be named is not the eternal name</strong> (Tao Te Ching)</p>
-<p>
-The digital world is a temporary expression of the Tao, like a river constantly changing its course.
-Wisdom lies in flowing with the digital current without attachment to it, using the tool without becoming a tool ourselves, connecting without losing essence, and advancing technologically while preserving original simplicity.
-</p>
-<p>
-The optimal path is the Middle Digital Way:
-Using technology as a bridge not a destination, as a means to connect with the Tao not a barrier to it.
-When we restore balance, Qi flow returns and harmony with the Great Way that flows through everything—even bits and bytes—is restored.
-</p>
-</div>
-</div>
+  <!-- Reference Modals -->
+    <div id="reference-african" class="reference-modal">
+        <div class="modal-content">
+            <span class="close-reference" onclick="closeReferenceModal('reference-african')">×</span>
+            <h2>إزالة الأذى في العصر الرقمي: رؤية الفلسفة الإفريقية التقليدية لحماية المسيرة الإنسانية</h2>
+            <p>
+                في الفلسفات الإفريقية التقليدية الكون ككل عضوي مترابط والعلاقات البشرية مقدسة والحكمة الجماعية هي الأساس. الفضاء الرقمي الحديث يُختبر من خلال عدسة الأوبونتا (الوحدة في التعددية) والأوجانجو (الإنسانية المشتركة) وضرورة الحفاظ على إيكو (الانسجام الكوني).
+            </p>
+            <p><strong>الأول: الفضاء الرقمي كساحة جديدة للجماعة</strong><br>
+            أنا لأننا نحن ونحن لأنني أنا - مثل إفريقي
+            في الرؤية الإفريقية الهوية فردية وجماعية في آن. 
+            الفضاء الرقمي:
+            - قد يعزز الجماعة عبر وصل المشتتين وحفظ التراث
+            - قد يُضعف الجماعة إذا استُخدم للانقسام والنميمة (السامبيا)
+            - يجب أن يخدم الأوجانجو (إنسانيتنا المشتركة) لا يُفقدها
+            الحكمة التقليدية: 
+            كل كلمة تُقال تُسمعها الأسلاف والذين لم يولدوا بعد. الرقمي لا يُلغي هذه المسؤولية بل يوسعها.
+            </p>
+            <p><strong>الثاني: إزالة الأشواك عن الطريق كمسؤولية جماعية</strong><br>
+            كما في مجتمعات الأكان واليوروبا والبانتو حيث تنظيف الطريق مسؤولية مشتركة:
+            </p>
+            <table>
+                <tr>
+                    <th>المفهوم الإفريقي</th>
+                    <th>تطبيقه الرقمي</th>
+                    <th>خطر تركه</th>
+                </tr>
+                <tr>
+                    <td>أوبونتا (الترابط)</td>
+                    <td>ربط الحكمة التقليدية بالمعرفة الحديثة</td>
+                    <td>قطيعة الأجيال، تهديد الهوية</td>
+                </tr>
+                <tr>
+                    <td>إيكو (الانسجام)</td>
+                    <td>خلق توازن بين التقليد والحداثة</td>
+                    <td>اختلال التوازن الثقافي</td>
+                </tr>
+                <tr>
+                    <td>أوجانجو (الإنسانية)</td>
+                    <td>معاملة الآخر رقميًا كأخ في الإنسانية</td>
+                    <td>تجريد الآخر من إنسانيته</td>
+                </tr>
+            </table>
+            <p><strong>الثالث: أخلاقيات الكلام في العصر الرقمي</strong><br>
+            في فلسفة اليوروبا: كلماتنا تخلق عالمنا (أووو). 
+            في الفضاء الرقمي:
+            </p>
+            <ol>
+                <li><strong>قوة الكلمة (أشيه):</strong>
+                    <ul>
+                        <li>الكلمات الرقمية لها وجود روحي</li>
+                        <li>يمكنها أن تُشفي أو تُمرض المجتمع</li>
+                        <li>تتطلب إتوتو (اللياقة والأدب)</li>
+                    </ul>
+                </li>
+                <li><strong>المقاطع الإفريقية الثلاثة:</strong>
+                    <ul>
+                        <li>ما نراه (المحتوى المرئي): يجب أن يحترم أبيلمو (الكرامة)</li>
+                        <li>ما نقوله (النص والصوت): يجب أن يعكس أوتيتو (الحقيقة)</li>
+                        <li>ما نفعله (المشاركات): يجب أن تخدم أرو (المجتمع)</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>الرابع: الحكمة الجماعية (الأدينكانسي) ضد الفردية الرقمية</strong><br>
+            الحكمة ليست في رأس واحد - مثل إفريقي
+            الخطر الرقمي: تضخيم الفردية على حساب الجماعة. 
+            العلاج الإفريقي:
+            </p>
+            <ol>
+                <li><strong>مجالس الحكمة الرقمية:</strong>
+                    <ul>
+                        <li>مجموعات استشارية افتراضية</li>
+                        <li>حوارات بين الأجيال</li>
+                        <li>مشاركة الحكمة التقليدية رقميًا</li>
+                    </ul>
+                </li>
+                <li><strong>إعادة اكتشاف القصص والحكايات:</strong>
+                    <ul>
+                        <li>رقمنة الحكايات الشعبية</li>
+                        <li>استخدام السرد لتعليم الأخلاق الرقمية</li>
+                        <li>الحكايات كبديل للتلقين المباشر</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>الخامس: مفهوم الزمن الإفريقي والسرعة الرقمية</strong><br>
+            الوقت ليس مالاً الوقت هو علاقة رؤية إفريقية
+            السرعة الرقمية تتعارض مع الزمن العضوي الإفريقي حيث:
+            - الزمن دوري لا خطي
+            - القيمة في العمق لا في السرعة
+            - العلاقات تحتاج زمنها الطبيعي
+            </p>
+            <p><strong>ممارسة مقترحة:</strong><br>
+            إيقاف إفريقي رقمي - التوقف لاستعادة إيقاع العلاقات الحقيقي.
+            </p>
+            <p><strong>التوصيات من المنظور الإفريقي</strong></p>
+            <ol>
+                <li><strong>إحياء مجلس الشيوخ الرقمي:</strong>
+                    <ul>
+                        <li>منصات تُعطي صوتًا للحكماء التقليديين</li>
+                        <li>قنوات نقل الحكمة بين الأجيال</li>
+                        <li>حوارات لا جدالات</li>
+                    </ul>
+                </li>
+                <li><strong>عقلية القرية الرقمية:</strong>
+                    <ul>
+                        <li>معاملة المساحة الرقمية كساحة قرية مشتركة</li>
+                        <li>تحمل المسؤولية الجماعية عن نظافتها الأخلاقية</li>
+                        <li>تطبيق قيم الهارامبي (العمل الجماعي) في المشاريع الرقمية</li>
+                    </ul>
+                </li>
+                <li><strong>طقوس العبور الرقمية:</strong>
+                    <ul>
+                        <li>طقوس دخول المراهقين إلى العالم الرقمي</li>
+                        <li>احتفالات التخرج الرقمي مع توجيهات أخلاقية</li>
+                        <li>مجالس لفض النزاعات الرقمية</li>
+                    </ul>
+                </li>
+                <li><strong>اقتصاد الهدية الرقمي:</strong>
+                    <ul>
+                        <li>مشاركة المعرفة كهدية لا كسلعة</li>
+                        <li>تبادل المحتوى النافع دون مقابل</li>
+                        <li>أوبونتا في الإبداع المشترك</li>
+                    </ul>
+                </li>
+                <li><strong>الأسلاف والذاكرة الرقمية:</strong>
+                    <ul>
+                        <li>رقمنة وتكريم تراث الأسلاف</li>
+                        <li>استخدام التقنية لحفظ اللغات المهددة</li>
+                        <li>ربط الأجيال عبر الزمن الرقمي</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>الخاتمة: العودة إلى الجذور عبر التقنية</strong><br>
+            عندما يموت عجوز في إفريقيا تحترق مكتبة كاملة - أمادو هامباتي با
+            الفضاء الرقمي فرصة تاريخية لحفظ مكتبات إفريقيا الحية قبل أن تحترق. 
+            لكن يجب أن يكون هذا الحفظ:
+            - باحترام للسياقات الثقافية
+            - بمشاركة المجتمعات الأصلية
+            - بوعي بأن التقنية وسيلة لا غاية
+            </p>
+            <p><strong>الشجرة التي تنجو من العاصفة هي ذات الجذور العميقة</strong></p>
+            <p><strong>الخلاصة:</strong><br>
+            الفلسفة الإفريقية تدعونا لاستخدام العالم الرقمي لتعميق جذورنا لا لاقتلاعها؛ لتعزيز الجماعة لا تفكيكها لحفظ الحكمة لا تبديدها. 
+            إزالة الأذى الرقمي هي عملية إعادة توازن بين التقدم التقني والحكمة التقليدية بين الفرد والجماعة بين السرعة والعمق.
+            </p>
+        </div>
+    </div>
+    
+    <div id="reference-confucianism" class="reference-modal">
+        <div class="modal-content">
+            <span class="close-reference" onclick="closeReferenceModal('reference-confucianism')">×</span>
+            <h2>إزالة العوائق في العصر الرقمي: رؤية كونفوشيوسية لحماية المسيرة الإنسانية</h2>
+            <p>
+                تقوم الكونفوشيوسية على مبادئ <strong>الفضيلة (دِي) والعلاقات الإنسانية المتناغمة ورعاية المجتمع</strong>. 
+                في العصر الرقمي حيث تحول الفضاء الافتراضي إلى طريق (داو) جديد للمجتمع تظهر حاجة ملحة لتطبيق الحكمة التقليدية لحماية النظام الأخلاقي والإنساني.
+            </p>
+            <p><strong>أولاً: مفهوم إزالة العوائق في الفكر الكونفوشيوسي</strong><br>
+            لم يذكر كونفوشيوس إزالة الأذى عن الطريق حرفياً لكن المبدأ متجذر في فكرته عن رين (الإنسانية) ويي (الاستقامة). 
+            الرجل المثالي (جونزي) يسعى لتحقيق النظام الاجتماعي المتناغم عبر:
+            - تطهير القلب/النوايا قبل الفعل
+            - تصحيح الأسماء (تحديد المسؤوليات بدقة)
+            - إزالة ما يعكر صفاء العلاقات الإنسانية
+            </p>
+            <p>
+            في العصر الرقمي الطريق لم يعد حجراً أو شوكاً مادياً بل أصبح:
+            - معلومات مضللة تُعكِّر صفاء الفكر
+            - خطابٌ يُفسد العلاقات الإنسانية
+            - محتوى يُضعف الأخلاق الفردية والاجتماعية
+            </p>
+            <p><strong>ثانياً: خمسة أنواع من العوائق الرقمية التي تفسد المجتمع المتناغم</strong></p>
+            <table>
+                <tr>
+                    <th>العائق الرقمي</th>
+                    <th>تأثيره على الفضائل الخمس</th>
+                </tr>
+                <tr>
+                    <td>الكذب والتضليل</td>
+                    <td>يُفسد الثقة (شين) بين الحاكم والمحكوم، بين الصديقين وفي السوق</td>
+                </tr>
+                <tr>
+                    <td>الخطاب المُفرِّق</td>
+                    <td>يُضعف الانسجام الأسري والاجتماعي (الشياو - البر بالوالدين)</td>
+                </tr>
+                <tr>
+                    <td>المحتوى الفاسد</td>
+                    <td>يُشوِّه اللياقة والأدب (لي) ويُضعف ضبط النفس</td>
+                </tr>
+                <tr>
+                    <td>الإلهاء المستمر</td>
+                    <td>يُعطِّل الحكمة والمعرفة (تشيه) والجدية في التعلم</td>
+                </tr>
+                <tr>
+                    <td>العزلة الافتراضية</td>
+                    <td>تُقوِّض العلاقات الإنسانية الواقعية وواجباتها</td>
+                </tr>
+            </table>
+            <p><strong>ثالثاً: المسؤولية المتدرجة في الفضاء الرقمي توسعة مفهوم تصحيح الأسماء</strong><br>
+            مبدأ تصحيح الأسماء (تشينغ مينغ) يحدد أن كل شخص يجب أن يعرف مسؤولياته ويتبعها. 
+            في الفضاء الرقمي:
+            </p>
+            <ol>
+                <li><strong>الحاكم/المسؤول:</strong> مسؤول عن وضع أنظمة رقمية تعزز القيم الأخلاقية</li>
+                <li><strong>المعلم:</strong> مسؤول عن تربية التلاميذ على الاستخدام الحكيم للتقنية</li>
+                <li><strong>الأب:</strong> مسؤول عن إدارة استخدام الأسرة للفضاء الرقمي</li>
+                <li><strong>الصديق:</strong> مسؤول عن نصح أصدقائه عند انحرافهم رقمياً</li>
+                <li><strong>الفرد:</strong> مسؤول عن ضبط نفسه وتنقية نيته</li>
+            </ol>
+            <p>
+            الفضاء الرقمي لا يلغي هذه المسؤوليات بل يوسع نطاقها.
+            </p>
+            <p><strong>رابعاً: تطبيق الطريق الوسط (تشونغ يونغ) في التعامل الرقمي</strong><br>
+            الطريق الوسط يرفض التطرف:
+            - لا رفضاً كاملاً للتقنية تجنب العزلة عن تطور العصر
+            - لا انغماساً كاملاً فيها تجنب فقدان الجوهر الإنساني
+            بل استخدام متوازن يحقق:
+            - فائدة عملية مع حفظ القيم الأخلاقية
+            - اتصال معلوماتي مع حماية العمق الفكري
+            - تحديث الوسائل مع الحفاظ على الأصول الأخلاقية
+            </p>
+            <p><strong>خامساً: خطر الفضاء الرقمي على طقوس اللياقة (لي)</strong><br>
+            اللياقة (لي) في الكونفوشيوسية ليست شكليات فارغة بل تعبير خارجي عن احترام داخلي. 
+            الفضاء الرقمي يهددها من خلال:
+            - الاختصارات اللغوية التي تُفقِد الكلام وقاره
+            - التفاعلات السريعة التي تهمل التسلسل الهرمي الاجتماعي
+            - الشفافية المفرطة التي تنتهك حدود العلاقات الخاصة
+            - السرعة الرقمية التي تُضعف التأني والتأمل قبل الكلام
+            </p>
+            <p><strong>خاتمة: توصيات من منظور كونفوشيوسي</strong></p>
+            <ol>
+                <li>تطوير آداب رقمية (لي شوما) تستند إلى الأصول الأخلاقية الكونفوشيوسية</li>
+                <li>إنشاء منصات رقمية تُقدِّم النماذج الأخلاقية (جونزي) القديمة في قوالب عصرية</li>
+                <li>تضمين التربية الرقمية في منهج التعلم الذاتي وتحسين الذات</li>
+                <li>تشجيع الحوارات الرقمية البناءة التي تحترم التسلسل الهرمي واللياقة</li>
+                <li>استخدام التقنية لتعزيز الطقوس العائلية والاجتماعية لا لتقويضها</li>
+            </ol>
+            <p><strong>إن كان المرء لا يعرف أن يتكلم بما يليق، فليس له أن يتكلم</strong> - مناقشات 4:24</p>
+            <p>
+            الفضاء الرقمي اختبار حقيقي للإنسان المثالي (جونزي) في عصرنا. 
+            كل كلمة نكتبها كل صورة نشاركها كل تفاعل رقمي نقوم به هو فرصة لممارسة الإنسانية (رين) والاستقامة (يي) واللياقة (لي). 
+            إزالة العوائق الرقمية ليست مجرد تنظيف تقني بل هي تطهير أخلاقي للطريق الذي تسير عليه الإنسانية جمعاء نحو المجتمع المتناغم الأكبر.
+            </p>
+        </div>
+    </div>
+    
+    <div id="reference-taoism" class="reference-modal">
+        <div class="modal-content">
+            <span class="close-reference" onclick="closeReferenceModal('reference-taoism')">×</span>
+            <h2>تطهير الدرب الرقمي: رؤية طاوية لحماية المسيرة الإنسانية</h2>
+            <p>
+                في الفلسفة الطاوية الطريق (تاو) يُظهر نفسه عبر العفوية والتوازن. 
+                العالم الرقمي الحديث هو تعبير جديد عن تدفق التاو لكنه قد يحيد عن جريانه الطبيعي إذا اختل توازن الـ"ين واليانغ".
+            </p>
+            <p><strong>الأول: التاو الرقمي والتدفق الطبيعي</strong><br>
+            التاو يتدفق كالماء يملأ الفراغات دون جهد. العالم الرقمي:
+            - قد يُعيق الـ"وو وي" (العمل من خلال عدم الفعل) عندما تصبح التفاعلات قسرية
+            - قد يخلق فائضاً من اليانغ (فعل مفرط) من خلال التحفيز المستمر
+            - قد يُضعف الـ"تزو ران" (العفوية الطبيعية) عبر التخطيط المبالغ للتواصل
+            </p>
+            <p>
+            التاو الذي يمكن وصفه ليس التاو الأزلي التحدي الرقمي يكمن في محاولة احتواء اللا محدود في واجهات محدودة.
+            </p>
+            <p><strong>الثاني: تشو الزائد وعسر الهضم الرقمي</strong><br>
+            مبدأ التشو (الفراغ/ الحيز) أساسي في الطاوية. 
+            العالم الرقمي غالباً:
+            - يملأ كل فراغ بالتشويش والمعلومات
+            - يُقلص المساحة الداخلية للتأمل واللا فعل
+            - يُحول الـ"شن" (الروح/ العقل) إلى مستودع مزدحم
+            </p>
+            <p>
+            ثلاثون متحدثاً يتحدون في محور واحد لكن الفراغ بينهم هو ما يجعل العربة مفيدة (التاو ته تشينغ)<br>
+            قيمة التواصل تكمن في المساحات بين الرسائل لا في تراكمها.
+            </p>
+            <p><strong>الثالث: الين واليانغ الرقمي</strong></p>
+            <table>
+                <tr>
+                    <th>العنصر الرقمي</th>
+                    <th>طاقته</th>
+                    <th>خطر الخلل</th>
+                </tr>
+                <tr>
+                    <td>المحتوى المستهلك</td>
+                    <td>يانغ (استقبال نشط)</td>
+                    <td>فرط اليانغ: إرهاق الحواس</td>
+                </tr>
+                <tr>
+                    <td>الصمت الرقمي</td>
+                    <td>ين (استيعاب سلبي)</td>
+                    <td>فرط الين: انفصال عن تدفق المعلومات</td>
+                </tr>
+                <tr>
+                    <td>التواصل السريع</td>
+                    <td>يانغ (دفق نشط)</td>
+                    <td>سرعة تتعارض مع تدفق التاو الطبيعي</td>
+                </tr>
+                <tr>
+                    <td>التأمل ما رقمي</td>
+                    <td>ين (توقف سلبي)</td>
+                    <td>ضروري لاستعادة التوازن</td>
+                </tr>
+            </table>
+            <p><strong>الرابع: العودة إلى البساطة (بو)</strong><br>
+            البساطة الطبيعية (بو - الكتلة غير المنحوتة) تتعرض للخطر عبر:
+            - التعقيد الزائد للواجهات والتطبيقات
+            - الاصطناع في الهويات والتواصل الرقمي
+            - التراكم الرقمي غير الضروري
+            </p>
+            <p><strong>ممارسة طاوية رقمية:</strong><br>
+            حذف ما لا يخدم الجوهر تبسيط الوجود الرقمي، العودة إلى الوظائف الأساسية.
+            </p>
+            <p><strong>الخامس: تشي الرقمي وتناغم الإنسان مع الكون</strong><br>
+            طاقة الـ"تشي" الشخصية تتأثر بالعالم الرقمي:
+            - تشي السماء (طاقة الكون): تنقطع بسبب الانشغال بالشاشات
+            - تشي الأرض (طاقة الطبيعة): تُهمل لصالح الواقع الافتراضي
+            - تشي الإنسان (طاقة الجسد والروح): تُستنزف بالتحديق الطويل
+            </p>
+            <p><strong>التمرين الطاوي:</strong><br>
+            ممارسة تشي غونغ رقمي - تنظيم التنفس - أخذ فترات راحة للعينين - ممارسة النظر إلى البعيد بين الجلسات
+            </p>
+            <p><strong>التوصيات الطاوية للوجود الرقمي المتوازن</strong></p>
+            <ol>
+                <li><strong>مبدأ 30-70 الرقمي:</strong>
+                    <ul>
+                        <li>30% من الوقت في الفعل الرقمي (يانغ)</li>
+                        <li>70% في الوجود الطبيعي غير الرقمي (ين)</li>
+                    </ul>
+                </li>
+                <li><strong>طقوس فضاء التشو:</strong>
+                    <ul>
+                        <li>تخصيص أوقات يومية خالية من الشاشات</li>
+                        <li>إنشاء مناطق منزلية خالية من الأجهزة</li>
+                        <li>ممارسة الصيام الرقمي القمري (يوم كل شهر قمري)</li>
+                    </ul>
+                </li>
+                <li><strong>فن الحذف البطيء:</strong>
+                    <ul>
+                        <li>إلغاء اشتراكات غير ضرورية شهرياً</li>
+                        <li>تقليل جهات الاتصال إلى الجوهرية فقط</li>
+                        <li>تنقية التطبيقات كما تُنقى المياه الراكدة</li>
+                    </ul>
+                </li>
+                <li><strong>التواصل كتدفق مائي:</strong>
+                    <ul>
+                        <li>عدم الإجبار على الرد الفوري</li>
+                        <li>السماح للمحادثات بالتدفق الطبيعي</li>
+                        <li>تقبل فترات الصمت الرقمي كجزء من الإيقاع الطبيعي</li>
+                    </ul>
+                </li>
+                <li><strong>الوجود الرقمي الحضوري:</strong>
+                    <ul>
+                        <li>جلسة واحدة كاملة كل مرة بدون تعدد مهام</li>
+                        <li>وعي كامل بالجلسة الرقمية كما في التأمل</li>
+                        <li>إنهاء كامل قبل الانتقال للنشاط التالي</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>الطريق الذي يمكن سلوكه ليس الطريق الدائم والاسم الذي يمكن نطقه ليس الاسم الدائم</strong> (التاو ته تشينغ)</p>
+            <p>
+            العالم الرقمي هو تعبير مؤقت عن التاو كالنهر الذي يتغير مجراه باستمرار. 
+            الحكمة تكمن في الانسياب مع التدفق الرقمي دون التعلق به في استخدام الأداة دون أن نصبح أداة لها في الاتصال دون فقدان الجوهر وفي التقدم التقني مع الحفاظ على البساطة الأصلية.
+            </p>
+            <p>
+            الطريق الأمثل هو الطريق الأوسط الرقمي: 
+            استخدام التقنية كجسر لا كغاية كوسيلة للتواصل مع التاو لا كحاجز عنه.
+            عندما نعيد التوازن يعود تدفق التشي ويعود الانسجام مع الطريق الكبير الذي يسري في كل شيء حتى في البتات والبايتات.
+            </p>
+        </div>
+    </div>
+
+<!-- الزرادشتية - المحتوى الكامل مع جداول وقوائم -->
 <div id="reference-indigenous" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-indigenous')">×</span>
-<h2>Removing Harm in the Digital Age: A Zoroastrian Vision for Protecting the Human Journey</h2>
+<h2>إزالة الأذى في العصر الرقمي: رؤية زرادشتية لحماية المسيرة الإنسانية</h2>
 <p>
-Zoroastrianism is based on the cosmic struggle between Ahura Mazda (Light/Truth/Order) and Angra Mainyu (Darkness/Lies/Chaos).
-In the digital age, the virtual space has become a new battlefield for this struggle, where modern forms of Druj (lies/corruption) threaten the moral order.
+تقوم الزرادشتية على الصراع الكوني بين أهورامزدا (النور/الحقيقة/النظام) وأهريمان (الظلام/الكذب/الفوضى).
+في العصر الرقمي أصبح الفضاء الافتراضي ساحة جديدة لهذا الصراع حيث تظهر أشكال حديثة من الدروج (الكذب/الفساد) التي تهدد النظام الأخلاقي.
 </p>
-<p><strong>First: The Digital Space as a Cosmic Battlefield</strong><br>
-In Zoroastrian vision, the world is a field for choosing between Asha (Truth/Order) and Druj (Lies/Chaos).
-The digital space:
-- Strengthens Asha when it spreads beneficial knowledge, justice, and truth
-- Strengthens Druj when it spreads lies, moral chaos, and discrimination
-- Has become a battlefield where every digital interaction is a vote for light or darkness
-Through our choices we shape the world; every click, every share is a choice in the cosmic struggle.
+<p><strong>الأول: الفضاء الرقمي كميدان للصراع الكوني</strong><br>
+في الرؤية الزرادشتية العالم ميدان للاختيار بين أشا (الحقيقة/النظام) ودروج (الكذب/الفوضى). 
+الفضاء الرقمي:
+- يعزز أشا عندما ينشر المعرفة النافعة، العدل، والحقيقة
+- يعزز دروج عندما ينشر الكذب، الفوضى الأخلاقية، والتمييز
+- أصبح ساحة معركة حيث كل تفاعل رقمي هو تصويت لصالح النور أو الظلام
+باختياراتنا نصنع العالم كل نقرة كل مشاركة هي اختيار في الصراع الكوني.
 </p>
-<p><strong>Second: Digital Druj - Modern Forms of Lies</strong></p>
+<p><strong>الثاني: الدروج الرقمية أشكال الكذب الحديثة</strong></p>
 <table>
 <tr>
-<th>Type of Druj (Corruption)</th>
-<th>Digital Manifestations</th>
-<th>Impact on Asha's Order</th>
+<th>نوع الدروج (الفساد)</th>
+<th>مظاهره الرقمية</th>
+<th>تأثيره على نظام أشا</th>
 </tr>
 <tr>
-<td>Druj of Lies</td>
-<td>Fake news, misinformation</td>
-<td>Weakens society's foundation: trust and truth</td>
+<td>دروج الكذب</td>
+<td>الأخبار المزيفة، المعلومات المضللة</td>
+<td>يُضعف أساس المجتمع: الثقة والحقيقة</td>
 </tr>
 <tr>
-<td>Druj of Chaos</td>
-<td>Hate speech, incitement to violence</td>
-<td>Destroys social order and harmony</td>
+<td>دروج الفوضى</td>
+<td>خطاب الكراهية، التحريض على العنف</td>
+<td>يُدمر النظام الاجتماعي والوئام</td>
 </tr>
 <tr>
-<td>Druj of Mental Pollution</td>
-<td>Corrupt content, pornographic materials</td>
-<td>Pollutes the mind (Manah) and spirit (Ruvan)</td>
+<td>دروج التلوث الفكري</td>
+<td>المحتوى الفاسد، المواد الإباحية</td>
+<td>يُلوث العقل (المانا) والروح (الروفان)</td>
 </tr>
 <tr>
-<td>Druj of Division</td>
-<td>Creating discord, promoting intolerance</td>
-<td>Divides society against itself</td>
+<td>دروج الانقسام</td>
+<td>خلق الفتنة، تعزيز التعصب</td>
+<td>يُقسّم المجتمع ضد نفسه</td>
 </tr>
 </table>
-<p><strong>Third: The Six Virtues (Amesha Spenta) in the Digital Age</strong></p>
+<p><strong>الثالث: الفضائل الست (أميشا سبينتا) في العصر الرقمي</strong></p>
 <ol>
-<li><strong>Vohu Manah (Good Mind):</strong>
+<li><strong>فهو مانا (الفكر الصالح):</strong>
 <ul>
-<li>Purifying consumed content</li>
-<li>Reflection before publishing</li>
-<li>Resisting harmful thoughts</li>
+<li>تنقية المحتوى المستهلك</li>
+<li>التأمل قبل النشر</li>
+<li>مقاومة الأفكار الضارة</li>
 </ul>
 </li>
-<li><strong>Asha Vahishta (Best Truth):</strong>
+<li><strong>أشا فهشتا (الحق الأفضل):</strong>
 <ul>
-<li>Seeking accuracy and credibility</li>
-<li>Correcting misinformation</li>
-<li>Resisting media deception</li>
+<li>السعي للدقة والمصداقية</li>
+<li>تصحيح المعلومات الخاطئة</li>
+<li>مقاومة التضليل الإعلامي</li>
 </ul>
 </li>
-<li><strong>Kshathra Vairya (Desirable Dominion):</strong>
+<li><strong>خشترا ويريا (القوة المثلى):</strong>
 <ul>
-<li>Using technology to serve good</li>
-<li>Protecting the vulnerable digitally</li>
-<li>Confronting digital injustice</li>
+<li>استخدام التقنية لخدمة الخير</li>
+<li>حماية الضعفاء رقمياً</li>
+<li>مواجهة الظلم الرقمي</li>
 </ul>
 </li>
-<li><strong>Spenta Armaiti (Holy Devotion):</strong>
+<li><strong>سبنتا أرمايتي (التفاني المقدس):</strong>
 <ul>
-<li>Sincerity in communication</li>
-<li>Depth instead of superficiality</li>
-<li>Commitment to digital ethics</li>
+<li>الإخلاص في التواصل</li>
+<li>العمق بدلاً من السطحية</li>
+<li>الالتزام بالأخلاق الرقمية</li>
 </ul>
 </li>
-<li><strong>Haurvatat (Wholeness/Perfection):</strong>
+<li><strong>هاورفاتات (الكمال):</strong>
 <ul>
-<li>Seeking completeness in information</li>
-<li>Avoiding deficiency and distortion</li>
-<li>Presenting the complete picture</li>
+<li>السعي للاكتمال في المعلومات</li>
+<li>تجنب النقص والتشويه</li>
+<li>تقديم الصورة الكاملة</li>
 </ul>
 </li>
-<li><strong>Ameretat (Immortality):</strong>
+<li><strong>أميرتات (الخلود):</strong>
 <ul>
-<li>Creating eternally valuable content</li>
-<li>Leaving a positive digital legacy</li>
-<li>Connecting present with eternal principles</li>
+<li>خلق محتوى خالد قيميًا</li>
+<li>ترك إرث رقمي إيجابي</li>
+<li>ربط الحاضر بالمبادئ الأبدية</li>
 </ul>
 </li>
 </ol>
-<p><strong>Fourth: The Concept of Digital Duality</strong><br>
-Zoroastrian duality (Light/Darkness) manifests digitally:
+<p><strong>الرابع: مفهوم الثنائية الرقمية</strong><br>
+الثنائية الزرادشتية (النور/الظلام) تتجلى رقمياً:
 </p>
 <table>
 <tr>
-<th>Powers of Light</th>
-<th>Powers of Darkness</th>
+<th>قوى النور</th>
+<th>قوى الظلام</th>
 </tr>
 <tr>
-<td>Beneficial content</td>
-<td>Harmful content</td>
+<td>المحتوى النافع</td>
+<td>المحتوى الضار</td>
 </tr>
 <tr>
-<td>Truthful speech</td>
-<td>Lying speech</td>
+<td>الكلام الصادق</td>
+<td>الكلام الكاذب</td>
 </tr>
 <tr>
-<td>Unity and cooperation</td>
-<td>Division and conflict</td>
+<td>الوحدة والتعاون</td>
+<td>الانقسام والصراع</td>
 </tr>
 <tr>
-<td>Balanced moderation</td>
-<td>Excess and addiction</td>
+<td>التوازن والاعتدال</td>
+<td>الإفراط والإدمان</td>
 </tr>
 </table>
 <p>
-Zoroastrian practice: Strengthening powers of light in every digital interaction and actively resisting powers of darkness.
+الممارسة الزرادشتية: تعزيز قوى النور في كل تفاعل رقمي ومقاومة قوى الظلام بنشاط.
 </p>
-<p><strong>Fifth: Humanity's Role as Guardian and Ally of Order</strong><br>
-In Zoroastrianism, humans are allies of Ahura Mazda in fighting darkness. In the digital age:
+<p><strong>الخامس: دور الإنسان كحارس ومعاون للنظام</strong><br>
+الإنسان في الزرادشتية هو حليف أهورامزدا في محاربة الظلام. في العصر الرقمي:
 </p>
 <ol>
-<li><strong>Guardianship (Care):</strong>
+<li><strong>الحراسة (الرعاية):</strong>
 <ul>
-<li>Guarding family from harmful content</li>
-<li>Protecting society from misinformation</li>
-<li>Preserving ethical values in public space</li>
+<li>حراسة العائلة من المحتوى الضار</li>
+<li>حماية المجتمع من المعلومات المضللة</li>
+<li>رعاية القيم الأخلاقية في الفضاء العام</li>
 </ul>
 </li>
-<li><strong>Construction (Reform):</strong>
+<li><strong>الإعمار (الإصلاح):</strong>
 <ul>
-<li>Correcting informational errors</li>
-<li>Building clean digital spaces</li>
-<li>Promoting constructive content</li>
+<li>إصلاح الأخطاء المعلوماتية</li>
+<li>بناء مساحات رقمية نظيفة</li>
+<li>تعزيز المحتوى البنّاء</li>
 </ul>
 </li>
-<li><strong>Resistance (Confrontation):</strong>
+<li><strong>المقاومة (المواجهة):</strong>
 <ul>
-<li>Resisting hate speech</li>
-<li>Confronting media deception</li>
-<li>Challenging corrupt content</li>
+<li>مقاومة خطاب الكراهية</li>
+<li>مواجهة التضليل الإعلامي</li>
+<li>تحدي المحتوى الفاسد</li>
 </ul>
 </li>
 </ol>
-<p><strong>Practical Zoroastrian Recommendations</strong></p>
+<p><strong>التوصيات الزرادشتية العملية</strong></p>
 <ol>
-<li>Practice of aligned "Thought-Speech-Action":
+<li>ممارسة "التفكير-الكلام-الفعل" المتوافق:
 <ul>
-<li>Good thinking before writing</li>
-<li>Truthful speech during communication</li>
-<li>Beneficial action in sharing</li>
+<li>التفكير الصالح قبل الكتابة</li>
+<li>الكلام الصادق أثناء التواصل</li>
+<li>الفعل النافع في المشاركة</li>
 </ul>
 </li>
-<li>Creating Digital Light Times:
+<li>إنشاء أوقات النور الرقمية:
 <ul>
-<li>Periods dedicated to learning and beneficial content</li>
-<li>Spaces for constructive and logical dialogue</li>
-<li>Groups focused on construction not destruction</li>
+<li>فترات مخصصة للتعلم والمحتوى النافع</li>
+<li>مساحات للحوار البناء والمنطقي</li>
+<li>مجموعات تركز على الإعمار لا الهدم</li>
 </ul>
 </li>
-<li>Digital Purification Rituals:
+<li>طقوس التنقية الرقمية:
 <ul>
-<li>Periodic cleaning of devices and applications as homes are cleaned</li>
-<li>Reviewing contacts and follows</li>
-<li>Ventilating digital spaces from stagnant content</li>
+<li>تنظيف الجهاز والتطبيقات بشكل دوري كما تُنظف البيوت</li>
+<li>مراجعة جهات الاتصال والمتابعات</li>
+<li>تهوية المساحات الرقمية من المحتوى الراكد</li>
 </ul>
 </li>
-<li>Educating on ethical duality:
+<li>تربية على الثنائية الأخلاقية:
 <ul>
-<li>Teaching children to distinguish between light and darkness digitally</li>
-<li>Training to resist harmful digital temptations</li>
-<li>Promoting Zoroastrian virtues in digital usage</li>
+<li>تعليم الأطفال التمييز بين النور والظلام رقمياً</li>
+<li>تدريب على مقاومة الإغراءات الرقمية الضارة</li>
+<li>تعزيز الفضائل الزرادشتية في الاستخدام الرقمي</li>
 </ul>
 </li>
-<li>Resisting Druj of Lies:
+<li>مقاومة دروج الكذب:
 <ul>
-<li>Developing information verification skills</li>
-<li>Participating in misinformation correction initiatives</li>
-<li>Supporting platforms committed to truth</li>
+<li>تطوير مهارات التحقق من المعلومات</li>
+<li>المشاركة في مبادرات تصحيح المعلومات</li>
+<li>دعم المنصات التي تلتزم بالصدق</li>
 </ul>
 </li>
 </ol>
-<p><strong>Conclusion: The Digital Space as an Opportunity for Ultimate Victory</strong></p>
+<p><strong>الخاتمة: الفضاء الرقمي كفرصة للانتصار النهائي</strong></p>
 <p>
-Through:
-Good thoughts
-Good words
-Good deeds
-We approach Ahura Mazda" (from Avesta texts)
+من خلال: 
+الأفكار الصالحة 
+الأقوال الصالحة
+الأفعال الصالحة
+نقترب من أهورامزدا"** (من نصوص الأفيستا)
 </p>
 <p>
-The digital age is not merely a threat but a great opportunity to spread light and truth on an unprecedented scale.
-Every internet-connected human is a potential soldier in the army of light, capable of choosing Asha over Druj in every moment.
+العصر الرقمي ليس تهديداً فحسب بل هو فرصة عظيمة لنشر النور والحقيقة على نطاق غير مسبوق. 
+كل إنسان مرتبط بالإنترنت هو جندي محتمل في جيش النور قادر على اختيار أشا على دروج في كل لحظة.
 </p>
 <p>
-Zoroastrianism calls us to be active not passive in this new arena.
-Removing digital harm is a religious and ethical duty because it is part of the cosmic war against forces of darkness and corruption.
-When we purify the digital space, we don't just clean screens—we contribute to light's ultimate victory over darkness.
+الزرادشتية تدعونا لنكون فاعلين لا منفعلين في هذه الساحة الجديدة. 
+إزالة الأذى الرقمي هو واجب ديني وأخلاقي لأنه جزء من الحرب الكونية ضد قوى الظلام والفساد. 
+عندما ننقي الفضاء الرقمي، لا ننظف شاشات فحسب بل نساهم في انتصار النور النهائي على الظلام.
 </p>
 </div>
 </div>
+<!-- الشنتو - المحتوى الكامل مع جداول وقوائم -->
 <div id="reference-shinto" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-shinto')">×</span>
-<h2>Purifying the Digital Path: A Shinto Vision for Protecting the Human Journey</h2>
+<h2>تطهير الطريق الرقمي: رؤية شنتوية لحماية المسيرة الإنسانية</h2>
 <p>
-In Shinto belief, purity (Harai) and harmony with Kami are the essence of existence.
-The modern digital world, as a new path walked by spirits, requires applying Shinto principles to preserve spiritual purity and social harmony.
+في العقيدة الشنتوية الطهارة (هاراي) والتناغم مع الكامي هما جوهر الوجود. 
+فالعالم الرقمي الحديث كطريق جديد تسلكه الأرواح يحتاج إلى تطبيق مبادئ الشنتو للحفاظ على النقاء الروحي والانسجام الاجتماعي.
 </p>
-<p><strong>First: The Path as a Sacred Space for Kami</strong><br>
-In Shinto, roads and public spaces are pathways for Kami (divine spirits).
-The digital space today:
-- Has become a digital path walked by human spirits daily
-- Needs continuous purification like shrines and sacred sites
-- Becomes a place for Kami manifestation or desecration if misused
+<p><strong>الأول: الطريق كفضاء مقدس للكامي</strong><br>
+في الشنتو الطرق والأماين العامة هي مسالك للكامي (الأرواح الإلهية). 
+الفضاء الرقمي اليوم:
+- أصبح طريقاً رقمياً تسلكه أرواح البشر يومياً
+- يحتاج إلى تطهير مستمر كما تُطهر المزارات والمقدسات
+- يصبح مكاناً لتجلي الكامي أو للتدنيس إذا أسيء استخدامه
 </p>
 <p>
-The spoken word has its spirit—and this applies to digitally written words too.
-Every digital content carries spiritual energy (Ki) affecting the human journey.
+الكلمة المنطوقة لها روحها وهذا ينطبق على الكلمة المكتوبة رقمياً أيضاً. 
+كل محتوى رقمي يحمل طاقة روحية (كيه) تؤثر على مسار الإنسان.
 </p>
-<p><strong>Second: Types of Digital Desecration (Kegare)</strong><br>
-Spiritual desecration (Kegare) in the digital age manifests as:
+<p><strong>الثاني: أنواع التدنيس الرقمي (كيغاري)</strong><br>
+التدنيس الروحي (كيغاري) في العصر الرقمي يتجلى في:
 </p>
 <table>
 <tr>
-<th>Type of Desecration</th>
-<th>Digital Manifestation</th>
-<th>Impact on Harmony (Wa)</th>
+<th>نوع التدنيس</th>
+<th>مظهره الرقمي</th>
+<th>تأثيره على التناغم (وا)</th>
 </tr>
 <tr>
-<td>Word desecration</td>
-<td>Vulgar language, insults, hate speech</td>
-<td>Drives away Kami, corrupts digital space purity</td>
+<td>تدنيس الكلمة</td>
+<td>الكلام البذيء، الشتائم، الخطاب البغيض</td>
+<td>يُبعد الكامي، يُفسد نقاء المكان الرقمي</td>
 </tr>
 <tr>
-<td>Image desecration</td>
-<td>Harmful images, inappropriate content</td>
-<td>Weakens sanctity of human and natural existence</td>
+<td>تدنيس الصورة</td>
+<td>الصور المؤذية، المحتوى المستهجن</td>
+<td>يُضعف قدسية الوجود البشري والطبيعي</td>
 </tr>
 <tr>
-<td>Relationship desecration</td>
-<td>Broken connections, cyberbullying, social isolation</td>
-<td>Disrupts community harmony (Sha-In-Wa)</td>
+<td>تدنيس العلاقة</td>
+<td>قطع الروابط، التنمر، العزلة الاجتماعية</td>
+<td>يُعطل تناغم المجتمع (شا-إن-وا)</td>
 </tr>
 <tr>
-<td>Memory desecration</td>
-<td>Historical distortion, heritage desecration</td>
-<td>Cuts connection with ancestors and guardian Kami</td>
+<td>تدنيس الذاكرة</td>
+<td>تزوير التاريخ، تشويه التراث</td>
+<td>يقطع الصلة بالأسلاف والكامي الحارسين</td>
 </tr>
 </table>
-<p><strong>Third: Digital Purification Practices (Harai / Misogi)</strong><br>
-As shrines and bodies are purified, the digital space must be purified:
+<p><strong>الثالث: ممارسات التطهير الرقمي (هاراي / ميسوغي)</strong><br>
+كما تُطهر المزارات والأجساد، يجب تطهير الفضاء الرقمي:
 </p>
 <ol>
-<li><strong>Purifying Personal Content:</strong>
+<li><strong>تطهير المحتوى الشخصي:</strong>
 <ul>
-<li>Deleting old negative posts</li>
-<li>Purifying friend lists and follows</li>
-<li>Organizing digital spaces like organizing the home altar (Kamidana)</li>
+<li>حذف المنشورات السلبية القديمة</li>
+<li>تنقية قواصد الصداقة والمتابعة</li>
+<li>تنظيم المساحات الرقمية كتنظيم المذبح المنزلي (كاميدانا)</li>
 </ul>
 </li>
-<li><strong>Daily Digital Rituals:</strong>
+<li><strong>طقوس رقمية يومية:</strong>
 <ul>
-<li>Beginning digital sessions with pure intention</li>
-<li>Symbolic water sprinkling before important interactions (like Temizu)</li>
-<li>Closing sessions with gratitude for harmonious connections</li>
+<li>بدء الجلسة الرقمية بنية طاهرة</li>
+<li>ترشيد المياه الرمزي قبل التفاعل المهم (كما في تيميزو)</li>
+<li>إغلاق الجلسات بشكر الكامي على الاتصالات المتناغمة</li>
 </ul>
 </li>
-<li><strong>Community Digital Purification:</strong>
+<li><strong>تطهير مجتمعي رقمي:</strong>
 <ul>
-<li>Creating sacred digital spaces free from negativity</li>
-<li>Developing digital etiquette mimicking shrine visit etiquette</li>
-<li>Digital warning signs at sensitive content entrances (like shrine warnings for the impure)</li>
+<li>إنشاء مساحات رقمية مقدسة خالية من السلبية</li>
+<li>تطوير آداب سلوك رقمية تحاكي آداب زيارة المزارات</li>
+<li>علامات تحذير رقمية عند مداخل المحتوى الحساس (كما تحذر المزارات من الدخول غير الطاهر)</li>
 </ul>
 </li>
 </ol>
-<p><strong>Fourth: Digital Kami and Ancestor Veneration</strong><br>
-The digital space affects our relationship with:
-- Nature Kami: disconnection from nature due to digital addiction
-- Ancestral spirits: replacing memorial rituals with superficial digital interaction
-- Place Kami: neglecting real sacred places in favor of virtual reality
+<p><strong>الرابع: الكامي الرقمي وعبادة الأسلاف</strong><br>
+الفضاء الرقمي يؤثر على علاقتنا بـ:
+- كامي الطبيعة: انفصال عن الطبيعة بسبب الإدمان الرقمي
+- أرواح الأسلاف: استبدال طقوس الذكرى بالتواصل السطحي
+- كامي المكان: تجاهل الأماكن المقدسة الحقيقية لصالح الواقع الافتراضي
 </p>
 <p>
-Recommended practice:
-Using technology to record and honor sacred places and ancestors—not to escape them.
+الممارسة الموصى بها: 
+استخدام التقنية لتسجيل وتكريم الأماكن المقدسة والأسلاف لا للهروب منها.
 </p>
-<p><strong>Fifth: The Art of Digital Misogi (Self-Purification)</strong></p>
-<p><strong>Spiritual Exercise:</strong></p>
+<p><strong>الخامس: فن الميسوغي الرقمي (التنقية الذاتية)</strong></p>
+<p><strong>التمرين الروحي:</strong></p>
 <ul>
-<li>Periodic digital fasting as a form of purification</li>
-<li>Reviewing digital relationships and discarding what doesn't maintain harmony</li>
-<li>Creating silent spaces in the digital schedule for meditation and nature connection</li>
+<li>صيام رقمي دوري كشكل من أشكال التطهير</li>
+<li>مراجعة العلاقات الرقمية والتخلص مما لا يحافظ على التناغم</li>
+<li>خلق مساحات صامتة في الجدول الرقمي للتأمل والاتصال بالطبيعة</li>
 </ul>
-<p><strong>Practical Recommendations from a Shinto Perspective</strong></p>
+<p><strong>التوصيات العملية من منظور شنتوي</strong></p>
 <ol>
-<li><strong>Designing Digital Platforms with Sacred Spaces:</strong>
+<li><strong>تصميم منصات رقمية بمساحات مقدسة:</strong>
 <ul>
-<li>Sections for polite discussion only</li>
-<li>Areas protected from negative speech</li>
-<li>Design standards respecting spiritual comfort</li>
+<li>أقسام للنقاش المهذب فقط</li>
+<li>مناطق محمية من الخطاب السلبي</li>
+<li>معايير تصميم تراعي الراحة الروحية</li>
 </ul>
 </li>
-<li><strong>Digital Rituals for Beginning and Ending:</strong>
+<li><strong>طقوس رقمية للبدء والإنهاء:</strong>
 <ul>
-<li>Brief meditation before opening platforms</li>
-<li>Expressing gratitude for positive interactions</li>
-<li>Weekly digital cleaning ceremony (deleting what doesn't serve harmony)</li>
+<li>تأمل قصير قبل فتح المنصات</li>
+<li>تعبير عن الامتنان للتفاعلات الإيجابية</li>
+<li>حفل تنظيف رقمي أسبوعي (حذف ما لا يخدم التناغم)</li>
 </ul>
 </li>
-<li><strong>Education on Digital Respect:</strong>
+<li><strong>تربية على الاحترام الرقمي:</strong>
 <ul>
-<li>Teaching that digital words carry spirits</li>
-<li>Training on digital listening as in shrines</li>
-<li>Reminding that the screen is a window to a world inhabited by spirits</li>
+<li>تعليم أن الكلمات الرقمية تحمل أرواحاً</li>
+<li>تدريب على الاستماع الرقمي كما نستمع في المزارات</li>
+<li>تذكير بأن الشاشة نافذة على عالم تسكنه الأرواح</li>
 </ul>
 </li>
-<li><strong>Balance Between Real and Virtual:</strong>
+<li><strong>توازن بين الواقع والافتراضي:</strong>
 <ul>
-<li>Prioritizing visits to real sacred places</li>
-<li>Using technology to enhance these visits not replace them</li>
-<li>Linking digital content to nature and real sacred sites</li>
+<li>أولوية زيارة الأماكن المقدسة الحقيقية</li>
+<li>استخدام التقنية لتعزيز هذه الزيارات لا استبدالها</li>
+<li>ربط المحتوى الرقمي بالطبيعة والمقدسات الواقعية</li>
 </ul>
 </li>
-<li><strong>Principles for Digital Creation:</strong>
+<li><strong>مبادئ للخلق الرقمي:</strong>
 <ul>
-<li>Does this content serve harmony (Wa)?</li>
-<li>Does it respect spirits and Kami?</li>
-<li>Does it maintain purity (Harai)?</li>
-<li>Does it enhance gratitude for nature and ancestors?</li>
+<li>هل هذا المحتوى يخدم التناغم (وا)؟</li>
+<li>هل يحترم الأرواح والكامي؟</li>
+<li>هل يحافظ على الطهارة (هاراي)؟</li>
+<li>هل يعزز الامتنان للطبيعة والأسلاف؟</li>
 </ul>
 </li>
 </ol>
-<p><strong>Purity is the foundation of everything, from which harmony with cosmic forces emerges</strong> - Shinto wisdom</p>
+<p><strong>إن النقاء أساس كل شيء، ومنه ينبع التناغم مع قوى الكون</strong> - حكمة شنتوية</p>
 <p>
-The digital path, like all paths, must be walked with pure heart and humble spirit.
-Every digital interaction is an encounter with others' spirits and with Kami inhabiting the world.
-Purifying this path is not a luxury but a spiritual necessity to achieve harmony between material and digital worlds, between humans and Kami, between present and ancestral heritage.
-In digital purity we find the path to true harmony.
+الطريق الرقمي ككل الطرق يجب أن يُسلك بنقاء قلب وتواضع روح. 
+كل تفاعل رقمي هو لقاء مع أرواح الآخرين ومع الكامي التي تسكن العالم. 
+تطهير هذا الطريق ليس رفاهية بل ضرورة روحية لتحقيق التناغم بين العالم المادي والرقمي بين الإنسان والكامي بين الحاضر وتراث الأسلاف. 
+في النقاء الرقمي نجد الطريق إلى الانسجام الحقيقي.
 </p>
 </div>
 </div>
+<!-- باقي النوافذ موجودة في الملف الأصلي -->
 <div id="reference-buddhism" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-buddhism')">×</span>
-<h2>Removing Suffering in the Digital Age: A Buddhist Vision for Protecting the Human Journey</h2>
+<h2>إزالة المعاناة في العصر الرقمي: رؤية بوذية لحماية المسيرة الإنسانية</h2>
 <p>
-Buddhism is founded on the "Four Noble Truths" and liberation from suffering (Dukkha).
-In the digital age, where the virtual space has become a daily path for consciousness, applying the "Noble Eightfold Path" becomes necessary to confront new forms of suffering generated by digital platforms.
+تستند البوذية إلى مبادئ "النبلاء الأربعة" والتخلّص من المعاناة (دوكها).
+في العصر الرقمي حيث تحول الفضاء الافتراضي إلى مسار يومي للوعي يصبح تطبيق "الطريق الثماني النبيل" ضرورياً لمواجهة أشكال المعاناة الجديدة التي تولدها المنصات الرقمية.
 </p>
-<p><strong>First: Non-Violence (Ahimsa) Extends Beyond the Physical</strong><br>
-The principle of non-harm is the foundation of Buddhist ethics.
-It does not stop at physical actions but includes speech (Vaca) and thought.
-The Buddha said: "Words that cause no regret... are good words." The digital space amplifies the power of words to harm, making "Right Speech" one of the most important practices in our era.
+<p><strong>أولاً: اللاحَرْم (أهيمسا) تتجاوز العالم المادي</strong><br>
+مبدأ عدم الإيذاء هو أساس الأخلاق البوذية.
+لا يقتصر هذا على الأفعال الجسدية بل يشمل الكلام (فاجا) والفكر.
+يقول بوذا: "الكلمات التي لا تسبب ندمًا... هي كلمات حسنة". الفضاء الرقمي يضخّم قدرة الكلمة على الإيذاء مما يجعل "الخطاب السليم" (صحيح الكلام) من أهم الممارسات في عصرنا.
 </p>
-<p><strong>Second: Three Types of Digital Poisons</strong><br>
-Buddhist teaching holds that the root of suffering lies in the three poisons:
+<p><strong>ثانياً: ثلاثة أنواع من السموم الرقمية</strong><br>
+تعلم البوذية أن أصل المعاناة يكمن في السموم الثلاثة:
 <ul>
-<li>Ignorance (Avidya) manifested as misinformation and fake news</li>
-<li>Attachment (Raga) manifested as digital addiction and constant craving for stimulation</li>
-<li>Hatred (Dvesha) manifested as hate speech and polarization</li>
+<li>الجهل (أفيديا) المتمثل في المعلومات المضللة والأخبار الكاذبة</li>
+<li>التعلق (راغا) المتمثل في الإدمان الرقمي والبحث الدائم عن التحفيز</li>
+<li>الكراهية (دڤيشا) المتمثل في خطاب الكراهية والاستقطاب</li>
 </ul>
-Digital platforms often feed these poisons rather than alleviating them.
+المنصات الرقمية غالباً ما تغذي هذه السموم بدلاً من تخفيفها.
 </p>
-<p><strong>Third: Mindfulness (Sati) as Guardian of the Digital Path</strong><br>
-"Mindfulness" in Buddhism is the guardian at the gate of the senses. In the digital world where stimuli flow endlessly, practicing mindfulness becomes essential:
+<p><strong>ثالثاً: الوعي (ساتي) كحارس للطريق الرقمي</strong><br>
+"الوعي" في البوذية هو الحارس عند بوابة الحواس في العالم الرقمي حيث تتدفق المحفزات بلا توقف تصبح ممارسة الوعي ضرورية:
 <ul>
-<li>Mindfulness of what we consume digitally</li>
-<li>Mindfulness of our emotional reactions</li>
-<li>Mindfulness of content's impact on our mental state</li>
+<li>الوعي بما نستهلكه رقمياً</li>
+<li>الوعي بردود أفعالنا العاطفية</li>
+<li>الوعي بتأثير المحتوى على حالتنا الذهنية</li>
 </ul>
-Mindfulness practice transforms passive consumers into conscious participants.
+ممارسة الوعي تحول المستهلك السلبي إلى مشارك واعي.
 </p>
-<p><strong>Fourth: Algorithms and Non-Self (Anatta)</strong><br>
-Buddhism faces a digital dilemma: algorithms build a "false self" (Anatta) through:
+<p><strong>رابعاً: الخوارزميات واللا-ذات (أناتا)</strong><br>
+تواجه البوذية معضلة رقمية: الخوارزميات تبني "ذاتاً" وهمية (أناتا) من خلال:
 <ul>
-<li>Creating echo chambers that reinforce the illusory ego</li>
-<li>Strengthening attachment to specific viewpoints</li>
-<li>Creating a constantly shifting digital identity</li>
+<li>إنشاء فقاعات تصورية تعزز الأنا الوهمية</li>
+<li>تعزيز التعلق بوجهات نظر محددة</li>
+<li>خلق هوية رقمية منفصلة ومتغيرة باستمرار</li>
 </ul>
-This contradicts the understanding of non-self and release from attachments.
+هذا يتعارض مع فهم اللا-ذات والتخلص من التعلقات.
 </p>
-<p><strong>Fifth: Compassion (Karuna) and Wisdom (Prajna) in Virtual Space</strong><br>
-Compassion and wisdom should guide our digital interactions:
+<p><strong>خامساً: التعاطف (كارونا) والحكمة (براجنا) في الفضاء الافتراضي</strong><br>
+يجب أن يوجه التعاطف والحكمة تفاعلاتنا الرقمية:
 <ul>
-<li>Compassion: Pausing before posting content that may cause suffering</li>
-<li>Wisdom: Discerning between beneficial and harmful content</li>
-<li>Right Action: Using platforms to spread peace and understanding</li>
+<li>التعاطف: التوقف قبل نشر محتوى قد يسبب معاناة</li>
+<li>الحكمة: التمييز بين المحتوى النافع والضار</li>
+<li>الفعل السليم: استخدام المنصات لنشر السلام والتفاهم</li>
 </ul>
-The Middle Way prevents extremism between complete technology rejection and total immersion.
+الطريق الوسط يمنع التطرف بين رفض التكنولوجيا كلياً والانغماس الكامل فيها.
 </p>
-<p><strong>Sixth: Isolation and Connection in the Age of Connectivity</strong><br>
-The digital world creates a paradox: superficial connection leading to deep isolation. Buddhist practices remind us that:
+<p><strong>سادساً: العزلة والاتصال في زمن الترابط</strong><br>
+يخلق العالم الرقمي مفارقة: اتصال سطحي يؤدي إلى عزلة عميقة. الممارسات البوذية تذكرنا بأن:
 <ul>
-<li>Inner silence (Samatha) is necessary even amidst digital noise</li>
-<li>True connection requires full presence and attention</li>
-<li>Deep relationships transcend quick interactions</li>
+<li>الصمت الداخلي (ساماثا) ضروري حتى وسط الضجيج الرقمي</li>
+<li>التواصل الحقيقي يتطلب حضوراً واهتماماً كاملاً</li>
+<li>العلاقات العميقة تتجاوز التفاعلات السريعة</li>
 </ul>
 </p>
-<p><strong>Conclusion and Recommendations from a Buddhist Perspective:</strong><br>
+<p><strong>خاتمة وتوصيات من منظور بوذي:</strong><br>
 <ol>
-<li>Mindful digital practice: Developing meditation programs focused on digital mindfulness, and periodic "fasting" from platforms.</li>
-<li>Developing tools that enhance Buddhist values: Algorithms encouraging compassion and understanding rather than anger and polarization.</li>
-<li>Teaching Buddhist digital ethics: Integrating concepts of "Right Speech" and "Right Action" into digital education.</li>
-<li>Supportive digital communities: Creating virtual spaces that support spiritual practice rather than scattering attention.</li>
-<li>Digital simplicity: Encouraging balanced technology use that reduces attachment and frees time for meditation and practice.</li>
+<li>ممارسة رقمية واعية: تطوير برامج تأمل تركز على الوعي الرقمي، و"صيام" دوري من المنصات.</li>
+<li>تطوير أدوات رقمية تعزز القيم البوذية: خوارزميات تشجع على التعاطف والتفاهم بدلاً من الغضب والاستقطاب.</li>
+<li>تعليم أخلاقيات رقمية بوذية: دمج مفاهيم "الكلام السليم" و"الفعل السليم" في التربية الرقمية.</li>
+<li>مجتمعات رقمية داعمة للممارسة: إنشاء فضاءات افتراضية تدعم الممارسة الروحية بدلاً من تشتيت الانتباه.</li>
+<li>البساطة الرقمية: تشجيع استخدام التكنولوجيا بطريقة متوازنة، تخفف التعلق وتحرر الوقت للتأمل والممارسة.</li>
 </ol>
 </p>
-<p>"We are what we repeatedly do. Excellence, then, is not an act but a habit." - Buddhist saying<br>
-Every click, every interaction, every hour we spend in the digital world is an opportunity to practice mindfulness and compassion—or an opportunity to feed the three poisons. The choice is a daily practice, and the digital path, like all paths, can lead either to more suffering or to awakening and liberation.
+<p>"نحن ما نكرره. التميز، إذاً، ليس فعلًا بل عادة." - مقولة بوذية<br>
+كل نقرة كل تفاعل كل ساعة نقضيها في العالم الرقمي هي فرصة لممارسة الوعي والتعاطف أو فرصة لتغذية السموم الثلاثة. الاختيار هو ممارسة يومية والطريق الرقمي مثل كل الطرق يمكن أن يقود إما إلى مزيد من المعاناة أو إلى اليقظة والتحرر.
 </p>
 </div>
 </div>
 <div id="reference-judaism" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-judaism')">×</span>
-<h2>Removing Harm in the Digital Age: A Jewish Vision for Protecting the Human Journey</h2>
+<h2>إزالة الأذى في العصر الرقمي: رؤية اليهودية لحماية المسيرة الإنسانية</h2>
 <p>
-Judaism is founded on principles of mercy, construction, and commands removing "Takun" (obstacles from the path)—not merely as an individual duty but as a comprehensive ethical methodology.
-In the age of social media, the path has transformed from a physical route to a digital space walked daily by humans, where they may encounter what harms their mind, heart, and relationships. Hence arises the need for deeper understanding of harm and path concepts in light of Jewish law (Halakha) and ethical values (Musar).
+تستند اليهودية إلى مبادئ الرحمة والبناء وتأمر بفعل "التِكّوم" (إزالة العثرة من الطريق) ليس كواجب فردي فحسب بل كمنهج أخلاقي شامل.
+في عصر وسائل التواصل الاجتماعي، تحول الطريق من مسار مادي إلى فضاء رقمي يسلكه الإنسان يومياً وقد يتعرض فيه لما قد يضر بعقله وقلبه وعلاقاته من هنا تنبع الحاجة لفهم أعمق لمفهوم الأذى والطريق في ضوء مقاصد الشريعة اليهودية (הלכה) وقيمها الأخلاقية (מוסר).
 </p>
-<p><strong>First: Removing Harm is a Universal Human Duty</strong><br>
-Jewish teachings did not limit this duty to followers of Judaism alone. In Deuteronomy (22:4), one is commanded to help even an enemy whose burden has fallen.
-The Jewish wisdom principle "Lo ta'amod al dam re'echa" (Do not stand idly by your neighbor's blood, Leviticus 19:16) includes preventing all potential harm.
-Jewish wisdom views preserving life and showing mercy to others ("Pikuach Nefesh" and "Darkhei Shalom") as supreme values encompassing all without discrimination.
+<p><strong>أولاً: إزالة الأذى واجب إنساني عام</strong><br>
+لم تحدد التعاليم اليهودية هذا الواجب بأتباع الديانة اليهودية فقط. ففي سفر التثنية (22: 4) يُؤمر المرء بمساعدة من سقط حِمله حتى لو كان من خصومه.
+أن مبدأ "לֹא תַעֲמֹד עַל דַּם רֵעֶךָ" (لا تقف مكتوف الأيدي على دم قريبك سفر اللاويين 19:16) يشمل منع كل ضرر محتمل.
+الحكمة اليهودية ترى في حفظ الحياة والرفق بالآخرين ("פיקוח נפש" و"דרכי שלום") قيماً عليا تشمل الجميع دون تمييز.
 </p>
-<p><strong>Second: Harm Extends Beyond the Physical to Moral and Ethical</strong><br>
-The harm to be removed is not limited to stones or tangible obstacles but includes:
+<p><strong>ثانياً: الأذى يتجاوز المادي إلى المعنوي والأخلاقي</strong><br>
+الأذى المراد إزالته لا يقتصر على الحجارة أو العوائق الملموسة بل يشمل:
 <ul>
-<li>Harmful or hateful speech (Lashon Hara - gossip and evil speech).</li>
-<li>Deception and misleading (Geneivat Da'at - theft of mind or intellectual deception).</li>
-<li>Behavior causing psychological pain or confusion to others.</li>
+<li>الكلام المؤذي أو البغيض (לשון הרע - نميمة وكلام السوء).</li>
+<li>الخداع والتضليل (גניבת דעת - سرقة الفكر أو خداع العقل).</li>
+<li>السلوك الذي يسبب الألم النفسي أو الارتباك للآخرين.</li>
 </ul>
-Talmudic sages emphasized that "shame is harsher than death," and psychological/moral harm may be more devastating than physical harm.
+حكماء التلمود أكدوا أن "العار أقسى من الموت"، وأن الأذى النفسي والمعنوي قد يكون أكثر فتكاً من الجسدي.
 </p>
-<p><strong>Third: Life as a Continuous Ethical Journey</strong><br>
-Judaism views earthly life as a journey ("Derech") where humans are tested and build their world. "In all your ways know Him" (Proverbs 3:6) is a call for ethical awareness in every path—every moment is an opportunity to choose: Do we facilitate others' path and build society ("Tikkun Olam"), or do we place obstacles and spread corruption?
+<p><strong>ثالثاً: الحياة رحلة أخلاقية مستمرة</strong><br>
+تنظر اليهودية إلى الحياة الدنيا كمسيرة ("דרך") يختبر فيها الإنسان ويبني عالمه "في كل الطرق اَعرفوه" (משלי ג:ו) دعوة للوعي الأخلاقي في كل مسار كل لحظة هي فرصة لاختيار: هل نساهم في تسهيل طريق الآخرين وبناء مجتمع ("תיקון עולם") أم نضع فيه العوائق وننشر الفساد?
 </p>
-<p><strong>Fourth: Destroying Thought and Mind is Among the Greatest Harms</strong><br>
-What weakens human intellect or drives them to error—such as spreading destructive doubts, hopeless despair, or unwarranted incitement to hatred—is severe harm. The mind is the instrument for understanding divine will and applying law; protecting it is a great responsibility.
-Whoever spreads what corrupts thoughts and distorts truth is like one who poisons a well from which everyone drinks.
+<p><strong>رابعاً: تدمير الفكر والعقل من أشد الأذى</strong><br>
+ما يضعف عقل الإنسان أو يدفعه للخطأ كبث الشكوك الهدامة أو نشر اليأس القاتل أو التحريض على الكراهية غير المبررة هو أذى خطير. العقل هو أداة فهم الإرادة الإلهية وتطبيق الشرعة ومسؤولية حمايته عظيمة.
+من ينشر ما يفسد الأفكار ويشوه الحقيقة كمن يسمم بئر ماء يشرب منه الجميع.
 </p>
-<p><strong>Fifth: Social Media: The Modern Path of Contemporary Harm</strong><br>
-Digital platforms have become a virtual path walked by millions, and their misuse has led to:
+<p><strong>خامساً: وسائل التواصل الاجتماعي: الطريق الرقمي للأذى المعاصر</strong><br>
+أصبحت المنصات الرقمية طريقاً افتراضياً يسلكه الملايين وقد أدى سوء استخدامها إلى:
 <ul>
-<li>Tearing family and community bonds (Shalom Bayit - establishing peace is a supreme virtue).</li>
-<li>Inciting violence and revenge (Hakamat Hamah - inciting unwarranted anger is rejected).</li>
-<li>Causing acute psychological crises.</li>
+<li>تمزيق أواصر العائلة والمجتمع (השכנת שלום - إحلال السلام هو فضيلة عليا).</li>
+<li>التحريض على العنف والانتقام (הקמת חמה - إثارة الغضب الباطل مرفوض).</li>
+<li>التسبب في أزمات نفسية حادة.</li>
 </ul>
-This is compound harm combining psychological, social, and spiritual injury. Whoever contributes to making this path poisonous violates the principle "Lo tasim damim beveitecha" (Do not make your house a place of bloodshed, Deuteronomy 22:8 in expanded concept).
+هذا أذى مركب يجمع بين الإيذاء النفسي والاجتماعي والروحي. من يساهم في جعل هذا الطريق ساماً، فإنه ينتهك مبدأ "לא תשים דמים בביתך" (لا تجعل في بيتك سبباً لسفك الدماء، تثنية 22:8 بمفهوم موسع).
 </p>
-<p><strong>Sixth: Algorithms Are Not Neutral—Profit Drives Them</strong><br>
-Most platform algorithms do not distinguish between truth and falsehood but between what generates profit and what doesn't.
-They feed users what satisfies their inclinations even if it destroys them psychologically or morally. Therefore, the conscious human must:
+<p><strong>سادساً: الخوارزميات ليست محايدة، بل توجهها الربحية</strong><br>
+معظم خوارزميات المنصات لا تميز بين الحق والباطل بل بين ما يدر ربحاً وما لا يدر.
+هي تغذي المستخدم بما يلبي ميوله حتى لو كان ذلك يدمره نفسياً أو أخلاقياً. لذلك على الإنسان الواعي أن:
 <ul>
-<li>Investigate sources ("Da mah she'tashiv" - know how to answer, i.e., be prepared).</li>
-<li>Choose content consciously and responsibly.</li>
-<li>Train themselves in discernment and constructive criticism, not passive drifting.</li>
+<li>يتحرى عن مصادره ("דע מה שתשיב" - اعرف كيف تجيب، أي كن مستعداً).</li>
+<li>يختار محتواه بوعي وبمسؤولية.</li>
+<li>يدرب نفسه على التمييز والنقد البناء، لا على الانجراف السلبي.</li>
 </ul>
 </p>
-<p><strong>Conclusion and Recommendations in Light of Jewish Vision:</strong><br>
+<p><strong>خاتمة وتوصيات في ضوء الرؤية اليهودية:</strong><br>
 <ol>
-<li>Call for awareness campaigns based on authentic Jewish values ("Ve'ahavta l're'acha kamocha" - Love your neighbor as yourself, Leviticus 19:18) to clarify digital harm dangers.</li>
-<li>Support non-profit initiatives and content enhancing human and ethical values contributing to world repair ("Tikkun Olam").</li>
-<li>Train families and educators to understand digital world mechanisms and how to raise children for wise, safe usage, focusing on speech responsibility ("Mishmeret Halashon").</li>
-<li>Emphasize that good intention alone is insufficient—action and content must also provide real benefit and avoid harm.</li>
-<li>Consider protecting mind and human soul among societal priorities just as bodies are protected from epidemics—this is among the highest degrees of life preservation ("Pikuach Nefesh").</li>
+<li>الدعوة إلى خطاب توعوي يستند إلى القيم اليهودية الأصيلة ("ואהבת לרעך כמוך" - أحب لغيرك كما تحب لنفسك، سفر اللاويين 19:18) لإيضاح خطر الأذى الرقمي.</li>
+<li>دعم مبادرات ومحتوى غير ربحي يعزز القيم الإنسانية والأخلاقية ويساهم في إصلاح العالم ("תיקון עולם").</li>
+<li>تأهيل الأسر والمعلمين لفهم آليات العالم الرقمي وكيفية تربية الأبناء على الاستخدام الحكيم والآمن مع التركيز على مسؤولية الكلام ("משמרת הלשון").</li>
+<li>التأكيد على أن النية الحسنة لا تكفي بل يجب أن يقترن العمل والمحتوى بالفائدة الحقيقية والبعد عن الضرر.</li>
+<li>اعتبار حماية العقل والنفس الإنسانية من الأولويات المجتمعية كما تحمى الأجساد من الأوبئة، فهذا من أعلى درجات حفظ الحياة ("פיקוח נפש").</li>
 </ol>
 </p>
-<p>"Whoever destroys a single soul, it is as if he destroyed an entire world; and whoever saves a single soul, it is as if he saved an entire world" (Mishnah, Sanhedrin 4:5).<br>
-Mind and soul are humanity's complete world, and protecting them from digital evils is among the greatest forms of saving souls and contributing to building a safer, more dignified world.
+<p>"مَنْ أَهْلَكَ نَفْسًا وَاحِدَةً، فَكَأَنَّمَا أَهْلَكَ عَالَمًا كَامِلًا، وَمَنْ أَحْيَا نَفْسًا وَاحِدَةً، فَكَأَنَّمَا أَحْيَا عَالَمًا كَامِلًا" (المشناه، سنهدرين 4:5).<br>
+العقل والروح هما عالم الإنسان الكامل وحمايتهما من الشرور الرقمية هي من أعظم صور إحياء النفس والإسهام في بناء عالم أكثر أماناً وكرامة.
 </p>
 </div>
 </div>
 <div id="reference-christianity" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-christianity')">×</span>
-<h2>Removing Harm in the Digital Age: A Christian Vision for Protecting the Human Journey</h2>
+<h2>إزالة الأذى في العصر الرقمي: رؤية مسيحية لحماية المسيرة الإنسانية</h2>
 <p>
-Christianity is founded on love of God and love of neighbor, calling to remove everything obstructing the path of good and peace.
-In the age of digital media, where the virtual world has become a path walked daily by millions, the need arises for deeper understanding of our calling as Christ's disciples in this new realm.
+تقوم المسيحية على محبة الله ومحبة القريب، وتدعو إلى إزالة كل ما يعترض طريق الخير والسلام.
+في عصر الوسائط الرقمية، حيث أصبح العالم الافتراضي طريقاً يسلكه الملايين يومياً تبرز الحاجة إلى فهم أعمق لدعوتنا كتلاميذ للمسيح في هذا المجال الجديد.
 </p>
-<p><strong>First: Serving the Neighbor in Digital Space</strong><br>
-The Lord Christ did not limit the commandment of loving one's neighbor (Mark 12:31) to geographical or medium boundaries but included every human we encounter.
-Saint Paul says: "Carry each other's burdens, and in this way you will fulfill the law of Christ" (Galatians 6:2).
-Removing digital harm—whether by word, image, or information—is a modern form of carrying others' burdens, especially in a world suffering from isolation and anxiety.
+<p><strong>أولاً: خدمة القريب في الفضاء الرقمي</strong><br>
+لم يحدد السيد المسيح وصية محبة القريب (مرقس ١٢:٣١) بحدود الجغرافيا أو الوسيط بل شملت كل إنسان نلتقيه.
+يقول القديس بولس: "احملوا بعضكم أثقالاً وهكذا تمموا ناموس المسيح" (غلاطية ٦:٢).
+إزالة الأذى الرقمي - سواء بالكلمة أو الصورة أو المعلومة - هي شكل حديث من أشكال حمل أثقال القريب، خاصة في عالم يعاني من العزلة والقلق.
 </p>
-<p><strong>Second: New Harm to Christ's Brothers and Sisters</strong><br>
-Scripture warns of the power of speech: "The tongue has the power of life and death" (Proverbs 18:21).
-In our era, this tongue has extended to social platforms. Digital harm includes:
+<p><strong>ثانيًا: الأذى الجديد لأخوة المسيح</strong><br>
+يحذر الكتاب المقدس من قوة الكلام: "الموت والحياة في يد اللسان" (أمثال ١٨:٢١).
+في عصرنا امتد هذا اللسان إلى منصات التواصل الأذى الرقمي يشمل:
 <ul>
-<li>Vulgar speech and insult (Ephesians 4:29)</li>
-<li>Rumors and slander (2 Corinthians 12:20)</li>
-<li>Inciting discord and division (Galatians 5:19-21)</li>
-<li>Temptation and sin (Matthew 18:6)</li>
+<li>الكلام البذيء والإساءة (أفسس ٤:٢٩)</li>
+<li>الشائعات والافتراء (٢ كورنثوس ١٢:٢٠)</li>
+<li>إثارة الفتنة والانقسام (غلاطية ٥:١٩-٢١)</li>
+<li>الإغراء والخطية (متى ١٨:٦)</li>
 </ul>
-All this violates the commandment "Love your neighbor as yourself" and constitutes sin against Christ's one body.
+كل هذا ينتهك وصية "أحبب قريبك كنفسك" ويكون خطية ضد جسد المسيح الواحد.
 </p>
-<p><strong>Third: Life as a Journey Toward the Kingdom</strong><br>
-Christians view life as a pilgrimage journey toward God's kingdom. The digital space has become part of this journey.
-The question directing the believer's conscience: Do I use these means to serve my brothers on the journey, or do I place stumbling blocks in their path? (Romans 14:13). The call is to be "salt and light" even in the digital world (Matthew 5:13-16).
+<p><strong>ثالثاً: الحياة رحلة نحو الملكوت</strong><br>
+يرى المسيحيون الحياة كرحلة حج نحو ملكوت الله الفضاء الرقمي أصبح جزءاً من هذه الرحلة.
+السؤال الذي يوجه ضمير المؤمن: هل أستخدم هذه الوسائل لخدمة إخوتي في الرحلة، أم أضع عثرات في طريقهم؟ (رومية ١٤:١٣). الدعوة هي أن نكون "ملحاً ونوراً" حتى في العالم الرقمي (متى ٥:١٣-١٦).
 </p>
-<p><strong>Fourth: Renewing the Mind Before the Digital Challenge</strong><br>
-Saint Paul emphasizes: "Do not conform to the pattern of this world, but be transformed by the renewing of your mind" (Romans 12:2).
-The greatest danger in the digital age is having our minds shaped according to worldly values rather than God's word.
-Content that doubts human dignity, preaches violence, or exploits the vulnerable is spiritual harm threatening souls' salvation.
+<p><strong>رابعاً: تجديد الذهن أمام التحدي الرقمي</strong><br>
+يؤكد القديس بولس: "لا تشاكلوا هذا الدهر، بل تغيروا عن شكلكم بتجديد أذهانكم" (رومية ١٢:٢).
+الخطر الأكبر في العصر الرقمي هو تشكيل أذهاننا وفقاً لقيم العالم لا لكلمة الله.
+المحتوى الذي يشكك في الكرامة الإنسانية أو يبشر بالعنف أو يستغل الضعفاء هو أذى روحي يهدد خلاص النفوس.
 </p>
-<p><strong>Fifth: Special Responsibility Toward the Vulnerable</strong><br>
-Christians bear special responsibility toward "these little ones" (Matthew 18:6).
-Digital platforms expose the vulnerable—whether by age or faith—to severe dangers:
+<p><strong>خامساً: المسؤولية تجاه الضعفاء</strong><br>
+يحمل المسيحيون مسؤولية خاصة تجاه "هؤلاء الصغار" (متى ١٨:٦).
+المنصات الرقمية تعرض الصغار - سواء في السن أو في الإيمان - لمخاطر جسيمة:
 <ul>
-<li>Bullying and exploitation</li>
-<li>Misleading and heresies</li>
-<li>Addiction and isolation</li>
+<li>التنمر والاستغلال</li>
+<li>التضليل والهرطقات</li>
+<li>الإدمان والعزلة</li>
 </ul>
-Whoever contributes to these harms is like one who causes one of these little ones to stumble (Matthew 18:6).
+من يساهم في هذه الأضعة يكون كمن أعثر أحد هؤلاء الصغار (متى ١٨:٦).
 </p>
-<p><strong>Sixth: Responsible Freedom in the Age of Algorithms</strong><br>
-Christianity calls to freedom, but "do not use your freedom to indulge the flesh" (Galatians 5:13).
-Algorithms feeding desires and anger contradict our call to virtue and self-control. The believer must:
+<p><strong>سادساً: الحرية المسؤولة في عالم الخوارزميات</strong><br>
+تدعو المسيحية إلى الحرية، ولكن "لا تتخذوا الحرية ذريعة للجسد" (غلاطية ٥:١٣).
+الخوارزميات التي تغذي الشهوات والغضب تناقض دعوتنا للفضيلة وضبط النفس. على المؤمن أن:
 <ul>
-<li>"Test everything. Hold on to the good" (1 Thessalonians 5:21)</li>
-<li>"Sow to the Spirit, not to the flesh" (Galatians 6:8)</li>
-<li>Be master of technology, not its slave</li>
+<li>يفحص كل شيء، ويتمسك بالحسن (١ تسالونيكي ٥:٢١)</li>
+<li>يزرع للروح لا للجسد (غلاطية ٦:٨)</li>
+<li>يكون سيد التكنولوجيا لا عبداً لها</li>
 </ul>
 </p>
-<p><strong>Conclusion and Recommendations from a Christian Perspective:</strong><br>
+<p><strong>خاتمة وتوصيات من منظور مسيحي:</strong><br>
 <ol>
-<li>Applying commandments of love digitally: Developing pastoral digital theology translating commandments of love and justice into practical behavior in virtual space.</li>
-<li>Christian digital communities: Building communities and digital sites offering constructive content, encouraging reconciliation, and offering hope in a world lacking it.</li>
-<li>Christian digital education: Including education on Christian technology usage in religious education and family education programs, focusing on protecting the young.</li>
-<li>Digital witness: Encouraging believers to be witnesses for Christ in the digital world through love, respect, and constructive dialogue—not through argument and division.</li>
-<li>Prayer and vigilance: Reminding believers of the necessity of prayer for wisdom in technology usage and spiritual vigilance against digital world temptations.</li>
+<li>تطبيق وصايا المحبة رقمياً: تطوير لاهوت رعوي رقمي يترجم وصايا المحبة والعدل إلى سلوك عملي في الفضاء الافتراضي.</li>
+<li>مجتمعات رقمية مسيحية: بناء مجتمعات ومواقع رقمية تقدم محتوى بنّاءً، تشجع على المصالحة، وتقدم الرجاء في عالم يفتقدهما.</li>
+<li>تربية رقمية مسيحية: إدراج التربية على الاستخدام المسيحي للتقنية في برامج التربية الدينية والتربية الأسَرية، مع التركيز على حماية الصغار.</li>
+<li>الشهادة الرقمية: تشجيع المؤمنين على أن يكونوا شهوداً للمسيح في العالم الرقمي من خلال المحبة والاحترام والحوار البناء، وليس من خلال الجدال والانقسام.</li>
+<li>الصلاة واليقظة: تذكير المؤمنين بضرورة الصلاة من أجل الحكمة في استخدام التقنية، واليقظة الروحية ضد إغراءات العالم الرقمي.</li>
 </ol>
 </p>
-<p>"So in everything, do to others what you would have them do to you" (Matthew 7:12)<br>
-This Golden Rule is the key to ethical Christian dealing in the digital age.
-When we interact with others through screens, we must remember we deal with souls created in God's image, and we are called to be guardians of our brothers—striving to build the kingdom of love even in our smallest digital interactions.
+<p>"كل ما تريدون أن يفعل الناس بكم افعلوا هكذا أنتم بهم" (متى ٧:١٢)<br>
+هذه القاعدة الذهبية هي المفتاح لتعامل مسيحي أخلاقي في العصر الرقمي.
+عندما نتعامل مع الآخرين عبر الشاشات علينا أن نتذكر أننا نتعامل مع أنفس مخلوقة على صورة الله ودُعينا لنكون حراساً لإخوتنا ساعين لبناء ملكوت المحبة حتى في أصغر تفاعلاتنا الرقمية.
 </p>
 </div>
 </div>
 <div id="reference-islam" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-islam')">×</span>
-<h2>Removing Harm in the Digital Age: An Islamic Vision for Protecting the Human Journey</h2>
+<h2>إماطة الأذى في العصر الرقمي: رؤية إسلامية لحماية المسيرة الإنسانية</h2>
 <p>
-Islam is a religion of mercy and construction, commanding removal of harm from the path—not merely as an individual act but as a comprehensive civilizational methodology. In the age of social media, the path has transformed from a physical route to a digital space walked daily by humans, where they may encounter what destroys their thought, heart, and relationships. Hence arises the need for deeper understanding of harm and path concepts in light of Sharia objectives.
+الإسلام دين الرحمة والبناء يأمر بإماطة الأذى عن الطريق، لا فقط كفعل فردي، بل كمنهج حضاري شامل. وفي عصر السوشيال ميديا، تحوّل الطريق من مسار مادي إلى فضاء رقمي يمشيه الإنسان يوميًّا، ويُعرض فيه على ما قد يُهلك فكره، قلبه، وعلاقاته. من هنا تبرز الحاجة إلى فهم أعمق لمفهوم الأذى والطريق في ضوء مقاصد الشريعة.
 </p>
-<p><strong>First: Removing Harm Is Not Exclusive to Muslims</strong><br>
-The Prophet ﷺ did not restrict removing harm to Muslims alone but made it among the branches of general faith. He said: "Faith has over seventy branches... and the lowest of them is removing harm from the path" (Sahih Muslim). This includes everyone walking the path—Muslim or non-Muslim—because Sharia's objective is preserving all from harm without discrimination.
+<p><strong>أولًا: إماطة الأذى ليست حكرًا على المسلمين</strong><br>
+لم يُقيّد النبي ﷺ إماطة الأذى بالمسلمين فقط، بل جعلها من شُعَب الإيمان العامّة. قال ﷺ: «الإيمانُ بضعٌ وسبعون شُعبة... وأدناها إماطةُ الأذى عن الطريق» (رواه مسلم). وهذا يشمل كل من يسلك الطريق مسلمًا كان أو غيره، لأن مقصد الشريعة حفظ الكلّ من الضرر دون تمييز بينهم.
 </p>
-<p><strong>Second: Harm Is Not Merely Physical—Moral Harm Is More Dangerous</strong><br>
-The harm to be removed is not limited to stones or thorns but includes:
+<p><strong>ثانيًا: الأذى ليس ماديًّا فحسب، بل معنويٌّ أخطر</strong><br>
+الأذى المراد إزالته لا يقتصر على الحجارة أو الشوك، بل يشمل:
 <ul>
-<li>Hurtful words</li>
-<li>Forbidden glances</li>
-<li>Misleading invitations</li>
-<li>Behavior confusing or distressing people</li>
+<li>الكلمة الجارحة</li>
+<li>النظرات المحرّمة</li>
+<li>الدعوات المضلّلة</li>
+<li>السلوك الذي يُربك الناس أو يُقلقهم</li>
 </ul>
-Ibn al-Qayyim said: "The greatest harm is what corrupts hearts and minds."
-The meaning is that anything disrupting a human's journey is harm that must be removed.
+قال ابن القيم: «أعظم الأذى ما أفسد القلوب والعقول».
+المقصود أن كل ما يُشوّش على الإنسان في مسيرته هو أذىٌ يجب إماطته.
 </p>
-<p><strong>Third: Life Is a Path from Cradle to Grave</strong><br>
-Earthly life is a temporary journey. The Prophet ﷺ said: "Be in this world as if you were a stranger or a traveler" (Sahih al-Bukhari).
-Every moment is a test: Do we facilitate the path for people or place stumbling blocks?
-Thus, the path in the prophetic tradition is not a geographical place but an existential journey.
+<p><strong>ثالثًا: الحياة طريقٌ من المهد إلى اللحد</strong><br>
+الحياة الدنيا مسيرة مؤقتة، قال ﷺ: «كُن في الدنيا كأنك غريبٌ أو عابرُ سبيلٍ» (رواه البخاري).
+كل لحظة فيها اختبار: هل نُسهّل الطريق للناس؟ أم نضع فيه ما يُعثّرهم؟
+من هنا فإن الطريق في الحديث النبوي ليس مكانًا جغرافيًّا، بل رحلة وجودية.
 </p>
-<p><strong>Fourth: Destroying Thought Is Among the Most Dangerous Harms</strong><br>
-What weakens human intellect or drives them to wrong decisions—such as doubting values, spreading despair, or inciting anger—is spiritual and intellectual harm.
-The intellect is the locus of responsibility. Allah says: "Indeed, the hearing, the sight and the heart—about all those [one] will be questioned" (Quran 17:36).
-Whoever spreads what corrupts thoughts is like one spreading poison in food.
+<p><strong>رابعًا: تدمير الفكر أذىٌ من أخطر الأذى</strong><br>
+ما يُضعف عقل الإنسان أو يدفعه لقرار خاطئ كالتشكيك في القيم أو نشر اليأس أو التحريض على الغضب هو أذىٌ روحي وفكري.
+العقل محلّ التكليف، قال تعالى: «إِنَّ السَّمْعَ وَالْبَصَرَ وَالْفُؤَادَ كُلُّ أُولَٰئِكَ كَانَ عَنْهُ مَسْئُولًا» (سورة الإسراء: 36).
+من ينشر ما يُفسد الأفكار كمن ينشر السمّ في الطعام.
 </p>
-<p><strong>Fifth: Social Media—A New Path for Modern Harm</strong><br>
-Social platforms have become a virtual path walked daily by millions.
-Their misuse has led to:
+<p><strong>خامسًا: السوشيال ميديا طريقٌ جديدٌ للأذى الحديث</strong><br>
+منصات التواصل أصبحت طريقًا افتراضيًّا يمشيه الملايين يوميًّا.
+واستخدامها الخاطئ أدّى إلى:
 <ul>
-<li>Severing family ties</li>
-<li>Inciting revenge</li>
-<li>Driving some to suicide</li>
+<li>قطع الأرحام</li>
+<li>تحريض على الانتقام</li>
+<li>دفع البعض إلى الانتحار</li>
 </ul>
-This is compound harm combining psychological, social, and spiritual injury.
-Whoever walks this path filled with poison has betrayed the trust and violated the Prophet's saying: "No harm shall be inflicted or reciprocated."
+وهذا أذىٌ مركّب يجمع بين الإيذاء النفسي، الاجتماعي، والروحي.
+ومن سلك هذا الطريق المليء بالسموم، فقد خان الأمانة وخالف قوله ﷺ: «لا ضرر ولا ضرار».
 </p>
-<p><strong>Sixth: Programs Are Not Neutral—Profit, Not Guidance, Drives Them</strong><br>
-Most social media algorithms do not distinguish between truth and falsehood but between what generates profit and what doesn't.
-They feed you what your psyche prefers even if it destroys you spiritually.
-Therefore, the Muslim must:
+<p><strong>سادسًا: البرامج ليست محايدة، بل تُدار بالربح لا بالهداية</strong><br>
+الغالب من خوارزميات السوشيال ميديا لا تميّز بين الحق والباطل، بل بين ما يُدرّ ربحًا وما لا يُدرّ.
+هي تُغذّيك بما تفضّله نفسيًّا حتى لو كان يُدمّرك روحيًّا.
+لذا، على المسلم أن:
 <ul>
-<li>Monitor sources</li>
-<li>Choose content consciously</li>
-<li>Train themselves in discernment, not drifting</li>
+<li>يُراقب مصادره</li>
+<li>يختار محتواه بوعي</li>
+<li>يُدرّب نفسه على التمييز لا على الانجراف</li>
 </ul>
 </p>
-<p><strong>Conclusion and Recommendations</strong><br>
+<p><strong>خاتمة وتوصيات</strong><br>
 <ol>
-<li>Call for adopting Islamic awareness discourse clarifying digital harm danger as a form of prohibited harm.</li>
-<li>Support non-profit awareness programs enhancing values, not desires.</li>
-<li>Train families and educators to understand platform mechanisms and how to protect children.</li>
-<li>Emphasize that intention alone is insufficient—content must also be beneficial.</li>
-<li>Consider protecting minds among priorities of da'wah and social work, like protecting bodies from epidemics.</li>
+<li>الدعوة إلى تبني خطاب توعوي إسلامي يُبيّن خطر الأذى الرقمي كأحد أشكال الإيذاء المحرّم.</li>
+<li>دعم برامج توعوية غير ربحية تُعزّز القيم، لا الرغبات.</li>
+<li>تأهيل الأسر والمربين لفهم آليات المنصات وكيفية حماية الأبناء منها.</li>
+<li>التأكيد على أن النية ليست كافية، بل يجب أن يكون المحتوى أيضًا نافعًا.</li>
+<li>اعتبار حماية العقول من أولويات العمل الدعوي والاجتماعي، كحماية الأجساد من الأوبئة.</li>
 </ol>
 </p>
-<p>"And whoever saves one [life]—it is as if he had saved mankind entirely" (Quran 5:32)<br>
-The intellect is life's secret, and protecting it is among the greatest forms of giving life.
+<p>«وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا» (سورة المائدة: 32)<br>
+العقل سِرّ الحياة، وحمايته من أعظم أبواب الإحياء.
 </p>
+</div>
+</div>
+<div id="reference-taoism" class="reference-modal">
+<div class="modal-content">
+<span class="close-reference" onclick="closeReferenceModal('reference-taoism')">×</span>
+<h2>الطاوية</h2>
+</div>
+</div>
+<div id="reference-confucianism" class="reference-modal">
+<div class="modal-content">
+<span class="close-reference" onclick="closeReferenceModal('reference-confucianism')">×</span>
+<h2>الكونفوشيوسية</h2>
 </div>
 </div>
 <div id="reference-hinduism" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-hinduism')">×</span>
-<h2>Removing Harm in the Digital Age: A Hindu Vision for Protecting the Human Journey</h2>
+<h2>إزالة الأذى في العصر الرقمي: رؤية الهندوسية لحماية المسيرة الإنسانية</h2>
 <p>
-Hinduism establishes ethical life on concepts of:
-Dharma (duty/virtue/cosmic law)
-Ahimsa (non-violence)
-Karma (law of causality)
-In the age of digital media, where virtual space has become a daily path for millions, applying these principles becomes necessary to protect the human journey from new harm.
+تُؤسس الهندوسية للحياة الأخلاقية على مفاهيم :
+الدارما (الواجب/ الفضيلة/ القانون الكوني)
+اللاحَرْم (عدم الإيذاء)
+الكارما (قانون السببية)
+في عصر الوسائط الرقمية حيث يُصبح الفضاء الافتراضي طريقًا يوميًا للملايين، تبرز الحاجة لتطبيق هذه المبادئ لحماية الرحلة الإنسانية من الأذى الجديد.
 </p>
-<p><strong>First: Removing Harm (Ahimsa) Is a Universal, Comprehensive Duty</strong><br>
-The principle of Ahimsa (अहिंसा) is a high ethical foundation not limited to Hindus alone but a universal human duty transcending all boundaries.
-In texts like Mahabharata it is said: Ahimsa is the highest Dharma.
-Teachings of Vasudhaiva Kutumbakam (viewing the world as one family) call for caring for all beings.
-Removing harm from the path—whether physical or moral—is part of serving the world (Loka Sangraha) and a duty for every human.
+<p><strong>أولًا: إزالة الأذى (اللاحَرْم) واجب كوني وشامل</strong><br>
+مبدأ اللاحَرْم (अहिंसा) هو أساس أخلاقي عالٍ لا يقتصر على أتباع الهندوسية بل هو واجب إنساني كوني يتجاوز كل الحدود.
+في نصوص مثل ماهابهاراتا يُقال: اللاحَرْم هي أعلى دارما.
+كما أن تعاليم الفاسوديفا كوتومباكام (رؤية العالم كأسرة واحدة) تدعو إلى رعاية كل الكائنات.
+إزالة الأذى عن الطريق ماديًا كان أم معنويًا هو جزء من خدمة العالم (लोक संग्रह) وواجب كل إنسان.
 </p>
-<p><strong>Second: Harm Manifests in Three Levels: Physical, Mental, Spiritual</strong><br>
-Dharma teaches that harm (Himsa) is not limited to physical injury but includes more dangerous harm:
+<p><strong>ثانيًا: الأذى يتجلى في مستويات ثلاثية: الجسدي، الذهني، الروحي</strong><br>
+الدارما تُعلمنا أن الأذى (هيما) لا يقتصر على الضرر المادي بل يشمل الأذى الأكثر خطورة:
 <ul>
-<li>Mental/verbal harm: Hurtful words, defamation, fake news, speech inciting anger or fear.</li>
-<li>Emotional harm: Embarrassment, social isolation through bullying or emotional exploitation.</li>
-<li>Spiritual/philosophical harm: Spreading ideas encouraging ignorance (Avidya) or hatred or selfishness that obscure truth and distance humans from their spiritual path.</li>
+<li>الأذى الكلامي والذهني: الكلمات الجارحة، التشهير، الأخبار الكاذبة ونشر الخطاب الذي يثير الغضب أو الخوف.</li>
+<li>الأذى العاطفي: الإحراج، العزلة الاجتماعية عبر التنمر أو استغلال المشاعر.</li>
+<li>الأذى الروحي أو الفلسفي: نشر الأفكار التي تشجع على الجهل (أفيديا) أو الكراهية أو الأنانية والتي تحجب الحقيقة الأعلى وتُبعد الإنسان عن طريقه الروحي.</li>
 </ul>
 </p>
-<p><strong>Third: Life Is a Journey (Yatra) Toward Liberation</strong><br>
-In Hindu philosophy, life is a journey (Yatra) for the soul through multiple cycles (Samsara) aiming ultimately for liberation (Moksha).
-Every action, word, and interaction is a step on this path.
-The essential question: Do our digital path actions facilitate others' journey and remove obstacles (purifying Karma), or create new suffering and increase attachments (accumulating negative Karma)?
+<p><strong>ثالثًا: الحياة رحلة (ياترا) نحو التحرر</strong><br>
+الحياة في الفلسفة الهندوسية هي رحلة ياترا للروح عبر دورات متعددة سامسارا تهدف في النهاية إلى التحرر موكشا.
+كل فعل وكل كلمة وكل تفاعل هو خطوة على هذا الطريق.
+السؤال الجوهري: هل أفعالنا على هذا الطريق الرقمي تُسهل رحلة الآخرين وتُزيل العوائق تنقية الكارما أم تخلق معاناة جديدة وتزيد من الارتباطات تراكم الكارما السلبية؟
 </p>
-<p><strong>Fourth: Mental Pollution Is the Most Dangerous Pollution</strong><br>
-Texts mention three types of pollution (Doshas) within humans: Tamas (ignorance/laziness) and Rajas (desire/anger). Harmful digital content can massively feed these Doshas and pollute the mind (Manas) more than any physical filth.
-A calm, pure mind (Sattvic) is necessary for discernment (Viveka) and knowledge (Jnana).
-Anything distorting the mind and distancing it from its Sattvic nature is great harm that must be removed.
+<p><strong>رابعًا: تلوث العقل أخطر أنواع التلوث</strong><br>
+تنص النصوص على وجود ثلاثة أنواع من التلوث (دوشاس) داخل الإنسان: تاماس (الجهل والكسل) وراجاس (الشهوة والغضب). المحتوى الرقمي الضار يُمكن أن يُغذي هذه الدوشاس بشكل هائل ويُلوث العقل (ماناس) أكثر من أي قذارة مادية.
+العقل الهادئ والنقي (ساتفيك) هو أداة ضرورية للتمييز (فيفيكا) وللمعرفة (جنانا).
+أي شيء يشوه العقل ويبعده عن طبيعته الساتفيكية هو أذى عظيم يجب إزالته.
 </p>
-<p><strong>Fifth: Digital Platforms: A New Arena for Karma and Dharma</strong><br>
-Social media has become a living arena where Karma is created at tremendous speed. Its misuse leads to:
+<p><strong>خامسًا: المنصات الرقمية: ساحة جديدة للكارما والدارما</strong><br>
+أصبحت وسائل التواصل الاجتماعي ساحة حية حيث تُخلق الكارما بسرعة هائلة. استخدامها الخاطئ يؤدي إلى:
 <ul>
-<li>Disrupting community cohesion (necessary for Sadhana, social order).</li>
-<li>Inciting lower desires (Kama, Krodha) over supreme virtues.</li>
-<li>Creating collective illusions (Maya) and distorting true perception.</li>
+<li>تفكيك تماسك المجتمع (الضروري للسادة انا، النظام الاجتماعي).</li>
+<li>تحريض الغرائد الدنيا (كاما، كرودها) على حساب الفضائل العليا.</li>
+<li>خلق أوهام (مايا) جماعية وتشويه للإدراك الحقيقي.</li>
 </ul>
-This generates negative collective Karma (Samashti Karma) affecting society's peace and spiritual progress.
+هذا يُولد كارما سلبية جماعية (ساماشتي كارما) تؤثر على سلام المجتمع وتقدمه الروحي.
 </p>
-<p><strong>Sixth: Algorithms Feed Ego (Ahamkara) and Reinforce Ignorance (Avidya)</strong><br>
-Most algorithms feed Ahamkara (ego) and sense of separation by surrounding users with content confirming their biases and satisfying narrow selfish desires, reinforcing Avidya (fundamental ignorance of unity of existence).
-This contradicts core teachings calling to transcend ego and seek unified truth (Advaita).
+<p><strong>سادسًا: الخوارزميات تُغذي الأنا (أهانكارا) وتُعزز الجهل (أفيديا)</strong><br>
+تغذي معظم الخوارزميات الأهانكارا الغرور والشعور بالانفصال من خلال إحاطة المستخدم بما يؤكد تحيزاته ويُرضي رغباته الذاتية الضيقة، مما يُعزز الأفيديا الجهل الأساسي بوحدة الوجود.
+هذا ضد جوهر التعاليم التي تدعو إلى تجاوز الأنا والبحث عن الحقيقة الموحدة (أدفايتا).
 </p>
-<p><strong>Conclusion and Recommendations in Light of Hindu Wisdom:</strong><br>
+<p><strong>خاتمة وتوصيات في ضوء الحكمة الهندوسية:</strong><br>
 <ol>
-<li>Awareness of Digital Dharma: Calling to adopt concept of Digital Dharma—a set of ethical principles governing our virtual world interaction based on Ahimsa, truthfulness (Satya), and purity.</li>
-<li>Purifying the Source and Awareness: Encouraging practices like meditation (Dhyana) and speech monitoring (Mauna) and content selection (Sattvic Ahara for the mind) to purify the mind and limit negative influence.</li>
-<li>Teaching Discernment (Viveka): Educating youth and families on Viveka skill—discerning between real and false, beneficial and harmful, eternal and transient when facing information floods.</li>
-<li>Sattvic Creativity: Encouraging creation and sharing of Sattvic content (pure, purposeful, unifying) that inspires and elevates awareness, rather than Rajasic (stimulating) or Tamasic (dark) content.</li>
-<li>Remembering the Higher Goal:
-Placing digital interaction within the framework of the greater spiritual journey.
-Every click, every share is an opportunity to practice Ahimsa, serve others (Seva), and take a step on the path to liberation.</li>
+<li>الوعي بالدارما الرقمية: الدعوة لتبني مفهوم الدارما الرقمية - مجموعة المبادئ الأخلاقية التي تحكم تفاعلنا في العالم الافتراضي قائمة على اللاحرم والصدق (ساتيا) والنقاء.</li>
+<li>تطهير المنبع والوعي: تشجيع ممارسات مثل التأمل (ديانا) ومراقبة الكلام (موناش) وانتقاء المحتوى (ساتفيك أحارا للعقل) لتنقية العقل والحد من تأثر السلبي.</li>
+<li>تعليم التمييز (فيفيكا): تثقيف الشباب والأسر على مهارة فيفيكا - التمييز بين الحقيقي والزائف، النافع والضار، الأبدي والعابر في مواجهة فيض المعلومات.</li>
+<li>الإبداع الساتفيك: تشجيع إنشاء ومشاركة محتوى ساتفيك (نقي، هادف، موحد) يُلهم ويرفع الوعي، بدلاً من المحتوى الراجاسي (مثير) أو التاماسي (مظلم).</li>
+<li>تذكر الهدف الأعلى:
+وضع التفاعل الرقمي في إطار الرحلة الروحية الأكبر.
+كل نقرة كل مشاركة هي فرصة لممارسة اللاحرم وخدمة الآخرين (سيوا) والسير خطوة على طريق التحرر.</li>
 </ol>
 </p>
-<p>"May peace prevail for all beings in all worlds." (Shanti Mantra)<br>
-The digital space has become one of the worlds we inhabit.
-Applying the principle of Ahimsa within it is not a luxury but a spiritual and ethical necessity for repairing our shared world (Loka Sangraha) and creating a safe path for all on their journey toward light and wisdom.
+<p>"أتمنى السلام لجميع الكائنات في كل العوالم." (شانتي مانترا)<br>
+الفضاء الرقمي أصبح أحد العوالم التي نسكنها.
+تطبيق مبدأ اللاحرم فيه ليس رفاهية بل ضرورة روحية وأخلاقية لإصلاح عالمنا المشترك (لوكا سانغراها) وخلق مسار آمن للجميع في رحلتهم نحو النور والحكمة.
 </p>
+</div>
+</div>
+<div id="reference-african" class="reference-modal">
+<div class="modal-content">
+<span class="close-reference" onclick="closeReferenceModal('reference-african')">×</span>
+<h2>الفلسفة الأفريقية</h2>
 </div>
 </div>
 <div id="reference-secular" class="reference-modal">
 <div class="modal-content">
 <span class="close-reference" onclick="closeReferenceModal('reference-secular')">×</span>
-<h2>Removing Harm in the Digital Age: A Humanistic Ethical Vision for Protecting the Human Journey</h2>
+<h2>إزالة الأذى في العصر الرقمي: رؤية أخلاقية إنسانية لحماية المسيرة الإنسانية</h2>
 <p>
-The humanistic ethical vision springs from two fundamental principles: inherent human dignity and rational responsibility toward all humanity.
-In the digital age, where virtual space has become a new existential environment, there arises an urgent need to apply rational ethical thinking to protect humanity from harm potentially unprecedented in its history.
+تنطلق الرؤية الأخلاقية الإنسانية من مبدأين أساسيين: كرامة الإنسان المتأصلة والمسؤولية العقلانية تجاه البشرية جمعاء. 
+في العصر الرقمي حيث تحول الفضاء الافتراضي إلى بيئة وجودية جديدة تظهر حاجة ملحة لتطبيق التفكير الأخلاقي العقلاني لحماية الإنسانية من أذى قد يكون غير مسبوق في تاريخها.
 </p>
-<p><strong>First: Rational Ethics as Foundation</strong><br>
-"We must treat humanity, whether in our own person or in the person of any other, always at the same time as an end and never merely as a means"
-Immanuel Kant (Humanity Formula of the Categorical Imperative)
+<p><strong>الأول: العقلانية الأخلاقية كمنطلق</strong><br>
+"يجب أن نتعامل مع الإنسانية سواء في شخصنا أو في شخص الآخرين دائماً كغاية في حد ذاتها وليس مجرد وسيلة"
+ إيمانويل كانط (الصيغة الإنسانية للأمر القاطع)
 </p>
 <p>
-The digital space is tested through two essential humanistic criteria:
+الفضاء الرقمي يُختبر من خلال معيارين إنسانيين أساسيين:
 </p>
 <ol>
-<li>Equal respect for every human's dignity regardless of digital or physical existence</li>
-<li>Commitment to truth and rationality as foundations of human communication</li>
+<li>الاحترام المتساوي لكرامة كل إنسان بغض النظر عن وجوده رقمياً أو مادياً</li>
+<li>الالتزام بالحقيقة والعقلانية كأساس للتواصل البشري</li>
 </ol>
-<p><strong>Second: Types of Digital Harm from a Humanistic Perspective</strong></p>
+<p><strong>الثاني: أنواع الأذى الرقمي من منظور إنساني</strong></p>
 <table border="1" cellpadding="10" style="width:100%; border-collapse: collapse; margin: 20px 0;">
 <tr style="background-color: #f0f0f0;">
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">Type of Harm</th>
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">Digital Causes</th>
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">Violation of Humanistic Principles</th>
+<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">نوع الأذى</th>
+<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">أسبابه الرقمية</th>
+<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">انتهاكه للمبادئ الإنسانية</th>
 </tr>
 <tr>
-<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>Cognitive Harm</strong></td>
-<td style="border: 1px solid #ddd; padding: 10px;">Misinformation, fake news</td>
-<td style="border: 1px solid #ddd; padding: 10px;">Destroys foundation of rational society: reliable knowledge</td>
+<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>الأذى المعرفي</strong></td>
+<td style="border: 1px solid #ddd; padding: 10px;">المعلومات المضللة، الأخبار المزيفة</td>
+<td style="border: 1px solid #ddd; padding: 10px;">يهدم أساس المجتمع العقلاني: المعرفة الموثوقة</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>Psychological Harm</strong></td>
-<td style="border: 1px solid #ddd; padding: 10px;">Cyberbullying, hate speech, intimidation</td>
-<td style="border: 1px solid #ddd; padding: 10px;">Violates human dignity and mental health</td>
+<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>الأذى النفسي</strong></td>
+<td style="border: 1px solid #ddd; padding: 10px;">التنمر، خطاب الكراهية، الترهيب</td>
+<td style="border: 1px solid #ddd; padding: 10px;">ينتهك الكرامة الإنسانية والصحة النفسية</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>Social Harm</strong></td>
-<td style="border: 1px solid #ddd; padding: 10px;">Digital discrimination, filter bubbles</td>
-<td style="border: 1px solid #ddd; padding: 10px;">Weakens human solidarity and social justice</td>
+<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>الأذى الاجتماعي</strong></td>
+<td style="border: 1px solid #ddd; padding: 10px;">التمييز الرقمي، الفقاعات المعرفية</td>
+<td style="border: 1px solid #ddd; padding: 10px;">يُضعف التضامن الإنساني والعدالة الاجتماعية</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>Existential Harm</strong></td>
-<td style="border: 1px solid #ddd; padding: 10px;">Digital addiction, constant distraction</td>
-<td style="border: 1px solid #ddd; padding: 10px;">Obstructs realization of full human potential</td>
+<td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>الأذى الوجودي</strong></td>
+<td style="border: 1px solid #ddd; padding: 10px;">الإدمان الرقمي، تشتيت الانتباه المستمر</td>
+<td style="border: 1px solid #ddd; padding: 10px;">يعيق تحقيق الإمكانات البشرية الكاملة</td>
 </tr>
 </table>
-<p><strong>Third: Seven Humanistic Principles for Digital Behavior</strong></p>
+<p><strong>الثالث: المبادئ الإنسانية السبعة للسلوك الرقمي</strong></p>
 <ol>
-<li><strong>Principle of Human Dignity:</strong>
+<li><strong>مبدأ الكرامة الإنسانية:</strong>
 <ul>
-<li>Treating every user as a human of inherent value</li>
-<li>Rejecting any dehumanization or objectification of others</li>
+<li>معاملة كل مستخدم كإنسان ذي قيمة متأصلة</li>
+<li>رفض أي تجريد للبشرية أو تشييء للآخرين</li>
 </ul>
 </li>
-<li><strong>Principle of Truth and Rationality:</strong>
+<li><strong>مبدأ الحقيقة والعقلانية:</strong>
 <ul>
-<li>Seeking accuracy and verification before sharing</li>
-<li>Public correction of errors</li>
-<li>Providing evidence and rational arguments</li>
+<li>السعي للدقة والتحقق قبل المشاركة</li>
+<li>التصحيح العلني للأخطاء</li>
+<li>تقديم الأدلة والحجج العقلانية</li>
 </ul>
 </li>
-<li><strong>Principle of Digital Justice:</strong>
+<li><strong>مبدأ العدالة الرقمية:</strong>
 <ul>
-<li>Equal opportunity for information access</li>
-<li>Fighting algorithmic discrimination</li>
-<li>Ensuring representation of marginalized voices</li>
+<li>تكافؤ الفرص في الوصول للمعلومات</li>
+<li>محاربة التمييز الخوارزمي</li>
+<li>ضمان تمثيل الأصوات المهمشة</li>
 </ul>
 </li>
-<li><strong>Principle of Responsibility:</strong>
+<li><strong>مبدأ المسؤولية:</strong>
 <ul>
-<li>Bearing consequences of our digital actions</li>
-<li>Considering distant effects of our immediate actions</li>
-<li>Balancing individual freedom with social responsibility</li>
+<li>تحمل تبعات أفعالنا الرقمية</li>
+<li>اعتبار التأثيرات البعيدة لأفعالنا القريبة</li>
+<li>الموازنة بين الحرية الفردية والمسؤولية المجتمعية</li>
 </ul>
 </li>
-<li><strong>Principle of Human Solidarity:</strong>
+<li><strong>مبدأ التضامن الإنساني:</strong>
 <ul>
-<li>Using technology to connect rather than separate humanity</li>
-<li>Empathy with suffering wherever found</li>
-<li>Building alliances across digital boundaries</li>
+<li>استخدام التقنية لربط لا لفصل البشرية</li>
+<li>التعاطف مع المعاناة أينما وجدت</li>
+<li>بناء تحالفات عابرة للحدود الرقمية</li>
 </ul>
 </li>
-<li><strong>Principle of Conscious Autonomy:</strong>
+<li><strong>مبدأ الاستقلالية الواعية:</strong>
 <ul>
-<li>Protecting freedom of thought from manipulation</li>
-<li>Developing self-criticism and critical awareness</li>
-<li>Resisting indoctrination and intellectual imposition</li>
+<li>حماية حرية التفكير من التلاعب</li>
+<li>تنمية النقد الذاتي والوعي النقدي</li>
+<li>مقاومة التلقين والإملاء الفكري</li>
 </ul>
 </li>
-<li><strong>Principle of Existential Sustainability:</strong>
+<li><strong>مبدأ الاستدامة الوجودية:</strong>
 <ul>
-<li>Protecting balance between digital and physical worlds</li>
-<li>Preserving intellectual depth in age of superficiality</li>
-<li>Ensuring continuity of human values across generations</li>
+<li>حماية التوازن بين العالم الرقمي والمادي</li>
+<li>الحفاظ على العمق الفكري في عصر السطحية</li>
+<li>ضمان استمرارية القيم الإنسانية عبر الأجيال</li>
 </ul>
 </li>
 </ol>
-<p><strong>Fourth: The New Digital Social Contract</strong><br>
-"Rights entail responsibilities" — fundamental humanistic concept
+<p><strong>الرابع: العقد الاجتماعي الرقمي الجديد</strong><br>
+"الحقوق تقابلها مسؤوليات" مفهوم إنساني أساسي
 </p>
 <p>
-The digital user in the humanistic vision is not a passive consumer but a digital citizen with rights and duties:
+فالمستخدم الرقمي في الرؤية الإنسانية ليس مستهلكاً سلبيًا بل مواطن رقمي بكل ما تحمله الكلمة من حقوق وواجبات:
 </p>
 <table border="1" cellpadding="10" style="width:100%; border-collapse: collapse; margin: 20px 0;">
 <tr style="background-color: #f0f0f0;">
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">Rights of the Digital Citizen</th>
-<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">Duties of the Digital Citizen</th>
+<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">حقوق المواطن الرقمي</th>
+<th style="border: 1px solid #ddd; padding: 12px; text-align: center;">واجبات المواطن الرقمي</th>
 </tr>
 <tr>
-<td style="border: 1px solid #ddd; padding: 10px;">Privacy and secure data</td>
-<td style="border: 1px solid #ddd; padding: 10px;">Respecting others' privacy</td>
+<td style="border: 1px solid #ddd; padding: 10px;">الخصوصية والبيانات الآمنة</td>
+<td style="border: 1px solid #ddd; padding: 10px;">احترام خصوصية الآخرين</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ddd; padding: 10px;">Access to reliable information</td>
-<td style="border: 1px solid #ddd; padding: 10px;">Verification and responsible sharing</td>
+<td style="border: 1px solid #ddd; padding: 10px;">الوصول للمعلومات الموثوقة</td>
+<td style="border: 1px solid #ddd; padding: 10px;">التحقق والمشاركة المسؤولة</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ddd; padding: 10px;">Freedom of constructive expression</td>
-<td style="border: 1px solid #ddd; padding: 10px;">Avoiding harmful speech</td>
+<td style="border: 1px solid #ddd; padding: 10px;">حرية التعبير البناء</td>
+<td style="border: 1px solid #ddd; padding: 10px;">تجنب الخطاب المؤذي</td>
 </tr>
 <tr>
-<td style="border: 1px solid #ddd; padding: 10px;">Participation in shaping digital environment</td>
-<td style="border: 1px solid #ddd; padding: 10px;">Contributing to its improvement for future generations</td>
+<td style="border: 1px solid #ddd; padding: 10px;">المشاركة في تشكيل البيئة الرقمية</td>
+<td style="border: 1px solid #ddd; padding: 10px;">المساهمة في تحسينها للأجيال القادمة</td>
 </tr>
 </table>
-<p><strong>Fifth: Rational Criticism Against Emotional Algorithms</strong></p>
+<p><strong>الخامس: العقلانية النقدية ضد الخوارزميات الانفعالية</strong></p>
 <p>
-The greatest danger: transforming humans into reactive beings rather than thinking beings.
+الخطر الأكبر: تحويل البشر إلى كائنات رد فعل بدلاً من كائنات تفكر. 
 </p>
-<p><strong>Humanistic Practice:</strong></p>
+<p><strong>الممارسة الإنسانية:</strong></p>
 <ol>
-<li><strong>Cultivating Self-Criticism:</strong>
+<li><strong>تثقيف النقد الذاتي:</strong>
 <ul>
-<li>Why do I feel this way after viewing this content?</li>
-<li>What interests does this information serve?</li>
-<li>How do I know what I'm seeing is true?</li>
+<li>لماذا أشعر بهذا الشعور بعد مشاهدة هذا المحتوى؟</li>
+<li>ما المصالح التي تخدمها هذه المعلومة؟</li>
+<li>كيف أعرف أن ما أراه حقيقي؟</li>
 </ul>
 </li>
-<li><strong>Practicing Judgmental Delay:</strong>
+<li><strong>ممارسة التأجيل الحكمي:</strong>
 <ul>
-<li>Avoiding immediate reactive responses</li>
-<li>Allowing time for reflection and contemplation</li>
-<li>Distinguishing between personal opinion and objective truth</li>
+<li>عدم الرد الانفعالي الفوري</li>
+<li>إعطاء الوقت للتفكير والتأمل</li>
+<li>التمييز بين الرأي الشخصي والحقيقة الموضوعية</li>
 </ul>
 </li>
-<li><strong>Developing Constructive Curiosity:</strong>
+<li><strong>تنمية الفضول البنّاء:</strong>
 <ul>
-<li>Seeking opposing viewpoints</li>
-<li>Exploring primary sources</li>
-<li>Striving to understand complete contexts</li>
+<li>البحث عن وجهات النظر المخالفة</li>
+<li>استكشاف المصادر الأولية</li>
+<li>السعي لفهم السياقات الكاملة</li>
 </ul>
 </li>
 </ol>
-<p><strong>Practical Recommendations from a Humanistic Perspective</strong></p>
+<p><strong>التوصيات العملية من منظور إنساني</strong></p>
 <ol>
-<li><strong>Humanistic Digital Education Programs:</strong>
+<li><strong>برامج التربية الرقمية الإنسانية:</strong>
 <ul>
-<li>Integrating critical thinking into digital education curricula</li>
-<li>Teaching history of ideas and ethics alongside technology</li>
-<li>Training in constructive rational dialogue</li>
+<li>دمج التفكير النقدي في مناهج التعليم الرقمي</li>
+<li>تعليم تاريخ الأفكار والأخلاق مع التقنية</li>
+<li>تدريب على الحوار العقلاني البناء</li>
 </ul>
 </li>
-<li><strong>Civil Oversight Institutions:</strong>
+<li><strong>مؤسسات الرقابة المدنية:</strong>
 <ul>
-<li>Independent bodies monitoring algorithms</li>
-<li>Organizations verifying information with humanistic standards</li>
-<li>Observatories protecting digital rights</li>
+<li>هيئات مستقلة لمراقبة الخوارزميات</li>
+<li>منظمات للتحقق من المعلومات بمعايير إنسانية</li>
+<li>مراصد لحماية الحقوق الرقمية</li>
 </ul>
 </li>
-<li><strong>Practices of the Conscious Individual:</strong>
+<li><strong>ممارسات الفرد الواعي:</strong>
 <ul>
-<li>Triple check before publishing: Is this true? Is this necessary? Is this respectful?</li>
-<li>Digital fasting for deep thinking: device-free days for profound reflection</li>
-<li>Opposite reading: following those who disagree to broaden understanding</li>
+<li>الفحص الثلاثي قبل النشر: هل هذا صحيح؟ هل هذا ضروري؟ هل هذا محترم؟</li>
+<li>الصيام الرقمي التفكري: أيام بدون أجهزة للتفكير العميق</li>
+<li>القراءة المعاكسة: متابعة من يخالفون رأيك لفهم أوسع</li>
 </ul>
 </li>
-<li><strong>Human-Centered System Design:</strong>
+<li><strong>تصميم أنظمة إنسانية:</strong>
 <ul>
-<li>Algorithms promoting constructive content rather than emotional reactions</li>
-<li>Interfaces encouraging contemplation rather than impulsivity</li>
-<li>Systems protecting the vulnerable and combating discrimination</li>
+<li>خوارزميات تعزز المحتوى البنّاء لا الانفعالي</li>
+<li>واجهات تشجع على التأمل لا الاندفاع</li>
+<li>أنظمة تحمي الضعفاء وتكافح التمييز</li>
 </ul>
 </li>
-<li><strong>Transcultural Human Dialogue:</strong>
+<li><strong>حوار إنساني عابر للثقافات:</strong>
 <ul>
-<li>Platforms for dialogue between different intellectual orientations</li>
-<li>Translation projects for global humanistic knowledge</li>
-<li>Alliances for shared humanistic causes</li>
+<li>منصات للحوار بين مختلف التوجهات الفكرية</li>
+<li>مشاريع ترجمة للمعارف الإنسانية العالمية</li>
+<li>تحالفات للقضايا الإنسانية المشتركة</li>
 </ul>
 </li>
 </ol>
-<p><strong>Conclusion: Humanity Confronting Itself Digitally</strong></p>
+<p><strong>الخاتمة: الإنسانية في مواجهة نفسها رقمياً</strong></p>
 <p>
-What cannot be measured is not less real; what cannot be digitized is not less human.
+ما لا يمكن قياسه ليس أقل واقعية وما لا يمكن رقمنته ليس أقل إنسانية.
 </p>
 <p>
-The greatest ethical challenge in the digital age: remaining human in a world sometimes attempting to transcend our humanity.
-Removing digital harm is not merely a technical task but an existential human project to protect our shared essence.
+التحدي الأخلاقي الأعظم في العصر الرقمي: أن نبقى بشراً في عالم يحاول أحياناً تجاوز إنسانيتنا. 
+إزالة الأذى الرقمي ليست مهمة تقنية فحسب بل هي مشروع إنساني وجودي لحماية جوهرنا المشترك.
 </p>
 <p>
-The humanistic vision reminds us: Technology serves humanity when it enhances our dignity, conscious freedom, solidarity, and rationality.
-When used against these values, we must redirect or reject it.
+الرؤية الإنسانية تذكرنا: التقنية تخدم الإنسانية عندما تُستخدم لتعزيز كرامتنا، حريتنا الواعية، تضامننا، وعقلانيتنا. 
+عندما تُستخدم ضد هذه القيم يجب أن نعيد توجيهها أو نرفضها.
 </p>
 <p>
-The ultimate test: any digital action, platform, or algorithm—does it increase our shared humanity or diminish it? The answer to this question is the compass of our ethics in the digital age.
+الاختبار النهائي: أي فعل رقمي أي منصة أي خوارزمية هل تزيد من إنسانيتنا المشتركة أم تنقص منها؟ الجواب على هذا السؤال هو بوصلة أخلاقيتنا في العصر الرقمي.
 </p>
 </div>
 </div>
@@ -1936,510 +1966,65 @@ The ultimate test: any digital action, platform, or algorithm—does it increase
 </div>
 </div>
 <nav class="navbar">
-<div class="nav-container">
-<div class="nav-links">
-<div class="lang-selector">
-<button class="lang-toggle-btn" id="langToggleBtn">
-<img src="https://flagcdn.com/w80/eg.png" alt="English" id="currentLangFlag">
-</button>
+  <div class="nav-container">
+    <div class="nav-links">
+      <div class="lang-selector">
+        <button class="lang-toggle-btn" id="langToggleBtn">
+          <img src="https://flagcdn.com/w80/eg.png" alt="العربية" id="currentLangFlag">
+       </button>
 <div class="lang-dropdown" id="langDropdown">
-<a href="https://anabileg.github.io/---CiviStories/#stats" class="lang-option arabic-flag" data-lang="ar"><img src="https://flagcdn.com/w80/eg.png" alt="العربية"> العربية</a>
-<a href="en.html" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w80/gb.png" alt="English"> English</a>
-<a href="fr.html" class="lang-option" data-lang="fr"><img src="https://flagcdn.com/w80/fr.png" alt="Français"> Français</a>
-<a href="es.html" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w80/es.png" alt="Español"> Español</a>
-<a href="de.html" class="lang-option" data-lang="de"><img src="https://flagcdn.com/w80/de.png" alt="Deutsch"> Deutsch</a>
-<a href="it.html" class="lang-option" data-lang="it"><img src="https://flagcdn.com/w80/it.png" alt="Italiano"> Italiano</a>
-<a href="pt.html" class="lang-option" data-lang="pt"><img src="https://flagcdn.com/w80/pt.png" alt="Português"> Português</a>
-<a href="tr.html" class="lang-option" data-lang="tr"><img src="https://flagcdn.com/w80/tr.png" alt="Türkçe"> Türkçe</a>
-<a href="el.html" class="lang-option" data-lang="el"><img src="https://flagcdn.com/w80/gr.png" alt="Ελληνικά"> Ελληνικά</a>
-<a href="nl.html" class="lang-option" data-lang="nl"><img src="https://flagcdn.com/w80/nl.png" alt="Nederlands"> Nederlands</a>
-<a href="ro.html" class="lang-option" data-lang="ro"><img src="https://flagcdn.com/w80/ro.png" alt="Română"> Română</a>
-<a href="sv.html" class="lang-option" data-lang="sv"><img src="https://flagcdn.com/w80/se.png" alt="Svenska"> Svenska</a>
-<a href="pl.html" class="lang-option" data-lang="pl"><img src="https://flagcdn.com/w80/pl.png" alt="Polski"> Polski</a>
-<a href="fi.html" class="lang-option" data-lang="fi"><img src="https://flagcdn.com/w80/fi.png" alt="Suomi"> Suomi</a>
-<a href="da.html" class="lang-option" data-lang="da"><img src="https://flagcdn.com/w80/dk.png" alt="Dansk"> Dansk</a>
-<a href="no.html" class="lang-option" data-lang="no"><img src="https://flagcdn.com/w80/no.png" alt="Norsk"> Norsk</a>
-<a href="hu.html" class="lang-option" data-lang="hu"><img src="https://flagcdn.com/w80/hu.png" alt="Magyar"> Magyar</a>
-<a href="sk.html" class="lang-option" data-lang="sk"><img src="https://flagcdn.com/w80/sk.png" alt="Slovenčina"> Slovenčina</a>
-<a href="hr.html" class="lang-option" data-lang="hr"><img src="https://flagcdn.com/w80/hr.png" alt="Hrvatski"> Hrvatski</a>
-<a href="sl.html" class="lang-option" data-lang="sl"><img src="https://flagcdn.com/w80/si.png" alt="Slovenščina"> Slovenščina</a>
-<a href="bg.html" class="lang-option" data-lang="bg"><img src="https://flagcdn.com/w80/bg.png" alt="Български"> Български</a>
-<a href="sr.html" class="lang-option" data-lang="sr"><img src="https://flagcdn.com/w80/rs.png" alt="Српски"> Српски</a>
-<a href="cs.html" class="lang-option" data-lang="cs"><img src="https://flagcdn.com/w80/cz.png" alt="Čeština"> Čeština</a>
-<a href="ru.html" class="lang-option" data-lang="ru"><img src="https://flagcdn.com/w80/ru.png" alt="Русский"> Русский</a>
-<a href="uk.html" class="lang-option" data-lang="uk"><img src="https://flagcdn.com/w80/ua.png" alt="Українська"> Українська</a>
-<a href="zh.html" class="lang-option" data-lang="zh"><img src="https://flagcdn.com/w80/cn.png" alt="中文"> 中文 (普通话)</a>
-<a href="yue.html" class="lang-option" data-lang="yue"><img src="https://flagcdn.com/w80/hk.png" alt="廣東話"> 廣東話</a>
-<a href="ja.html" class="lang-option" data-lang="ja"><img src="https://flagcdn.com/w80/jp.png" alt="日本語"> 日本語</a>
-<a href="ko.html" class="lang-option" data-lang="ko"><img src="https://flagcdn.com/w80/kr.png" alt="한국어"> 한국어</a>
-<a href="hi.html" class="lang-option" data-lang="hi"><img src="https://flagcdn.com/w80/in.png" alt="हिन्दी"> हिन्दी</a>
-<a href="te.html" class="lang-option" data-lang="te"><img src="https://flagcdn.com/w80/in.png" alt="తెలుగు"> తెలుగు</a>
-<a href="mr.html" class="lang-option" data-lang="mr"><img src="https://flagcdn.com/w80/in.png" alt="मराठी"> मराठी</a>
-<a href="ta.html" class="lang-option" data-lang="ta"><img src="https://flagcdn.com/w80/in.png" alt="தமிழ்"> தமிழ்</a>
-<a href="ur.html" class="lang-option" data-lang="ur"><img src="https://flagcdn.com/w80/pk.png" alt="اردو"> اردو</a>
-<a href="gu.html" class="lang-option" data-lang="gu"><img src="https://flagcdn.com/w80/in.png" alt="ગુજરાતી"> ગુજરાતી</a>
-<a href="kn.html" class="lang-option" data-lang="kn"><img src="https://flagcdn.com/w80/in.png" alt="ಕನ್ನಡ"> ಕನ್ನಡ</a>
-<a href="ml.html" class="lang-option" data-lang="ml"><img src="https://flagcdn.com/w80/in.png" alt="മലയാളം"> മലയാളം</a>
-<a href="or.html" class="lang-option" data-lang="or"><img src="https://flagcdn.com/w80/in.png" alt="ଓଡ଼ିଆ"> ଓଡ଼ିଆ</a>
-<a href="pa.html" class="lang-option" data-lang="pa"><img src="https://flagcdn.com/w80/pk.png" alt="ਪੰਜਾਬੀ"> ਪੰਜਾਬੀ</a>
-<a href="sd.html" class="lang-option" data-lang="sd"><img src="https://flagcdn.com/w80/pk.png" alt="سنڌي"> سنڌي</a>
-<a href="ps.html" class="lang-option" data-lang="ps"><img src="https://flagcdn.com/w80/af.png" alt="پښتو"> پښتو</a>
-<a href="bal.html" class="lang-option" data-lang="bal"><img src="https://flagcdn.com/w80/pk.png" alt="بلوچی"> بلوچی</a>
-<a href="si.html" class="lang-option" data-lang="si"><img src="https://flagcdn.com/w80/lk.png" alt="සිංහල"> සිංහල</a>
-<a href="bn.html" class="lang-option" data-lang="bn"><img src="https://flagcdn.com/w80/bd.png" alt="বাংলা"> বাংলা</a>
-<a href="zh-sg.html" class="lang-option" data-lang="zh-sg"><img src="https://flagcdn.com/w80/sg.png" alt="中文 (新加坡)"> 中文 (新加坡)</a>
-<a href="ms.html" class="lang-option" data-lang="ms"><img src="https://flagcdn.com/w80/sg.png" alt="Bahasa Melayu"> Bahasa Melayu</a>
-<a href="id.html" class="lang-option" data-lang="id"><img src="https://flagcdn.com/w80/id.png" alt="Bahasa Indonesia"> Bahasa Indonesia</a>
-<a href="jv.html" class="lang-option" data-lang="jv"><img src="https://flagcdn.com/w80/id.png" alt="Jawa"> Jawa</a>
-<a href="su.html" class="lang-option" data-lang="su"><img src="https://flagcdn.com/w80/id.png" alt="Sunda"> Sunda</a>
-<a href="bbc.html" class="lang-option" data-lang="bbc"><img src="https://flagcdn.com/w80/id.png" alt="Batak"> Batak</a>
-<a href="my.html" class="lang-option" data-lang="my"><img src="https://flagcdn.com/w80/mm.png" alt="ဗမာစာ"> ဗမာစာ</a>
-<a href="kar.html" class="lang-option" data-lang="kar"><img src="https://flagcdn.com/w80/mm.png" alt="ကရင်စာ"> ကရင်စာ</a>
-<a href="rhg.html" class="lang-option" data-lang="rhg"><img src="https://flagcdn.com/w80/mm.png" alt="রোহিঙ্গা"> রোহিঙ্গা</a>
-<a href="mnw.html" class="lang-option" data-lang="mnw"><img src="https://flagcdn.com/w80/mm.png" alt="မွန်စာ"> မွန်စာ</a>
-<a href="shn.html" class="lang-option" data-lang="shn"><img src="https://flagcdn.com/w80/mm.png" alt="ရှမ်းစာ"> ရှမ်းစာ</a>
-<a href="tl.html" class="lang-option" data-lang="tl"><img src="https://flagcdn.com/w80/ph.png" alt="Filipino"> Filipino</a>
-<a href="th.html" class="lang-option" data-lang="th"><img src="https://flagcdn.com/w80/th.png" alt="ไทย"> ไทย</a>
-<a href="vi.html" class="lang-option" data-lang="vi"><img src="https://flagcdn.com/w80/vn.png" alt="Tiếng Việt"> Tiếng Việt</a>
-<a href="fa.html" class="lang-option" data-lang="fa"><img src="https://flagcdn.com/w80/ir.png" alt="فارسی"> فارسی</a>
-<a href="yo.html" class="lang-option" data-lang="yo"><img src="https://flagcdn.com/w80/ng.png" alt="Yorùbá"> Yorùbá</a>
-<a href="am.html" class="lang-option" data-lang="am"><img src="https://flagcdn.com/w80/et.png" alt="አማርኛ"> አማርኛ</a>
-<a href="sw.html" class="lang-option" data-lang="sw"><img src="https://flagcdn.com/w80/tz.png" alt="Kiswahili"> Kiswahili</a>
-<a href="sw-ke.html" class="lang-option" data-lang="sw-ke"><img src="https://flagcdn.com/w80/ke.png" alt="Kiswahili (Kenya)"> Kiswahili (Kenya)</a>
-<a href="ln.html" class="lang-option" data-lang="ln"><img src="https://flagcdn.com/w80/cd.png" alt="Lingála"> Lingála</a>
-<a href="zu.html" class="lang-option" data-lang="zu"><img src="https://flagcdn.com/w80/za.png" alt="isiZulu"> isiZulu</a>
-<a href="lg.html" class="lang-option" data-lang="lg"><img src="https://flagcdn.com/w80/ug.png" alt="Luganda"> Luganda</a>
-<a href="ak.html" class="lang-option" data-lang="ak"><img src="https://flagcdn.com/w80/gh.png" alt="Akan"> Akan</a>
-<a href="ff.html" class="lang-option" data-lang="ff"><img src="https://flagcdn.com/w80/cm.png" alt="Fula"> Fula</a>
-<a href="dyu.html" class="lang-option" data-lang="dyu"><img src="https://flagcdn.com/w80/ci.png" alt="Dioula"> Dioula</a>
-<a href="mg.html" class="lang-option" data-lang="mg"><img src="https://flagcdn.com/w80/mg.png" alt="Malagasy"> Malagasy</a>
-<a href="din.html" class="lang-option" data-lang="din"><img src="https://flagcdn.com/w80/ss.png" alt="Dinka"> Dinka</a>
-<a href="srr.html" class="lang-option" data-lang="srr"><img src="https://flagcdn.com/w80/td.png" alt="Sara"> Sara</a>
-<a href="so.html" class="lang-option" data-lang="so"><img src="https://flagcdn.com/w80/so.png" alt="Soomaali"> Soomaali</a>
-<a href="sn.html" class="lang-option" data-lang="sn"><img src="https://flagcdn.com/w80/zw.png" alt="Shona"> Shona</a>
-<a href="bem.html" class="lang-option" data-lang="bem"><img src="https://flagcdn.com/w80/zm.png" alt="Bemba"> Bemba</a>
-<a href="ny.html" class="lang-option" data-lang="ny"><img src="https://flagcdn.com/w80/mw.png" alt="Chichewa"> Chichewa</a>
-<a href="wo.html" class="lang-option" data-lang="wo"><img src="https://flagcdn.com/w80/sn.png" alt="Wolof"> Wolof</a>
-<a href="bm.html" class="lang-option" data-lang="bm"><img src="https://flagcdn.com/w80/ml.png" alt="Bambara"> Bambara</a>
-<a href="ha.html" class="lang-option" data-lang="ha"><img src="https://flagcdn.com/w80/ne.png" alt="Hausa"> Hausa</a>
-<a href="mos.html" class="lang-option" data-lang="mos"><img src="https://flagcdn.com/w80/bf.png" alt="Mossi"> Mossi</a>
-<a href="rw.html" class="lang-option" data-lang="rw"><img src="https://flagcdn.com/w80/rw.png" alt="Kinyarwanda"> Kinyarwanda</a>
-<a href="rn.html" class="lang-option" data-lang="rn"><img src="https://flagcdn.com/w80/bi.png" alt="Kirundi"> Kirundi</a>
-</div>
-</div>
-<a onclick="scrollToSec('about')">Our Goals</a>
-<a onclick="scrollToSec('about')">Our Cry</a>
-<a onclick="openMessagesModal()">Our Messages</a>
-<a onclick="scrollToSec('inst')">National Awareness</a>
-<a onclick="scrollToSec('media-sec')">Media</a>
-<a onclick="scrollToSec('stats')">Statistics</a>
-<a onclick="scrollToSec('losses')">Losses</a>
-<a onclick="scrollToSec('awareness-sec')">Awareness Programs</a>
-<a onclick="scrollToSec('human-vision')">Human Vision</a>
-<a onclick="scrollToSec('references')">Our Human References</a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=civistories@gmail.com&cc=anabileg@gmail.com" target="_blank">Contact Us</a>
-</div>
-<div class="nav-right-group">
-<div class="social-icons">
-<a href="https://wa.me/201009995015" target="_blank" style="color: var(--wa-color);"><i class="fab fa-whatsapp"></i></a>
-</div>
-<img src="logo.png" class="nav-logo-img" alt="Logo">
-</div>
-</div>
-</nav>
-<div class="news-ticker"><div class="ticker-track animate-news" id="tickerTrack"></div></div>
-<section class="hero" id="home">
-<h1 class="main-alert-title" id="main-hero-title">
-<span class="highlight">Tsunami</span> <span class="gold-text">of Digital Illusion: From the Cradle of Civilization Egypt to the World... A Cry to Save Humanity</span>
-</h1>
-<div class="hero-container">
-<div class="book-static">
-<div class="book-wrapper"><img src="CIVISTORIES Book.png" alt="Book Cover"></div>
-<a href="https://heyzine.com/flip-book/48ab3792ec.html" target="_blank" id="btn-browse" class="btn-action">Browse the Book</a>
-</div>
-<div class="video-container-box">
-<iframe src="https://www.youtube.com/embed/ite_9cHeOO4?autoplay=1&mute=1&loop=1&playlist=ite_9cHeOO4&controls=1&rel=0" allowfullscreen></iframe>
-</div>
-</div>
-</section>
-<section id="about" class="vision-section">
-<h2 id="vis-title" class="section-main-title" style="font-size: 3rem; font-weight: 900;">Our Strategic Goals</h2>
-<p id="vis-desc">Through the "Stories of Civilizations" initiative, we aim to protect Egypt's social fabric from the dangers of electronic disintegration, by empowering families and restoring psychological and social balance.<br>We started from Egypt, where digital illusion threatens family and societal stability, and we aspire to launch a global cry to protect humanity from the dangers of digital addiction—through empowering families, restoring psychological balance, and building a humane digital space.</p>
-</section>
-<section id="messages" class="section">
-<div class="glass-box">
-<h2 class="section-main-title" style="font-size: 3rem; font-weight: 900;">Our Cry</h2>
-<p style="font-size: 1.4rem; font-weight: bold; line-height: 1.6; color: var(--white);">
-From the heart of Egyptian civilization, we launch our messages to the world:<br>
-• Technology is a tool, not a substitute for humanity.<br>
-• The family is the first fortress against digital collapse.<br>
-• Digital awareness is a right for every individual and a duty for every society.<br>
-• No safe future without balance between digital progress and human values.
-</p>
-</div>
-</section>
-<section id="inst" class="section">
-<div class="glass-box">
-<h2 id="part-title" class="section-main-title" style="font-size: 3rem; font-weight: bold;">National Awareness</h2>
-<div class="grid">
-<div class="card">
-<div class="info-popup" id="src-p1">Source: Al-Azhar Electronic Fatwa Center statistics</div>
-<img src="100.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
-<h3 id="p1-name">Al-Azhar Al-Sharif</h3>
-<p id="p1-desc">Monitoring and treating cases of family disintegration resulting from digital addiction through specialized fatwa committees.</p>
-</div>
-<div class="card">
-<div class="info-popup" id="src-p2">Source: Church counseling reports</div>
-<img src="300.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
-<h3 id="p2-name">Egyptian Church</h3>
-<p id="p2-desc">Working to stabilize families and confront digital isolation within the household through counseling programs.</p>
-</div>
-<div class="card">
-<div class="info-popup" id="src-p3">Source: Egyptian Ministry of Awqaf</div>
-<img src="200.png" style="width:110px; border-radius:50%; border:3px solid var(--gold); background:#fff; margin-bottom:20px;">
-<h3 id="p3-name">Ministry of Awqaf</h3>
-<p id="p3-desc">"Sakan wa Mawadda" initiative to educate married couples about technology's dangers to their psychological stability.</p>
-</div>
-</div>
-</div>
-</section>
-<div style="text-align:center; margin-top:40px;">
-<h2 id="media-guideline" class="section-main-title">Click on the image to receive our message</h2>
-</div>
-<section id="media-sec" class="carousel-wide">
-<div class="track animate-media" id="track-imgs"></div>
-</section>
-<section id="stats" class="section">
-<div class="glass-box">
-<h2 id="st-title" class="section-main-title" style="font-size: 3rem; font-weight: 900;">Statistics</h2>
-<div class="grid">
-<div class="card">
-<div class="info-popup" id="src1">Source: Central Agency for Public Mobilization and Statistics</div>
-<span class="stat-num counter" id="cnt1" data-target="311">0</span>
-<p id="st1-txt">Thousand divorce cases annually</p>
-</div>
-<div class="card">
-<div class="info-popup" id="src2">Source: Ministry of Communications and Information Technology</div>
-<span class="stat-num counter" id="cnt2" data-target="104">0</span>
-<p id="st2-txt">Million mobile phones</p>
-</div>
-<div class="card">
-<div class="info-popup" id="src3">Source: Ministry of Social Solidarity</div>
-<span class="stat-num counter" id="cnt3" data-target="5.7">0</span>
-<p id="st3-txt">Daily hours before screens for children</p>
-</div>
-</div>
-</div>
-</section>
-<section id="losses" class="section">
-<div class="glass-box" style="border-color: var(--red-num);">
-<h2 id="ls-title" class="section-main-title" style="color: var(--red-num); font-size: 3rem; font-weight: 900;">Losses</h2>
-<div class="grid">
-<div class="card" style="border-bottom-color: var(--red-num);">
-<div class="info-popup" id="src4">Source: Economic feasibility studies</div>
-<span class="stat-num loss-num counter" id="cnt4" data-target="15">0</span>
-<p id="ls1-txt">Billion pounds in annual productivity losses</p>
-</div>
-<div class="card" style="border-bottom-color: var(--red-num);">
-<div class="info-popup" id="src5">Source: Mental health reports</div>
-<span class="stat-num loss-num counter" id="cnt5" data-target="4.5">0</span>
-<p id="ls2-txt">Billion pounds cost of psychological treatment</p>
-</div>
-<div class="card" style="border-bottom-color: var(--red-num);">
-<div class="info-popup" id="src6">Source: Cybersecurity reports</div>
-<span class="stat-num loss-num counter" id="cnt6" data-target="2.1">0</span>
-<p id="ls3-txt">Billion pounds losses from electronic fraud</p>
-</div>
-</div>
-</div>
-</section>
-<section id="awareness-sec" class="section">
-<div class="glass-box">
-<h2 id="awareness-main-title" class="section-main-title">Awareness Programs</h2>
-<div class="awareness-grid">
-<div class="awareness-card" onclick="openProgram('child')"><i class="fas fa-child"></i><span id="aw-c1">Digital Childhood</span></div>
-<div class="awareness-card" onclick="openProgram('teens')"><i class="fas fa-user-friends"></i><span id="aw-c2">Teen World</span></div>
-<div class="awareness-card" onclick="openProgram('youth')"><i class="fas fa-briefcase"></i><span id="aw-c3">Productivity and Youth</span></div>
-<div class="awareness-card" onclick="openProgram('marriage')"><i class="fas fa-heart"></i><span id="aw-c4">Happy Marriage</span></div>
-<div class="awareness-card" onclick="openProgram('seniors')"><i class="fas fa-blind"></i><span id="aw-c5">Senior Citizens</span></div>
-<div class="awareness-card" onclick="openProgram('security')"><i class="fas fa-user-shield"></i><span id="aw-c6">Safety and Privacy</span></div>
-</div>
-</div>
-</section>
-<section id="human-vision" class="section">
-<div class="glass-box">
-<h2 class="section-main-title" style="font-size: 3rem; font-weight: bold;">Human Vision</h2>
-<p style="font-size: 1.4rem; font-weight: bold; line-height: 1.6; color: var(--white);">
-In a world accelerating toward boundless digitization, we call for:<br>
-• Returning humanity to the center of attention.<br>
-• Building bridges between civilizations through shared values.<br>
-• Transforming technology from a source of isolation into a tool for communication and understanding.<br>
-• Instilling digital responsibility in future generations.<br>
-Because true civilization is not measured by screens, but by humanity.
-</p>
-</div>
-</section>
-<!-- Our Human References Section -->
-<section id="references" class="references-section">
-<h2 class="section-main-title">Our Human References</h2>
-<div class="references-grid">
-<div class="reference-card" onclick="openReferenceModal('reference-islam')"><span>Islam</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-christianity')"><span>Christianity</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-judaism')"><span>Judaism</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-buddhism')"><span>Buddhism</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-hinduism')"><span>Hinduism</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-confucianism')"><span>Confucianism</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-taoism')"><span>Taoism</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-shinto')"><span>Shinto</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-eastern')"><span>Jainism</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-indigenous')"><span>Zoroastrianism</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-african')"><span>African Philosophy</span></div>
-<div class="reference-card" onclick="openReferenceModal('reference-secular')"><span>Human Ethics</span></div>
-</div>
-</section>
-<script>
-function initPage() {
-scrollToSec('home');
-updateTicker();
-loadMedia();
-setupLanguageToggle();
-initCountersObserver();
-}
-function initCountersObserver() {
-const counters = document.querySelectorAll('.counter');
-counters.forEach(c => c.innerText = '0');
-const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if(entry.isIntersecting) {
-const el = entry.target;
-const target = parseFloat(el.getAttribute('data-target'));
-let start = 0;
-const duration = 2000;
-const step = target / (duration / 30);
-const timer = setInterval(() => {
-start += step;
-if(start >= target) {
-el.innerText = target;
-clearInterval(timer);
-} else {
-el.innerText = start.toFixed(1).replace('.0','');
-}
-}, 30);
-observer.unobserve(el);
-}
-});
-}, { threshold: 0.3 });
-document.querySelectorAll('#stats .counter, #losses .counter').forEach(c => {
-observer.observe(c);
-});
-}
-function updateTicker() {
-const track = document.getElementById('tickerTrack');
-const list = [
-"Al-Azhar: A divorce case every 2.5 minutes due to digital addiction",
-"Ministry of Awqaf: Phones are a primary cause of marital silence",
-"Warning: Digital disintegration threatens Egypt's stability",
-"Ministry of Health: 3 million annual visits to psychological clinics due to social media disorders",
-"Egyptian Church: 60% of family problems linked to digital isolation and excess",
-"Al-Qasr Al-Aini: A suicide attempt approximately every 6 hours due to online bullying",
-"Ministry of Finance: 15 billion pounds in annual productivity losses due to digital addiction",
-"UNICEF: 47% of Egyptian children exposed to harmful cyberbullying",
-"Statistics Agency: 57% increase in divorce rates over previous 5 years",
-"Ministry of Interior: 40% of domestic violence reports caused by social media applications",
-"World Bank: 4.5 billion pounds cost of treating digital psychological disorders annually",
-"National Security: Monitoring 870 organized electronic groups spreading discord and sedition",
-"Study: 85% of high school students suffer psychological effects of digital bullying",
-"Catastrophe: 2.1 billion pounds annual losses due to electronic fraud",
-"Recording 93,300 divorce cases annually linked to social media",
-"Occurrence of 255 divorce cases daily due to social media platforms",
-"Mentioning social media as direct cause in 30% of divorce cases",
-"Issuing 100,000 annual fatwas about family problems, 23% due to social media",
-"30% of Al-Azhar Research Assembly fatwas concerning family severance",
-"29% of Al-Azhar Research Assembly fatwas concerning forbidden relationships",
-"60% of family problems in Coptic community linked to social media",
-"50,000 Coptic families suffering annually from social media problems",
-"Increase in Egypt's divorce rates by 57% during 5 years (2018-2023)",
-"Increase in divorce cases from 198,000 cases in 2018 to 311,000 cases in 2023",
-"Recording average daily 852 divorce cases in Egypt",
-"40% of domestic violence reports began with arguments on social media",
-"Recording 145,000 domestic violence reports in 2023, 43,500 linked to electronic problems",
-"Existence of 22,000 marital infidelity cases with electronic evidence",
-"Occurrence of 122 spousal murders, 40 cases due to jealousy from posts",
-"65% of psychological clinic visitors complain of disorders linked to social media",
-"Recording 3 million visits to psychological clinics in 2023, 40% linked to social media",
-"Age group 15-35 years represents 68% of digital psychological disorder cases",
-"50% of divorces in first year of marriage caused by social media",
-"Productivity loss estimated at 15 billion pounds annually due to digital psychological problems",
-"47% of children (8-18 years) exposed to cyberbullying",
-"Average daily screen time for children reaching 5.7 hours",
-"63% of children exposed to inappropriate content online",
-"Productivity losses due to digital addiction reach 2.3% of GDP",
-"Cost of treating psychological disorders linked to digitization amounts to 4 billion 500 million pounds annually",
-"Loss of 18 million work days annually due to digital repercussions",
-"Recording average 3 broken friendships per young person due to digital disagreements",
-"85% of high school students suffer from digital bullying",
-"35% of high school students attempted suicide at least once",
-"64% of university students suffer from sleep disorders due to social media",
-"42% of university students' academic performance negatively affected",
-"17% of university students exposed to electronic blackmail",
-"Occurrence of suicide attempt every 6 hours due to digital bullying or severance",
-"Recording 1,460 suicide attempts in 2023, 60% for digital reasons",
-"40% of seniors suffer from isolation due to children's preoccupation with social media",
-"2 million Egyptian seniors living in digital isolation",
-"Divorce rate in first year of marriage reaching 34%",
-"Average marriage duration at divorce is 3.7 years",
-"Recording 12,500 digital divorce cases annually",
-"Average number of social media accounts per Egyptian is 3.8 accounts",
-"71% of Egyptians start their day browsing social media",
-"52% of family problems begin via WhatsApp application",
-"Divorce of couple after 32 years of marriage due to a comment",
-"Murder of two brothers in Mansoura after argument over political post",
-"Suicide of medical student at Ain Shams University after watching 100 videos daily about failure of medical life",
-"Division of family of 15 members in Alexandria due to birthday party photo",
-"Husband divorces wife in Giza after discovering dance videos of her on TikTok",
-"Depression rate among social media users reaching 31%",
-"76% of users engage in negative social comparisons",
-"Family losses due to electronic fraud amount to 2.1 billion pounds annually",
-"Monitoring more than 15,000 anonymous electronic pages spreading sedition",
-"Monitoring 870 organized electronic groups spreading discord",
-"Egyptian family cohesion subjected to 120 electronic attacks daily",
-"Erosion of traditional family values by 22% during 5 years",
-"Negatively influential foreign content represents 68% of circulated content",
-"Expectation of divorce cases reaching 450,000 cases annually by 2030 if no intervention",
-"Expectation of digital economic losses exceeding 35 billion pounds annually by 2030",
-"30% of divorce cases mention social media as direct cause",
-"93,300 divorce cases annually linked to social media",
-"255 divorce cases daily linked to social media",
-"100,000 annual fatwas about family problems, 23% due to social media",
-"30% fatwas about family severance",
-"29% fatwas about forbidden relationships",
-"60% of family problems in Coptic community linked to social media",
-"50,000 Coptic families suffering annually",
-"Increase of 57% in divorce rates during 5 years (2018-2023)",
-"40% of domestic violence reports began with arguments on social media",
-"2023: 145,000 domestic violence reports, 43,500 linked to electronic problems representing 30%",
-"22,000 marital infidelity cases with electronic evidence",
-"122 spousal murders, 40 cases due to jealousy from posts",
-"65% of psychological clinic visitors complain of disorders linked to social media",
-"2023: 3 million visits to psychological clinics, 40% of cases linked to social media",
-"Age group 15-35 years represents 68% of psychological cases",
-"50% of divorces in first year due to social media",
-"Productivity loss due to digital psychological problems estimated at 15 billion pounds annually",
-"Percentage of children 8-18 years exposed to cyberbullying: 47%",
-"Average daily screen time: 5.7 hours",
-"Percentage of children exposed to inappropriate content: 63%",
-"Productivity losses due to digital addiction in Egypt reach 2.3% of GDP",
-"Cost of treating linked psychological disorders: 4 billion 500 million pounds annually",
-"Lost work days: 18 million work days annually",
-"Average 3 broken friendships per young person",
-"85% of high school students suffer from digital bullying",
-"35% of high school students attempted suicide at least once",
-"58% of university students suffer from electronic bullying",
-"64% suffer from sleep disorders due to social media",
-"42% academic performance negatively affected",
-"17% exposed to electronic blackmail",
-"Suicide attempt every 6 hours due to digital bullying or severance",
-"2023: 1,460 suicide attempts, 60% for digital reasons linked to social media",
-"40% of seniors suffer from isolation because children are busy with social media",
-"2 million Egyptian seniors living in digital isolation",
-"Percentage of divorces in first year of marriage: 34%",
-"Average marriage duration at divorce: 3.7 years",
-"Digital divorce cases: 12,500 cases annually",
-"Average number of social media accounts per person: 3.8 accounts",
-"Percentage of Egyptians starting day with social media: 71%",
-"Percentage of family problems starting via WhatsApp: 52%",
-"Divorce after 32 years of marriage due to comment",
-"Two brothers in Mansoura fought to death over political post",
-"Suicide of medical student at Ain Shams University after watching 100 videos daily about failure of medical life",
-"Division of family of 15 members in Alexandria due to birthday party photo",
-"Husband divorces wife in Giza after discovering dance videos of her on TikTok",
-"Depression rate among social media users: 31%",
-"Percentage of negative social comparisons: 76%",
-"Increasing cases of social anxiety: 44%",
-"Family economic losses due to electronic fraud: 2.1 billion pounds annually",
-"Monitoring more than 15,000 anonymous electronic pages spreading sedition",
-"Monitoring 870 organized electronic groups spreading discord",
-"Electronic attacks on Egyptian family cohesion averaging 120 attacks daily",
-"Erosion of traditional family values: 22% during last 5 years",
-"Spread of unrealistic life models affecting 81% of youth",
-"Percentage of negatively influential foreign content: 68% of circulated content",
-"Increase in digital divorce: 20% annually",
-"Increase in digital family crime: 15% annually",
-"Increase in psychological disorders: 25% annually",
-"Increase in electronic bullying: 30% annually",
-"50% of Egyptian families exposed to disintegration",
-"Expectation of divorce cases reaching 450,000 cases annually in 2030",
-"Expectation of economic losses exceeding 35 billion pounds annually in 2030"
-];
-track.innerHTML = "";
-[...list, ...list].forEach(txt => {
-const s = document.createElement('span');
-s.innerText = txt;
-track.appendChild(s);
-});
-}
-function loadMedia() {
-const track = document.getElementById('track-imgs');
-track.innerHTML = "";
-const imgs = [];
-for(let i=101; i<=124; i++) { imgs.push(i + ".jpg"); }
-[...imgs, ...imgs].forEach(src => {
-const img = document.createElement('img');
-img.src = src;
-img.onclick = () => openImage(src);
-track.appendChild(img);
-});
-}
-function openImage(src) {
-document.getElementById('lightbox-img').src = src;
-document.getElementById('lightbox').style.display = 'flex';
-}
-function closeImage() {
-document.getElementById('lightbox').style.display = 'none';
-}
-function scrollToSec(id) {
-const el = document.getElementById(id);
-if(el) {
-const offset = 100;
-const pos = el.offsetTop - offset;
-window.scrollTo({ top: pos, behavior: 'smooth' });
-}
-}
-function setupLanguageToggle() {
-const toggleBtn = document.getElementById('langToggleBtn');
-const dropdown = document.getElementById('langDropdown');
-toggleBtn.onclick = (e) => {
-e.stopPropagation();
-dropdown.classList.toggle('show');
-};
-document.addEventListener('click', (e) => {
-if (!dropdown.contains(e.target) && e.target !== toggleBtn) {
-dropdown.classList.remove('show');
-}
-});
-document.querySelectorAll('.lang-option').forEach(option => {
-option.onclick = function(e) {
-e.preventDefault();
-const langCode = this.dataset.lang;
-if (langCode === 'ar') {
-return;
-} else {
-showSoonPlaceholder();
-dropdown.classList.remove('show');
-}
-};
-});
-}
-function showSoonPlaceholder() {
-const flagContainer = document.querySelector('.lang-toggle-btn');
-flagContainer.innerHTML = '<span class="soon-placeholder">Soon</span>';
-setTimeout(() => {
-flagContainer.innerHTML = '<img src="https://flagcdn.com/w80/eg.png" alt="English" id="currentLangFlag">';
-}, 2000);
-}
-// === Complete Awareness Programs ===
-const programsData = {
-child: [
-{ q: "What is the appropriate age technically and psychologically for allowing a child to use screens?", src: "American Academy of Pediatrics (AAP)", ans: "* Completely prohibited screen use for children under 18–24 months.<br>* The only exception at this age is video calls for communicating with family only.<br>* From ages 2 to 5 years, maximum limit is one hour daily of educational content.<br>* Parents must watch with the child to ensure understanding and real-world application." },
-{ q: "How do I distinguish between normal phone use and the beginning of digital isolation?", src: "American Psychological Association (APA)", ans: "* Normal use is a means of entertainment that doesn't affect real social interaction.<br>* Isolation begins when withdrawal symptoms appear such as severe irritability when device is taken away.<br>* Loss of interest in traditional hobbies and playing with peers is a danger sign.<br>* Neglecting personal hygiene or disruption of eating/sleeping schedules due to screen time." },
-{ q: "How do I manage ending screen time peacefully without tantrums?", src: "Harvard Center on the Developing Child", ans: "* Use gradual warning system 10 and 5 minutes before end time.<br>* Give the child a choice (Do you want to turn off now or after finishing this level?).<br>* Link end of screen time to another enjoyable activity (like playing
+  <a href="https://anabileg.github.io/---CiviStories/#stats" class="lang-option arabic-flag" data-lang="ar"><img src="https://flagcdn.com/w80/eg.png" alt="العربية"> العربية</a>
+  <a href="en.html" class="lang-option" data-lang="en"><img src="https://flagcdn.com/w80/gb.png" alt="English"> English</a>
+  <a href="fr.html" class="lang-option" data-lang="fr"><img src="https://flagcdn.com/w80/fr.png" alt="Français"> Français</a>
+  <a href="es.html" class="lang-option" data-lang="es"><img src="https://flagcdn.com/w80/es.png" alt="Español"> Español</a>
+  <a href="de.html" class="lang-option" data-lang="de"><img src="https://flagcdn.com/w80/de.png" alt="Deutsch"> Deutsch</a>
+  <a href="it.html" class="lang-option" data-lang="it"><img src="https://flagcdn.com/w80/it.png" alt="Italiano"> Italiano</a>
+  <a href="pt.html" class="lang-option" data-lang="pt"><img src="https://flagcdn.com/w80/pt.png" alt="Português"> Português</a>
+  <a href="tr.html" class="lang-option" data-lang="tr"><img src="https://flagcdn.com/w80/tr.png" alt="Türkçe"> Türkçe</a>
+  <a href="el.html" class="lang-option" data-lang="el"><img src="https://flagcdn.com/w80/gr.png" alt="Ελληνικά"> Ελληνικά</a>
+  <a href="nl.html" class="lang-option" data-lang="nl"><img src="https://flagcdn.com/w80/nl.png" alt="Nederlands"> Nederlands</a>
+  <a href="ro.html" class="lang-option" data-lang="ro"><img src="https://flagcdn.com/w80/ro.png" alt="Română"> Română</a>
+  <a href="sv.html" class="lang-option" data-lang="sv"><img src="https://flagcdn.com/w80/se.png" alt="Svenska"> Svenska</a>
+  <a href="pl.html" class="lang-option" data-lang="pl"><img src="https://flagcdn.com/w80/pl.png" alt="Polski"> Polski</a>
+  <a href="fi.html" class="lang-option" data-lang="fi"><img src="https://flagcdn.com/w80/fi.png" alt="Suomi"> Suomi</a>
+  <a href="da.html" class="lang-option" data-lang="da"><img src="https://flagcdn.com/w80/dk.png" alt="Dansk"> Dansk</a>
+  <a href="no.html" class="lang-option" data-lang="no"><img src="https://flagcdn.com/w80/no.png" alt="Norsk"> Norsk</a>
+  <a href="hu.html" class="lang-option" data-lang="hu"><img src="https://flagcdn.com/w80/hu.png" alt="Magyar"> Magyar</a>
+  <a href="sk.html" class="lang-option" data-lang="sk"><img src="https://flagcdn.com/w80/sk.png" alt="Slovenčina"> Slovenčina</a>
+  <a href="hr.html" class="lang-option" data-lang="hr"><img src="https://flagcdn.com/w80/hr.png" alt="Hrvatski"> Hrvatski</a>
+  <a href="sl.html" class="lang-option" data-lang="sl"><img src="https://flagcdn.com/w80/si.png" alt="Slovenščina"> Slovenščina</a>
+  <a href="bg.html" class="lang-option" data-lang="bg"><img src="https://flagcdn.com/w80/bg.png" alt="Български"> Български</a>
+  <a href="sr.html" class="lang-option" data-lang="sr"><img src="https://flagcdn.com/w80/rs.png" alt="Српски"> Српски</a>
+  <a href="cs.html" class="lang-option" data-lang="cs"><img src="https://flagcdn.com/w80/cz.png" alt="Čeština"> Čeština</a>
+  <a href="ru.html" class="lang-option" data-lang="ru"><img src="https://flagcdn.com/w80/ru.png" alt="Русский"> Русский</a>
+  <a href="uk.html" class="lang-option" data-lang="uk"><img src="https://flagcdn.com/w80/ua.png" alt="Українська"> Українська</a>
+  <a href="zh.html" class="lang-option" data-lang="zh"><img src="https://flagcdn.com/w80/cn.png" alt="中文"> 中文 (普通话)</a>
+  <a href="yue.html" class="lang-option" data-lang="yue"><img src="https://flagcdn.com/w80/hk.png" alt="廣東話"> 廣東話</a>
+  <a href="ja.html" class="lang-option" data-lang="ja"><img src="https://flagcdn.com/w80/jp.png" alt="日本語"> 日本語</a>
+  <a href="ko.html" class="lang-option" data-lang="ko"><img src="https://flagcdn.com/w80/kr.png" alt="한국어"> 한국어</a>
+  <a href="hi.html" class="lang-option" data-lang="hi"><img src="https://flagcdn.com/w80/in.png" alt="हिन्दी"> हिन्दी</a>
+  <a href="te.html" class="lang-option" data-lang="te"><img src="https://flagcdn.com/w80/in.png" alt="తెలుగు"> తెలుగు</a>
+  <a href="mr.html" class="lang-option" data-lang="mr"><img src="https://flagcdn.com/w80/in.png" alt="मराठी"> मराठी</a>
+  <a href="ta.html" class="lang-option" data-lang="ta"><img src="https://flagcdn.com/w80/in.png" alt="தமிழ்"> தமிழ்</a>
+  <a href="ur.html" class="lang-option" data-lang="ur"><img src="https://flagcdn.com/w80/pk.png" alt="اردو"> اردو</a>
+  <a href="gu.html" class="lang-option" data-lang="gu"><img src="https://flagcdn.com/w80/in.png" alt="ગુજરાતી"> ગુજરાતી</a>
+  <a href="kn.html" class="lang-option" data-lang="kn"><img src="https://flagcdn.com/w80/in.png" alt="ಕನ್ನಡ"> ಕನ್ನಡ</a>
+  <a href="ml.html" class="lang-option" data-lang="ml"><img src="https://flagcdn.com/w80/in.png" alt="മലയാളം"> മലയാളം</a>
+  <a href="or.html" class="lang-option" data-lang="or"><img src="https://flagcdn.com/w80/in.png" alt="ଓଡ଼ିଆ"> ଓଡ଼ିଆ</a>
+  <a href="pa.html" class="lang-option" data-lang="pa"><img src="https://flagcdn.com/w80/pk.png" alt="ਪੰਜਾਬੀ"> ਪੰਜਾਬੀ</a>
+  <a href="sd.html" class="lang-option" data-lang="sd"><img src="https://flagcdn.com/w80/pk.png" alt="سنڌي"> سنڌي</a>
+  <a href="ps.html" class="lang-option" data-lang="ps"><img src="https://flagcdn.com/w80/af.png" alt="پښتو"> پښتو</a>
+  <a href="bal.html" class="lang-option" data-lang="bal"><img src="https://flagcdn.com/w80/pk.png" alt="بلوچی"> بلوچی</a>
+  <a href="si.html" class="lang-option" data-lang="si"><img src="https://flagcdn.com/w80/lk.png" alt="සිංහල"> සිංහල</a>
+  <a href="bn.html" class="lang-option" data-lang="bn"><img src="https://flagcdn.com/w80/bd.png" alt="বাংলা"> বাংলা</a>
+  <a href="zh-sg.html" class="lang-option" data-lang="zh-sg"><img src="https://flagcdn.com/w80/sg.png" alt="中文 (新加坡)"> 中文 (新加坡)</a>
+  <a href="ms.html" class="lang-option" data-lang="ms"><img src="https://flagcdn.com/w80/sg.png" alt="Bahasa Melayu"> Bahasa Melayu</a>
+  <a href="id.html" class="lang-option" data-lang="id"><img src="https://flagcdn.com/w80/id.png" alt="Bahasa Indonesia"> Bahasa Indonesia</a>
+  <a href="jv.html" class="lang-option" data-lang="jv"><img src="https://flagcdn.com/w80/id.png" alt="Jawa"> Jawa</a>
+  <a href="su.html" class="lang-option" data-lang="su"><img src="https://flagcdn.com/w80/id.png" alt="Sunda"> Sunda</a>
+  <a href="bbc.html" class="lang-option" data-lang="bbc"><img src="https://flagcdn.com/w80/id.png" alt="Batak"> Batak</a>
+  <a href="my.html" class="lang-option" data-lang="my"><img src="https://flagcdn.com/w80/mm.png" alt="ဗမာစာ"> ဗမာစာ</a>
+  <a href="kar.html" class="lang-option" data-lang="kar"><img src="https://flagcdn.com/w80/mm.png" alt="ကရင်စာ"> ကရင်စာ</a>
+  <a href="rhg.html" class="lang-option" data-lang="rhg"><img src="https://flagcdn.com/w80/mm.png" alt="রোহিঙ্গা"> রোহিঙ্গা</a>
+  <a href="mnw.html" class="lang-option" data-lang="mnw"><img src="https://flagcdn.com/w80/mm.png" alt="မွန်စာ"> မွန်စာ</a>
+  <a href="shn.html" class="lang-option"
